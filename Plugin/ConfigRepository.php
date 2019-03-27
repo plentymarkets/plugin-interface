@@ -21,7 +21,7 @@ abstract class ConfigRepository
 	abstract public function get(
 		string $key, 
 		 $default = null
-	):mixed;
+	);
 
 	/**
 	 * Set a given configuration value.

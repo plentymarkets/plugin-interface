@@ -11,6 +11,6 @@ abstract class KeyValue
 	abstract public function get(
 		string $key, 
 		 $default = null
-	):mixed;
+	);
 
 }
