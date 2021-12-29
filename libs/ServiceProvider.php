@@ -1,10 +1,10 @@
 <?php
 namespace Illuminate\Support;
 
+use Illuminate\Console\Application as Artisan;
+use Illuminate\Contracts\Support\DeferrableProvider;
+use Illuminate\Database\Eloquent\Factory as ModelFactory;
 
-/**
- * Abstract Model class
- */
 abstract class ServiceProvider 
 {
 
