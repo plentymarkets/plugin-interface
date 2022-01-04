@@ -17,4 +17,9 @@ interface PickingOrderItemRepositoryContract
 		int $pickingOrderItemId
 	):PickingOrderItem;
 
+	public function setPickingOrderItemState(
+		int $pickingOrderItemId, 
+		string $state
+	):PickingOrderItem;
+
 }
