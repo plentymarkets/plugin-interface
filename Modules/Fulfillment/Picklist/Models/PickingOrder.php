@@ -3,9 +3,9 @@ namespace Plenty\Modules\Fulfillment\Picklist\Models;
 
 
 /**
- * Represent a picking order item
+ * Represent a picking order
  */
-abstract class PickingOrderItem 
+abstract class PickingOrder 
 {
 
 	const CREATED_AT = 'createdAt';
@@ -14,29 +14,27 @@ abstract class PickingOrderItem
 	
 public		$id;
 	
-public		$pickingOrderId;
-	
-public		$orderItemId;
-	
-public		$processState;
+public		$createdAt;
 	
 public		$processDate;
 	
+public		$doneDate;
+	
+public		$ownerId;
+	
 public		$processUserId;
 	
-public		$comment;
+public		$processState;
 	
-public		$quantity;
-	
-public		$itemId;
-	
-public		$holdingArea;
+public		$webstoreId;
 	
 public		$warehouseId;
 	
-public		$orderIdList;
+public		$comment;
 	
-public		$pickingOrder;
+public		$filterOptions;
+	
+public		$pickingOrderItems;
 	
 	/**
 	 * Returns this model as an array.
