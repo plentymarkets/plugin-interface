@@ -9,6 +9,9 @@ use Plenty\Modules\Basket\Models\BasketItem;
 abstract class BeforeBasketItemUpdate 
 {
 
+	abstract public function getCategoryRebateForBasketItem(
+	);
+
 	/**
 	 * The shopping cart item that has changed.
 	 */

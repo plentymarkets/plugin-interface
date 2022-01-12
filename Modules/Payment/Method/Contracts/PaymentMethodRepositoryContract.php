@@ -121,4 +121,10 @@ interface PaymentMethodRepositoryContract
 		string $lang
 	):array;
 
+	public function backendSearchablePaymentMethods(
+	):array;
+
+	public function backendActivePaymentMethods(
+	):array;
+
 }
