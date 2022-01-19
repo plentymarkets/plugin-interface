@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Item\Item\Contracts;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Plenty\Modules\Item\Item\Models\Item;
 use Plenty\Repositories\Contracts\FilterableContract;
@@ -10,7 +9,7 @@ use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\DeleteResponse;
 
 /**
- * The contract for the attribute value repository
+ * The contract for the item repository
  */
 interface ItemRepositoryContract 
 {
