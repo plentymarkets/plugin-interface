@@ -58,4 +58,12 @@ interface ReturnOrderRepositoryContract
 		array $data
 	):Order;
 
+	/**
+	 * Book order items of return
+	 */
+	public function book(
+		int $orderId, 
+		array $data = []
+	);
+
 }

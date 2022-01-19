@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
+use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\SalesPrice\With;
 
 /**
@@ -23,6 +24,16 @@ abstract class SalesPrice
 	 * @var float
 	 */
 	public		$price;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$updatedAt;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

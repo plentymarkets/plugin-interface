@@ -364,6 +364,8 @@ public		$itemSearchOperator;
 	
 public		$itemAutocompleteSearchOperator;
 	
+public		$defaultOrderItemName;
+	
 	/**
 	 * Returns this model as an array.
 	 */
