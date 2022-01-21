@@ -53,8 +53,15 @@ abstract class OrderPropertyFileService
 	 * Copy the uploaded file to the order.
 	 */
 	abstract public function copyBasketFileToOrder(
-		string $filename
+		string $filename, 
+		string $collectDeletingFiles = false
 	):string;
+
+	/**
+	 * Delete collected files on s3 temp directory
+	 */
+	abstract public function deleteCollectedFiles(
+	);
 
 	/**
 	 * Delete the specified file.
