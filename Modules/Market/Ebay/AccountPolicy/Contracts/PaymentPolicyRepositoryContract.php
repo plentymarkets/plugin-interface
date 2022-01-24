@@ -10,11 +10,47 @@ interface PaymentPolicyRepositoryContract
 {
 
 	/**
+	 * Creates a new payment policy.
+	 */
+	public function create(
+		array $data
+	):PaymentPolicy;
+
+	/**
 	 * Get a stored payment policy based on ID.
 	 */
 	public function get(
 		string $id, 
 		array $filters = []
 	):PaymentPolicy;
+
+	/**
+	 * Get a stored fulfillment policy based on ID.
+	 */
+	public function getPolicies(
+		int $credentialsId, 
+		string $marketplaceId
+	):array;
+
+	public function update(
+		string $id, 
+		array $data
+	):PaymentPolicy;
+
+	/**
+	 * Deletes a payment policy.
+	 */
+	public function delete(
+		string $id, 
+		array $data
+	):bool;
+
+	/**
+	 * Deletes a payment policies.
+	 */
+	public function deleteBulk(
+		int $userId, 
+		int $marketId
+	):bool;
 
 }
