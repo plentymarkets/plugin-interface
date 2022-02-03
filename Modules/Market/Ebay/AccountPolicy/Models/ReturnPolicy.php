@@ -26,6 +26,8 @@ public		$restockingFeePercentage;
 	
 public		$returnInstruction;
 	
+public		$returnInstructions;
+	
 public		$returnMethod;
 	
 public		$returnPeriod;

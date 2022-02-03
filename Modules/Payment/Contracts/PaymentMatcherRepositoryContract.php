@@ -40,4 +40,11 @@ interface PaymentMatcherRepositoryContract
 		int $paymentId
 	):array;
 
+	/**
+	 * Get matching or assigning rate list for a payment
+	 */
+	public function getMatchingOrAssigningRatesForPayment(
+		int $paymentId
+	):array;
+
 }

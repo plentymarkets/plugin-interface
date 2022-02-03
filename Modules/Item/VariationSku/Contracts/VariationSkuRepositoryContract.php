@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Item\VariationSku\Contracts;
 
+use Illuminate\Database\Eloquent\Collection;
 use Plenty\Modules\Item\VariationSku\Models\VariationSku;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -71,7 +72,9 @@ interface VariationSkuRepositoryContract
 	 * Lists SKUs
 	 */
 	public function search(
-		array $filter
+		array $filter, 
+		int $limit = null, 
+		int $page = 1
 	):array;
 
 	/**
