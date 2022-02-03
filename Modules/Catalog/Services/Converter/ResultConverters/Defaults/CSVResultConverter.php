@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
 use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\UI\UIOptionsContract;
+use Plenty\Modules\Catalog\Helpers\Traits\NumberFormatter;
 use Plenty\Modules\Catalog\Models\CatalogExportResult;
 use Plenty\Modules\Catalog\Services\Collections\CatalogLazyCollection;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\BaseResultConverter;
@@ -31,6 +32,8 @@ abstract class CSVResultConverter extends \Plenty\Modules\Catalog\Services\Conve
 
 	const OPTIONS_PATH = 'converter.csv';
 
+	const OPTIONS_FORMAT_PATH = 'format';
+
 	abstract public function getKey(
 	):string;
 
@@ -39,6 +42,12 @@ abstract class CSVResultConverter extends \Plenty\Modules\Catalog\Services\Conve
 
 	abstract public function getOptions(
 	):UIOptionsContract;
+
+	abstract public function getCSVHeaderRowIncluded(
+	):bool;
+
+	abstract public function getDecimalSeparator(
+	):string;
 
 	/**
 	 * Convert and prepare resource for download

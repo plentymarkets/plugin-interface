@@ -25,6 +25,8 @@ abstract class TXTResultConverter extends \Plenty\Modules\Catalog\Services\Conve
 
 	const OPTIONS_PATH = 'converter.txt';
 
+	const OPTIONS_FORMAT_PATH = 'format';
+
 	abstract public function from(
 		 $data
 	):BaseResultConverter;
@@ -37,6 +39,12 @@ abstract class TXTResultConverter extends \Plenty\Modules\Catalog\Services\Conve
 
 	abstract public function getOptions(
 	):UIOptionsContract;
+
+	abstract public function getCSVHeaderRowIncluded(
+	):bool;
+
+	abstract public function getDecimalSeparator(
+	):string;
 
 	/**
 	 * Convert and prepare resource for download

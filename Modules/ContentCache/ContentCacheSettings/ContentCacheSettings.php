@@ -16,6 +16,8 @@ public		$plentyId;
 	
 public		$contentCacheActive;
 	
+public		$version;
+	
 	/**
 	 * Returns this model as an array.
 	 */

@@ -3,9 +3,9 @@ namespace Plenty\Modules\Order\ReturnStatus\Models;
 
 
 /**
- * The return status model.
+ * The return status name model.
  */
-abstract class ReturnStatus 
+abstract class ReturnStatusName 
 {
 
 	const CREATED_AT = 'createdAt';
@@ -16,7 +16,7 @@ public		$id;
 	
 public		$status;
 	
-public		$names;
+public		$lang;
 	
 	/**
 	 * Returns this model as an array.

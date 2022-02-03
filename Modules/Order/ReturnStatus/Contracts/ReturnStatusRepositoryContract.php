@@ -22,4 +22,11 @@ interface ReturnStatusRepositoryContract
 		int $id
 	):ReturnStatus;
 
+	/**
+	 * Set a return status.
+	 */
+	public function set(
+		array $data
+	):array;
+
 }

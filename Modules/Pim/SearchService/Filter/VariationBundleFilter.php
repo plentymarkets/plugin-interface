@@ -36,6 +36,13 @@ abstract class VariationBundleFilter implements TypeInterface
 		int $componentVariationId
 	):self;
 
+	/**
+	 * Restricts the result to not match the specified bundle type.
+	 */
+	abstract public function hasNotBundleType(
+		string $bundleType
+	):self;
+
 	abstract public function toArray(
 	):array;
 

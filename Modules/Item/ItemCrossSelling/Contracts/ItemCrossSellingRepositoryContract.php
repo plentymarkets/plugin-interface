@@ -1,7 +1,9 @@
 <?php
 namespace Plenty\Modules\Item\ItemCrossSelling\Contracts;
 
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Item\ItemCrossSelling\Models\ItemCrossSelling;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -15,6 +17,15 @@ interface ItemCrossSellingRepositoryContract
 {
 
 	public function create(
+		array $data
+	):ItemCrossSelling;
+
+	/**
+	 * Update an item cross-selling. The item ID and the cross item ID must be specified.
+	 */
+	public function update(
+		int $itemId, 
+		int $crossItemId, 
 		array $data
 	):ItemCrossSelling;
 
