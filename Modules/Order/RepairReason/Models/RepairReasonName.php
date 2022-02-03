@@ -1,11 +1,11 @@
 <?php
-namespace Plenty\Modules\Order\ReturnStatus\Models;
+namespace Plenty\Modules\Order\RepairReason\Models;
 
 
 /**
- * The return status model.
+ * The repair reason name model.
  */
-abstract class ReturnStatus 
+abstract class RepairReasonName 
 {
 
 	const CREATED_AT = 'createdAt';
@@ -14,9 +14,9 @@ abstract class ReturnStatus
 	
 public		$id;
 	
-public		$status;
+public		$reason;
 	
-public		$names;
+public		$lang;
 	
 	/**
 	 * Returns this model as an array.

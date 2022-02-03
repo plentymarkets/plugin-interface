@@ -6,6 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
@@ -33,6 +34,13 @@ abstract class TagFilter implements TypeInterface
 	 * Restricts the result to have all of the tag ids.
 	 */
 	abstract public function hasAllTags(
+		array $tagIds
+	):self;
+
+	/**
+	 * Restricts the result to not match the specified IDs.
+	 */
+	abstract public function hasNotTagIds(
 		array $tagIds
 	):self;
 

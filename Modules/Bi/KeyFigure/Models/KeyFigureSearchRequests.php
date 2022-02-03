@@ -8,6 +8,8 @@ namespace Plenty\Modules\BI\KeyFigure\Models;
 abstract class KeyFigureSearchRequests 
 {
 	
+public		$globalDataFilters;
+	
 public		$searchRequests;
 	
 	/**

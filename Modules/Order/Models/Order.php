@@ -84,6 +84,8 @@ public		$reverseOrderReferences;
 	
 public		$originOrderReferences;
 	
+public		$shippingPallets;
+	
 public		$shippingPackages;
 	
 public		$documents;

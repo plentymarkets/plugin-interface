@@ -22,4 +22,11 @@ interface ReturnReasonRepositoryContract
 		int $id
 	):ReturnReason;
 
+	/**
+	 * Set a return reason.
+	 */
+	public function set(
+		array $data
+	):array;
+
 }

@@ -22,6 +22,8 @@ public		$parentPluginSet;
 	
 public		$name;
 	
+public		$description;
+	
 public		$pluginSetEntries;
 	
 public		$pluginSetEntriesWithTrashed;

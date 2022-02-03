@@ -41,6 +41,14 @@ interface VariationSkuBulkRepositoryContract
 	);
 
 	/**
+	 * Updates deletedAt for multiple SKUs.
+	 */
+	public function updateDeletedAt(
+		array $ids, 
+		string $time = null
+	);
+
+	/**
 	 * Deletes multiple SKUs.
 	 */
 	public function delete(

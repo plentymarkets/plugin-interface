@@ -42,11 +42,25 @@ interface PropertyGroupRelationRepositoryContract
 	):PropertyGroupRelation;
 
 	/**
+	 * Updates or creates multiple property group relation.
+	 */
+	public function updateOrCreate(
+		array $data
+	):array;
+
+	/**
 	 * Deletes a property group relation. The ID of the property group relation must be specified.
 	 */
 	public function delete(
 		int $id
 	):bool;
+
+	/**
+	 * Deletes a property group relation. The ID of the property group relation must be specified.
+	 */
+	public function deleteMany(
+		array $data
+	):int;
 
 	/**
 	 * Gets a property group relation. The property ID and the group ID of the property group relation must be specified.

@@ -62,6 +62,14 @@ abstract class CategoryFilter implements TypeInterface
 		bool $bool = true
 	):self;
 
+	/**
+	 * Restricts the result to not match the specified IDs.
+	 */
+	abstract public function hasNotCategoryIds(
+		array $categoryIds, 
+		string $depth = self::DEPTH_ANY
+	):self;
+
 	abstract public function toArray(
 	):array;
 
