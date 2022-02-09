@@ -191,6 +191,27 @@ abstract class VariationBaseFilter implements TypeInterface
 	abstract public function customsTariffNumberExists(
 	):self;
 
+	/**
+	 * Restricts the result to not match the specified referrer IDs.
+	 */
+	abstract public function hasNotReferrerIds(
+		array $ids
+	):self;
+
+	/**
+	 * Restricts the result to not match the specified IDs.
+	 */
+	abstract public function hasNotIds(
+		array $ids
+	):self;
+
+	/**
+	 * Restricts the result to not match the specified item IDs.
+	 */
+	abstract public function hasNotItemIds(
+		array $itemIds
+	):self;
+
 	abstract public function toArray(
 	):array;
 

@@ -1,11 +1,11 @@
 <?php
-namespace Plenty\Modules\Order\ReturnStatus\Models;
+namespace Plenty\Modules\Order\RepairStatus\Models;
 
 
 /**
- * The return status model.
+ * The repair status model.
  */
-abstract class ReturnStatus 
+abstract class RepairStatus 
 {
 
 	const CREATED_AT = 'createdAt';

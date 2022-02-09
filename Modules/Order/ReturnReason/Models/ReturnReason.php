@@ -16,6 +16,8 @@ public		$id;
 	
 public		$reason;
 	
+public		$names;
+	
 	/**
 	 * Returns this model as an array.
 	 */
