@@ -7,6 +7,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
 use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\UI\UIOptionsContract;
+use Plenty\Modules\Catalog\Helpers\Traits\NumberFormatter;
 use Plenty\Modules\Catalog\Models\CatalogExportResult;
 use Plenty\Modules\Catalog\Services\Collections\CatalogLazyCollection;
 use Plenty\Modules\Catalog\Services\Converter\Converters\SpatieXMLConverter;
@@ -27,6 +28,10 @@ abstract class XMLResultConverter extends \Plenty\Modules\Catalog\Services\Conve
 
 	const FILE_EXTENSION = 'xml';
 
+	const OPTIONS_PATH = 'converter.xml';
+
+	const OPTIONS_FORMAT_PATH = 'format';
+
 	abstract public function getKey(
 	):string;
 
@@ -35,6 +40,12 @@ abstract class XMLResultConverter extends \Plenty\Modules\Catalog\Services\Conve
 
 	abstract public function getOptions(
 	):UIOptionsContract;
+
+	abstract public function getRootKey(
+	):string;
+
+	abstract public function getDecimalSeparator(
+	):string;
 
 	/**
 	 * Convert and prepare resource for download

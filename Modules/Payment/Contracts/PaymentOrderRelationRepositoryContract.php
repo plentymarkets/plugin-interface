@@ -41,7 +41,8 @@ interface PaymentOrderRelationRepositoryContract
 	public function createOrderRelationWithValidation(
 		int $paymentId, 
 		int $orderId, 
-		int $matchingRate = null
+		int $matchingRate = null, 
+		bool $allowMultiplePaymentsPerOrder = false
 	):PaymentOrderRelation;
 
 	/**
