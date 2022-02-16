@@ -25,7 +25,7 @@ interface PaymentPolicyRepositoryContract
 	):PaymentPolicy;
 
 	/**
-	 * Get a stored fulfillment policy based on ID.
+	 * Get a stored fulfillment policy based on credentials & marketplace ID.
 	 */
 	public function getPolicies(
 		int $credentialsId, 
@@ -46,7 +46,7 @@ interface PaymentPolicyRepositoryContract
 	):bool;
 
 	/**
-	 * Deletes a payment policies.
+	 * Deletes payment policies.
 	 */
 	public function deleteBulk(
 		int $userId, 
