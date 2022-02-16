@@ -28,6 +28,12 @@ abstract class Hook
 	);
 
 	/**
+	 * Checks if hook should run
+	 */
+	abstract public function shouldRun(
+	):bool;
+
+	/**
 	 * Gets the catalog
 	 */
 	abstract public function getCatalog(

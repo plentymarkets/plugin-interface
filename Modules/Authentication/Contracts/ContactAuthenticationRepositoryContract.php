@@ -30,4 +30,11 @@ interface ContactAuthenticationRepositoryContract
 	public function logout(
 	);
 
+	/**
+	 * Set new password to logged in contact and logout other devices with same contact.
+	 */
+	public function logoutOtherDevices(
+		string $password
+	);
+
 }

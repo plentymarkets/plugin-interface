@@ -1,10 +1,12 @@
 <?php
 namespace Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
 use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\UI\UIOptionsContract;
+use Plenty\Modules\Catalog\Helpers\Traits\NumberFormatter;
 use Plenty\Modules\Catalog\Models\CatalogExportResult;
 use Plenty\Modules\Catalog\Services\Collections\CatalogLazyCollection;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\BaseResultConverter;
@@ -23,10 +25,15 @@ abstract class JSONResultConverter extends \Plenty\Modules\Catalog\Services\Conv
 
 	const FILE_EXTENSION = 'json';
 
+	const OPTIONS_FORMAT_PATH = 'format';
+
 	abstract public function getKey(
 	):string;
 
 	abstract public function getLabel(
+	):string;
+
+	abstract public function getDecimalSeparator(
 	):string;
 
 	/**
