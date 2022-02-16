@@ -295,7 +295,7 @@ abstract class Collection
 	 */
 	abstract public function random(
 		int $number = null
-	);
+	):Collection;
 
 	/**
 	 * Reduce the collection to a single value.
@@ -587,7 +587,7 @@ abstract class Collection
 		 $value, 
 		callable $callback, 
 		callable $default = null
-	);
+	):Collection;
 
 	/**
 	 * Apply the callback if the value is falsy.
@@ -596,7 +596,7 @@ abstract class Collection
 		bool $value, 
 		callable $callback, 
 		callable $default = null
-	);
+	):Collection;
 
 	/**
 	 * Filter items by the given key value pair.

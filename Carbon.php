@@ -2,8 +2,8 @@
 namespace Carbon;
 
 use Carbon\Traits\Date;
+use Carbon\Traits\DeprecatedProperties;
 use DateTime;
-use DateTimeImmutable;
 use DateTimeInterface;
 use DateTimeZone;
 
@@ -38,14 +38,6 @@ public		$shortEnglishDayOfWeek;
 public		$englishMonth;
 	
 public		$shortEnglishMonth;
-	
-public		$localeDayOfWeek;
-	
-public		$shortLocaleDayOfWeek;
-	
-public		$localeMonth;
-	
-public		$shortLocaleMonth;
 	
 public		$milliseconds;
 	
@@ -116,7 +108,7 @@ public		$tz;
 	 */
 	abstract public function tz(
 		 $value = null
-	);
+	):Carbon;
 
 	/**
 	 * Set the year, month, and date for this instance to that of the passed instance.
@@ -181,7 +173,7 @@ public		$tz;
 
 	/**
 	 * Format the instance with the current locale.  You can set the current
-locale using setlocale() http://php.net/setlocale.
+locale using setlocale() https://php.net/setlocale.
 	 */
 	abstract public function formatLocalized(
 		string $format
@@ -597,6 +589,7 @@ locale using setlocale() http://php.net/setlocale.
 	 * Format the instance as RFC3339
 	 */
 	abstract public function toRfc3339String(
+		bool $extended = false
 	):string;
 
 	/**
@@ -634,7 +627,7 @@ locale using setlocale() http://php.net/setlocale.
 	 * Create a carbon instance from a string.
 	 */
 	abstract public static function parse(
-		string $time = null, 
+		 $time = null, 
 		 $tz = null
 	):Carbon;
 
@@ -702,7 +695,7 @@ locale using setlocale() http://php.net/setlocale.
 		int $minute = null, 
 		int $second = null, 
 		 $tz = null
-	);
+	):Carbon;
 
 	/**
 	 * Create a Carbon instance from just a date. The time portion is set to now.
@@ -1147,33 +1140,33 @@ of the current year, then return false and no modifications are made.
 	);
 
 	/**
-	 * Create a Carbon instance from a timestamp.
+	 * Create a Carbon instance from a timestamp and set the timezone (use default one if not specified).
 	 */
 	abstract public static function createFromTimestamp(
-		int $timestamp, 
+		 $timestamp, 
 		 $tz = null
+	):Carbon;
+
+	/**
+	 * Create a Carbon instance from an timestamp keeping the timezone to UTC.
+	 */
+	abstract public static function createFromTimestampUTC(
+		 $timestamp
 	):Carbon;
 
 	/**
 	 * Create a Carbon instance from a timestamp in milliseconds.
 	 */
 	abstract public static function createFromTimestampMs(
-		float $timestamp, 
+		 $timestamp, 
 		 $tz = null
-	):Carbon;
-
-	/**
-	 * Create a Carbon instance from an UTC timestamp.
-	 */
-	abstract public static function createFromTimestampUTC(
-		int $timestamp
 	):Carbon;
 
 	/**
 	 * Set the instance's timestamp.
 	 */
 	abstract public function timestamp(
-		int $value
+		 $unixTimestamp
 	):Carbon;
 
 	/**
