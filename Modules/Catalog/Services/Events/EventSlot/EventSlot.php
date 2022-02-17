@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Catalog\Services\Events\EventSlot;
 
 use Exception;
+use Illuminate\Support\Arr;
 use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Catalog\Contracts\Events\EventSlotContract;
 use Plenty\Modules\Catalog\Models\Catalog;
