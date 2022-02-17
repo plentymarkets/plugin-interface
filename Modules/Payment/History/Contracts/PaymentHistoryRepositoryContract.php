@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Payment\History\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Payment\History\Models\PaymentHistory;
 
 /**
@@ -17,6 +18,13 @@ interface PaymentHistoryRepositoryContract
 		int $paymentId, 
 		int $typeId = 0
 	):array;
+
+	/**
+	 * Get payment history by order ID.
+	 */
+	public function getByOrderId(
+		int $orderId
+	);
 
 	/**
 	 * Creates the payment history.
