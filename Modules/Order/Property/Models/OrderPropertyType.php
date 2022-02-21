@@ -190,6 +190,8 @@ abstract class OrderPropertyType
 
 	const WEEE_PICK_UP = 92;
 
+	const MC_OP_ORDER_STATUS_ID = 93;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
