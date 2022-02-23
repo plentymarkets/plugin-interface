@@ -38,7 +38,7 @@ interface ReturnPolicyRepositoryContract
 	):bool;
 
 	/**
-	 * Deletes a return policy.
+	 * Deletes return policies.
 	 */
 	public function deleteBulk(
 		int $userId, 
@@ -46,7 +46,7 @@ interface ReturnPolicyRepositoryContract
 	):bool;
 
 	/**
-	 * Get a stored fulfillment policy based on ID.
+	 * Get a stored fulfillment policy based on credentials & marketplace ID.
 	 */
 	public function getPolicies(
 		int $credentialsId, 
