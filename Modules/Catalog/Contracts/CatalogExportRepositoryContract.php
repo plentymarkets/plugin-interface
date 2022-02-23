@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Catalog\Contracts;
 
 use Exception;
+use Plenty\Modules\Catalog\Services\CatalogExportService;
 use Plenty\Modules\Catalog\Services\Collections\CatalogLazyCollection;
 
 /**
@@ -49,5 +50,13 @@ interface CatalogExportRepositoryContract
 		string $id, 
 		int $maximumAgeInSeconds = 14400
 	):CatalogLazyCollection;
+
+	/**
+	 * Export by id and version
+	 */
+	public function exportByIdAndVersion(
+		string $id, 
+		string $version
+	):CatalogExportServiceContract;
 
 }
