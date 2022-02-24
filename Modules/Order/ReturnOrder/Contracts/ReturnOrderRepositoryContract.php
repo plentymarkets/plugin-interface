@@ -51,6 +51,14 @@ interface ReturnOrderRepositoryContract
 	):Order;
 
 	/**
+	 * Validate order items for create a return from a parent order
+	 */
+	public function validateFromParent(
+		int $orderId, 
+		array $data = []
+	):array;
+
+	/**
 	 * Update currency
 	 */
 	public function updateCurrency(
