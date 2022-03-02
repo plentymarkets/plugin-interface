@@ -28,6 +28,8 @@ public		$id;
 	
 public		$catalog_id;
 	
+public		$version_id;
+	
 public		$type;
 	
 public		$subtype;
