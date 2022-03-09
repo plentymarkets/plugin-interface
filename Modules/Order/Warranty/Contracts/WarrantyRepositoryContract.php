@@ -51,6 +51,14 @@ interface WarrantyRepositoryContract
 	):Order;
 
 	/**
+	 * Validate order items for create a warranty from a parent order
+	 */
+	public function validateFromParent(
+		int $orderId, 
+		array $data = []
+	):array;
+
+	/**
 	 * Update currency
 	 */
 	public function updateCurrency(

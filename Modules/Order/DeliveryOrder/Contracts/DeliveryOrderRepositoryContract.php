@@ -52,6 +52,14 @@ interface DeliveryOrderRepositoryContract
 	):Order;
 
 	/**
+	 * Validate order items for create a delivery order from a parent order
+	 */
+	public function validateFromParent(
+		int $orderId, 
+		array $data = []
+	):array;
+
+	/**
 	 * Create delivery orders automatically for all order items
 	 */
 	public function createAllAutomaticallyFromParent(
