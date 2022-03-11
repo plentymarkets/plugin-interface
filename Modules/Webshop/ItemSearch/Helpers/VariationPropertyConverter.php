@@ -1,7 +1,9 @@
 <?php
 namespace Plenty\Modules\Webshop\ItemSearch\Helpers;
 
+use Plenty\Modules\Core\Data\Exceptions\ModelFlattenerException;
 use Plenty\Modules\Core\Data\Factories\LazyLoaderFactory;
+use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Models\OrderItem;
 use Plenty\Modules\Order\Models\OrderItemOrderProperty;
 use Plenty\Modules\Order\Models\OrderItemType;
@@ -21,7 +23,7 @@ abstract class VariationPropertyConverter
 	):array;
 
 	abstract public function convertVariationPropertyOrderItems(
-		 $orderItems
+		Order $order
 	);
 
 }
