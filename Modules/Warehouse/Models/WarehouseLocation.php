@@ -3,7 +3,7 @@ namespace Plenty\Modules\Warehouse\Models;
 
 
 /**
- * The warehouse location model.
+ * The storage location model.
  */
 abstract class WarehouseLocation 
 {

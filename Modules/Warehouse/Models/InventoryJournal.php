@@ -3,7 +3,7 @@ namespace Plenty\Modules\Warehouse\Models;
 
 
 /**
- * The inventory journal model.
+ * The stocktaking journal model.
  */
 abstract class InventoryJournal 
 {

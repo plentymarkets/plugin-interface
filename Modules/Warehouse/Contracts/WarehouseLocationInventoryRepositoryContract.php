@@ -9,20 +9,20 @@ use Plenty\Repositories\Models\PaginatedResult;
 use\Contracts;
 
 /**
- * Get, create, update and delete warehouse locations
+ * Get, create, update and delete storage locations
  */
 interface WarehouseLocationInventoryRepositoryContract 
 {
 
 	/**
-	 * Get a warehouse location inventory
+	 * Get a storage location inventory
 	 */
 	public function getWarehouseLocationInventory(
 		int $warehouseLocationInventory
 	):WarehouseLocationInventory;
 
 	/**
-	 * Get a warehouse location inventory
+	 * Get a storage location inventory
 	 */
 	public function getWarehouseLocationInventoryList(
 		int $page = 1, 
@@ -34,7 +34,7 @@ interface WarehouseLocationInventoryRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * Create a warehouse location inventory
+	 * Create a storage location inventory
 	 */
 	public function createWarehouseLocationInventory(
 		array $data

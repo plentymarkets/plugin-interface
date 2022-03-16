@@ -8,20 +8,20 @@ use Plenty\Repositories\Criteria\Criteria;
 use\Contracts;
 
 /**
- * Get, create, update and delete warehouse location levels
+ * Get, create, update and delete storage location levels
  */
 interface WarehouseLocationLevelRepositoryContract 
 {
 
 	/**
-	 * Get a warehouse location level
+	 * Get a storage location level
 	 */
 	public function getWarehouseLocationLevel(
 		int $warehouseLocationLevel
 	):WarehouseLocationLevel;
 
 	/**
-	 * Get a warehouse location level
+	 * Get a storage location level
 	 */
 	public function getWarehouseLocationLevelByName(
 		string $warehouseLocationLevelName, 
@@ -30,14 +30,14 @@ interface WarehouseLocationLevelRepositoryContract
 	):WarehouseLocationLevel;
 
 	/**
-	 * Get a warehouse location level only by name.
+	 * Get a storage location level only by name.
 	 */
 	public function getWarehouseLocationLevelOnlyByName(
 		string $warehouseLocationLevelName
 	):WarehouseLocationLevel;
 
 	/**
-	 * Get a list of warehouse location levels
+	 * Get a list of storage location levels
 	 */
 	public function listWarehouseLocationLevels(
 		array $filters = [], 
@@ -45,7 +45,7 @@ interface WarehouseLocationLevelRepositoryContract
 	):array;
 
 	/**
-	 * Create a warehouse location level
+	 * Create a storage location level
 	 */
 	public function createWarehouseLocationLevel(
 		array $data, 
@@ -53,7 +53,7 @@ interface WarehouseLocationLevelRepositoryContract
 	):WarehouseLocationLevel;
 
 	/**
-	 * Update a warehouse location level
+	 * Update a storage location level
 	 */
 	public function updateWarehouseLocationLevel(
 		int $warehouseLocationLevel, 
@@ -61,7 +61,7 @@ interface WarehouseLocationLevelRepositoryContract
 	):WarehouseLocationLevel;
 
 	/**
-	 * Delete a warehouse location level
+	 * Delete a storage location level
 	 */
 	public function deleteWarehouseLocationLevel(
 		int $warehouseLocationLevel
@@ -76,7 +76,7 @@ interface WarehouseLocationLevelRepositoryContract
 	);
 
 	/**
-	 * Move a warehouse location level position
+	 * Move a storage location level position
 	 */
 	public function moveWarehouseLocationLevelPosition(
 		array $data

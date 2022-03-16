@@ -8,13 +8,13 @@ use Plenty\Repositories\Criteria\Criteria;
 use\Contracts;
 
 /**
- * Get, create, update and delete warehouse location dimensions
+ * Get, create, update and delete storage location dimensions
  */
 interface WarehouseLocationDimensionRepositoryContract 
 {
 
 	/**
-	 * Get a warehouse location dimension
+	 * Get a storage location dimension
 	 */
 	public function getWarehouseLocationDimension(
 		int $warehouseLocationDimension, 
@@ -22,28 +22,28 @@ interface WarehouseLocationDimensionRepositoryContract
 	):WarehouseLocationDimension;
 
 	/**
-	 * Get all warehouse location dimensions
+	 * Get all storage location dimensions
 	 */
 	public function listWarehouseLocationDimension(
 		int $warehouseId
 	):WarehouseLocationDimension;
 
 	/**
-	 * Create multiple warehouse location dimensions
+	 * Create multiple storage location dimensions
 	 */
 	public function createMultipleWarehouseLocationDimension(
 		array $data
 	):array;
 
 	/**
-	 * Create a warehouse location dimension
+	 * Create a storage location dimension
 	 */
 	public function createWarehouseLocationDimension(
 		array $data
 	):WarehouseLocationDimension;
 
 	/**
-	 * Update a warehouse location dimension
+	 * Update a storage location dimension
 	 */
 	public function updateWarehouseLocationDimension(
 		int $warehouseLocationDimension, 
@@ -51,7 +51,7 @@ interface WarehouseLocationDimensionRepositoryContract
 	):WarehouseLocationDimension;
 
 	/**
-	 * Delete a warehouse location dimension
+	 * Delete a storage location dimension
 	 */
 	public function deleteWarehouseLocationDimension(
 		int $warehouseLocationDimension
