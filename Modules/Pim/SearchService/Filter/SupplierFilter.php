@@ -34,7 +34,7 @@ abstract class SupplierFilter implements TypeInterface
 	 * Restricts the result to have any of the tag ids.
 	 */
 	abstract public function hasAnySupplier(
-		array $tagIds
+		array $supplierIds
 	):self;
 
 	/**
