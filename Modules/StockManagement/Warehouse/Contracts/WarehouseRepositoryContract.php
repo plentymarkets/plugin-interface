@@ -6,6 +6,7 @@ use Plenty\Modules\StockManagement\Warehouse\Models\Warehouse;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\PaginatedResult;
 use\Contracts;
 
 /**
@@ -38,7 +39,12 @@ interface WarehouseRepositoryContract
 	):Warehouse;
 
 	public function allPaginated(
-	);
+		array $columns = [], 
+		int $page = 1, 
+		int $itemsPerPage = 50, 
+		array $filters = [], 
+		array $with = []
+	):PaginatedResult;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
