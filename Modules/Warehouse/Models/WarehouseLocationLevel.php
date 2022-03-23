@@ -3,7 +3,7 @@ namespace Plenty\Modules\Warehouse\Models;
 
 
 /**
- * The warehouse location level model.
+ * The storage location level model.
  */
 abstract class WarehouseLocationLevel 
 {

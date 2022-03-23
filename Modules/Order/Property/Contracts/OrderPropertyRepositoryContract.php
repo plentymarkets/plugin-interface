@@ -68,8 +68,8 @@ interface OrderPropertyRepositoryContract
 	 * Update an order property type
 	 */
 	public function updateType(
-		array $data, 
-		int $id
+		array $data = [], 
+		int $id = null
 	):OrderPropertyType;
 
 	/**

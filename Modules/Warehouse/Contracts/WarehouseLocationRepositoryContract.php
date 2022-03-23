@@ -9,13 +9,13 @@ use Plenty\Repositories\Models\PaginatedResult;
 use\Contracts;
 
 /**
- * Get, create, update and delete warehouse locations
+ * Get, create, update and delete storage locations
  */
 interface WarehouseLocationRepositoryContract 
 {
 
 	/**
-	 * Get a warehouse location
+	 * Get a storage location
 	 */
 	public function getWarehouseLocation(
 		int $warehouseLocation, 
@@ -23,7 +23,7 @@ interface WarehouseLocationRepositoryContract
 	):WarehouseLocation;
 
 	/**
-	 * Get all warehouse locations
+	 * Get all storage locations
 	 */
 	public function listWarehouseLocations(
 		int $page = 1, 
@@ -35,7 +35,7 @@ interface WarehouseLocationRepositoryContract
 	):PaginatedResult;
 
 	/**
-	 * List warehouse locations by levelId
+	 * List storage locations by levelId
 	 */
 	public function listWarehouseLocationsByLevelId(
 		int $warehouseId, 
@@ -43,22 +43,22 @@ interface WarehouseLocationRepositoryContract
 	);
 
 	/**
-	 * Get first warehouse location matching the given label
-Gets the first warehouse location matching the given label. The label must be specified.
+	 * Get first storage location matching the given label
+Gets the first storage location matching the given label. The label must be specified.
 	 */
 	public function getWarehouseLocationByLabel(
 		string $label
 	):WarehouseLocation;
 
 	/**
-	 * Create a warehouse location
+	 * Create a storage location
 	 */
 	public function createWarehouseLocation(
 		array $data
 	):WarehouseLocation;
 
 	/**
-	 * Update a warehouse location
+	 * Update a storage location
 	 */
 	public function updateWarehouseLocation(
 		int $warehouseLocation, 
@@ -74,14 +74,14 @@ with the data provided
 	);
 
 	/**
-	 * Delete a warehouse location
+	 * Delete a storage location
 	 */
 	public function deleteWarehouseLocation(
 		int $warehouseLocation
 	);
 
 	/**
-	 * Delete multiple warehouse locations
+	 * Delete multiple storage locations
 	 */
 	public function deleteMultipleWarehouseLocations(
 		array $warehouseLocationIds
@@ -95,7 +95,7 @@ with the data provided
 	):array;
 
 	/**
-	 * Generate warehouse location labels
+	 * Generate storage location labels
 	 */
 	public function generateWarehouseLocationLabel(
 		int $warehouseId, 
@@ -103,14 +103,14 @@ with the data provided
 	):array;
 
 	/**
-	 * Move a warehouse location position
+	 * Move a storage location position
 	 */
 	public function moveWarehouseLocationPosition(
 		array $data
 	);
 
 	/**
-	 * Get all warehouse locations stock
+	 * Get all storage locations stock
 	 */
 	public function listWarehouseLocationStock(
 		int $page = 1, 
