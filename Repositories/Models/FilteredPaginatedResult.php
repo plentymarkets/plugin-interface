@@ -60,9 +60,15 @@ abstract class FilteredPaginatedResult
 	);
 
 	abstract public function sumMetaData(
+		string $metaColumn = "", 
+		string $groupBy = "", 
+		string $metaDataName = ""
 	);
 
 	abstract public function rowCountMetaData(
+		string $metaColumn = "", 
+		string $groupBy = "", 
+		string $metaDataName = ""
 	);
 
 	/**

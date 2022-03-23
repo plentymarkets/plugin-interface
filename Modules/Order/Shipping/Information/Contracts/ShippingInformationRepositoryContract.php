@@ -35,7 +35,9 @@ interface ShippingInformationRepositoryContract
 	 * Get all the orders with their shipping information in a paginated form
 	 */
 	public function listOrdersShippingInformation(
-		array $searchParams
+		array $searchParams, 
+		int $itemsPerPage = null, 
+		int $page = null
 	):PaginatedResult;
 
 	/**

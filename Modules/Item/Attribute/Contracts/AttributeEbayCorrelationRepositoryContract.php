@@ -56,9 +56,9 @@ interface AttributeEbayCorrelationRepositoryContract
 	 * Lists ebay attribute correlations by filters.
 	 */
 	public function search(
-		int $perPage, 
-		int $page, 
-		array $filters
+		int $perPage = 50, 
+		int $page = 1, 
+		array $filters = []
 	):PaginatedResult;
 
 	/**
