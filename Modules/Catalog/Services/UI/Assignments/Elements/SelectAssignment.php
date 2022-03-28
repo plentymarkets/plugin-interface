@@ -48,6 +48,9 @@ abstract class SelectAssignment
 	abstract public function isVisible(
 	):bool;
 
+	abstract public function isDisabled(
+	):bool;
+
 	abstract public function isRequired(
 	):bool;
 
@@ -75,6 +78,10 @@ abstract class SelectAssignment
 
 	abstract public function setVisible(
 		bool $visible
+	):BaseUIOption;
+
+	abstract public function setDisabled(
+		bool $disabled
 	):BaseUIOption;
 
 	abstract public function setRequired(
