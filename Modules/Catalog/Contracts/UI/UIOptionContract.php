@@ -21,6 +21,9 @@ interface UIOptionContract
 	public function isVisible(
 	):bool;
 
+	public function isDisabled(
+	):bool;
+
 	public function isRequired(
 	):bool;
 
@@ -51,6 +54,10 @@ interface UIOptionContract
 
 	public function setVisible(
 		bool $visible
+	):UIOptionContract;
+
+	public function setDisabled(
+		bool $disabled
 	):UIOptionContract;
 
 	public function setRequired(
