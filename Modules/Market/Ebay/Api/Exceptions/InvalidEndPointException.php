@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Modules\Market\Ebay\Api\Exceptions;
 
+use Exception;
+use Throwable;
 
 /**
  * InvalidEndPointException.
