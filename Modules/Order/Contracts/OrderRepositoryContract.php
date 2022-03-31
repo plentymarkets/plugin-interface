@@ -221,7 +221,8 @@ interface OrderRepositoryContract
 	 * Generate an access key for the given order ID.
 	 */
 	public function generateAccessKey(
-		int $orderId
+		int $orderId, 
+		bool $regenerate = false
 	):string;
 
 	/**

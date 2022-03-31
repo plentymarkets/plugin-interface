@@ -44,6 +44,8 @@ abstract class OrderDateType
 
 	const LATEST_SHIPPING_DATE = 18;
 
+	const CONFIRMATION_LINK_VALID_UNTIL = 19;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
