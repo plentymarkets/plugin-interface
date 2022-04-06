@@ -53,9 +53,15 @@ abstract class PaginatedResult
 	);
 
 	abstract public function sumMetaData(
+		string $metaColumn = "", 
+		string $groupBy = "", 
+		string $metaDataName = ""
 	);
 
 	abstract public function rowCountMetaData(
+		string $metaColumn = "", 
+		string $groupBy = "", 
+		string $metaDataName = ""
 	);
 
 	/**

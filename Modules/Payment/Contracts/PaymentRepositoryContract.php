@@ -99,8 +99,8 @@ interface PaymentRepositoryContract
 	 * Lists payments by payment property type and value.
 	 */
 	public function getPaymentsByPropertyTypeAndValue(
-		int $propertyTypeId, 
-		 $propertyValue, 
+		int $propertyTypeId = 0, 
+		 $propertyValue = "", 
 		int $itemsPerPage = 50, 
 		int $page = 1
 	);

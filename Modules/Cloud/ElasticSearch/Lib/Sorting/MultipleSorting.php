@@ -16,7 +16,8 @@ abstract class MultipleSorting implements SortingInterface
 
 	abstract public function add(
 		string $path, 
-		string $order = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::SORTING_ORDER_ASC
+		string $order = \Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch::SORTING_ORDER_ASC, 
+		string $nestedPath = null
 	);
 
 	abstract public function toArray(
