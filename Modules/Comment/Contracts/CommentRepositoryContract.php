@@ -24,6 +24,7 @@ interface CommentRepositoryContract
 	 * List comments
 	 */
 	public function listComments(
+		 $with = []
 	):Collection;
 
 	/**
