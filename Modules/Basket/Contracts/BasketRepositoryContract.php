@@ -42,4 +42,10 @@ interface BasketRepositoryContract
 	public function deleteBasket(
 	):Basket;
 
+	/**
+	 * Load amount from tax free items
+	 */
+	public function getTaxFreeAmount(
+	);
+
 }
