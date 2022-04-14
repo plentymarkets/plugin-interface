@@ -192,6 +192,8 @@ abstract class OrderPropertyType
 
 	const MC_OP_ORDER_STATUS_ID = 93;
 
+	const PACKED = 94;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
