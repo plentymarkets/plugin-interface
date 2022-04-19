@@ -15,6 +15,10 @@ abstract class BoolShouldStatementFilter implements TypeInterface
 	abstract public function toArray(
 	):array;
 
+	abstract public function setMinimumShouldMatch(
+		int $minimumShouldMatch
+	);
+
 	abstract public function addStatement(
 		StatementInterface $statement
 	);
