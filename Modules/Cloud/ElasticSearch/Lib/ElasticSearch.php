@@ -36,6 +36,8 @@ abstract class ElasticSearch
 
 	const DOMAIN_CONTACT = 'contact';
 
+	const DOMAIN_CONTACT_7 = 'contact7';
+
 	const DOMAIN_ORDER = 'order';
 
 	const DOMAIN_LOG = 'log';
