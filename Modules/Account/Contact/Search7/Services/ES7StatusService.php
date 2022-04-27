@@ -1,7 +1,7 @@
 <?php
-namespace Plenty\Modules\Account\Contact\Search\Services;
+namespace Plenty\Modules\Account\Contact\Search7\Services;
 
-use \Plenty\Modules\Account\Contact\Search7\Services\ES7StatusService as ES7StatusServiceNew;
+use Plenty\Modules\Account\Contact\Search7\Index\ContactIndex;
 
 /**
  * Elastic Search 7 status checker service
@@ -16,6 +16,9 @@ abstract class ES7StatusService
 	);
 
 	abstract public static function isIndexAvailable(
+	);
+
+	abstract public static function isIndexReadyToBeUsed(
 	);
 
 }

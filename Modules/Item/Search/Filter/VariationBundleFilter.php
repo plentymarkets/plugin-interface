@@ -31,6 +31,10 @@ abstract class VariationBundleFilter implements TypeInterface
 	abstract public function toArray(
 	):array;
 
+	abstract public function setMinimumShouldMatch(
+		int $minimumShouldMatch
+	);
+
 	abstract public function addStatement(
 		StatementInterface $statement
 	);
