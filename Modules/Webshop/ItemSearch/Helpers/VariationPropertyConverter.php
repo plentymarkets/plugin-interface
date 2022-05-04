@@ -5,7 +5,6 @@ use Plenty\Modules\Core\Data\Exceptions\ModelFlattenerException;
 use Plenty\Modules\Core\Data\Factories\LazyLoaderFactory;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Models\OrderItem;
-use Plenty\Modules\Order\Models\OrderItemOrderProperty;
 use Plenty\Modules\Order\Models\OrderItemType;
 use Plenty\Modules\Order\Property\Models\OrderPropertyType;
 use Plenty\Modules\Property\V2\Models\Property;
