@@ -43,9 +43,10 @@ interface BasketRepositoryContract
 	):Basket;
 
 	/**
-	 * Load amount from tax free items
+	 * Load amount from tax-free items
 	 */
 	public function getTaxFreeAmount(
-	);
+		array $basketItems = []
+	):float;
 
 }
