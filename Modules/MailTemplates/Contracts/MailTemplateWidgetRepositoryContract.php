@@ -1,8 +1,10 @@
 <?php
 namespace Plenty\Modules\Mail\Templates\Contracts;
 
+use Illuminate\Support\Collection;
 use Plenty\Modules\ContentBuilder\Exceptions\ContentBuilderException;
 use Plenty\Modules\ContentBuilder\Models\Widget;
+use Plenty\Modules\ShopBuilder\Models\ContentWidgetPreview;
 
 /**
  * Register mail builder widgets.
