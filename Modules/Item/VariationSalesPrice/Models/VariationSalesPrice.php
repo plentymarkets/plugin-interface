@@ -20,6 +20,10 @@ public		$salesPriceId;
 	
 public		$price;
 	
+public		$lowestPrice;
+	
+public		$lowestPriceCalculation;
+	
 public		$updatedAt;
 	
 public		$createdAt;
