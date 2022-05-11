@@ -24,6 +24,8 @@ abstract class CronContainer
 
 	const DAILY = 1440;
 
+	const PHP_8 = 1441;
+
 	/**
 	 * Use this method to add a handler class and a schedule time for your desired cron event. The action will then be triggered according to the given schedule.
 	 */
