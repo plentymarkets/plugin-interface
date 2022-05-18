@@ -22,6 +22,10 @@ public		$unitPrice;
 	
 public		$unitPriceNet;
 	
+public		$lowestPrice;
+	
+public		$lowestPriceNet;
+	
 public		$customerClassDiscountPercent;
 	
 public		$customerClassDiscount;

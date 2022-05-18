@@ -26,6 +26,16 @@ abstract class SalesPrice
 	public		$price;
 	
 	/**
+	 * @var float
+	 */
+	public		$lowestPrice;
+	
+	/**
+	 * @var bool
+	 */
+	public		$lowestPriceCalculation;
+	
+	/**
 	 * @var Carbon
 	 */
 	public		$updatedAt;
