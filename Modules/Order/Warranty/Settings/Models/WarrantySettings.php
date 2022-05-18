@@ -1,18 +1,16 @@
 <?php
-namespace Plenty\Modules\Order\CreditNote\Settings\Models;
+namespace Plenty\Modules\Order\Warranty\Settings\Models;
 
 
 /**
- * The model of the creditNote order settings.
+ * The model of the warranty order settings.
  */
-abstract class CreditNoteSettings 
+abstract class WarrantySettings 
 {
 
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
-	
-public		$defaultOrderStatus;
 	
 public		$setShippingCostsToZero;
 	
