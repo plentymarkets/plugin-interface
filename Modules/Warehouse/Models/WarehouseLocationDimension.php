@@ -8,6 +8,8 @@ namespace Plenty\Modules\Warehouse\Models;
 abstract class WarehouseLocationDimension 
 {
 
+	const MAX_LEVEL = 10;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
