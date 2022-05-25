@@ -36,6 +36,8 @@ public		$customsTariffNumber;
 	
 public		$defaultPriceOnly;
 	
+public		$itemQuantityList;
+	
 	/**
 	 * Returns this model as an array.
 	 */
