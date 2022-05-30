@@ -74,4 +74,11 @@ interface ReturnOrderRepositoryContract
 		array $data = []
 	);
 
+	/**
+	 * Validate booking of an return
+	 */
+	public function validateBook(
+		int $orderId
+	):array;
+
 }

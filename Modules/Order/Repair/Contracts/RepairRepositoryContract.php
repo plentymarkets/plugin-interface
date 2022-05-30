@@ -82,4 +82,11 @@ interface RepairRepositoryContract
 		array $data = []
 	):bool;
 
+	/**
+	 * alidate cancellation of the booking of an order
+	 */
+	public function validateCancelBooking(
+		int $orderId
+	):array;
+
 }
