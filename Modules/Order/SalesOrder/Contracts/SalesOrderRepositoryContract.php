@@ -109,6 +109,13 @@ interface SalesOrderRepositoryContract
 	):bool;
 
 	/**
+	 * Validate cancellation of the booking of an order
+	 */
+	public function validateCancelBooking(
+		int $orderId
+	):array;
+
+	/**
 	 * Convert advance order into sales order
 	 */
 	public function convertFromAdvanceOrder(
