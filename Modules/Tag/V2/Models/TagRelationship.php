@@ -40,9 +40,9 @@ public		$value;
 	
 public		$UUID5;
 	
-public		$;
+public		$createdAt;
 	
-public		$;
+public		$updatedAt;
 	
 public		$tag;
 	
