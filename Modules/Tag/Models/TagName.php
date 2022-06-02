@@ -3,7 +3,7 @@ namespace Plenty\Modules\Tag\Models;
 
 
 /**
- * The tag name model.
+ * The tag name model (deprecated).
  */
 abstract class TagName 
 {

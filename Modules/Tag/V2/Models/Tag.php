@@ -1,9 +1,9 @@
 <?php
-namespace Plenty\Modules\Tag\Models;
+namespace Plenty\Modules\Tag\V2\Models;
 
 
 /**
- * The Tag model (deprecated)
+ * The V2 tag model.
  */
 abstract class Tag 
 {
@@ -12,11 +12,15 @@ abstract class Tag
 
 	const TAG_NAMES_RELATION = 'names';
 
-	const TAG_RELATIONSHIPS_RELATION = 'relationship';
-
 	const TAG_CLIENTS_RELATION = 'clients';
 
-	const AVAILABLE_TYPES = ['item','contact'];
+	const ALLOWED_RELATIONS = ['availabilities','names','clients'];
+
+	const TYPE_CONTACT = 'contact';
+
+	const TYPE_ITEM = 'item';
+
+	const AVAILABLE_TYPES = ['contact','item'];
 
 	const CREATED_AT = 'createdAt';
 
@@ -24,21 +28,19 @@ abstract class Tag
 	
 public		$id;
 	
-public		$tagName;
+public		$name;
 	
 public		$color;
 	
-public		$availabilities;
-	
-public		$names;
-	
-public		$relationships;
-	
-public		$clients;
+public		$createdAt;
 	
 public		$updatedAt;
 	
-public		$createdAt;
+public		$names;
+	
+public		$clients;
+	
+public		$availabilities;
 	
 	/**
 	 * Returns this model as an array.
