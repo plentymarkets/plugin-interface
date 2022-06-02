@@ -72,6 +72,8 @@ public		$keywords;
 	
 public		$require;
 	
+public		$platform;
+	
 public		$notInstalledRequirements;
 	
 public		$notActiveStageRequirements;
