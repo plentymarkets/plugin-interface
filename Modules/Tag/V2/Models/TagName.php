@@ -1,11 +1,11 @@
 <?php
-namespace Plenty\Modules\Tag\Models;
+namespace Plenty\Modules\Tag\V2\Models;
 
 
 /**
- * The tag client model (deprecated).
+ * The V2 tag name model.
  */
-abstract class TagClient 
+abstract class TagName 
 {
 
 	const CREATED_AT = 'createdAt';
@@ -16,7 +16,15 @@ public		$id;
 	
 public		$tagId;
 	
-public		$plentyId;
+public		$name;
+	
+public		$lang;
+	
+public		$createdAt;
+	
+public		$updatedAt;
+	
+public		$tag;
 	
 	/**
 	 * Returns this model as an array.

@@ -256,6 +256,13 @@ interface OrderRepositoryContract
 	):Order;
 
 	/**
+	 * Get My Account url of the order
+	 */
+	public function getMyAccountUrl(
+		int $orderId
+	):string;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(

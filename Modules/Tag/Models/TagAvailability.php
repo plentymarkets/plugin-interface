@@ -3,7 +3,7 @@ namespace Plenty\Modules\Tag\Models;
 
 
 /**
- * The tag availability model.
+ * The tag availability model (deprecated).
  */
 abstract class TagAvailability 
 {
