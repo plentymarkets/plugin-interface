@@ -74,4 +74,11 @@ interface DeliveryOrderRepositoryContract
 		array $data
 	):Order;
 
+	/**
+	 * Validate cancellation of the booking of an order
+	 */
+	public function validateCancelBooking(
+		int $orderId
+	):array;
+
 }

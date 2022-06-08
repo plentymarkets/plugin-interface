@@ -82,4 +82,11 @@ interface WarrantyRepositoryContract
 		array $data = []
 	):bool;
 
+	/**
+	 * Validate cancellation of the booking of an order
+	 */
+	public function validateCancelBooking(
+		int $orderId
+	):array;
+
 }

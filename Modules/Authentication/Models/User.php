@@ -58,6 +58,8 @@ public		$isSupportUser;
 	
 public		$oauthAccessTokensId;
 	
+public		$user_email;
+	
 	/**
 	 * Returns this model as an array.
 	 */
