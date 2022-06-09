@@ -20,6 +20,12 @@ abstract class CatalogStatus
 
 	const STATE_COMPLETE = 'complete';
 
+	const STATE_CANCELED = 'canceled';
+
+	const STATE_FAILED = 'failed';
+
+	const FINAL_STATES = ['complete','canceled','failed'];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
