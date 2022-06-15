@@ -1,11 +1,11 @@
 <?php
-namespace Plenty\Modules\Tag\Models;
+namespace Plenty\Modules\Tag\V2\Models;
 
 
 /**
- * The tag relationship model (deprecated).
+ * The V2 tag availability model.
  */
-abstract class TagRelationship 
+abstract class TagAvailability 
 {
 
 	const TAG_TYPE_CATEGORY = 'category';
@@ -26,9 +26,7 @@ abstract class TagRelationship
 
 	const TAG_TYPE_MESSAGE_CLEARING_SUB_ACCOUNT = 'messageClearingSubAccount';
 
-	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
-
-	const RELATIONSHIP_TAG_RELATION = 'tag';
+	const ALLOWED_TYPES = ['category','ticket','variation','board','contact','order','messenger','messageBillable','messageClearingSubAccount'];
 
 	const CREATED_AT = 'createdAt';
 
@@ -36,11 +34,11 @@ abstract class TagRelationship
 	
 public		$tagId;
 	
-public		$tagType;
+public		$type;
 	
-public		$relationshipValue;
+public		$createdAt;
 	
-public		$relationshipUUID5;
+public		$tag;
 	
 	/**
 	 * Returns this model as an array.
