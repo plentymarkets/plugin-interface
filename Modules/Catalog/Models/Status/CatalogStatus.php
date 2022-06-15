@@ -44,11 +44,15 @@ public		$has_data;
 	
 public		$has_logs;
 	
+public		$logs;
+	
 public		$initiator;
 	
 public		$initiator_id;
 	
 public		$state;
+	
+public		$speed;
 	
 public		$total;
 	

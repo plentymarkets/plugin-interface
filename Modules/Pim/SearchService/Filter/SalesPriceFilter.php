@@ -34,6 +34,10 @@ abstract class SalesPriceFilter implements TypeInterface
 		array $priceIds
 	):self;
 
+	abstract public function hasLowestPrice(
+		 $bool = true
+	);
+
 	abstract public function toArray(
 	):array;
 
