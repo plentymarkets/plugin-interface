@@ -17,6 +17,8 @@ abstract class MailTemplateAttachments
 	
 public		$configId;
 	
+public		$relationId;
+	
 public		$isStaticDoc;
 	
 public		$documentId;
