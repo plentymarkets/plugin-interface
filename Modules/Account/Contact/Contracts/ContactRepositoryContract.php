@@ -34,6 +34,13 @@ interface ContactRepositoryContract
 	):Contact;
 
 	/**
+	 * Updates the newsletter date from contact and returns it.
+	 */
+	public function updateNewsletterDate(
+		int $contactId
+	):Contact;
+
+	/**
 	 * Deletes a contact. The ID of the contact must be specified.
 	 */
 	public function deleteContact(
