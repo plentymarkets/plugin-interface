@@ -18,9 +18,11 @@ use Plenty\Modules\Pim\Catalog\Variation\Filters\Item\ItemUpdatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Manufacturer\ItemHasAtLeastOneManufacturer;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Markets\VariationIsVisibleForAtLeastOneMarket;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Markets\VariationIsVisibleForMarkets;
+use Plenty\Modules\Pim\Catalog\Variation\Filters\Price\SalesPriceUpdatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Property\VariationHasAtLeastOnePropertySelection;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Property\VariationHasPropertySelections;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Sku\VariationHasSku;
+use Plenty\Modules\Pim\Catalog\Variation\Filters\Stock\StockUpdatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Tag\VariationHasAtLeastOneTag;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Tag\VariationHasTags;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationCreatedAt;
@@ -115,5 +117,11 @@ abstract class FilterBuilderFactory
 
 	abstract public function variationUpdatedAt(
 	):VariationUpdatedAt;
+
+	abstract public function salesPriceUpdatedAt(
+	):SalesPriceUpdatedAt;
+
+	abstract public function stockUpdatedAt(
+	):StockUpdatedAt;
 
 }
