@@ -66,4 +66,24 @@ interface CreditNoteRepositoryContract
 		array $data
 	):Order;
 
+	/**
+	 * Change an order item of type "variation" to "unassigned variation".
+	 */
+	public function detachVariation(
+		int $orderItemId, 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
+	/**
+	 * Change an order item of type "unassigned variation" to "variation".
+	 */
+	public function assignVariation(
+		int $orderItemId, 
+		int $variationId, 
+		int $warehouseId = null, 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
 }

@@ -10,6 +10,8 @@ abstract class AutomaticEmailTemplate
 
 	const SHOP_ORDER = 'ShopOrder';
 
+	const SHOP_ORDER_REGENERATE_ORDER_CONFIRMATION_LINK = 'ShopOrderRegenerateOrderConfirmationLink';
+
 	const CONTACT_NEW_PASSWORD = 'NewPWD2User';
 
 	const CONTACT_NEW_PASSWORD_CONFIRMATION = 'ChangePWD2User';
