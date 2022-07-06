@@ -10,6 +10,8 @@ abstract class DocumentReference
 
 	const ORDER = 'order';
 
+	const REVERSAL_DOCUMENT = 'reversal_document';
+
 	const CUSTOMER = 'customer';
 
 	const CATEGORY = 'category';
