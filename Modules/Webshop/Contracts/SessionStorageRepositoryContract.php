@@ -74,7 +74,7 @@ interface SessionStorageRepositoryContract
 	):Order;
 
 	/**
-	 * Get the url of the document call while running a rest call.
+	 * Get the url of the document call while running a rest call without query params.
 	 */
 	public function getHttpReferrerUri(
 	):string;
