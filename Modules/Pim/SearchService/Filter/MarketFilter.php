@@ -6,6 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
@@ -26,6 +27,13 @@ abstract class MarketFilter implements TypeInterface
 	 * Restricts the result to have any of the market ids.
 	 */
 	abstract public function isVisibleForAtLeastOneMarket(
+		array $marketIds
+	):self;
+
+	/**
+	 * Restricts the result to not have any of the market ids.
+	 */
+	abstract public function isNotAvailableForAtLeastOneMarket(
 		array $marketIds
 	):self;
 

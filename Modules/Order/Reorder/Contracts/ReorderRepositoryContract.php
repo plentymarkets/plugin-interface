@@ -74,4 +74,27 @@ interface ReorderRepositoryContract
 		int $orderId
 	):Order;
 
+	/**
+	 * Create reorder(s) for an order
+	 */
+	public function generateFromOrder(
+		int $orderId, 
+		array $data
+	):array;
+
+	/**
+	 * Create / update reorder(s) for order items
+	 */
+	public function generateFromOrderItems(
+		int $orderId, 
+		array $data
+	):array;
+
+	/**
+	 * Validate order items for create a reorder from a sales order, delivery order, repair and warranty
+	 */
+	public function validateGenerateFromOrder(
+		int $orderId
+	):array;
+
 }
