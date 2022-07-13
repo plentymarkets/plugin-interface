@@ -8,6 +8,12 @@ namespace Plenty\Modules\Document\Models;
 abstract class Document 
 {
 
+	const PENDING = 'pending';
+
+	const DONE = 'done';
+
+	const FAULTY = 'faulty';
+
 	const RECEIPT = 'receipt';
 
 	const CANCELLATION = 'cancellation';

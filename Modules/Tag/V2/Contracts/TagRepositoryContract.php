@@ -21,7 +21,8 @@ interface TagRepositoryContract
 		array $with = [], 
 		int $perPage = 50, 
 		int $page = 1, 
-		array $sorting = []
+		array $sorting = [], 
+		string $lang = null
 	);
 
 	/**

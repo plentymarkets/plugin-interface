@@ -18,6 +18,8 @@ public		$quantity;
 	
 public		$weight;
 	
+public		$warehouses;
+	
 	/**
 	 * Returns this model as an array.
 	 */
