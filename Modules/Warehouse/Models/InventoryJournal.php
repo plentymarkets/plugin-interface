@@ -42,6 +42,8 @@ public		$batch;
 	
 public		$quantity;
 	
+public		$unitContent;
+	
 public		$unit;
 	
 public		$userId;
