@@ -40,6 +40,16 @@ interface CatalogStatusRepositoryContract
 	):CatalogStatus;
 
 	/**
+	 * Get the latest status of a specific catalog with version
+	 */
+	public function getLatestStatusOfCatalogWithVersion(
+		string $catalogId, 
+		string $versionId, 
+		string $type = "run", 
+		string $subtype = "async"
+	):CatalogStatus;
+
+	/**
 	 * List catalog statuses
 	 */
 	public function list(
