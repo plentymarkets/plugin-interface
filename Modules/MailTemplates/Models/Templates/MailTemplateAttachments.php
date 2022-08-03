@@ -4,7 +4,7 @@ namespace Plenty\Modules\Mail\Templates\Models\Templates;
 
 /**
  * The MailTemplateAttachments model. Stores the relation between
- *     mail templates - static attachments - dynamic attachments
+ *     mail templates - static attachments
  */
 abstract class MailTemplateAttachments 
 {
@@ -15,19 +15,19 @@ abstract class MailTemplateAttachments
 
 	const UPDATED_AT = 'updatedAt';
 	
-public		$configId;
-	
 public		$relationId;
 	
-public		$isStaticDoc;
-	
 public		$documentId;
-	
-public		$dynamicAttachmentId;
 	
 public		$createdAt;
 	
 public		$updatedAt;
+	
+public		$configId;
+	
+public		$isStaticDoc;
+	
+public		$dynamicAttachmentId;
 	
 	/**
 	 * Returns this model as an array.

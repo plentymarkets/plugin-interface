@@ -3,6 +3,7 @@ namespace Plenty\Modules\Catalog\Contracts;
 
 use Plenty\Modules\Catalog\Containers\Filters\CatalogFilterBuilderContainer;
 use Plenty\Modules\Catalog\Containers\TemplateGroupContainer;
+use Plenty\Modules\Catalog\Services\Cache\Intervals\Intervals;
 use Plenty\Modules\Catalog\Services\Converter\Containers\ResultConverterContainer;
 use Plenty\Modules\Catalog\Services\UI\Sections\Sections;
 
@@ -113,5 +114,11 @@ interface CatalogGroupedTemplateProviderContract
 	 */
 	public function getSections(
 	):Sections;
+
+	/**
+	 * Returns devcache intervals
+	 */
+	public function getDevcacheIntervals(
+	):Intervals;
 
 }

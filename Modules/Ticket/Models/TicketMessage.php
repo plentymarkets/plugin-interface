@@ -10,6 +10,10 @@ abstract class TicketMessage
 
 	const CREATED_AT = 'create_timestamp';
 
+	const MESSAGE_TYPE = 'message';
+
+	const COMMENT_TYPE = 'comment';
+
 	const UPDATED_AT = 'updatedAt';
 	
 public		$id;
