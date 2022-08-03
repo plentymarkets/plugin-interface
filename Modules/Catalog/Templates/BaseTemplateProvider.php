@@ -4,6 +4,7 @@ namespace Plenty\Modules\Catalog\Templates;
 use Plenty\Modules\Catalog\Contracts\CatalogRuntimeConfigProviderContract;
 use Plenty\Modules\Catalog\Contracts\CatalogTemplateProviderContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
+use Plenty\Modules\Catalog\Services\Cache\Intervals\Intervals;
 use Plenty\Modules\Catalog\Services\UI\Sections\Sections;
 
 /**
@@ -45,5 +46,8 @@ abstract class BaseTemplateProvider implements CatalogTemplateProviderContract
 
 	abstract public function getSections(
 	):Sections;
+
+	abstract public function getDevcacheIntervals(
+	):Intervals;
 
 }

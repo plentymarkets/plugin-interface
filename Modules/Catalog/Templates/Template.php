@@ -10,6 +10,7 @@ use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\CatalogRuntimeConfigContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
 use Plenty\Modules\Catalog\Models\Filters\CatalogUiFilter;
+use Plenty\Modules\Catalog\Services\Cache\Intervals\Intervals;
 use Plenty\Modules\Catalog\Services\Converter\Containers\ResultConverterContainer;
 use Plenty\Modules\Catalog\Services\UI\Sections\Section\Section;
 use Plenty\Modules\Catalog\Services\UI\Sections\Sections;
@@ -180,6 +181,19 @@ abstract class Template implements TemplateContract
 		Sections $sections
 	);
 
+	/**
+	 * Gets devcache intervals
+	 */
+	abstract public function getDevcacheIntervals(
+	):Intervals;
+
+	/**
+	 * Sets devcache intervals
+	 */
+	abstract public function setDevcacheIntervals(
+		Intervals $intervals
+	);
+
 	abstract public function getName(
 	):string;
 
@@ -258,7 +272,14 @@ abstract class Template implements TemplateContract
 	abstract public function getDynamicConfig(
 	):CatalogDynamicConfigContract;
 
+	abstract public function fastBoot(
+		 $provider
+	);
+
 	abstract public function isBooted(
+	):bool;
+
+	abstract public function isFastBooted(
 	):bool;
 
 	abstract public function getCustomFilterContainer(
