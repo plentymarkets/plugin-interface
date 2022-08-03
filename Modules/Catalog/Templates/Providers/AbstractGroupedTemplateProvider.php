@@ -9,6 +9,7 @@ use Plenty\Modules\Catalog\Contracts\CatalogMutatorContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
 use Plenty\Modules\Catalog\Dummy\DynamicConfig\EmptyCatalogDynamicConfig;
 use Plenty\Modules\Catalog\Dummy\EmptyCatalogMutator;
+use Plenty\Modules\Catalog\Services\Cache\Intervals\Intervals;
 use Plenty\Modules\Catalog\Services\Converter\Containers\DefaultResultConverterContainer;
 use Plenty\Modules\Catalog\Services\Converter\Containers\ResultConverterContainer;
 use Plenty\Modules\Catalog\Services\UI\Sections\Sections;
@@ -94,6 +95,12 @@ abstract class AbstractGroupedTemplateProvider implements CatalogGroupedTemplate
 	 */
 	abstract public function getSections(
 	):Sections;
+
+	/**
+	 * Gets devcache intervals
+	 */
+	abstract public function getDevcacheIntervals(
+	):Intervals;
 
 	/**
 	 * Returns a container in which all TemplateGroups of this template are collected.
