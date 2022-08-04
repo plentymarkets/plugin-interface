@@ -9,6 +9,7 @@ use Plenty\Modules\Catalog\Contracts\CatalogMutatorContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
 use Plenty\Modules\Catalog\Dummy\DynamicConfig\EmptyCatalogDynamicConfig;
 use Plenty\Modules\Catalog\Dummy\EmptyCatalogMutator;
+use Plenty\Modules\Catalog\Services\Cache\Intervals\Defaults\DefaultIntervals;
 use Plenty\Modules\Catalog\Services\Cache\Intervals\Intervals;
 use Plenty\Modules\Catalog\Services\Converter\Containers\DefaultResultConverterContainer;
 use Plenty\Modules\Catalog\Services\Converter\Containers\ResultConverterContainer;
