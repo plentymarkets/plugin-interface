@@ -10,6 +10,7 @@ use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\CatalogRuntimeConfigContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
 use Plenty\Modules\Catalog\Models\Filters\CatalogUiFilter;
+use Plenty\Modules\Catalog\Services\Cache\Intervals\Defaults\DefaultIntervals;
 use Plenty\Modules\Catalog\Services\Cache\Intervals\Intervals;
 use Plenty\Modules\Catalog\Services\Converter\Containers\ResultConverterContainer;
 use Plenty\Modules\Catalog\Services\UI\Sections\Section\Section;
