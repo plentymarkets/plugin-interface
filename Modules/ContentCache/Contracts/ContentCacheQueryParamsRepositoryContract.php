@@ -22,4 +22,8 @@ interface ContentCacheQueryParamsRepositoryContract
 		array $queryParams
 	);
 
+	public function getRegistered(
+		string $key = ""
+	):array;
+
 }
