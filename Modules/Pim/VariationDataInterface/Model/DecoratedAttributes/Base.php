@@ -355,6 +355,11 @@ abstract class Base
 	public		$tagsInherited;
 	
 	/**
+	 * @var string
+	 */
+	public		$itemType;
+	
+	/**
 	 * Returns this model as an array.
 	 */
 	public function toArray(
