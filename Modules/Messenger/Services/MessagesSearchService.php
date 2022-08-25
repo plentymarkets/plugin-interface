@@ -17,6 +17,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\IncludeSource;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Services\ClientFactory;
+use Plenty\Modules\Messenger\Filters\ConversationIdFilter;
 use Plenty\Modules\Messenger\Filters\IsNotDeletedFilter;
 use Plenty\Modules\Messenger\Filters\PlentyIdHashFilter;
 use Plenty\Modules\Messenger\Filters\UuidFilter;
@@ -64,6 +65,13 @@ abstract class MessagesSearchService
 	 */
 	abstract public function getTotalEntries(
 	):int;
+
+	/**
+	 * Gets a stream of messages. The given UUID can be the UUID of the first message in the stream or one of the replied messages.
+	 */
+	abstract public function findByConversationId(
+		string $conversationUuid
+	):array;
 
 	abstract public function toArray(
 	):array;

@@ -26,7 +26,11 @@ abstract class TagRelationship
 
 	const TAG_TYPE_MESSAGE_CLEARING_SUB_ACCOUNT = 'messageClearingSubAccount';
 
-	const ALLOWED_TYPES = ['category','ticket','variation','board','contact','order','messenger','messageBillable','messageClearingSubAccount'];
+	const TAG_TYPE_DOCUMENT = 'document';
+
+	const TAG_TYPE_DOCUMENT_TEMPLATE = 'documentTemplate';
+
+	const ALLOWED_TYPES = ['category','ticket','variation','board','contact','order','messenger','messageBillable','messageClearingSubAccount','document','documentTemplate'];
 
 	const CREATED_AT = 'createdAt';
 

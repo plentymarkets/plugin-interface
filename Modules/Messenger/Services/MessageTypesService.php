@@ -29,6 +29,10 @@ abstract class MessageTypesService
 
 	const LINKED_TO_TYPE_PAYMENT = 'payment';
 
+	const LINKED_TO_TYPE_EMAIL = 'email';
+
+	const LINKED_TO_TYPE_USER = 'user';
+
 	const REFERRER_TYPE_SYSTEM = 'system';
 
 	const REFERRER_TYPE_BACKEND = 'backend';
