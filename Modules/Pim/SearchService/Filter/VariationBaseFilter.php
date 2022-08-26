@@ -128,6 +128,7 @@ abstract class VariationBaseFilter implements TypeInterface
 	 * Restricts the result to have an image.
 	 */
 	abstract public function hasAnImageOrItemHasAnImage(
+		 $bool = true
 	):self;
 
 	/**
