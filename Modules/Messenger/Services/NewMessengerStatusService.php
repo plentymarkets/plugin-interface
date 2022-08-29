@@ -8,7 +8,7 @@ namespace Plenty\Modules\Messenger\Services;
 abstract class NewMessengerStatusService 
 {
 
-	const ALLOWED_PIDS = [];
+	const ALLOWED_PIDS = [51054,40650];
 
 	abstract public static function isActive(
 	);
