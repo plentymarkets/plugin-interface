@@ -16,6 +16,8 @@ public		$id;
 	
 public		$hash;
 	
+public		$plentyId;
+	
 public		$plentyIdHash;
 	
 public		$keyFigure;
