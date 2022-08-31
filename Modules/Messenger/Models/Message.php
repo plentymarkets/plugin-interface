@@ -16,6 +16,8 @@ public		$plentyIdHash;
 	
 public		$parentUuid;
 	
+public		$conversationId;
+	
 public		$linkedTo;
 	
 public		$from;
@@ -31,6 +33,8 @@ public		$title;
 public		$preview;
 	
 public		$message;
+	
+public		$plainMessage;
 	
 public		$attachedFilesCount;
 	

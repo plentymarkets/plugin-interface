@@ -7,19 +7,17 @@ use Plenty\Modules\Catalog\Services\Events\EventSlot\EventSlot;
 use Plenty\Modules\Catalog\Services\Events\Hook\Hook;
 
 /**
- * After catalog is updated
+ * After catalog is copied
  */
-abstract class AfterCatalogIsUpdatedEventSlot implements EventSlotContract
+abstract class AfterCatalogIsCopiedEventSlot implements EventSlotContract
 
 {
 
-	const KEY = 'after_catalog_is_updated';
+	const KEY = 'after_catalog_is_copied';
 
-	const DATA_OLD_CATALOG = 'oldCatalog';
+	const DATA_CATALOG = 'catalog';
 
-	const DATA_NEW_CATALOG = 'newCatalog';
-
-	const DATA_CATALOG_OBJECT = 'catalogObject';
+	const DATA_ADDITIONAL_DATA = 'additionalData';
 
 	abstract public function getKey(
 	):string;
