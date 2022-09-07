@@ -26,6 +26,10 @@ abstract class TagRelationship
 
 	const TAG_TYPE_MESSAGE_CLEARING_SUB_ACCOUNT = 'messageClearingSubAccount';
 
+	const TAG_TYPE_DOCUMENT = 'document';
+
+	const TAG_TYPE_DOCUMENT_TEMPLATE = 'documentTemplate';
+
 	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
 
 	const RELATIONSHIP_TAG_RELATION = 'tag';
