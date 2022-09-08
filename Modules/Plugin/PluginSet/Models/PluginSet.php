@@ -16,6 +16,8 @@ public		$id;
 	
 public		$hash;
 	
+public		$hasSuccessfulBuild;
+	
 public		$parentPluginSetId;
 	
 public		$parentPluginSet;
