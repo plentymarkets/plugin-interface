@@ -48,11 +48,34 @@ interface OrderShippingPackageItemsRepositoryContract
 	):array;
 
 	/**
+	 * Get packed items in a package
+	 */
+	public function getPackedItemsFromPackage(
+		int $packageId, 
+		array $with = [], 
+		int $page = 1, 
+		int $perPage = 25, 
+		string $sortBy = "variationId", 
+		string $sortOrder = "asc"
+	):OrderShippingPackageItems;
+
+	/**
 	 * Get unpacked items for an order
 	 */
 	public function getUnpackedItemsFromPackagesForOrder(
 		int $orderId
 	):array;
+
+	/**
+	 * Get all the unpacked items in the order
+	 */
+	public function getUnpackedItemsForOrderPaginated(
+		int $orderId, 
+		int $page = 1, 
+		int $perPage = 25, 
+		string $sortBy = "itemVariationId", 
+		string $sortOrder = "asc"
+	):OrderShippingPackageItems;
 
 	/**
 	 * Create items for a package
