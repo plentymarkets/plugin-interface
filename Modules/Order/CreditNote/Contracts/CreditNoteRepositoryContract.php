@@ -86,4 +86,19 @@ interface CreditNoteRepositoryContract
 		bool $lazyLoaded = false
 	):Order;
 
+	/**
+	 * Get a credit note create preview for the given order data.
+	 */
+	public function previewCreate(
+		array $data
+	):array;
+
+	/**
+	 * Get a credit note update preview for the given order data.
+	 */
+	public function previewUpdate(
+		int $orderId, 
+		array $data
+	):array;
+
 }

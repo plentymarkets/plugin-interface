@@ -95,4 +95,19 @@ interface AdvanceOrderRepositoryContract
 		bool $lazyLoaded = false
 	):Order;
 
+	/**
+	 * Get an advance order create preview for the given order data.
+	 */
+	public function previewCreate(
+		array $data
+	):array;
+
+	/**
+	 * Get an advance order update preview for the given order data.
+	 */
+	public function previewUpdate(
+		int $orderId, 
+		array $data
+	):array;
+
 }

@@ -109,4 +109,19 @@ interface WarrantyRepositoryContract
 		bool $lazyLoaded = false
 	):Order;
 
+	/**
+	 * Get a warranty create preview for the given order data.
+	 */
+	public function previewCreate(
+		array $data
+	):array;
+
+	/**
+	 * Get a warranty update preview for the given order data.
+	 */
+	public function previewUpdate(
+		int $orderId, 
+		array $data
+	):array;
+
 }
