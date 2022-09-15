@@ -102,8 +102,6 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 
 	const HTTP_FAILED_DEPENDENCY = 424;
 
-	const HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL = 425;
-
 	const HTTP_TOO_EARLY = 425;
 
 	const HTTP_UPGRADE_REQUIRED = 426;

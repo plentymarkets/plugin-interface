@@ -1,9 +1,8 @@
 <?php
 namespace Plenty\Plugin\Templates\Extensions;
 
-use Twig\Extension\AbstractExtension;
-use Twig\Extension\GlobalsInterface;
-use Twig_Extension_GlobalsInterface;
+use Raider\Extension\AbstractExtension;
+use Raider\Extension\GlobalsInterface;
 
 /**
  * Twig extension
