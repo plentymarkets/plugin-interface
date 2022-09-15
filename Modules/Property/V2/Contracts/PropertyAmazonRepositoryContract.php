@@ -14,14 +14,14 @@ interface PropertyAmazonRepositoryContract
 		array $with = [], 
 		int $perPage = 50, 
 		int $page = 1
-	);
+	):array;
 
 	/**
 	 * Gets a list of property amazon. The ID of the property must be specified.
 	 */
 	public function findByPropertyId(
 		int $propertyId
-	);
+	):array;
 
 	/**
 	 * Gets a property amazon. The ID of the property amazon must be specified.

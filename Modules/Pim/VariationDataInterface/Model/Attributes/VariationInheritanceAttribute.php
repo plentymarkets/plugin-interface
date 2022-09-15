@@ -26,6 +26,6 @@ abstract class VariationInheritanceAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

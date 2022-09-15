@@ -47,6 +47,6 @@ abstract class ItemMinPriceAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

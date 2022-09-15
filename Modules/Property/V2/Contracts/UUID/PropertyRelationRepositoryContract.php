@@ -18,7 +18,7 @@ interface PropertyRelationRepositoryContract
 		int $perPage = 50, 
 		int $page = 1, 
 		array $sorting = []
-	);
+	):array;
 
 	/**
 	 * Count the property relations.
@@ -54,14 +54,14 @@ interface PropertyRelationRepositoryContract
 	 */
 	public function createBulk(
 		array $data
-	);
+	):array;
 
 	/**
 	 * Updates a list of property relations.
 	 */
 	public function updateBulk(
 		array $data
-	);
+	):array;
 
 	/**
 	 * Deletes a property relation. The ID of the property relation must be specified.

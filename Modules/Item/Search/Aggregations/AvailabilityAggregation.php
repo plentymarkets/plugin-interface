@@ -48,6 +48,6 @@ abstract class AvailabilityAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

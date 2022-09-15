@@ -32,7 +32,7 @@ interface AccountingLocationRepositoryContract
 	 */
 	public function listByPlentyId(
 		int $plentyId
-	);
+	):array;
 
 	/**
 	 * Create an accounting location.

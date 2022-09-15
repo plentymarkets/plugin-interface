@@ -48,6 +48,6 @@ abstract class AttributeValueListAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

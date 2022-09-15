@@ -52,6 +52,6 @@ abstract class FeedbackAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

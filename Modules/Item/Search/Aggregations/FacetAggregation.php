@@ -46,6 +46,6 @@ abstract class FacetAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

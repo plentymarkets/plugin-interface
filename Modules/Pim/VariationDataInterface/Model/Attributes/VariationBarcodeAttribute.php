@@ -30,6 +30,6 @@ abstract class VariationBarcodeAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

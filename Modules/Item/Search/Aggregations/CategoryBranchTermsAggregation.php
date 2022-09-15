@@ -48,6 +48,6 @@ abstract class CategoryBranchTermsAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

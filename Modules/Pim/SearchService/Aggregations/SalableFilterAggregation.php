@@ -56,6 +56,6 @@ abstract class SalableFilterAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

@@ -31,6 +31,6 @@ abstract class VariationTagAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

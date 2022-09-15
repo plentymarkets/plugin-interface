@@ -48,6 +48,6 @@ interface VariationPropertyValueTextRepositoryContract
 	 */
 	public function findByPropertyValue(
 		int $valueId
-	);
+	):array;
 
 }

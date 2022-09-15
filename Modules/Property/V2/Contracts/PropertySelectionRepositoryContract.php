@@ -19,7 +19,7 @@ interface PropertySelectionRepositoryContract
 		int $perPage = 50, 
 		int $page = 1, 
 		array $sorting = []
-	);
+	):array;
 
 	/**
 	 * Count the property selections. The ID of the property must be specified.

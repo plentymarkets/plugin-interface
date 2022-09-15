@@ -88,6 +88,6 @@ interface OrderItemPropertyRepositoryContract
 	 */
 	public function findByOrderItemId(
 		int $orderItemId
-	);
+	):array;
 
 }

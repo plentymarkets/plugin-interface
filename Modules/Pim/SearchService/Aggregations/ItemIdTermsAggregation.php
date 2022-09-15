@@ -54,6 +54,6 @@ abstract class ItemIdTermsAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

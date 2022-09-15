@@ -29,7 +29,7 @@ interface VariationDataInterfaceResultInterface
 	 * Get all found variations as Traversable.
 	 */
 	public function get(
-	);
+	):array;
 
 	/**
 	 * Get additional data provided by the elasticsearch result

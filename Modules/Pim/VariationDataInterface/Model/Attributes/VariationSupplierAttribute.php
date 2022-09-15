@@ -30,6 +30,6 @@ abstract class VariationSupplierAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

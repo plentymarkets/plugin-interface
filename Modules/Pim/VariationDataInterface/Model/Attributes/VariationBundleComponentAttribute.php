@@ -26,6 +26,6 @@ abstract class VariationBundleComponentAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

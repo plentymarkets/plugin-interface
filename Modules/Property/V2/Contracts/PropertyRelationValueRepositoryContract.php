@@ -16,7 +16,7 @@ interface PropertyRelationValueRepositoryContract
 	public function findByPropertyRelationId(
 		int $propertyRelationId, 
 		array $with = []
-	);
+	):array;
 
 	/**
 	 * Gets a property relation value. The ID of the property relation value must be specified.

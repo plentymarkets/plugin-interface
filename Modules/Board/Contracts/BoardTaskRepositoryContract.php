@@ -105,7 +105,7 @@ interface BoardTaskRepositoryContract
 		string $columnId, 
 		string $referenceValue = null, 
 		array $columns = []
-	);
+	):array;
 
 	/**
 	 * Gets all tasks for the given column ID having a reference with the given reference value.
@@ -114,6 +114,6 @@ interface BoardTaskRepositoryContract
 		string $boardId, 
 		string $referenceValue = null, 
 		array $columns = []
-	);
+	):array;
 
 }

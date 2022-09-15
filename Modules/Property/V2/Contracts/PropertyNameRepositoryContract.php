@@ -15,7 +15,7 @@ interface PropertyNameRepositoryContract
 	 */
 	public function findByPropertyId(
 		int $propertyId
-	);
+	):array;
 
 	/**
 	 * Gets a property name. The ID of the property name must be specified.

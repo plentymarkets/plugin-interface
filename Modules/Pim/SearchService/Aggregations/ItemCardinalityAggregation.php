@@ -49,6 +49,6 @@ abstract class ItemCardinalityAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

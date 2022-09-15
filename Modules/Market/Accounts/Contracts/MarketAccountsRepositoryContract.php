@@ -9,10 +9,10 @@ interface MarketAccountsRepositoryContract
 {
 
 	public function getAll(
-	);
+	):array;
 
 	public function getByReferrerId(
 		 $referrerId
-	);
+	):array;
 
 }

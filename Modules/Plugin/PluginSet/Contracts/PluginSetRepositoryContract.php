@@ -61,7 +61,7 @@ interface PluginSetRepositoryContract
 	 * List all plugin sets.
 	 */
 	public function list(
-	);
+	):array;
 
 	/**
 	 * List all set entries of a plugin set.

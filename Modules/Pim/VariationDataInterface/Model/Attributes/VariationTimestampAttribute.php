@@ -26,6 +26,6 @@ abstract class VariationTimestampAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

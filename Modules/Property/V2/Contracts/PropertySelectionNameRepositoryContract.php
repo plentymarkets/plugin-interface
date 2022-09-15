@@ -14,7 +14,7 @@ interface PropertySelectionNameRepositoryContract
 	 */
 	public function findBySelectionId(
 		int $selectionId
-	);
+	):array;
 
 	/**
 	 * Gets a property selection name. The ID of the property selection name must be specified.

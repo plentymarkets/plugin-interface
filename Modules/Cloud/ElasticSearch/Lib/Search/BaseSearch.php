@@ -70,7 +70,7 @@ abstract class BaseSearch implements SearchInterface
 	);
 
 	abstract public function getSources(
-	);
+	):array;
 
 	abstract public function setScoreModifier(
 		ScoreModifierInterface $scoreModifier

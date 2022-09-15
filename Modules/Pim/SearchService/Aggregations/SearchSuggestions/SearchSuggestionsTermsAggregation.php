@@ -57,7 +57,7 @@ abstract class SearchSuggestionsTermsAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 	abstract public static function isLanguageSupported(
 		string $lang

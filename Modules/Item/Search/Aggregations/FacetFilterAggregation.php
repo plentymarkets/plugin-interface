@@ -55,6 +55,6 @@ abstract class FacetFilterAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

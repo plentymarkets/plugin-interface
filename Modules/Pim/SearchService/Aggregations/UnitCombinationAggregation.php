@@ -54,6 +54,6 @@ abstract class UnitCombinationAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

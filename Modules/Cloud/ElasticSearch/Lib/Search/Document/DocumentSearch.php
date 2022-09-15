@@ -45,7 +45,7 @@ abstract class DocumentSearch implements SearchInterface
 	):array;
 
 	abstract public function getSources(
-	);
+	):array;
 
 	abstract public function addDependenciesToSource(
 		 $sources

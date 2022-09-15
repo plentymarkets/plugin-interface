@@ -12,6 +12,6 @@ abstract class PropertyHelper
 
 	abstract public static function getPropertyById(
 		int $propertyId
-	);
+	):array;
 
 }

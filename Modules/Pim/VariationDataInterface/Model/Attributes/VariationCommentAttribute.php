@@ -28,6 +28,6 @@ abstract class VariationCommentAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

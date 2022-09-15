@@ -66,7 +66,7 @@ interface VariationMarketRepositoryContract
 	 */
 	public function createBulk(
 		array $data
-	);
+	):array;
 
 	/**
 	 * Deletes all market links of the variation specified.

@@ -18,7 +18,7 @@ interface PropertyRepositoryContract
 		int $perPage = 50, 
 		int $page = 1, 
 		array $sorting = []
-	);
+	):array;
 
 	/**
 	 * Count the properties.

@@ -26,6 +26,6 @@ abstract class VariationMarketIdentNumberAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

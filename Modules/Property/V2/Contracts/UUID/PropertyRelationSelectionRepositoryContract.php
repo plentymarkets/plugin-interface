@@ -16,7 +16,7 @@ interface PropertyRelationSelectionRepositoryContract
 	public function findByPropertyRelationId(
 		int $propertyRelationId, 
 		array $with = []
-	);
+	):array;
 
 	/**
 	 * Gets a property relation selection. The ID of the property relation selection must be specified.

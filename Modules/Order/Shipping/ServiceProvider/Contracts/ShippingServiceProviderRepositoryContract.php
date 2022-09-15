@@ -22,7 +22,7 @@ interface ShippingServiceProviderRepositoryContract
 		int $itemsPerPage = 50, 
 		array $filters = [], 
 		array $with = []
-	);
+	):array;
 
 	/**
 	 * Gets a shipping service provider. The ID of the shipping service provider must be specified.

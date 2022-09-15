@@ -23,7 +23,7 @@ interface TagRepositoryContract
 		int $page = 1, 
 		array $sorting = [], 
 		string $lang = null
-	);
+	):array;
 
 	/**
 	 * Count the tags.

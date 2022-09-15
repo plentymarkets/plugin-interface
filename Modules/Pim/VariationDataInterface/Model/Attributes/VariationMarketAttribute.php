@@ -26,6 +26,6 @@ abstract class VariationMarketAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

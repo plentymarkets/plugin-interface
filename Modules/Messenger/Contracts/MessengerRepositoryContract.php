@@ -33,7 +33,7 @@ interface MessengerRepositoryContract
 	 */
 	public function show(
 		string $uuid
-	);
+	):array;
 
 	/**
 	 * Lists messages. If no reference UUID5 is given, the method returns the $amount first messages. If $successor is set to FALSE, the messages older than the referenced message will be returned.
@@ -58,7 +58,7 @@ interface MessengerRepositoryContract
 	public function updateReadBy(
 		int $readBy, 
 		string $uuid
-	);
+	):array;
 
 	/**
 	 * Updates the tags of the message.
@@ -66,7 +66,7 @@ interface MessengerRepositoryContract
 	public function updateTags(
 		array $tags, 
 		string $uuid
-	);
+	):array;
 
 	/**
 	 * Updates the visibility of the message. Attributes that are updated are Message.visibility, Message.linkedTo and Message.accessFor.
@@ -74,7 +74,7 @@ interface MessengerRepositoryContract
 	public function updateVisibility(
 		array $data, 
 		string $uuid
-	);
+	):array;
 
 	/**
 	 * Updates the message ui control options in the message meta data and returns the message.
@@ -90,7 +90,7 @@ interface MessengerRepositoryContract
 	public function setDone(
 		string $doneAt = null, 
 		string $uuid
-	);
+	):array;
 
 	/**
 	 * Deletes a message stream by the UUID. Returns the count of messages deleted.

@@ -24,20 +24,20 @@ interface TicketMessageRepositoryContract
 	 */
 	public function list(
 		int $ticketId
-	);
+	):array;
 
 	/**
 	 * Lists all internal ticket messages of a ticket.
 	 */
 	public function listInternal(
 		int $ticketId
-	);
+	):array;
 
 	/**
 	 * Lists all public ticket messages of a ticket
 	 */
 	public function listPublic(
 		int $ticketId
-	);
+	):array;
 
 }

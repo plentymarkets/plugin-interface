@@ -44,6 +44,6 @@ abstract class PriceRangeAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

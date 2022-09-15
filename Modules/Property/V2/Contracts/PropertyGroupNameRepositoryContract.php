@@ -15,7 +15,7 @@ interface PropertyGroupNameRepositoryContract
 	 */
 	public function findByGroupId(
 		int $groupId
-	);
+	):array;
 
 	/**
 	 * Gets a property group name. The ID of the property group name must be specified.

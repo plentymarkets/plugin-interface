@@ -26,6 +26,6 @@ abstract class VariationClientAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

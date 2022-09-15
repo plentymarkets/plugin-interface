@@ -16,7 +16,7 @@ interface PropertyOptionRepositoryContract
 	public function searchByPropertyId(
 		int $propertyId, 
 		array $with = []
-	);
+	):array;
 
 	/**
 	 * Gets a property option. The ID of the property option must be specified.

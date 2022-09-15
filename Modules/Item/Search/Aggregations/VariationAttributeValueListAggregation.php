@@ -55,6 +55,6 @@ abstract class VariationAttributeValueListAggregation implements AggregationInte
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

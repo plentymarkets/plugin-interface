@@ -15,7 +15,7 @@ interface PropertyGroupOptionRepositoryContract
 	 */
 	public function findByGroupId(
 		int $groupId
-	);
+	):array;
 
 	/**
 	 * Gets a property group option. The ID of the property group option must be specified.

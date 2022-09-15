@@ -67,6 +67,6 @@ abstract class VariationBaseAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

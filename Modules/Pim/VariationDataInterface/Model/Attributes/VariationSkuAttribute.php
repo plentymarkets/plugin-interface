@@ -26,6 +26,6 @@ abstract class VariationSkuAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }

@@ -51,6 +51,6 @@ abstract class NestedFacetValuesAggregation implements AggregationInterface
 	):AggregationInterface;
 
 	abstract public function getSources(
-	);
+	):array;
 
 }

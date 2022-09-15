@@ -1133,7 +1133,7 @@ of the current year, then return false and no modifications are made.
 	 * Prepare the object for JSON serialization.
 	 */
 	abstract public function jsonSerialize(
-	);
+	):array;
 
 	abstract public static function serializeUsing(
 		callable $callback

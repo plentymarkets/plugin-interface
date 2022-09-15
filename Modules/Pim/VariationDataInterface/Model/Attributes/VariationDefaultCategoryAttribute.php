@@ -30,6 +30,6 @@ abstract class VariationDefaultCategoryAttribute
 	);
 
 	abstract public function getLazyLoadParts(
-	);
+	):array;
 
 }
