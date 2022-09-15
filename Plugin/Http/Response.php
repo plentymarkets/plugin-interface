@@ -139,6 +139,12 @@ abstract class Response extends \Symfony\Component\HttpFoundation\Response
 	const HTTP_NETWORK_AUTHENTICATION_REQUIRED = 511;
 
 	/**
+	 * Get the headers for the response.
+	 */
+	abstract public function getHeaders(
+	);
+
+	/**
 	 * Get the status code for the response.
 	 */
 	abstract public function status(
