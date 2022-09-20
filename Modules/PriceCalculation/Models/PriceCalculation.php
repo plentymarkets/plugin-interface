@@ -16,7 +16,7 @@ public		$id;
 	
 public		$name;
 	
-public		$;
+public		$dataHash;
 	
 public		$placeholder;
 	
