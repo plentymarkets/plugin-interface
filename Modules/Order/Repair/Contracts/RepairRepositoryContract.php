@@ -109,4 +109,19 @@ interface RepairRepositoryContract
 		bool $lazyLoaded = false
 	):Order;
 
+	/**
+	 * Get a repair order create preview for the given order data.
+	 */
+	public function previewCreate(
+		array $data
+	):array;
+
+	/**
+	 * Get a repair order update preview for the given order data.
+	 */
+	public function previewUpdate(
+		int $orderId, 
+		array $data
+	):array;
+
 }
