@@ -34,6 +34,8 @@ public		$isClosed;
 	
 public		$palletSscc;
 	
+public		$orderId;
+	
 	/**
 	 * Returns this model as an array.
 	 */
