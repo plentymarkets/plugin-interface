@@ -1,38 +1,61 @@
 <?php
-namespace Plenty\Modules\Pim\Contracts\Category;
+namespace Plenty\Modules\Pim\Contracts\Barcode;
 
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Collection;
-use Plenty\Modules\Category\Models\Category;
+use Plenty\Modules\Item\Barcode\Models\Barcode;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * The contract for the pim category repository
+ * The contract for the pim barcode repository
  */
-interface CategoryRepositoryContract 
+interface BarcodeRepositoryContract 
 {
 
 	/**
-	 * Search for categories
+	 * Searches for barcodes
 	 */
 	public function search(
 		array $with = [], 
 		int $page = 1, 
-		int $perPage = 50, 
-		array $sorting = []
+		int $perPage = 50
 	):Collection;
 
 	/**
-	 * Get one category by ID
+	 * Updates a list of barcodes
+	 */
+	public function update(
+		array $data
+	):Collection;
+
+	/**
+	 * Creates a list of barcodes
+	 */
+	public function create(
+		array $data
+	):Collection;
+
+	/**
+	 * Deletes a list of barcodes
+	 */
+	public function delete(
+		array $data
+	):Collection;
+
+	/**
+	 * Get one attribute by ID
 	 */
 	public function getById(
 		int $id, 
 		array $with = []
-	):Category;
+	):Barcode;
 
+	/**
+	 * Gets the total count of barcodes
+	 */
 	public function getCount(
 	):int;
 
