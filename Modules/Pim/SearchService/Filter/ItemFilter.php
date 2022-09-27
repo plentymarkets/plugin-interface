@@ -7,6 +7,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
@@ -88,6 +90,13 @@ abstract class ItemFilter implements TypeInterface
 	 * Restricts the result to have the specified item type.
 	 */
 	abstract public function isItemType(
+		string $itemType
+	):self;
+
+	/**
+	 * Restricts the result to not have the specified item type.
+	 */
+	abstract public function isNotItemType(
 		string $itemType
 	):self;
 

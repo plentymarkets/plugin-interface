@@ -140,6 +140,10 @@ public		$updatedAt;
 	
 public		$references;
 	
+public		$cancelledBy;
+	
+public		$cancels;
+	
 public		$contacts;
 	
 public		$orders;
