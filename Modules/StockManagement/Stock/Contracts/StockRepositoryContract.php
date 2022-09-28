@@ -104,6 +104,12 @@ interface StockRepositoryContract
 	):PaginatedResult;
 
 	/**
+	 * List archive years of stock movements
+	 */
+	public function listStockMovementArchives(
+	):array;
+
+	/**
 	 * Unpack variation
 	 */
 	public function unpackVariation(

@@ -3,6 +3,7 @@ namespace Plenty\Modules\Catalog\Contracts;
 
 use Carbon\Carbon;
 use Plenty\Modules\Catalog\Models\CatalogExportResult;
+use Plenty\Modules\Catalog\Services\Queue\Models\Bundle;
 
 /**
  * The CatalogExportServiceContract is the interface for the catalogue export service. It allows you to configure and start the export of a catalogue.
