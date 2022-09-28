@@ -1,38 +1,61 @@
 <?php
-namespace Plenty\Modules\Pim\Contracts\Category;
+namespace Plenty\Modules\Pim\Contracts\SalesPrice;
 
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Collection;
-use Plenty\Modules\Category\Models\Category;
+use Plenty\Modules\Item\SalesPrice\Models\SalesPrice;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * The contract for the pim category repository
+ * The contract for the pim sales price repository
  */
-interface CategoryRepositoryContract 
+interface SalesPriceRepositoryContract 
 {
 
 	/**
-	 * Search for categories
+	 * Searches for sales prices
 	 */
 	public function search(
 		array $with = [], 
 		int $page = 1, 
-		int $perPage = 50, 
-		array $sorting = []
+		int $perPage = 50
 	):Collection;
 
 	/**
-	 * Get one category by ID
+	 * Creates a list of sales prices
+	 */
+	public function create(
+		array $data
+	):Collection;
+
+	/**
+	 * Updates a list of sales prices
+	 */
+	public function update(
+		array $data
+	):Collection;
+
+	/**
+	 * Deletes a list of sales prices
+	 */
+	public function delete(
+		array $data
+	):Collection;
+
+	/**
+	 * Gets one sales price by ID
 	 */
 	public function getById(
 		int $id, 
 		array $with = []
-	):Category;
+	):SalesPrice;
 
+	/**
+	 * Gets the total count of sales prices
+	 */
 	public function getCount(
 	):int;
 

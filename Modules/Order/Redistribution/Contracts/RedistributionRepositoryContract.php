@@ -58,4 +58,19 @@ interface RedistributionRepositoryContract
 		array $data
 	):Order;
 
+	/**
+	 * Get a redistribution create preview for the given order data.
+	 */
+	public function previewCreate(
+		array $data
+	):array;
+
+	/**
+	 * Get a redistribution update preview for the given order data.
+	 */
+	public function previewUpdate(
+		int $orderId, 
+		array $data
+	):array;
+
 }

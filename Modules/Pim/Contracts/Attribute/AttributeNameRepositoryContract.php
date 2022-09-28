@@ -1,38 +1,52 @@
 <?php
-namespace Plenty\Modules\Pim\Contracts\Category;
+namespace Plenty\Modules\Pim\Contracts\Attribute;
 
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Collection;
-use Plenty\Modules\Category\Models\Category;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * The contract for the pim category repository
+ * The contract for the pim attribute name repository
  */
-interface CategoryRepositoryContract 
+interface AttributeNameRepositoryContract 
 {
 
 	/**
-	 * Search for categories
+	 * Search for attribute names
 	 */
 	public function search(
 		array $with = [], 
 		int $page = 1, 
-		int $perPage = 50, 
-		array $sorting = []
+		int $perPage = 50
 	):Collection;
 
 	/**
-	 * Get one category by ID
+	 * Updates a list of attribute names
 	 */
-	public function getById(
-		int $id, 
-		array $with = []
-	):Category;
+	public function update(
+		array $data
+	):Collection;
 
+	/**
+	 * Creates a list of attribute names
+	 */
+	public function create(
+		array $data
+	):Collection;
+
+	/**
+	 * Deletes a list of attribute names
+	 */
+	public function delete(
+		array $data
+	):Collection;
+
+	/**
+	 * Gets the total count of attribute names
+	 */
 	public function getCount(
 	):int;
 

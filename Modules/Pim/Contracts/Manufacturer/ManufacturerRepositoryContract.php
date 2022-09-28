@@ -1,37 +1,56 @@
 <?php
-namespace Plenty\Modules\Pim\Contracts\Category;
+namespace Plenty\Modules\Pim\Contracts\Manufacturer;
 
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Support\Collection;
-use Plenty\Modules\Category\Models\Category;
+use Plenty\Modules\Item\Manufacturer\Models\Manufacturer;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 
 /**
- * The contract for the pim category repository
+ * The contract for the pim manufacturer repository
  */
-interface CategoryRepositoryContract 
+interface ManufacturerRepositoryContract 
 {
 
 	/**
-	 * Search for categories
+	 * Search for manufacturer
 	 */
 	public function search(
 		array $with = [], 
 		int $page = 1, 
-		int $perPage = 50, 
-		array $sorting = []
+		int $perPage = 50
 	):Collection;
 
 	/**
-	 * Get one category by ID
+	 * Create a list of manufacturer
+	 */
+	public function create(
+		array $data
+	):Collection;
+
+	/**
+	 * Update a list of manufacturer
+	 */
+	public function update(
+		array $data
+	):Collection;
+
+	/**
+	 * Delete a list of manufacturer
+	 */
+	public function delete(
+		array $data
+	):Collection;
+
+	/**
+	 * Get one manufacturer
 	 */
 	public function getById(
-		int $id, 
-		array $with = []
-	):Category;
+		int $id
+	):Manufacturer;
 
 	public function getCount(
 	):int;
