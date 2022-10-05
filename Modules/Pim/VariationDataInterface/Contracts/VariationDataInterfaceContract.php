@@ -26,4 +26,25 @@ interface VariationDataInterfaceContract
 		array $contextList
 	):array;
 
+	/**
+	 * Get an operation to create or update data.
+	 */
+	public function createOrUpdate(
+		 $entities
+	):CreateOrUpdateOperation;
+
+	/**
+	 * Get an operation to replace data.
+	 */
+	public function replace(
+		 $entities
+	):ReplaceOperation;
+
+	/**
+	 * Get a operation to delete data.
+	 */
+	public function delete(
+		 $entities
+	):DeleteOperation;
+
 }
