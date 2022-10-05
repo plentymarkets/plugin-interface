@@ -56,4 +56,11 @@ interface ItemSetConfigRepositoryContract
 		int $setId
 	):ItemSetConfig;
 
+	/**
+	 * Trigger a sales price calculation for an item set
+	 */
+	public function calculateSetPrice(
+		int $setId
+	);
+
 }
