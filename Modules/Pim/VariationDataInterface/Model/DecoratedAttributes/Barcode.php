@@ -25,6 +25,11 @@ abstract class Barcode
 	public		$barcodeId;
 	
 	/**
+	 * @var int
+	 */
+	public		$variationId;
+	
+	/**
 	 * Returns this model as an array.
 	 */
 	public function toArray(
