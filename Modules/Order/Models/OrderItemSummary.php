@@ -16,6 +16,8 @@ public		$orderId;
 	
 public		$quantity;
 	
+public		$count;
+	
 public		$weight;
 	
 public		$warehouses;
