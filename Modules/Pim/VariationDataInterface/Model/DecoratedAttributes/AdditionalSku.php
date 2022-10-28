@@ -11,6 +11,11 @@ abstract class AdditionalSku
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$id;
 	
 	/**

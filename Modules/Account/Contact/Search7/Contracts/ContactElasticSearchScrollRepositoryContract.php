@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Contact\Search7\Contracts;
 
-use Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchScrollRepositoryContract;
+use Plenty\Modules\Account\Contact\Search\Contracts\ContactElasticSearchScrollRepositoryContract as ContactElasticSearchScrollRepositoryContractOld;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 
 /**

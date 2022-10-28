@@ -1,9 +1,8 @@
 <?php
 namespace Plenty\Modules\Plugin\DataBase\Contracts;
 
-use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Collection;
 use Plenty\Modules\Plugin\Traits\ActsAsModel;
-use Plenty\Modules\Plugin\Traits\HasAttributes;
 
 /**
  * Database model

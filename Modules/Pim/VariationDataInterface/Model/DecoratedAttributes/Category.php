@@ -17,6 +17,11 @@ abstract class Category
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$categoryId;
 	
 	/**

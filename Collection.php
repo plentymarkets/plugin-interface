@@ -3,20 +3,14 @@ namespace Illuminate\Support;
 
 use ArrayAccess;
 use ArrayIterator;
+use Illuminate\Contracts\Support\CanBeEscapedWhenCastToString;
 use Illuminate\Support\Traits\EnumeratesValues;
 use Illuminate\Support\Traits\Macroable;
+use Traversable;
 use stdClass;
 
 abstract class Collection 
 {
-
-	/**
-	 * Create a new collection by invoking the callback a given amount of times.
-	 */
-	abstract public static function times(
-		int $number, 
-		callable $callback = null
-	):Collection;
 
 	/**
 	 * Get all of the items in the collection.
@@ -150,7 +144,7 @@ abstract class Collection
 	 * Concatenate values of a given key as a string.
 	 */
 	abstract public function implode(
-		string $value, 
+		 $value, 
 		string $glue = null
 	):string;
 
@@ -254,10 +248,11 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Get and remove the last item from the collection.
+	 * Get and remove the last N items from the collection.
 	 */
 	abstract public function pop(
-	);
+		int $count = 1
+	):Collection;
 
 	/**
 	 * Push an item onto the beginning of the collection.
@@ -268,10 +263,10 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Push an item onto the end of the collection.
+	 * Push one or more items onto the end of the collection.
 	 */
 	abstract public function push(
-		 $value
+		 $values
 	):Collection;
 
 	/**
@@ -294,16 +289,8 @@ abstract class Collection
 	 * Get one or a specified number of items randomly from the collection.
 	 */
 	abstract public function random(
-		int $number = null
+		 $number = null
 	):Collection;
-
-	/**
-	 * Reduce the collection to a single value.
-	 */
-	abstract public function reduce(
-		callable $callback, 
-		 $initial = null
-	);
 
 	/**
 	 * Reverse items order.
@@ -320,10 +307,11 @@ abstract class Collection
 	);
 
 	/**
-	 * Get and remove the first item from the collection.
+	 * Get and remove the first N items from the collection.
 	 */
 	abstract public function shift(
-	);
+		int $count = 1
+	):Collection;
 
 	/**
 	 * Shuffle the items in the collection.
@@ -358,7 +346,7 @@ abstract class Collection
 	 * Sort through each item with a callback.
 	 */
 	abstract public function sort(
-		callable $callback = null
+		 $callback = null
 	):Collection;
 
 	/**
@@ -367,7 +355,7 @@ abstract class Collection
 	abstract public function splice(
 		int $offset, 
 		int $length = null, 
-		 $replacement = []
+		array $replacement = []
 	):Collection;
 
 	/**
@@ -382,6 +370,14 @@ abstract class Collection
 	 */
 	abstract public function transform(
 		callable $callback
+	):Collection;
+
+	/**
+	 * Return only unique items from the collection array.
+	 */
+	abstract public function unique(
+		 $key = null, 
+		bool $strict = false
 	):Collection;
 
 	/**
@@ -437,7 +433,7 @@ abstract class Collection
 	 * Unset the item at a given offset.
 	 */
 	abstract public function offsetUnset(
-		string $key
+		 $key
 	);
 
 	/**
@@ -451,7 +447,7 @@ abstract class Collection
 	 * Wrap the given value in a collection if applicable.
 	 */
 	abstract public static function wrap(
-		 $value
+		string $value
 	):Collection;
 
 	/**
@@ -460,6 +456,14 @@ abstract class Collection
 	abstract public static function unwrap(
 		 $value
 	):array;
+
+	/**
+	 * Create a new collection by invoking the callback a given amount of times.
+	 */
+	abstract public static function times(
+		int $number, 
+		callable $callback = null
+	):Collection;
 
 	/**
 	 * Alias for the "avg" method.
@@ -503,7 +507,7 @@ abstract class Collection
 	 * Get the first item by the given key value pair.
 	 */
 	abstract public function firstWhere(
-		string $key, 
+		 $key, 
 		 $operator = null, 
 		 $value = null
 	);
@@ -581,28 +585,10 @@ abstract class Collection
 	);
 
 	/**
-	 * Apply the callback if the value is truthy.
-	 */
-	abstract public function when(
-		 $value, 
-		callable $callback, 
-		callable $default = null
-	):Collection;
-
-	/**
-	 * Apply the callback if the value is falsy.
-	 */
-	abstract public function unless(
-		bool $value, 
-		callable $callback, 
-		callable $default = null
-	):Collection;
-
-	/**
 	 * Filter items by the given key value pair.
 	 */
 	abstract public function where(
-		string $key, 
+		 $key, 
 		 $operator = null, 
 		 $value = null
 	):Collection;
@@ -657,11 +643,12 @@ abstract class Collection
 	);
 
 	/**
-	 * Pass the collection to the given callback and then return it.
+	 * Reduce the collection to a single value.
 	 */
-	abstract public function tap(
-		callable $callback
-	):Collection;
+	abstract public function reduce(
+		callable $callback, 
+		 $initial = null
+	);
 
 	/**
 	 * Create a collection of all elements that do not pass a given truth test.
@@ -671,11 +658,10 @@ abstract class Collection
 	):Collection;
 
 	/**
-	 * Return only unique items from the collection array.
+	 * Pass the collection to the given callback and then return it.
 	 */
-	abstract public function unique(
-		 $key = null, 
-		bool $strict = false
+	abstract public function tap(
+		callable $callback
 	):Collection;
 
 	/**
@@ -710,6 +696,24 @@ abstract class Collection
 	abstract public static function proxy(
 		string $method
 	);
+
+	/**
+	 * Apply the callback if the given "value" is (or resolves to) truthy.
+	 */
+	abstract public function when(
+		 $value = null, 
+		callable $callback = null, 
+		callable $default = null
+	):Collection;
+
+	/**
+	 * Apply the callback if the given "value" is (or resolves to) falsy.
+	 */
+	abstract public function unless(
+		 $value = null, 
+		callable $callback = null, 
+		callable $default = null
+	):Collection;
 
 	/**
 	 * Register a custom macro.

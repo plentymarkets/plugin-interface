@@ -4,8 +4,10 @@ namespace Plenty\Modules\Order\Referrer\Contracts;
 use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Referrer\Exceptions\ReferrerNotEditableException;
 use Plenty\Modules\Order\Referrer\Models\OrderReferrer;
+use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * Provides methods for processing order referrers. An order referrer indicates where a purchase was made originally.
@@ -19,6 +21,16 @@ interface OrderReferrerRepositoryContract
 	public function getList(
 		array $columns = []
 	);
+
+	/**
+	 * Search for referrers
+	 */
+	public function search(
+		int $page = 1, 
+		int $itemsPerPage = 20, 
+		string $sortBy = "id", 
+		string $sortOrder = "asc"
+	):PaginatedResult;
 
 	/**
 	 * Create an order referrer
@@ -61,6 +73,31 @@ interface OrderReferrerRepositoryContract
 	 * Applies criteria classes to the current repository.
 	 */
 	public function applyCriteriaFromFilters(
+	);
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
+	);
+
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
 	);
 
 }

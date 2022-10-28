@@ -34,10 +34,6 @@ public		$itemsPerPage;
 	
 public		$page;
 	
-public		$scaleBasisSortOrder;
-	
-public		$primaryResultSortOrder;
-	
 public		$searchId;
 	
 public		$calculatedAt;

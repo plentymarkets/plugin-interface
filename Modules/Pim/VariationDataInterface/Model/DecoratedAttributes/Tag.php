@@ -17,6 +17,11 @@ abstract class Tag
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$tagId;
 	
 	/**

@@ -11,6 +11,11 @@ abstract class Sku
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$id;
 	
 	/**

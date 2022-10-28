@@ -17,6 +17,11 @@ abstract class Image
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$imageId;
 	
 	/**

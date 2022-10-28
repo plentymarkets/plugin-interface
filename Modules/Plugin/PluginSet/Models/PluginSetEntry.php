@@ -30,6 +30,8 @@ public		$position;
 	
 public		$isInstalledFromGit;
 	
+public		$lastCodeUpdateAt;
+	
 	/**
 	 * Returns this model as an array.
 	 */
