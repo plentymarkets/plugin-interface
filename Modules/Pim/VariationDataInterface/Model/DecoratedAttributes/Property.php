@@ -17,6 +17,11 @@ abstract class Property
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$id;
 	
 	/**

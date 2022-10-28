@@ -9,6 +9,11 @@ abstract class Inheritance
 {
 	
 	/**
+	 * @var int
+	 */
+	public		$variationId;
+	
+	/**
 	 * @var bool
 	 */
 	public		$categories;

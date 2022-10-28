@@ -35,6 +35,11 @@ abstract class Comment
 	public		$createdAt;
 	
 	/**
+	 * @var int
+	 */
+	public		$variationId;
+	
+	/**
 	 * Returns this model as an array.
 	 */
 	public function toArray(

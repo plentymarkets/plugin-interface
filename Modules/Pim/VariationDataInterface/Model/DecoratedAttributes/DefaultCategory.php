@@ -17,6 +17,11 @@ abstract class DefaultCategory
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$branchId;
 	
 	/**

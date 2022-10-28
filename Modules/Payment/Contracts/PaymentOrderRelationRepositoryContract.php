@@ -46,6 +46,15 @@ interface PaymentOrderRelationRepositoryContract
 	):PaymentOrderRelation;
 
 	/**
+	 * Assign a payment to an order if invoice number is valid.
+	 */
+	public function createOrderRelationByInvoiceNumber(
+		int $paymentId, 
+		string $invoiceNumber, 
+		bool $allowMultiplePaymentsPerOrder = false
+	):PaymentOrderRelation;
+
+	/**
 	 * Bulk auto assign payments
 	 */
 	public function autoAssignPayments(

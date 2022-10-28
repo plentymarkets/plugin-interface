@@ -17,6 +17,11 @@ abstract class AttributeValue
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$attributeId;
 	
 	/**

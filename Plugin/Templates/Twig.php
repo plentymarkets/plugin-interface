@@ -1,11 +1,14 @@
 <?php
 namespace Plenty\Plugin\Templates;
 
-use App;
+use Exception;
+use InvalidArgumentException;
 use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Webshop\Hooks\OverrideOrderConfirmation;
-use Plenty\View\Bridge;
-use Twig\Error\LoaderError;
+use RaiderBridge\Facade\Raider;
+use Raider\Error\LoaderError;
+use Throwable;
+use Twig_ExtensionInterface;
 
 /**
  * Twig engine
