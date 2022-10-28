@@ -105,7 +105,8 @@ interface DocumentRepositoryContract
 	 */
 	public function findCurrentOrderDocument(
 		int $orderId, 
-		string $type
+		string $type, 
+		bool $includePending = false
 	):Document;
 
 	/**
@@ -113,7 +114,8 @@ interface DocumentRepositoryContract
 	 */
 	public function findRecentOrderDocument(
 		int $orderId, 
-		string $type
+		string $type, 
+		bool $includePending = false
 	):Document;
 
 	/**

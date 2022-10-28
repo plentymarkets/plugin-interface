@@ -15,6 +15,11 @@ abstract class Base
 	public		$with;
 	
 	/**
+	 * @var int
+	 */
+	public		$variationId;
+	
+	/**
 	 * @var bool
 	 */
 	public		$isMain;

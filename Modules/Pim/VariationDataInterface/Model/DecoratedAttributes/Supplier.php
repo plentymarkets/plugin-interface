@@ -17,6 +17,11 @@ abstract class Supplier
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$id;
 	
 	/**

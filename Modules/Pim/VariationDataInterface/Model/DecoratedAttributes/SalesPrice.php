@@ -18,6 +18,11 @@ abstract class SalesPrice
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$salesPriceId;
 	
 	/**

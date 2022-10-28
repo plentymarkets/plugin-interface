@@ -21,6 +21,11 @@ abstract class MarketIdentNumber
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$id;
 	
 	/**

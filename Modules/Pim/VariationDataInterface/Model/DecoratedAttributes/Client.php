@@ -11,6 +11,11 @@ abstract class Client
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$plentyId;
 	
 	/**

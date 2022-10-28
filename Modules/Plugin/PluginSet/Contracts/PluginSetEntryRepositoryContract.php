@@ -18,6 +18,14 @@ interface PluginSetEntryRepositoryContract
 	):PluginSetEntry;
 
 	/**
+	 * Get a PluginSetEntry using a PluginSetId and PluginId
+	 */
+	public function getByPluginSetIdAndPluginId(
+		int $pluginSetId, 
+		int $pluginId
+	):PluginSetEntry;
+
+	/**
 	 * Create a set entry.
 	 */
 	public function create(

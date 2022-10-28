@@ -18,6 +18,8 @@ public		$isLimitEditing;
 	
 public		$numberFormatLang;
 	
+public		$formatResult;
+	
 	/**
 	 * Returns this model as an array.
 	 */

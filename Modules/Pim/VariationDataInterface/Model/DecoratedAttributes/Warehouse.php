@@ -17,6 +17,11 @@ abstract class Warehouse
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$warehouseId;
 	
 	/**

@@ -9,6 +9,11 @@ abstract class Market
 {
 	
 	/**
+	 * @var int
+	 */
+	public		$variationId;
+	
+	/**
 	 * @var float
 	 */
 	public		$marketId;

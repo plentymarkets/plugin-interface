@@ -17,6 +17,11 @@ abstract class Unit
 	/**
 	 * @var int
 	 */
+	public		$variationId;
+	
+	/**
+	 * @var int
+	 */
 	public		$unitId;
 	
 	/**
