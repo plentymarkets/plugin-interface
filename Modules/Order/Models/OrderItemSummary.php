@@ -22,6 +22,10 @@ public		$weight;
 	
 public		$warehouses;
 	
+public		$profitMarginSystemCurrency;
+	
+public		$profitMarginOrderCurrency;
+	
 	/**
 	 * Returns this model as an array.
 	 */
