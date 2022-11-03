@@ -46,6 +46,8 @@ interface SessionStorageRepositoryContract
 
 	const LAST_PLACE_ORDER_TRY = 'lastPlaceOrderTry';
 
+	const SKIP_ITEM_STOCK_CHECK = 'skipItemStockCheck';
+
 	/**
 	 * Set a value to a given key in the session
 	 */
