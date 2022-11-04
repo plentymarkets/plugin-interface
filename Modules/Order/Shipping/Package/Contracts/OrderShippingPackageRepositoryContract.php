@@ -40,6 +40,15 @@ interface OrderShippingPackageRepositoryContract
 		string $sortOrder = "desc"
 	):array;
 
+	public function getPackagesFromPallet(
+		int $palletId, 
+		array $with = [], 
+		int $page = 1, 
+		int $perPage = 1000, 
+		string $sortBy = "id", 
+		string $sortOrder = "desc"
+	):array;
+
 	/**
 	 * Create an order shipping package
 	 */
