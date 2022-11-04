@@ -37,6 +37,13 @@ interface OrderShippingPalletRepositoryContract
 	):array;
 
 	/**
+	 * Get all pallets from given order IDs
+	 */
+	public function getPalletsFromOrders(
+		array $orderIds
+	):array;
+
+	/**
 	 * Create an order shipping pallet
 	 */
 	public function createOrderShippingPallet(
