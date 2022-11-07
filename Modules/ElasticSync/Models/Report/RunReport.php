@@ -24,6 +24,8 @@ public		$jobs_completed;
 	
 public		$errors;
 	
+public		$sync_type;
+	
 public		$children_identifier;
 	
 public		$report_filename;
