@@ -12,6 +12,8 @@ public		$globalDataFilters;
 	
 public		$searchRequests;
 	
+public		$debug;
+	
 	/**
 	 * Returns this model as an array.
 	 */

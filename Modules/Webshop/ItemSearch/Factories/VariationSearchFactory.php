@@ -45,6 +45,7 @@ use Plenty\Modules\Webshop\ItemSearch\Extensions\ContentCacheVariationLinkExtens
 use Plenty\Modules\Webshop\ItemSearch\Extensions\CurrentCategoryExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemDefaultImage;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\PriceSearchExtension;
+use Plenty\Modules\Webshop\ItemSearch\Extensions\PropertySortExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\SetComponentExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\TagExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\VariationAttributeMapExtension;
@@ -323,6 +324,9 @@ abstract class VariationSearchFactory
 	):self;
 
 	abstract public function withOrderPropertySelectionValues(
+	):self;
+
+	abstract public function withSortedProperties(
 	):self;
 
 	abstract public function withVariationProperties(

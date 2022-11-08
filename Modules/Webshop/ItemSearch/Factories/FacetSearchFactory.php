@@ -293,6 +293,9 @@ abstract class FacetSearchFactory
 	abstract public function withOrderPropertySelectionValues(
 	):self;
 
+	abstract public function withSortedProperties(
+	):self;
+
 	abstract public function withVariationProperties(
 	):self;
 
