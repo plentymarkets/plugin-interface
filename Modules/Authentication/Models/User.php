@@ -44,6 +44,8 @@ public		$userRights;
 	
 public		$uiConfig;
 	
+public		$userType;
+	
 public		$permissions;
 	
 public		$pluginPermissions;
