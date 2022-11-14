@@ -34,6 +34,8 @@ abstract class DeleteLog
 
 	const REFERENCE_TYPE_ITEM_VARIATION = 13;
 
+	const REFERENCE_TYPE_ORDER_ITEM = 14;
+
 	const UPDATED_AT = 'updatedAt';
 
 	const CREATED_AT = 'createdAt';
