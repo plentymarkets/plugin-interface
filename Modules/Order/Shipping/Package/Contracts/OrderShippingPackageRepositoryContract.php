@@ -25,7 +25,8 @@ interface OrderShippingPackageRepositoryContract
 	public function listOrderShippingPackages(
 		int $orderId, 
 		array $columns = [], 
-		array $with = []
+		array $with = [], 
+		array $packageInputData = []
 	):array;
 
 	/**
