@@ -3,7 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
 
 /**
- * contains the inheritance informations of a variation
+ * Contains the inheritance information of a variation.
  */
 abstract class Inheritance 
 {

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
 
 /**
- * contains informations about an market ident number, belongs to a variation
+ * Contains informations about a market ident number, belongs to a variation.
  */
 abstract class MarketIdentNumber 
 {

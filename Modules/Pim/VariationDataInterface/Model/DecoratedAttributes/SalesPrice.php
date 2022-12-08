@@ -5,7 +5,7 @@ use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\SalesPrice\With;
 
 /**
- * contains informations about a client, belongs to a salesPrice
+ * Contains information about a sales price, belongs to a variation.
  */
 abstract class SalesPrice 
 {

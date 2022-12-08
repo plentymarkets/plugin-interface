@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Base\With;
 
 /**
- * contains the basic informations of a variation
+ * Contains the basic information of a variation.
  */
 abstract class Base 
 {
