@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Warehouse\With;
 
 /**
- * contains informations about a warehouse, belongs to a variation
+ * Contains information about a warehouse, belongs to a variation.
  */
 abstract class Warehouse 
 {

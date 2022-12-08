@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Unit\With;
 
 /**
- * contains informations about the unit of the variaiton
+ * Contains information about the unit of the variation.
  */
 abstract class Unit 
 {

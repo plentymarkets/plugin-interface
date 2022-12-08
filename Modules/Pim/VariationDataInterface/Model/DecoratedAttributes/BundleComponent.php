@@ -3,7 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
 
 /**
- * contains informations about a barcode, belongs to a variation
+ * Contains information about a barcode, belongs to a variation.
  */
 abstract class BundleComponent 
 {

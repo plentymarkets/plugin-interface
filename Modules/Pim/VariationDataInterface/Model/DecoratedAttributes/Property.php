@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Property\With;
 
 /**
- * contains informations about a property, belongs to a variation
+ * Contains information about a property, belongs to a variation.
  */
 abstract class Property 
 {

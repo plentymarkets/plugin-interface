@@ -3,7 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
 
 /**
- * contains informations about an additonal sku, belongs to a variation
+ * Contains information about an additonal sku, belongs to a variation.
  */
 abstract class AdditionalSku 
 {

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
 
 /**
- * contains informations about a client, belongs to a variation
+ * Contains information about a client, belongs to a variation.
  */
 abstract class Client 
 {

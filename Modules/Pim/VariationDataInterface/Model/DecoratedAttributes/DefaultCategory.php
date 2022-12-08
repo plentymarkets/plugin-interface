@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\DefaultCategory\With;
 
 /**
- * contains informations about a default category, belongs to a variation
+ * Contains information about a default category, belongs to a variation.
  */
 abstract class DefaultCategory 
 {

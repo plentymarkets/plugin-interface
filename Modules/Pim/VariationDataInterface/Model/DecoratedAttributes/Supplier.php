@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Supplier\With;
 
 /**
- * contains informations about a supplier, belongs to a variation
+ * contains informations about a supplier, belongs to a variation.
  */
 abstract class Supplier 
 {

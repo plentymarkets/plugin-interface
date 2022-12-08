@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Carbon\Carbon;
 
 /**
- * contains informations about a comment, belongs to a variation
+ * Contains information about a comment, belongs to a variation.
  */
 abstract class Comment 
 {
