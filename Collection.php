@@ -48,6 +48,14 @@ abstract class Collection
 	):bool;
 
 	/**
+	 * Determine if an item exists, using strict comparison.
+	 */
+	abstract public function containsStrict(
+		 $key, 
+		 $value = null
+	):bool;
+
+	/**
 	 * Cross join with the given lists, returning all possible permutations.
 	 */
 	abstract public function crossJoin(
@@ -471,14 +479,6 @@ abstract class Collection
 	abstract public function average(
 		 $callback = null
 	);
-
-	/**
-	 * Determine if an item exists, using strict comparison.
-	 */
-	abstract public function containsStrict(
-		 $key, 
-		 $value = null
-	):bool;
 
 	/**
 	 * Execute a callback over each item.

@@ -489,16 +489,6 @@ locale using setlocale() https://php.net/setlocale.
 	):bool;
 
 	/**
-	 * Reset the format used to the default when type juggling a Carbon instance to a string
-	 */
-	abstract public static function resetToStringFormat(
-	);
-
-	abstract public static function setToStringFormat(
-		 $format
-	);
-
-	/**
 	 * Format the instance as date
 	 */
 	abstract public function toDateString(
@@ -615,6 +605,16 @@ locale using setlocale() https://php.net/setlocale.
 	 */
 	abstract public function toArray(
 	):array;
+
+	/**
+	 * Reset the format used to the default when type juggling a Carbon instance to a string
+	 */
+	abstract public static function resetToStringFormat(
+	);
+
+	abstract public static function setToStringFormat(
+		 $format
+	);
 
 	/**
 	 * Create a Carbon instance from a DateTime one.

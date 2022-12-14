@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Carbon\Carbon;
 
 /**
- * contains informations the timestamps of a variation
+ * Contains informations the timestamps of a variation.
  */
 abstract class Timestamp 
 {

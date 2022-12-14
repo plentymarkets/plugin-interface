@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Order\Referrer\Contracts;
 
 use Illuminate\Support\Collection;
+use Plenty\Modules\Order\Referrer\Exceptions\NoMoreFreeMainReferrerIdsException;
 use Plenty\Modules\Order\Referrer\Exceptions\ReferrerNotEditableException;
 use Plenty\Modules\Order\Referrer\Models\OrderReferrer;
 use Plenty\Repositories\Contracts\FilterableContract;
@@ -62,6 +63,12 @@ interface OrderReferrerRepositoryContract
 	public function delete(
 		float $referrerId
 	):bool;
+
+	/**
+	 * Get next free main referrer ID
+	 */
+	public function getNextFreeMainReferrerId(
+	):float;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.

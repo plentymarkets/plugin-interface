@@ -4,7 +4,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Images\With;
 
 /**
- * contains informations about an image, belongs to a variation
+ * Contains information about an image, belongs to a variation.
  */
 abstract class Image 
 {
