@@ -18,11 +18,25 @@ abstract class AutomaticEmailTemplate
 
 	const CONTACT_NEW_EMAIL = 'ChangeCustomerEmail';
 
+	const CUSTOMER_EVENT = 'customerEvent';
+
 	const CONTACT_REGISTRATION = 'CustomerRegistration';
 
 	const NEWSLETTER_OPTIN = 'NewsletterDoubleOptIn';
 
 	const NEWSLETTER_OPTIN_CONFIRM = 'NewNewsletter';
+
+	const SUBSCRIPTION_ORDER = 'SubscriptionOrder';
+
+	const SCHEDULER_CHANGED = 'schedulerChanged';
+
+	const POSITIVE_STOCK_NOTIFICATION = 'positiveStockNotification';
+
+	const SSL_HOSTMASTER = 'sslHostmaster';
+
+	const SSL_CERT_EXPIRE = 'sslCertExpire';
+
+	const SSL_ORDER_DONE = 'sslOrderDone';
 
 	/**
 	 * Returns this model as an array.
