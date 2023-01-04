@@ -29,6 +29,7 @@ use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationCreatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationHasChildren;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIsActive;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIsMain;
+use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationRelatedUpdatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationUpdatedAt;
 
 /**
@@ -117,6 +118,9 @@ abstract class FilterBuilderFactory
 
 	abstract public function variationUpdatedAt(
 	):VariationUpdatedAt;
+
+	abstract public function variationRelatedUpdatedAt(
+	):VariationRelatedUpdatedAt;
 
 	abstract public function salesPriceUpdatedAt(
 	):SalesPriceUpdatedAt;
