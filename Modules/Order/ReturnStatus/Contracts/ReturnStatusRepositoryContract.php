@@ -29,4 +29,11 @@ interface ReturnStatusRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Delete an order return status
+	 */
+	public function delete(
+		int $id
+	):bool;
+
 }

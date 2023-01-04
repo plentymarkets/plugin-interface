@@ -29,4 +29,11 @@ interface RepairReasonRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Delete an order repair reason
+	 */
+	public function delete(
+		int $id
+	):bool;
+
 }

@@ -29,4 +29,11 @@ interface ReturnReasonRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Delete an order return reason
+	 */
+	public function delete(
+		int $id
+	):bool;
+
 }
