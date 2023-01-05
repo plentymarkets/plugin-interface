@@ -366,6 +366,8 @@ public		$itemAutocompleteSearchOperator;
 	
 public		$defaultOrderItemName;
 	
+public		$serviceWorkerScope;
+	
 	/**
 	 * Returns this model as an array.
 	 */
