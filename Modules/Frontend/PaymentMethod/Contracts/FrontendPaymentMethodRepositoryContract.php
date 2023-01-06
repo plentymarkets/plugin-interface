@@ -161,4 +161,8 @@ interface FrontendPaymentMethodRepositoryContract
 	public function getAllowedPaymentMethodListForContact(
 	);
 
+	public function getCurrentPaymentMethodById(
+		int $paymentMethodId
+	);
+
 }
