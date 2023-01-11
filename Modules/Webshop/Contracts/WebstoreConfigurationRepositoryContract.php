@@ -16,6 +16,13 @@ interface WebstoreConfigurationRepositoryContract
 	):WebstoreConfiguration;
 
 	/**
+	 * Get the webstore configuration by webstore id
+	 */
+	public function getWebstoreConfigurationByWebstoreId(
+		int $webstoreId
+	):WebstoreConfiguration;
+
+	/**
 	 * Get the activate languages of the webstore
 	 */
 	public function getActiveLanguageList(
