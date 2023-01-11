@@ -20,7 +20,8 @@ interface OrderReferrerRepositoryContract
 	 * List order referrers
 	 */
 	public function getList(
-		array $columns = []
+		array $columns = [], 
+		bool $filterable = false
 	);
 
 	/**
