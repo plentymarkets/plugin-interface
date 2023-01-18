@@ -23,6 +23,10 @@ abstract class PluginSeoSitemapService
 		array $pattern
 	);
 
+	abstract public function setBlogContent(
+		array $data
+	);
+
 	abstract public function setContentCategoryPattern(
 		array $pattern
 	);
@@ -36,6 +40,9 @@ abstract class PluginSeoSitemapService
 
 	abstract public function getBlogPattern(
 	):string;
+
+	abstract public function getBlogContent(
+	):array;
 
 	abstract public function getItemCategoryPattern(
 	):string;

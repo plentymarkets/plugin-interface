@@ -19,6 +19,13 @@ interface ItemLabelRepositoryContract
 	):string;
 
 	/**
+	 * Get a item label
+	 */
+	public function generateItemLabel(
+		array $data
+	):string;
+
+	/**
 	 * List item label templates
 	 */
 	public function listTemplates(
