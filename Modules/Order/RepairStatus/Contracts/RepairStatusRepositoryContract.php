@@ -29,4 +29,11 @@ interface RepairStatusRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Delete an order repair status
+	 */
+	public function delete(
+		int $id
+	):bool;
+
 }
