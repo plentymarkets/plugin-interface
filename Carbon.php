@@ -431,7 +431,7 @@ locale using setlocale() https://php.net/setlocale.
 	):bool;
 
 	/**
-	 * Determines if the instance is a long year
+	 * Determines if the instance is a long year (using calendar year).
 	 */
 	abstract public function isLongYear(
 	):bool;
@@ -675,7 +675,7 @@ locale using setlocale() https://php.net/setlocale.
 	 * Create a new Carbon instance from a specific date and time.
 	 */
 	abstract public static function create(
-		int $year = 0, 
+		 $year = 0, 
 		int $month = 1, 
 		int $day = 1, 
 		int $hour = 0, 
