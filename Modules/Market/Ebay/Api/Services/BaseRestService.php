@@ -1,16 +1,21 @@
 <?php
 namespace Plenty\Modules\Market\Ebay\Api\Services;
 
+use Ebay\DigitalSignature\Signature;
+use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
+use Plenty\Legacy\Repositories\Market\Ebay\AccountPolicy\AccountPolicyHelper;
 use Plenty\Log\Factories\LoggerFactory;
 use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Market\Credentials\Models\Credentials;
 use Plenty\Modules\Market\Ebay\Api\Exceptions\InvalidEndPointException;
 use Plenty\Modules\Market\Ebay\Api\Handlers\HttpHandler;
 use Plenty\Modules\Market\Ebay\Api\Helpers\Helper;
+use Plenty\Modules\Market\Ebay\Api\Helpers\SignatureHelper;
 use Plenty\Modules\Market\Ebay\Api\Resolvers\ConfigurationResolver;
 use Plenty\Modules\Market\Ebay\Api\Resolvers\UriResolver;
 use Plenty\Modules\Market\Ebay\Api\Types\BaseType;
+use Plenty\Modules\Market\Ebay\Auth\Helpers\AuthHelper;
 use Plenty\Modules\Market\Ebay\Auth\Services\AuthService;
 use Psr\Http\Message\ResponseInterface;
 
