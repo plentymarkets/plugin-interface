@@ -59,6 +59,19 @@ abstract class BaseRestService
 	}
 
 	/**
+	 * Set a value
+	 */
+	public function setConfig(
+		string $option, 
+		 $value
+	):self
+	{
+		$this->config[$option] = $value;
+
+        return $this;
+	}
+
+	/**
 	 * Build API request and send.
 	 */
 	protected function callOperation(
