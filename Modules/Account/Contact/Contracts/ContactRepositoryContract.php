@@ -82,7 +82,8 @@ interface ContactRepositoryContract
 	 * Returns a contact id by email. The email must be specified.
 	 */
 	public function getContactIdByEmail(
-		string $email
+		string $email, 
+		array $filter = []
 	):int;
 
 	/**
