@@ -7,6 +7,8 @@ use GuzzleHttp\Psr7\Request;
 use Plenty\Legacy\Repositories\Market\Ebay\AccountPolicy\AccountPolicyHelper;
 use Plenty\Log\Factories\LoggerFactory;
 use Plenty\Log\Traits\Loggable;
+use Plenty\Modules\Cloud\SecretsManager\Contracts\CachedSecretsManagerRepositoryContract;
+use Plenty\Modules\Cloud\Storage\Contracts\GlobalStorageProviderRepositoryContract;
 use Plenty\Modules\Market\Credentials\Models\Credentials;
 use Plenty\Modules\Market\Ebay\Api\Exceptions\InvalidEndPointException;
 use Plenty\Modules\Market\Ebay\Api\Handlers\HttpHandler;
@@ -17,6 +19,7 @@ use Plenty\Modules\Market\Ebay\Api\Resolvers\UriResolver;
 use Plenty\Modules\Market\Ebay\Api\Types\BaseType;
 use Plenty\Modules\Market\Ebay\Auth\Helpers\AuthHelper;
 use Plenty\Modules\Market\Ebay\Auth\Services\AuthService;
+use Plenty\Modules\Market\MarketLogIdentifier;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -24,6 +27,8 @@ use Psr\Http\Message\ResponseInterface;
  */
 abstract class BaseRestService 
 {
+
+	const SIGNATURE_TOKEN_KEY_PATH = 'multichannel/ebay/signature/mc-ebay-signing-key';
 
 	const HDR_REQUEST_LANGUAGE = 'Content-Language';
 
@@ -56,19 +61,6 @@ abstract class BaseRestService
 	)
 	{
 		return null;
-	}
-
-	/**
-	 * Set a value
-	 */
-	public function setConfig(
-		string $option, 
-		 $value
-	):self
-	{
-		$this->config[$option] = $value;
-
-        return $this;
 	}
 
 	/**
