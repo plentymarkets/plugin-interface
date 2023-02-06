@@ -4,6 +4,8 @@ namespace Plenty\Modules\Market\Ebay\Api\Services;
 use Ebay\DigitalSignature\Signature;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Crypt;
 use Plenty\Legacy\Repositories\Market\Ebay\AccountPolicy\AccountPolicyHelper;
 use Plenty\Log\Factories\LoggerFactory;
 use Plenty\Log\Traits\Loggable;
