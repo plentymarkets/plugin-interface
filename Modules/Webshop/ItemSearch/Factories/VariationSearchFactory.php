@@ -492,6 +492,9 @@ abstract class VariationSearchFactory
 	abstract public function getMutators(
 	):array;
 
+	abstract public function getAdditionalFilterParams(
+	);
+
 	/**
 	 * Add an aggregation
 	 */

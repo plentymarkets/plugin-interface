@@ -459,6 +459,9 @@ abstract class FacetSearchFactory
 	abstract public function getMutators(
 	):array;
 
+	abstract public function getAdditionalFilterParams(
+	);
+
 	/**
 	 * Add an aggregation
 	 */
