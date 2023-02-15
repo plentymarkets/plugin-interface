@@ -21,7 +21,8 @@ abstract class PluginSendMailService
 		string $url, 
 		string $template = "", 
 		string $email = "", 
-		string $callFunction = ""
+		string $callFunction = "", 
+		int $webstoreId = null
 	):bool;
 
 	abstract public function getStatus(

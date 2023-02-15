@@ -17,4 +17,7 @@ abstract class PluginSendMail
 	abstract public function getCallFunction(
 	);
 
+	abstract public function getWebstoreId(
+	);
+
 }
