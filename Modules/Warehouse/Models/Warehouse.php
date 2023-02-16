@@ -32,6 +32,8 @@ public		$note;
 	
 public		$typeId;
 	
+public		$priority;
+	
 public		$allocationReferrerIds;
 	
 public		$onStockAvailability;
