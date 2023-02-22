@@ -41,6 +41,8 @@ abstract class MessageTypesService
 
 	const REFERRER_TYPE_PLUGIN = 'plugin';
 
+	const REFERRER_TYPE_EMAIL = 'email';
+
 	const TO_TYPE_USER = 'user';
 
 	const TO_TYPE_ROLE = 'role';
