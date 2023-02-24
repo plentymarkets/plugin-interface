@@ -32,6 +32,13 @@ interface UserRepositoryContract
 	):User;
 
 	/**
+	 * Get user by given user id
+	 */
+	public function getUserByEmail(
+		string $email
+	):User;
+
+	/**
 	 * Get all users by given status
 	 */
 	public function getUserByStatus(
