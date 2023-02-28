@@ -31,7 +31,8 @@ interface CountryRepositoryContract
 	 */
 	public function getCountriesList(
 		int $active, 
-		array $with
+		array $with, 
+		int $onlyEUCountries = null
 	):Collection;
 
 	/**
