@@ -455,7 +455,7 @@ abstract class Collection
 	 * Wrap the given value in a collection if applicable.
 	 */
 	abstract public static function wrap(
-		string $value
+		 $value
 	):Collection;
 
 	/**
