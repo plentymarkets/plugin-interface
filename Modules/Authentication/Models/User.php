@@ -42,6 +42,8 @@ public		$userClass;
 	
 public		$userRights;
 	
+public		$ipLimit;
+	
 public		$uiConfig;
 	
 public		$userType;
@@ -49,6 +51,8 @@ public		$userType;
 public		$permissions;
 	
 public		$pluginPermissions;
+	
+public		$visibilities;
 	
 public		$roles;
 	

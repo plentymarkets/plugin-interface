@@ -32,6 +32,10 @@ abstract class AuthorizationException extends AuthorizationException
 
 	const ROLE_DOESNT_EXIST = 9;
 
+	const WRONG_VISIBILITIES_FORMAT = 10;
+
+	const WRONG_PERMISSIONS_FORMAT = 11;
+
 	abstract public function __construct(
 		string $message = "", 
 		int $code = 0, 
