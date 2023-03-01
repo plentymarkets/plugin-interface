@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Fulfillment\Services;
 
 use Plenty\Legacy\Repositories\Fulfillment\Shipping\LegacyFulfillmentShippingRepository;
+use Plenty\Modules\Authorization\Services\AuthHelper;
 use Plenty\Modules\Comment\Contracts\CommentRepositoryContract;
 use Plenty\Modules\Order\Contracts\OrderRepositoryContract;
 use Plenty\Modules\Order\Models\Order;
