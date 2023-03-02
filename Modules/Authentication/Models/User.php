@@ -8,6 +8,10 @@ namespace Plenty\Modules\Authentication\Models;
 abstract class User 
 {
 
+	const PERMISSIONS_CACHE_PREFIX = 'permissionKeys_user_';
+
+	const PERMISSIONS_CACHE_TTL = 345600;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -53,6 +57,8 @@ public		$permissions;
 public		$pluginPermissions;
 	
 public		$visibilities;
+	
+public		$permissionKeys;
 	
 public		$roles;
 	
