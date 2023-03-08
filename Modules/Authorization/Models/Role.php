@@ -22,11 +22,19 @@ public		$holdParents;
 	
 public		$hidden;
 	
+public		$uuid;
+	
 public		$users;
 	
 public		$permissions;
 	
+public		$permissionKeys;
+	
 public		$accessControl;
+	
+public		$resourceAccess;
+	
+public		$visibilities;
 	
 	/**
 	 * Returns this model as an array.
