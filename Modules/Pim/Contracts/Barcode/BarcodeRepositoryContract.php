@@ -25,6 +25,14 @@ interface BarcodeRepositoryContract
 	):Collection;
 
 	/**
+	 * Get one attribute by ID
+	 */
+	public function getById(
+		int $id, 
+		array $with = []
+	):Barcode;
+
+	/**
 	 * Updates a list of barcodes
 	 */
 	public function update(
@@ -44,14 +52,6 @@ interface BarcodeRepositoryContract
 	public function delete(
 		array $data
 	):Collection;
-
-	/**
-	 * Get one attribute by ID
-	 */
-	public function getById(
-		int $id, 
-		array $with = []
-	):Barcode;
 
 	/**
 	 * Gets the total count of barcodes

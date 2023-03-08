@@ -94,6 +94,8 @@ abstract class Document
 
 	const UPLOADED = 'uploaded';
 
+	const INCOMING_ITEMS_RECEIPT = 'incoming_items_receipt';
+
 	const SHIPPING_LABEL = 'shipping_label';
 
 	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';

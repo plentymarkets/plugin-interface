@@ -24,6 +24,8 @@ public		$hidden;
 	
 public		$uuid;
 	
+public		$private_user_id;
+	
 public		$users;
 	
 public		$permissions;
