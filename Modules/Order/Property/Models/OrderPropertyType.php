@@ -194,6 +194,10 @@ abstract class OrderPropertyType
 
 	const PACKED = 94;
 
+	const ITEM_CUSTOM_OPTIONS_FILE_URL = 95;
+
+	const ITEM_CUSTOM_OPTIONS_PAGE_URL = 96;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
