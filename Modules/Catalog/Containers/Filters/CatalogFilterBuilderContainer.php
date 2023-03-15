@@ -16,4 +16,8 @@ abstract class CatalogFilterBuilderContainer
 	abstract public function getFilterBuilders(
 	):array;
 
+	abstract public function removeFilterBuilder(
+		string $key
+	);
+
 }
