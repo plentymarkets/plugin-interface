@@ -96,6 +96,8 @@ public		$addresses;
 	
 public		$primaryBillingAddress;
 	
+public		$deliveryAddresses;
+	
 public		$accounts;
 	
 public		$orders;
