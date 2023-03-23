@@ -38,9 +38,19 @@ abstract class VariationBaseFilter implements TypeInterface
 		array $numbers
 	);
 
+	/**
+	 * Restricts the result to have the main variation id.
+	 */
 	abstract public function hasMainVariationId(
 		int $mainVariationId
-	);
+	):self;
+
+	/**
+	 * Restricts the result to have any of the main variation ids.
+	 */
+	abstract public function hasMainVariationIds(
+		array $mainVariationIds
+	):self;
 
 	/**
 	 * Restricts the result to have active variations only.
