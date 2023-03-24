@@ -36,6 +36,8 @@ abstract class AuthorizationException extends AuthorizationException
 
 	const WRONG_PERMISSIONS_FORMAT = 11;
 
+	const UNKNOWN_OWNERSHIP = 12;
+
 	abstract public function __construct(
 		string $message = "", 
 		int $code = 0, 
