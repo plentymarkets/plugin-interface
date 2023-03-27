@@ -13,7 +13,8 @@ interface ContentCacheInvalidationRepositoryContract
 	 */
 	public function invalidateVariationIds(
 		array $variationIds, 
-		int $plentyId = null
+		int $plentyId = null, 
+		int $delaySeconds = 0
 	);
 
 	/**
