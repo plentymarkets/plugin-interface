@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\BI\RawData\Contracts;
 
+use Plenty\Modules\Authorization\Exception\AuthorizationException;
 use Plenty\Modules\BI\RawData\Models\RawDataConfigs;
 use Plenty\Modules\BI\RawData\Models\RawDataSearchResult;
 
