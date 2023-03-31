@@ -142,6 +142,8 @@ public		$updatedAt;
 	
 public		$references;
 	
+public		$comment;
+	
 public		$cancelledBy;
 	
 public		$cancels;
