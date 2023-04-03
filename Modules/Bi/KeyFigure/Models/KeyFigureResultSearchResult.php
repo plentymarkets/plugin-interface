@@ -18,6 +18,8 @@ public		$keyFigure;
 	
 public		$error;
 	
+public		$query;
+	
 	/**
 	 * Returns this model as an array.
 	 */
