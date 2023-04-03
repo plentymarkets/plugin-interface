@@ -198,6 +198,8 @@ abstract class OrderPropertyType
 
 	const ITEM_CUSTOM_OPTIONS_PAGE_URL = 96;
 
+	const EXTERNAL_REFUND_ID = 97;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
