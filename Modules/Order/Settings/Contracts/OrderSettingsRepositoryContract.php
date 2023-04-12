@@ -11,16 +11,23 @@ interface OrderSettingsRepositoryContract
 {
 
 	/**
+	 * Get basic order settings
+	 */
+	public function get(
+	):OrderSettings;
+
+	/**
+	 * Update basic order settings
+	 */
+	public function set(
+		array $data
+	):OrderSettings;
+
+	/**
 	 * Get order settings for store
 	 */
 	public function getStoreSettings(
 		int $storeId
 	):StoreOrderSettings;
-
-	/**
-	 * Get basic order settings
-	 */
-	public function get(
-	):OrderSettings;
 
 }

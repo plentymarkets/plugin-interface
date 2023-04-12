@@ -8,13 +8,23 @@ namespace Plenty\Modules\Order\CreditNote\Settings\Models;
 abstract class CreditNoteSettings 
 {
 
+	const DEFAULT_VALUE = 'defaultValue';
+
+	const VALUE_IS_NULLABLE = 'valueIsNullable';
+
+	const DIVERGENT_DB_KEY = 'divergentDBKey';
+
+	const LOAD_OPTION_FIELD_SEPARATELY = 'loadOptionFieldSeparately';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
 	
-public		$defaultOrderStatus;
+public		$defaultStatusId;
 	
 public		$setShippingCostsToZero;
+	
+public		$defaultOrderStatus;
 	
 	/**
 	 * Returns this model as an array.
