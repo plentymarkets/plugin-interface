@@ -1,8 +1,10 @@
 <?php
 namespace Plenty\Modules\Market\Ebay\Api\Types;
 
+use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Market\Ebay\Api\Exceptions;
 use Plenty\Modules\Market\Ebay\Api\Types;
+use Plenty\Modules\Market\MarketLogIdentifier;
 
 /**
  * The service for base type.
