@@ -134,6 +134,8 @@ public		$source;
 	
 public		$displayDate;
 	
+public		$status;
+	
 public		$content;
 	
 public		$createdAt;
