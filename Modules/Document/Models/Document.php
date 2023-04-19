@@ -96,6 +96,8 @@ abstract class Document
 
 	const INCOMING_ITEMS_RECEIPT = 'incoming_items_receipt';
 
+	const ORDER_CUSTOM = 'order_custom';
+
 	const SHIPPING_LABEL = 'shipping_label';
 
 	const SHIPPING_EXPORT_LABEL = 'shipping_export_label';
@@ -133,6 +135,8 @@ public		$userId;
 public		$source;
 	
 public		$displayDate;
+	
+public		$status;
 	
 public		$content;
 	
