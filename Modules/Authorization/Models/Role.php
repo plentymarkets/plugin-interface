@@ -32,6 +32,8 @@ public		$permissions;
 	
 public		$permissionKeys;
 	
+public		$isLinkedWithUsers;
+	
 public		$accessControl;
 	
 public		$resourceAccess;
