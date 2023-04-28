@@ -45,7 +45,8 @@ interface Checkout
 	 * Updates the ID of the shipping profile. The ID must be specified.
 	 */
 	public function setShippingProfileId(
-		int $shippingProfileId
+		int $shippingProfileId, 
+		bool $force = false
 	);
 
 	/**
