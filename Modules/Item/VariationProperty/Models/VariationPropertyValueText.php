@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\VariationProperty\Models;
 
 
 /**
- * The VariationPropertyValueText
+ * The variation property value text model. Includes language specific information for a variation property value.
  */
 abstract class VariationPropertyValueText 
 {
@@ -17,6 +17,8 @@ public		$valueId;
 public		$lang;
 	
 public		$value;
+	
+public		$characteristic;
 	
 	/**
 	 * Returns this model as an array.

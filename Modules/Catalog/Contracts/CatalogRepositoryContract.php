@@ -183,6 +183,12 @@ interface CatalogRepositoryContract
 	):Catalog;
 
 	/**
+	 * Get schedule days
+	 */
+	public function getScheduleDays(
+	):array;
+
+	/**
 	 * Sets the filter array.
 	 */
 	public function setFilters(
