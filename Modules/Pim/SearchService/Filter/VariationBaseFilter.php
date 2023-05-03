@@ -99,6 +99,20 @@ abstract class VariationBaseFilter implements TypeInterface
 	):self;
 
 	/**
+	 * Restricts the result to have the price calculation uuid
+	 */
+	abstract public function hasPriceCalculationUuid(
+		string $uuid
+	):self;
+
+	/**
+	 * Restricts the result to have the any of the price calculation uuid
+	 */
+	abstract public function hasAnyPriceCalculationUuid(
+		array $uuids
+	):self;
+
+	/**
 	 * Restricts the result to have the any of the item ids
 	 */
 	abstract public function hasItemIds(
