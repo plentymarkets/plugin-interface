@@ -3,7 +3,7 @@ namespace Plenty\Modules\Item\VariationProperty\Models;
 
 
 /**
- * The VariationPropertyValue
+ * The variation property value model. Represents a link between characteristic and item.
  */
 abstract class VariationPropertyValue 
 {

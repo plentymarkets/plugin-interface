@@ -14,6 +14,8 @@ public		$calculation;
 	
 public		$dimension;
 	
+public		$customUnit;
+	
 	/**
 	 * Returns this model as an array.
 	 */
