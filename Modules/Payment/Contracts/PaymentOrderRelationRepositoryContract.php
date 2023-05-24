@@ -61,4 +61,11 @@ interface PaymentOrderRelationRepositoryContract
 		array $paymentIds
 	):array;
 
+	/**
+	 * Detach all the payment from and order.
+	 */
+	public function detachAllPayments(
+		int $orderId
+	);
+
 }
