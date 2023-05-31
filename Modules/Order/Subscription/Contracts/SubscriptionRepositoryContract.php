@@ -65,4 +65,20 @@ interface SubscriptionRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Create a subscription from a parent order
+	 */
+	public function createFromParent(
+		int $orderId, 
+		array $data
+	):Order;
+
+	/**
+	 * Validate order items for subscription creation from parent order
+	 */
+	public function validateFromParent(
+		int $orderId, 
+		array $data = []
+	):array;
+
 }

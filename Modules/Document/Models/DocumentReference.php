@@ -52,6 +52,8 @@ public		$type;
 	
 public		$value;
 	
+public		$document;
+	
 	/**
 	 * Returns this model as an array.
 	 */
