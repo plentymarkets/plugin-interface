@@ -4,12 +4,23 @@ namespace Plenty\Modules\Account\Contact\Contracts;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Account\Contact\Models\ContactBank;
+use Plenty\Repositories\Models\PaginatedResult;
 
 /**
  * The contract for the contact payment repository.
  */
 interface InternalContactPaymentRepositoryContract 
 {
+
+	/**
+	 * Gets a collection of bank accounts of a contact. The ID of the contact must be specified.
+	 */
+	public function getBanksOfContactPaginated(
+		int $contactId, 
+		array $columns = [], 
+		int $perPage = 50, 
+		int $page = 1
+	):array;
 
 	/**
 	 * Gets a collection of bank accounts of a contact. The ID of the contact must be specified.
@@ -44,7 +55,7 @@ interface InternalContactPaymentRepositoryContract
 	):ContactBank;
 
 	/**
-	 * Deletes a bank account. The ID of the bank account must be specified. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
+	 * Deletes a bank account. The ID of the bank account must be specified.
 	 */
 	public function deleteContactBank(
 		int $contactBankId
