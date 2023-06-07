@@ -1,9 +1,9 @@
 <?php
 namespace Plenty\Modules\Market\Ebay\Api\Types;
 
+use Plenty\Modules\Market\Ebay\Api\Exceptions;
 use Plenty\Modules\Market\Ebay\Api\Helpers\Helper;
-use \Plenty\Modules\Market\Ebay\Api\Exceptions;
-use \Plenty\Modules\Market\Ebay\Api\JmesPath\JmesPathableArrayInterface;
+use Plenty\Modules\Market\Ebay\Api\JmesPath\JmesPathableArrayInterface;
 
 /**
  * The service for repeatable type.
