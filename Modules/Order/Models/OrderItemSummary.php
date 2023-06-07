@@ -26,6 +26,8 @@ public		$profitMarginSystemCurrency;
 	
 public		$profitMarginOrderCurrency;
 	
+public		$orderCommentCount;
+	
 	/**
 	 * Returns this model as an array.
 	 */
