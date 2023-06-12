@@ -272,6 +272,19 @@ abstract class VariationDataInterfaceContext
 	):VariationDataInterfaceContext;
 
 	/**
+	 * Return whether the search cache should be used or not
+	 */
+	abstract public function getUseSearchCache(
+	):bool;
+
+	/**
+	 * Set whether the search cache should be used or not. It is recommended to use this cache (Default)
+	 */
+	abstract public function setUseSearchCache(
+		bool $useSearchCache
+	):VariationDataInterfaceContext;
+
+	/**
 	 * Returns whether the context has an additional source or not
 	 */
 	abstract public function isHasAdditionalSource(
