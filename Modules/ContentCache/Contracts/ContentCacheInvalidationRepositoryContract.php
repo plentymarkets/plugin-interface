@@ -14,7 +14,8 @@ interface ContentCacheInvalidationRepositoryContract
 	public function invalidateVariationIds(
 		array $variationIds, 
 		int $plentyId = null, 
-		int $delaySeconds = 0
+		int $delaySeconds = 0, 
+		bool $invalidateParent = false
 	);
 
 	/**
@@ -22,7 +23,8 @@ interface ContentCacheInvalidationRepositoryContract
 	 */
 	public function invalidateItemIds(
 		array $itemIds, 
-		int $plentyId = null
+		int $plentyId = null, 
+		int $delaySeconds = 0
 	);
 
 	/**
