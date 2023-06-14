@@ -159,6 +159,14 @@ interface DocumentRepositoryContract
 	):bool;
 
 	/**
+	 * Check if there is a document without a reversed counter part
+	 */
+	public function documentWithoutReversalDocumentExists(
+		int $orderId, 
+		array $documentTypes
+	):bool;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(
