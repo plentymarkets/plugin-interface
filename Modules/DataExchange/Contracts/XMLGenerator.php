@@ -1,11 +1,11 @@
 <?php
 namespace Plenty\Modules\DataExchange\Contracts;
 
+use DOMAttr;
+use DOMCdataSection;
+use DOMElement;
+use DOMText;
 use Plenty\Modules\DataExchange\Models\FormatSetting;
-use \DOMAttr;
-use \DOMCdataSection;
-use \DOMElement;
-use \DOMText;
 
 /**
  * generator for xml content

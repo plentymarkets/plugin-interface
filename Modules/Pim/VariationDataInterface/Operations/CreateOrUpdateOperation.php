@@ -5,6 +5,7 @@ use DB;
 use Plenty\Modules\Pim\DocumentService\Models\Variation;
 use Plenty\Modules\Pim\DocumentService\Models\Variation\Base;
 use Plenty\Modules\Pim\DocumentService\Models\WriteResponse;
+use Plenty\Modules\Pim\VariationDataInterface\Contracts\OperationInterface;
 use stdClass;
 
 /**
@@ -12,6 +13,13 @@ use stdClass;
  */
 abstract class CreateOrUpdateOperation 
 {
+
+	/**
+	 * Updated variations will be direct refreshed in the elasticsearch index. !!! ONLY USE IN AGREEMENT WITH PIM TEAM !!!
+	 */
+	abstract public function setDirectRefresh(
+		bool $directRefresh
+	):self;
 
 	abstract public function add(
 		 $variations

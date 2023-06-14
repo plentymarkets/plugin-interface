@@ -1,4 +1,5 @@
 <?php
+
 namespace Plenty\Plugin\Log;
 
 use Plenty\Log\Contracts\LoggerContract;
@@ -11,10 +12,10 @@ use Plenty\Modules\Plugin\Annotations\PluginTrait;
  */
 trait Reportable
 {
-	/**
-	 * @var null|string
-	 */
-	private $pluginNamespaceReportable = null;
+    /**
+     * @var null|string
+     */
+    private $pluginNamespaceReportable = null;
 
     /**
      * Instantiates Logger using the current namespace and directly reports.
@@ -24,26 +25,23 @@ trait Reportable
      * @param mixed $additionalInfo
      * @param array $references
      */
-	private function report($identifier, $code, $additionalInfo = null, $references = array())
-	{
-		if(is_null($this->pluginNamespaceReportable))
-		{
-			$classInfo = explode('\\', trim(get_class($this), '\\'));
+    private function report($identifier, $code, $additionalInfo = null, $references = array())
+    {
+        if (is_null($this->pluginNamespaceReportable)) {
+            $classInfo = explode('\\', trim(get_class($this), '\\'));
 
-			$this->pluginNamespaceReportable = array_shift($classInfo);
-		}
+            $this->pluginNamespaceReportable = array_shift($classInfo);
+        }
 
         /** @var LoggerContract $logger */
-		$logger = pluginApp(LoggerFactory::class)->getLogger($this->pluginNamespaceReportable, $identifier);
+        $logger = pluginApp(LoggerFactory::class)->getLogger($this->pluginNamespaceReportable, $identifier);
 
-        if(is_array($references) && count($references))
-        {
-            foreach($references as $referenceType => $referenceValue)
-            {
+        if (is_array($references) && count($references)) {
+            foreach ($references as $referenceType => $referenceValue) {
                 $logger->addReference($referenceType, $referenceValue);
             }
         }
 
         $logger->report($code, $additionalInfo);
-	}
+    }
 }

@@ -32,6 +32,14 @@ abstract class VariationBaseFilter implements TypeInterface
 	):self;
 
 	/**
+	 * Restricts the result to have the model. Possible precisions are: exact, fuzzy and autocomplete
+	 */
+	abstract public function hasModel(
+		string $model, 
+		string $precision
+	):self;
+
+	/**
 	 * Restricts the result to have any of the numbers.
 	 */
 	abstract public function hasAnyNumber(
