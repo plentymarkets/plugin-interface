@@ -9,6 +9,8 @@ abstract class Message
 {
 
 	const STORAGE = 'messages';
+
+	const DATETIME_FORMAT = 'Y-m-d\TH:i:s.000\Z';
 	
 public		$uuid;
 	
