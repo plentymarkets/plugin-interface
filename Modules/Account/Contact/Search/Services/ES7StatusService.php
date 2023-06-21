@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Contact\Search\Services;
 
-use \Plenty\Modules\Account\Contact\Search7\Services\ES7StatusService as ES7StatusServiceNew;
+use Plenty\Modules\Account\Contact\Search7\Services\ES7StatusService as ES7StatusServiceNew;
 
 /**
  * Elastic Search 7 status checker service
