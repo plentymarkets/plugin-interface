@@ -22,6 +22,7 @@ use Plenty\Modules\Messenger\Filters\IsNotDeletedFilter;
 use Plenty\Modules\Messenger\Filters\PlentyIdHashFilter;
 use Plenty\Modules\Messenger\Filters\UuidFilter;
 use Plenty\Modules\Messenger\Filters\UuidOrParentFilter;
+use Plenty\Modules\Messenger\Helpers\MessageHelper;
 use Plenty\Modules\Messenger\Index\MessengerIndex;
 use Plenty\Modules\Messenger\Models\Message;
 
@@ -65,6 +66,13 @@ abstract class MessagesSearchService
 	 */
 	abstract public function getTotalEntries(
 	):int;
+
+	/**
+	 * Get an instance of the model.
+	 */
+	abstract public static function loadMessage(
+		string $path
+	):Message;
 
 	/**
 	 * Gets a stream of messages. The given UUID can be the UUID of the first message in the stream or one of the replied messages.
