@@ -9,7 +9,7 @@ interface ContentCacheInvalidationRepositoryContract
 {
 
 	/**
-	 * Invalidate all cache entries related to given variation IDs.
+	 * Completely remove all cache entries related to given variation IDs.
 	 */
 	public function invalidateVariationIds(
 		array $variationIds, 

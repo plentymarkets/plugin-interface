@@ -4,6 +4,7 @@ namespace Plenty\Modules\Catalog\Services\Converter\Containers;
 use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\BaseResultConverter;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\CSVResultConverter;
+use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\CSVResultConverterArrayAsJson;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\JSONResultConverter;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\TXTResultConverter;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\XMLResultConverter;
