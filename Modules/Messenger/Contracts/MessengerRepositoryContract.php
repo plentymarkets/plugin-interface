@@ -1,13 +1,18 @@
 <?php
 namespace Plenty\Modules\Messenger\Contracts;
 
+use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
+use Plenty\Modules\Messenger\Conversations\Errors\ConversationException;
 use Plenty\Modules\Messenger\Models\Attachment;
 use Plenty\Modules\Messenger\Models\Message;
 use Plenty\Modules\Messenger\Models\MessageMetaDataControls;
 use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Models\PaginatedResult;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * The MessengerRepositoryContract is the interface for the messenger repository. This interface defines methods to add and show/list messages.
@@ -43,6 +48,13 @@ interface MessengerRepositoryContract
 		bool $successors = true, 
 		int $amount = self::DEFAULT_MESSAGES_AMOUNT
 	):array;
+
+	/**
+	 * Lists messages for an archived conversation
+	 */
+	public function listArchivedMessages(
+		string $conversationUuid
+	):PaginatedResult;
 
 	/**
 	 * Lists messages.
