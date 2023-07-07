@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Order\Shipping\Returns\Services;
 
 use Illuminate\Translation\Translator;
+use Plenty\Modules\Authentication\Contracts\UserRepositoryContract;
 use Plenty\Modules\Authorization\Services\AuthHelper;
 use Plenty\Modules\Comment\Contracts\CommentRepositoryContract;
 use Plenty\Modules\Document\Contracts\DocumentRepositoryContract;
