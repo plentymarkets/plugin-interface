@@ -1,6 +1,8 @@
 <?php
 namespace Plenty\Modules\Account\Contact\Contracts;
 
+use Exception;
+use Plenty\Modules\Cloud\Storage\Exceptions\StorageException;
 use Plenty\Modules\Cloud\Storage\Models\StorageObject;
 use Plenty\Modules\Cloud\Storage\Models\StorageObjectList;
 
@@ -33,6 +35,15 @@ interface ContactDocumentContract
 		string $key, 
 		int $contactId
 	):string;
+
+	/**
+	 * Stores an external link as a document
+	 */
+	public function uploadDocumentLink(
+		string $link, 
+		string $title, 
+		int $contactId
+	):StorageObject;
 
 	/**
 	 * Upload document to contact directory
