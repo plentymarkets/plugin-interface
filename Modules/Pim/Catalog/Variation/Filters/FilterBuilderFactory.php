@@ -27,6 +27,7 @@ use Plenty\Modules\Pim\Catalog\Variation\Filters\Tag\VariationHasAtLeastOneTag;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Tag\VariationHasTags;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationCreatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationHasChildren;
+use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIds;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIsActive;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIsMain;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationRelatedUpdatedAt;
@@ -108,6 +109,9 @@ abstract class FilterBuilderFactory
 	):VariationCreatedAt;
 
 	abstract public function variationHasChildren(
+	);
+
+	abstract public function variationIds(
 	);
 
 	abstract public function variationIsActive(
