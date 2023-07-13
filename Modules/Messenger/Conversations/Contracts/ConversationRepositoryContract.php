@@ -3,6 +3,7 @@ namespace Plenty\Modules\Messenger\Conversations\Contracts;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Auth\Access\AuthorizationException;
+use JsonException;
 use Plenty\Modules\Account\Exceptions\CRMCritical;
 use Plenty\Modules\Messenger\Conversations\Errors\ConversationException;
 use Plenty\Modules\Messenger\Conversations\Models\Conversation;
@@ -199,7 +200,7 @@ interface ConversationRepositoryContract
 	 * Permanently deletes a batch of conversations from the archive
 	 */
 	public function permanentlyDeleteArchivedConversations(
-		string $uuids
+		array $uuids
 	):int;
 
 	/**
