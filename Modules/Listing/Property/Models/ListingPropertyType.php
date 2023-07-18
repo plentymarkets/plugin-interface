@@ -94,6 +94,8 @@ abstract class ListingPropertyType
 
 	const EBAY_BEST_OFFER_TYPE = 115;
 
+	const EBAY_REPAIR_SCORE = 116;
+
 	const HOOD_SHOW_ON_SHOP_STARTPAGE = 200;
 
 	const HOOD_SHIPPING_DISCOUNT = 201;
