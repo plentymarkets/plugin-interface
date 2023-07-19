@@ -200,6 +200,8 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_REFUND_ID = 97;
 
+	const SKU = 98;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
