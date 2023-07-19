@@ -122,6 +122,8 @@ public		$maximumOrderQuantity;
 	
 public		$manufacturer;
 	
+public		$producingCountry;
+	
 public		$texts;
 	
 public		$ebayTitles;
