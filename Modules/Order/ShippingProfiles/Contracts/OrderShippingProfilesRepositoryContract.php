@@ -14,14 +14,16 @@ interface OrderShippingProfilesRepositoryContract
 	 * Get the shipping profile combinations for an order.
 	 */
 	public function getCombinations(
-		int $orderId
+		int $orderId, 
+		bool $uniqueMainShippingProfiles = false
 	):array;
 
 	/**
 	 * Get the shipping profile combinations for the given order data.
 	 */
 	public function getCombinationsForOrderData(
-		array $data
+		array $data, 
+		bool $uniqueMainShippingProfiles = false
 	):array;
 
 }
