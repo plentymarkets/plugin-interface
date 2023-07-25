@@ -16,8 +16,8 @@ interface VariationCategoryRepositoryContract
 	 * Gets the link between a category and a variation. The ID of the variation and the ID of the category must be specified.
 	 */
 	public function show(
-		int $categoryId, 
-		int $variationId
+		int $variationId, 
+		int $categoryId
 	):VariationCategory;
 
 	/**
@@ -32,16 +32,16 @@ interface VariationCategoryRepositoryContract
 	 */
 	public function update(
 		array $data, 
-		int $categoryId, 
-		int $variationId
+		int $variationId, 
+		int $categoryId
 	):VariationCategory;
 
 	/**
 	 * Deletes the link between a category and a variation. The ID of the variation and the ID of the category must be specified.
 	 */
 	public function delete(
-		int $categoryId, 
-		int $variationId
+		int $variationId, 
+		int $categoryId
 	):DeleteResponse;
 
 	/**

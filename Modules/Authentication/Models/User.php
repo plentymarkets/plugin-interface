@@ -72,6 +72,10 @@ public		$oauthAccessTokensId;
 	
 public		$user_email;
 	
+public		$accountEmail;
+	
+public		$invitationStatus;
+	
 	/**
 	 * Returns this model as an array.
 	 */
