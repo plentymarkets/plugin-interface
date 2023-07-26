@@ -40,6 +40,8 @@ public		$createdAt;
 	
 public		$updatedAt;
 	
+public		$hasStockReservationForEbay;
+	
 public		$listingMarket;
 	
 public		$variations;
