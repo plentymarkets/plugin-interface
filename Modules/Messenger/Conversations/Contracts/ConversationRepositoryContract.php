@@ -7,6 +7,8 @@ use JsonException;
 use Plenty\Modules\Account\Exceptions\CRMCritical;
 use Plenty\Modules\Messenger\Conversations\Errors\ConversationException;
 use Plenty\Modules\Messenger\Conversations\Models\Conversation;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * The ConversationRepositoryContract is the interface for the messenger conversations repository. This interface defines methods to add, update and show conversations.
@@ -137,22 +139,6 @@ interface ConversationRepositoryContract
 	):int;
 
 	/**
-	 * Assigns batch of conversation to batch of folders. The list of folders must belong to the current logged in user ID.
-	 */
-	public function updateConversationsFoldersRelations(
-		array $conversationsUuids, 
-		array $foldersUuids
-	):bool;
-
-	/**
-	 * Removes conversation from all folders except the ones passed to array $foldersUuidsToKeep. This operation will be performed only for folders belonging to current logged in user ID.
-	 */
-	public function removeConversationFolders(
-		string $conversationsUuid, 
-		array $foldersUuidsToKeep
-	):bool;
-
-	/**
 	 * Sets the type and status for a batch of conversations
 	 */
 	public function updateConversationsTypeAndStatus(
@@ -229,6 +215,38 @@ interface ConversationRepositoryContract
 	 */
 	public function automaticallyArchiveConversations(
 		int $days
+	):bool;
+
+	/**
+	 * Assigns batch of conversation to batch of folders. The list of folders must belong to the current logged in user ID.
+	 */
+	public function updateConversationsFoldersRelations(
+		array $conversationsUuids, 
+		array $foldersUuids
+	):bool;
+
+	/**
+	 * Removes conversation from all folders except the ones passed to array $foldersUuidsToKeep.
+	 */
+	public function updateSingleConversationFoldersRelations(
+		string $conversationsUuid, 
+		array $foldersUuidsToKeep
+	):bool;
+
+	/**
+	 * Add multiple conversations to multiple folders
+	 */
+	public function addToFolders(
+		array $conversationsUuids, 
+		array $foldersUuids
+	):bool;
+
+	/**
+	 * Remove multiple conversations from multiple folders
+	 */
+	public function removeFromFolders(
+		array $conversationsUuids, 
+		array $foldersUuids
 	):bool;
 
 }

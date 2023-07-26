@@ -54,6 +54,8 @@ public		$updatedAt;
 	
 public		$type;
 	
+public		$pricePosition;
+	
 	/**
 	 * Returns this model as an array.
 	 */
