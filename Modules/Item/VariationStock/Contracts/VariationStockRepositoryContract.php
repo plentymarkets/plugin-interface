@@ -57,7 +57,8 @@ interface VariationStockRepositoryContract
 		int $variationId, 
 		array $data, 
 		bool $calcStockLater = false, 
-		bool $finishReceiptLater = false
+		bool $finishReceiptLater = false, 
+		bool $deactivateAutoTransaction = false
 	):array;
 
 	/**
