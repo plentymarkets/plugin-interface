@@ -226,9 +226,9 @@ interface ConversationRepositoryContract
 	):bool;
 
 	/**
-	 * Removes conversation from all folders except the ones passed to array $foldersUuidsToKeep.
+	 * Removes conversation from all folders except the ones passed to array $foldersUuidsToKeep. This operation will be performed only for folders belonging to current logged in user ID.
 	 */
-	public function updateSingleConversationFoldersRelations(
+	public function removeConversationFolders(
 		string $conversationsUuid, 
 		array $foldersUuidsToKeep
 	):bool;
