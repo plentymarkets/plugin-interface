@@ -26,8 +26,13 @@ abstract class CronContainer
 
 	const PHP_8 = 1441;
 
+	const CRON_JOB_EXECUTION_TYPE_DEDICATED = 'dedicated';
+
+	const CRON_JOB_EXECUTION_TYPE_SHARED = 'shared';
+
 	/**
-	 * Use this method to add a handler class and a schedule time for your desired cron event. The action will then be triggered according to the given schedule.
+	 * Use this method to add a handler class and a schedule time for your desired cron event. The action will then be
+triggered according to the given schedule.
 	 */
 	abstract public function add(
 		int $schedule, 
