@@ -36,7 +36,8 @@ triggered according to the given schedule.
 	 */
 	abstract public function add(
 		int $schedule, 
-		string $handlerClass
+		string $handlerClass, 
+		int $position = 0
 	);
 
 }
