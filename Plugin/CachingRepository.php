@@ -2,7 +2,7 @@
 namespace Plenty\Plugin;
 
 use Plenty\Log\Traits\Loggable;
-use Plenty\Modules\Plugin\Services\Monitoring\Facades\RedisCounter;
+use Plenty\Modules\Plugin\Monitoring\Facades\RedisCounter;
 
 /**
  * caching repository

@@ -3,7 +3,7 @@ namespace Plenty\Modules\Plugin\DataBase\Contracts;
 
 use Illuminate\Database\Query\Builder;
 use Plenty\Modules\Plugin\DataBase\Models\Schema;
-use Plenty\Modules\Plugin\Services\Monitoring\Facades\MysqlCounter;
+use Plenty\Modules\Plugin\Monitoring\Facades\MysqlCounter;
 
 /**
  * database query
