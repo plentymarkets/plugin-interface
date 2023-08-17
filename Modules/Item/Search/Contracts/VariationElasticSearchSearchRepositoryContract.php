@@ -5,7 +5,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Contracts\ElasticSearchSearchRepositoryCo
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
 
 /**
- * kommt noch
+ * deprecated
  */
 interface VariationElasticSearchSearchRepositoryContract 
 {
