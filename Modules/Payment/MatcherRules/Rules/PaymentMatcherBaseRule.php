@@ -1,31 +1,14 @@
 <?php
 namespace Plenty\Modules\Payment\MatcherRules\Rules;
 
-use Plenty\Log\Traits\Loggable;
-use Plenty\Modules\Helper\Contracts\KeyValueStorageRepositoryContract;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Payment\Models\Payment;
 
 /**
- * Amount Payment Matcher Rule
+ * Abstract Payment Matcher Rule
  */
-abstract class MatchAmount 
+abstract class PaymentMatcherBaseRule 
 {
-
-	const SCORE_UP = 35;
-
-	const SCORE_UP_WITH_DIFF = 18;
-
-	abstract public function canScore(
-		Payment $payment, 
-		int $matchScore, 
-		array $scoringLog
-	):bool;
-
-	abstract public function score(
-		Payment $payment, 
-		Order $order
-	):float;
 
 	abstract public function getScoreUp(
 	):int;
@@ -47,5 +30,16 @@ abstract class MatchAmount
 	abstract public function calculateMatchingCondition(
 		Payment $payment
 	):int;
+
+	abstract public function canScore(
+		Payment $payment, 
+		int $matchScore, 
+		array $scoringLog
+	):bool;
+
+	abstract public function score(
+		Payment $payment, 
+		Order $order
+	):float;
 
 }
