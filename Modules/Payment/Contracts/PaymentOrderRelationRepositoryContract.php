@@ -68,4 +68,11 @@ interface PaymentOrderRelationRepositoryContract
 		int $orderId
 	);
 
+	/**
+	 * Reset paid amount of order payment and add details in payment history
+	 */
+	public function resetPaidAmount(
+		Payment $payment
+	);
+
 }
