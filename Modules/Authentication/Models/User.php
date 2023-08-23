@@ -76,6 +76,8 @@ public		$accountEmail;
 	
 public		$invitationStatus;
 	
+public		$loginType;
+	
 	/**
 	 * Returns this model as an array.
 	 */
