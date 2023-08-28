@@ -1,23 +1,18 @@
 <?php
-namespace Plenty\Modules\Flow\StepActions\Definitions\Contracts;
+namespace Plenty\Modules\Flow\StepControls\Definitions\Contracts;
 
 use Exception;
 use Illuminate\Translation\Translator;
-use Plenty\Modules\Flow\Models\Filter;
 use Plenty\Modules\Flow\Models\Input;
 use Plenty\Modules\Flow\Models\Output;
-use Plenty\Modules\Flow\StepActions\Definitions\Exceptions\StepActionDefinitionException;
-use Plenty\Modules\Flow\StepActions\Definitions\Models\UI\StepActionUI;
+use Plenty\Modules\Flow\StepControls\Definitions\Exceptions\StepControlDefinitionException;
 use Plenty\Modules\Fulfillment\DataModels\ConfigForm\FormField;
 
 /**
- * Flow step action
+ * Flow step control
  */
-abstract class StepActionDefinitionContract 
+abstract class StepControlDefinitionContract 
 {
-
-	abstract public function getUIAction(
-	):StepActionUI;
 
 	abstract public function getIdentifier(
 	):string;
@@ -39,8 +34,7 @@ abstract class StepActionDefinitionContract
 
 	abstract public function performTask(
 		array $inputs, 
-		array $configFields, 
-		 $filter = null
+		array $configFields
 	):array;
 
 	abstract public function validateConfigFields(

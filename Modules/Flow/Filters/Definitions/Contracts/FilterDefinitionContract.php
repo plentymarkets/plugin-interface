@@ -1,23 +1,20 @@
 <?php
-namespace Plenty\Modules\Flow\StepActions\Definitions\Contracts;
+namespace Plenty\Modules\Flow\Filters\Definitions\Contracts;
 
 use Exception;
 use Illuminate\Translation\Translator;
-use Plenty\Modules\Flow\Models\Filter;
+use Plenty\Modules\Flow\Contracts\UIConfigFormContract;
+use Plenty\Modules\Flow\Filters\Definitions\Exceptions\FilterDefinitionException;
 use Plenty\Modules\Flow\Models\Input;
 use Plenty\Modules\Flow\Models\Output;
-use Plenty\Modules\Flow\StepActions\Definitions\Exceptions\StepActionDefinitionException;
-use Plenty\Modules\Flow\StepActions\Definitions\Models\UI\StepActionUI;
 use Plenty\Modules\Fulfillment\DataModels\ConfigForm\FormField;
+use Plenty\Modules\Fulfillment\DataModels\ConfigForm\SelectboxField;
 
 /**
- * Flow step action
+ * Flow filter
  */
-abstract class StepActionDefinitionContract 
+abstract class FilterDefinitionContract 
 {
-
-	abstract public function getUIAction(
-	):StepActionUI;
 
 	abstract public function getIdentifier(
 	):string;
@@ -34,14 +31,17 @@ abstract class StepActionDefinitionContract
 	abstract public function getRequiredInputTypes(
 	):array;
 
-	abstract public function getProvidedOutputTypes(
+	abstract public function getOperators(
 	):array;
 
-	abstract public function performTask(
+	abstract public function performFilter(
 		array $inputs, 
-		array $configFields, 
-		 $filter = null
-	):array;
+		array $configFields
+	):bool;
+
+	abstract public function addOperators(
+		UIConfigFormContract $configForm
+	):UIConfigFormContract;
 
 	abstract public function validateConfigFields(
 		array $configFields
