@@ -121,7 +121,8 @@ interface ConversationRepositoryContract
 	 * Search and returns a list of possible receivers. Search is done by contact name, contact id, order ID, user ID, user name. Search term must have minimum 3 letters
 	 */
 	public function searchReceiver(
-		string $searchTerm
+		string $searchTerm, 
+		int $companyId = null
 	):array;
 
 	/**

@@ -21,4 +21,17 @@ interface ContactElasticSearchSearchRepositoryContract
 		string $with = ""
 	):FilteredPaginatedResult;
 
+	/**
+	 * Search contacts with the given filters.
+	 */
+	public function searchAfter(
+		int $itemsPerPage = 50, 
+		array $filters = [], 
+		string $sortBy = "id", 
+		string $sortOrder = "desc", 
+		string $with = "", 
+		array $searchAfterKey = [], 
+		bool $withResult = true
+	):array;
+
 }
