@@ -66,6 +66,8 @@ public		$addressRelations;
 	
 public		$orderItems;
 	
+public		$sortedOrderItems;
+	
 public		$properties;
 	
 public		$relations;
