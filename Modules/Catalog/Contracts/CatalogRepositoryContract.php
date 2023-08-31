@@ -2,7 +2,6 @@
 namespace Plenty\Modules\Catalog\Contracts;
 
 use Exception;
-use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Catalog\Models\Catalog;
@@ -139,6 +138,14 @@ interface CatalogRepositoryContract
 	public function getCatalogPreview(
 		string $id
 	):array;
+
+	/**
+	 * Get the preview for an export with a specific VDI catalog
+	 */
+	public function getVDICatalogPreview(
+		Catalog $catalog, 
+		array $data
+	);
 
 	/**
 	 * Migrates catalogs from Dynamo DB to S3
