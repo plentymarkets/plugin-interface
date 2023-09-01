@@ -3,6 +3,7 @@ namespace Plenty\Modules\Flow\StepControls\Definitions\Contracts;
 
 use Exception;
 use Illuminate\Translation\Translator;
+use Plenty\Modules\Flow\Models\Filter;
 use Plenty\Modules\Flow\Models\Input;
 use Plenty\Modules\Flow\Models\Output;
 use Plenty\Modules\Flow\StepControls\Definitions\Exceptions\StepControlDefinitionException;
@@ -34,8 +35,9 @@ abstract class StepControlDefinitionContract
 
 	abstract public function performTask(
 		array $inputs, 
-		array $configFields
-	):array;
+		array $configFields, 
+		 $filterField = null
+	):bool;
 
 	abstract public function validateConfigFields(
 		array $configFields
