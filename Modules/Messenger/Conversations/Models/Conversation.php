@@ -84,6 +84,8 @@ public		$isMigratedToEs;
 	
 public		$isArchived;
 	
+public		$conversationPreview;
+	
 	/**
 	 * Returns this model as an array.
 	 */
