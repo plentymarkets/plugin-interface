@@ -9,7 +9,8 @@ use Plenty\Modules\Account\Address\Models\Address;
 use Plenty\Modules\Account\Address\Models\AddressContactRelation;
 
 /**
- * The ContactAddressRepositoryContract is the interface for the contact address repository. This interface allows to list, get, create, update, add and delete addresses of the contact.
+ * The ContactAddressRepositoryContract is the interface for the contact address repository.
+ * This interface allows to list, get, create, update, add and delete addresses of the contact.
  */
 interface ContactAddressRepositoryContract 
 {
@@ -31,7 +32,8 @@ interface ContactAddressRepositoryContract
 	):Address;
 
 	/**
-	 * Creates an address, associates it immediately with the given contact ID with the given type and returns the new address.
+	 * Creates an address, associates it immediately with the given contact ID with
+the given type and returns the new address.
 	 */
 	public function createAddress(
 		array $data, 
@@ -94,7 +96,15 @@ interface ContactAddressRepositoryContract
 	):AddressContactRelation;
 
 	/**
-	 * Deletes an existing address of a given contact and type. Returns `true` if deletion was successful. Returns `false` if deletion was not successful.
+	 * Returns true if contact has primary address of type
+	 */
+	public function hasPrimaryAddress(
+		int $contactId, 
+		int $addressTypeId
+	):bool;
+
+	/**
+	 * Deletes an existing address of a given contact and type. Returns `true` if deletion was successful.
 	 */
 	public function deleteAddress(
 		int $addressId, 

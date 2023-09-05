@@ -37,7 +37,7 @@ abstract class StepControlDefinitionContract
 		array $inputs, 
 		array $configFields, 
 		 $filterField = null
-	):bool;
+	);
 
 	abstract public function validateConfigFields(
 		array $configFields

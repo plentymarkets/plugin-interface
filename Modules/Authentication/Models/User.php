@@ -78,6 +78,8 @@ public		$invitationStatus;
 	
 public		$loginType;
 	
+public		$blockLegacyLogin;
+	
 	/**
 	 * Returns this model as an array.
 	 */
