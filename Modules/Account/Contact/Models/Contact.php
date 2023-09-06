@@ -8,6 +8,28 @@ namespace Plenty\Modules\Account\Contact\Models;
 abstract class Contact 
 {
 
+	const UNQUALIFIED_LEAD_STATUS_TYPE = 'unqualified';
+
+	const ON_HOLD_LEAD_STATUS_TYPE = 'onhold';
+
+	const QUALIFIED_LEAD_STATUS_TYPE = 'qualified';
+
+	const WORKING_LEAD_STATUS_TYPE = 'working';
+
+	const BASIC_LEAD_LEAD_STATUS_TYPE = 'basiclead';
+
+	const CONVERTED_LEAD_STATUS_TYPE = 'converted';
+
+	const LOST_LEAD_STATUS_TYPE = 'lost';
+
+	const MALE_GENDER_TYPE = 'male';
+
+	const FEMALE_GENDER_TYPE = 'female';
+
+	const DIVERSE_GENDER_TYPE = 'diverse';
+
+	const CONTACT_GENDERS = ['male','female','diverse'];
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

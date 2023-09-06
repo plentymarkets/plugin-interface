@@ -36,7 +36,7 @@ abstract class FilterDefinitionContract
 
 	abstract public function performFilter(
 		array $inputs, 
-		array $configFields
+		array $filterField
 	):bool;
 
 	abstract public function addOperators(
