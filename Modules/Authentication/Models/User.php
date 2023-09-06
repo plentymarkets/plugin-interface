@@ -8,6 +8,10 @@ namespace Plenty\Modules\Authentication\Models;
 abstract class User 
 {
 
+	const INVITATION_STATUS_PENDING = 'pending';
+
+	const INVITATION_STATUS_ACCEPTED = 'accepted';
+
 	const PERMISSIONS_CACHE_PREFIX = 'permissionKeys_user_';
 
 	const PERMISSIONS_CACHE_TTL = 345600;
