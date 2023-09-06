@@ -202,6 +202,8 @@ abstract class OrderPropertyType
 
 	const SKU = 98;
 
+	const EXTERNAL_ORDER_ITEM_STATUS = 99;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
