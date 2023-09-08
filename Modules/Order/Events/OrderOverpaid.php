@@ -23,4 +23,25 @@ abstract class OrderOverpaid extends \Plenty\Modules\Order\Events\OrderPaidEvent
 	abstract public function getOrder(
 	):Order;
 
+	abstract public function broadcastAs(
+	);
+
+	abstract public function broadcastPayload(
+	);
+
+	abstract public function getWebstoreId(
+	);
+
+	abstract public function broadcastWhen(
+	);
+
+	abstract public function broadcastConnections(
+	);
+
+	abstract public function broadcastOn(
+	);
+
+	abstract public function broadcastWith(
+	);
+
 }

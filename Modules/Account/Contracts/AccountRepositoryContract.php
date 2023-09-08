@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Contracts;
 
+use Exception;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Account\Models\Account;
@@ -10,7 +11,9 @@ use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * The AccountRepositoryContract is the interface for the account repository. This interface allows to list, get, create, update and delete accounts. An account contains company-related data. It is also possible to list all contacts of an account.
+ * The AccountRepositoryContract is the interface for the account repository.
+ * This interface allows to list, get, create, update and delete accounts.
+ *     An account contains company-related data. It is also possible to list all contacts of an account.
  */
 interface AccountRepositoryContract 
 {
@@ -23,7 +26,7 @@ interface AccountRepositoryContract
 	):Account;
 
 	/**
-	 * Updates an existing company and returns it. The ID of the company must be specified. An account is equivalent to a company.
+	 * Updates an existing company and returns it. The ID of the company must be specified.
 	 */
 	public function updateAccount(
 		array $data, 
@@ -31,7 +34,7 @@ interface AccountRepositoryContract
 	):Account;
 
 	/**
-	 * Deletes a company. The ID of the company must be specified. Returns `true` if deletion was successful. Returns `false` if deletion was not successful. An account is equivalent to a company.
+	 * Deletes a company. The ID of the company must be specified. Returns `true` if deletion was successful.
 	 */
 	public function deleteAccount(
 		int $accountId
@@ -43,6 +46,13 @@ interface AccountRepositoryContract
 	public function findAccountById(
 		int $accountId
 	):Account;
+
+	/**
+	 * Gets multiple accounts. The IDs of the accounts must be specified.
+	 */
+	public function findAccountsByIds(
+		array $accountIds
+	);
 
 	/**
 	 * Returns a collection of all companies. An account is equivalent to a company.
