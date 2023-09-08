@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Account\Contracts;
 
+use Exception;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Account\Models\Account;
@@ -44,8 +45,20 @@ interface AccountRepositoryContract
 		int $accountId
 	):Account;
 
+    /**
+     * Gets multiple accounts. The IDs of the accounts must be specified.
+     *
+     * @param array $accountIds
+     *
+     * @return Collection|array|null
+     *
+     * @throws Exception
+     */
+    public function findAccountsByIds(array $accountIds):Collection|array|null;
+
 	/**
 	 * Returns a collection of all companies. An account is equivalent to a company.
+     *
 	 */
 	public function allAccounts(
 		array $columns = [], 
