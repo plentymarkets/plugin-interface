@@ -25,4 +25,11 @@ interface MultiCreditNoteRepositoryContract
 		array $data
 	):Order;
 
+	/**
+	 * Delete a multi credit note
+	 */
+	public function delete(
+		int $orderId
+	);
+
 }
