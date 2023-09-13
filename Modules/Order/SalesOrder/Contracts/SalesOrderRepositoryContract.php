@@ -62,6 +62,14 @@ interface SalesOrderRepositoryContract
 	):Order;
 
 	/**
+	 * Validate order items for create a sales order from a parent order
+	 */
+	public function validateFromParent(
+		int $orderId, 
+		array $data = []
+	):array;
+
+	/**
 	 * Get a sales order create preview for the given order data.
 	 */
 	public function previewCreate(

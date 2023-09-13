@@ -68,6 +68,8 @@ abstract class ContactOption
 
 	const SUBTYPE_FOLLOW_UP_DATE = 17;
 
+	const SUBTYPE_SUPPORT_PIN = 501;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

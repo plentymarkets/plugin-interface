@@ -21,6 +21,15 @@ interface CategoryRepositoryContract
 	);
 
 	/**
+	 * Return one category by category url.
+	 */
+	public function getByCategoryUrl(
+		string $categoryUrl, 
+		string $language = null, 
+		int $webstoreId = null
+	):Category;
+
+	/**
 	 * Retrieve the url for a category by id.
 	 */
 	public function getUrl(
