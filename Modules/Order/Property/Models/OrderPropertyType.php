@@ -204,6 +204,8 @@ abstract class OrderPropertyType
 
 	const EXTERNAL_ORDER_ITEM_STATUS = 99;
 
+	const PICKING_PRIORITY = 101;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

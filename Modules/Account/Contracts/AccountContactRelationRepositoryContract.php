@@ -38,7 +38,8 @@ interface AccountContactRelationRepositoryContract
 	 */
 	public function updateAccountContactRelationIsPrimary(
 		int $accountContactRelationId, 
-		bool $isPrimary
+		bool $isPrimary, 
+		array $data = []
 	):AccountContactRelation;
 
 }

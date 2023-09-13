@@ -25,4 +25,11 @@ interface MultiSalesOrderRepositoryContract
 		array $data
 	):Order;
 
+	/**
+	 * Delete a multi sales order
+	 */
+	public function delete(
+		int $orderId
+	);
+
 }
