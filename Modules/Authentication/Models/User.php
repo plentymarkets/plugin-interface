@@ -78,6 +78,8 @@ public		$user_email;
 	
 public		$accountEmail;
 	
+public		$IsMigrated;
+	
 public		$invitationStatus;
 	
 public		$loginType;
