@@ -13,7 +13,8 @@ use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * The ContactRepositoryContract is the interface for the contact repository. This interface allows to list, get, create, update and delete contacts. A contact is equivalent to a person.
+ * The ContactRepositoryContract is the interface for the contact repository.
+ * This interface allows to list, get, create, update and delete contacts. A contact is equivalent to a person.
  */
 interface ContactRepositoryContract 
 {
