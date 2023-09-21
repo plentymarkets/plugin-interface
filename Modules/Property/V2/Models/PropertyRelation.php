@@ -8,6 +8,8 @@ namespace Plenty\Modules\Property\V2\Models;
 abstract class PropertyRelation 
 {
 
+	const PROPERTY_RELATION_TYPE_CONTACT = 'contact';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
