@@ -35,4 +35,12 @@ interface RevenueAccountRepositoryContract
 		int $countryId
 	):RevenueAccountCountryConfiguration;
 
+	/**
+	 * Updates the revenue account configuration of an accounting location. The ID of the accounting location has to be specified.
+	 */
+	public function update(
+		int $locationId, 
+		array $data
+	):RevenueAccountLocationConfiguration;
+
 }
