@@ -40,7 +40,9 @@ interface DocumentRepositoryContract
 		int $page = 1, 
 		int $itemsPerPage = 50, 
 		array $columns = [], 
-		array $with = []
+		array $with = [], 
+		string $sortBy = "id", 
+		string $sortOrder = "desc"
 	):PaginatedResult;
 
 	/**
