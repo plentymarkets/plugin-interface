@@ -9,6 +9,8 @@ use Plenty\Modules\Document\Contracts\DocumentRepositoryContract;
 use Plenty\Modules\Document\Models\Document;
 use Plenty\Modules\Order\Contracts\OrderRepositoryContract;
 use Plenty\Modules\Order\Legacy\Services\LegacyOrderEventService;
+use Plenty\Modules\Order\Settings\Contracts\OrderSettingsRepositoryContract;
+use Plenty\Modules\Order\Settings\Models\OrderSettings;
 use Plenty\Modules\Order\Shipping\Returns\Contracts\ReturnsServiceProviderRepositoryContract;
 use Plenty\Modules\Order\Shipping\Returns\Models\OrderReturns;
 use Plenty\Modules\Order\Shipping\Returns\Models\RegisterOrderReturnsResponse;
