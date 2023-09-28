@@ -4,11 +4,11 @@ namespace Plenty\Modules\Flow\Filters\Definitions\Contracts;
 use Exception;
 use Illuminate\Translation\Translator;
 use Plenty\Modules\Flow\Contracts\UIConfigFormContract;
+use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\SelectboxField;
 use Plenty\Modules\Flow\Filters\Definitions\Exceptions\FilterDefinitionException;
 use Plenty\Modules\Flow\Models\Input;
 use Plenty\Modules\Flow\Models\Output;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\FormField;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\SelectboxField;
 
 /**
  * Flow filter
