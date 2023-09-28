@@ -3,11 +3,11 @@ namespace Plenty\Modules\Flow\StepControls\Definitions\Contracts;
 
 use Exception;
 use Illuminate\Translation\Translator;
+use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 use Plenty\Modules\Flow\Models\Filter;
 use Plenty\Modules\Flow\Models\Input;
 use Plenty\Modules\Flow\Models\Output;
 use Plenty\Modules\Flow\StepControls\Definitions\Exceptions\StepControlDefinitionException;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\FormField;
 
 /**
  * Flow step control
