@@ -1,13 +1,14 @@
 <?php
 namespace Plenty\Modules\Flow\Contracts;
 
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\CheckboxField;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\DateField;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\FormField;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\HyperlinkField;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\InputField;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\SelectboxField;
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\TimeField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxGroupField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\DateField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\HyperlinkField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\InputField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\SelectboxField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\TimeField;
 
 /**
  * Add fields to config form.
@@ -48,6 +49,13 @@ interface UIConfigFormContract
 	 */
 	public function addSelectboxField(
 		SelectboxField $selectboxField
+	);
+
+	/**
+	 * Add a checkboxGroup field to the config form
+	 */
+	public function addCheckboxGroupField(
+		CheckboxGroupField $checkboxGroupField
 	);
 
 	/**

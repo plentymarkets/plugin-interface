@@ -1,7 +1,7 @@
 <?php
 namespace Plenty\Modules\Flow\Triggers\Definitions\Contracts;
 
-use Plenty\Modules\Fulfillment\DataModels\ConfigForm\FormField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 
 /**
  * Flow trigger plenty definition
