@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Flow\Contracts;
 
 use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxGroupField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\DateField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\HyperlinkField;
@@ -48,6 +49,13 @@ interface UIConfigFormContract
 	 */
 	public function addSelectboxField(
 		SelectboxField $selectboxField
+	);
+
+	/**
+	 * Add a checkboxGroup field to the config form
+	 */
+	public function addCheckboxGroupField(
+		CheckboxGroupField $checkboxGroupField
 	);
 
 	/**

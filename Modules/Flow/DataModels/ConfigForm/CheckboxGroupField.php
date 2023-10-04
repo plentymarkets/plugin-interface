@@ -3,9 +3,9 @@ namespace Plenty\Modules\Flow\DataModels\ConfigForm;
 
 
 /**
- * The selectbox field model.
+ * The checkbox group field model.
  */
-abstract class SelectboxField 
+abstract class CheckboxGroupField 
 {
 
 	const TYPE_DATE = 'date';
@@ -30,7 +30,7 @@ public		$value;
 	
 public		$type;
 	
-public		$selectBoxValues;
+public		$;
 	
 public		$isVisible;
 	

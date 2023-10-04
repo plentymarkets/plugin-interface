@@ -18,6 +18,8 @@ abstract class CheckboxField
 
 	const TYPE_SELECTBOX = 'selectbox';
 
+	const TYPE_CHECK_BOX_GROUP = 'checkboxGroup';
+
 	const TYPE_HYPERLINK = 'hyperlink';
 	
 public		$name;

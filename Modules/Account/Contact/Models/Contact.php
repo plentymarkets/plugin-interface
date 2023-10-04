@@ -166,6 +166,8 @@ public		$leadStatusUpdatedAt;
 	
 public		$leadStatusUpdateAt;
 	
+public		$position_id;
+	
 	/**
 	 * Returns this model as an array.
 	 */
