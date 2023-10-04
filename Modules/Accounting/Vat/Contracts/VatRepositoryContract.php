@@ -24,6 +24,14 @@ interface VatRepositoryContract
 
 	const FILTER_STARTED_AT = 'startedAt';
 
+	const FILTER_STARTED_AT_FROM = 'startedAtFrom';
+
+	const FILTER_STARTED_AT_TO = 'startedAtTo';
+
+	const FILTER_IS_ACTIVE = 'isActive';
+
+	const FILTER_IS_RESTRICTED_TO_DIGITAL_ITEMS = 'isRestrictedToDigitalItems';
+
 	/**
 	 * Get a VAT configuration
 	 */
@@ -116,6 +124,13 @@ interface VatRepositoryContract
 		int $id, 
 		array $data
 	):Vat;
+
+	/**
+	 * Delete a VAT configuration
+	 */
+	public function deleteVat(
+		int $id
+	);
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.

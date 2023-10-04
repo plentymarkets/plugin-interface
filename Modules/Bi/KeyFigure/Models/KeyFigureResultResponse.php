@@ -24,6 +24,8 @@ public		$resultUnit;
 	
 public		$target;
 	
+public		$keyFigureName;
+	
 public		$calculatedAt;
 	
 	/**
