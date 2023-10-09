@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\Attributes;
 
+use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 
@@ -9,6 +10,8 @@ use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContex
  */
 abstract class VariationMarketIdentNumberAttribute 
 {
+
+	const COUNTRY = 'Plenty\Modules\Order\Shipping\Countries\Models\Country';
 
 	const PRIMARY_KEY = 'variationId';
 

@@ -10,6 +10,8 @@ abstract class StorageObject
 	
 public		$key;
 	
+public		$path;
+	
 public		$lastModified;
 	
 public		$metaData;
