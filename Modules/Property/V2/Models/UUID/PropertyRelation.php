@@ -10,6 +10,8 @@ abstract class PropertyRelation
 
 	const PROPERTY_RELATION_TYPE_CONTACT = 'contact';
 
+	const PROPERTY_RELATION_TYPE_ITEM = 'item';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
