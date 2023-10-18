@@ -22,6 +22,9 @@ abstract class StepActionDefinitionContract
 	abstract public function getIdentifier(
 	):string;
 
+	abstract public function getPath(
+	):string;
+
 	abstract public function getName(
 	):string;
 
