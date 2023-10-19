@@ -17,6 +17,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Sorting\SortingInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\IncludeSource;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Source\SourceInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Services\ClientFactory;
+use Plenty\Modules\Messenger\Conversations\Models\ConversationCategory;
 use Plenty\Modules\Messenger\Filters\ConversationIdFilter;
 use Plenty\Modules\Messenger\Filters\IsNotDeletedFilter;
 use Plenty\Modules\Messenger\Filters\PlentyIdHashFilter;

@@ -20,6 +20,8 @@ public		$userId;
 	
 public		$isDeleted;
 	
+public		$categoryId;
+	
 	/**
 	 * Returns this model as an array.
 	 */

@@ -56,6 +56,8 @@ public		$deletedBy;
 	
 public		$attachments;
 	
+public		$categoryId;
+	
 	/**
 	 * Returns this model as an array.
 	 */

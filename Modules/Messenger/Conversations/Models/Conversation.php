@@ -86,6 +86,8 @@ public		$isArchived;
 	
 public		$conversationPreview;
 	
+public		$categoryId;
+	
 	/**
 	 * Returns this model as an array.
 	 */
