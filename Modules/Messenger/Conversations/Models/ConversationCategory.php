@@ -10,6 +10,10 @@ abstract class ConversationCategory
 
 	const LAST_RESERVED_ID = 100;
 
+	const EMPTY_CATEGORY_ID = 0;
+
+	const EMPTY_CATEGORY_POSITION = 0;
+
 	const DEFAULT_CATEGORY_ID = 1;
 
 	const DEFAULT_CATEGORY_POSITION = 1;

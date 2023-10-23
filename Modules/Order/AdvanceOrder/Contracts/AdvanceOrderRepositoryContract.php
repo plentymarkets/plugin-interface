@@ -103,6 +103,14 @@ interface AdvanceOrderRepositoryContract
 	):array;
 
 	/**
+	 * Get an advance order create preview for the given order data with coupon codes.
+	 */
+	public function previewCreateWithCoupons(
+		array $data, 
+		array $coupons = []
+	):array;
+
+	/**
 	 * Get an advance order update preview for the given order data.
 	 */
 	public function previewUpdate(
