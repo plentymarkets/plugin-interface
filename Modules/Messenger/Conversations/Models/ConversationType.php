@@ -7,6 +7,10 @@ namespace Plenty\Modules\Messenger\Conversations\Models;
  */
 abstract class ConversationType 
 {
+
+	const EMPTY_TYPE_ID = 0;
+
+	const EMPTY_TYPE_POSITION = 0;
 	
 public		$names;
 	
@@ -19,6 +23,8 @@ public		$position;
 public		$userId;
 	
 public		$isDeleted;
+	
+public		$categoryId;
 	
 	/**
 	 * Returns this model as an array.

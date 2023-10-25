@@ -7,6 +7,10 @@ namespace Plenty\Modules\Messenger\Conversations\Models;
  */
 abstract class ConversationStatus 
 {
+
+	const EMPTY_STATUS_ID = 0;
+
+	const EMPTY_STATUS_POSITION = 0;
 	
 public		$names;
 	
