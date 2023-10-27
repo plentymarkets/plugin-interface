@@ -44,7 +44,8 @@ interface AccountRepositoryContract
 	 * Gets a company. The ID of the company must be specified. An account is equivalent to a company.
 	 */
 	public function findAccountById(
-		int $accountId
+		int $accountId, 
+		array $with = []
 	):Account;
 
 	/**
@@ -59,7 +60,8 @@ interface AccountRepositoryContract
 	 */
 	public function allAccounts(
 		array $columns = [], 
-		int $perPage = 50
+		int $perPage = 50, 
+		array $with = []
 	):Collection;
 
 	/**
