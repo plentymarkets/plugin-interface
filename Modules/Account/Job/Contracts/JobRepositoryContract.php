@@ -3,6 +3,9 @@ namespace Plenty\Modules\Account\Job\Contracts;
 
 use Plenty\Modules\Account\Exceptions\CRMCritical;
 use Plenty\Modules\Account\Job\Models\Job;
+use Plenty\Repositories\Contracts\FilterableContract;
+use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
+use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
@@ -45,11 +48,49 @@ interface JobRepositoryContract
 	 * Get paginated list of jobs
 	 */
 	public function getJobsList(
-		array $filters = [], 
 		int $page = 1, 
 		int $itemsPerPage = 50, 
 		string $sortBy = "id", 
-		string $sortOrder = "desc"
+		string $sortOrder = "desc", 
+		array $filters = [], 
+		array $with = []
 	):PaginatedResult;
+
+	/**
+	 * Resets all Criteria filters by creating a new instance of the builder object.
+	 */
+	public function clearCriteria(
+	);
+
+	/**
+	 * Applies criteria classes to the current repository.
+	 */
+	public function applyCriteriaFromFilters(
+	);
+
+	/**
+	 * Sets the filter array.
+	 */
+	public function setFilters(
+		array $filters = []
+	);
+
+	/**
+	 * Returns the filter array.
+	 */
+	public function getFilters(
+	);
+
+	/**
+	 * Returns a collection of parsed filters as Condition object
+	 */
+	public function getConditions(
+	);
+
+	/**
+	 * Clears the filter array.
+	 */
+	public function clearFilters(
+	);
 
 }
