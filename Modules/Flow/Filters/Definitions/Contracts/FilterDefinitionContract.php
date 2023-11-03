@@ -40,7 +40,8 @@ abstract class FilterDefinitionContract
 	):bool;
 
 	abstract public function addOperators(
-		UIConfigFormContract $configForm
+		UIConfigFormContract $configForm, 
+		string $key = "key"
 	):UIConfigFormContract;
 
 	abstract public function validateConfigFields(
@@ -49,6 +50,10 @@ abstract class FilterDefinitionContract
 
 	abstract public function validateInputs(
 		 $inputs
+	);
+
+	abstract public function mapFilterFields(
+		 $filterField
 	);
 
 }

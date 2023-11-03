@@ -20,49 +20,56 @@ interface UIConfigFormContract
 	 * Add a  date field to the config form
 	 */
 	public function addDateField(
-		DateField $dateField
+		DateField $dateField, 
+		string $key = "key"
 	);
 
 	/**
 	 * Add a time field to the config form
 	 */
 	public function addTimeField(
-		TimeField $timeField
+		TimeField $timeField, 
+		string $key = "key"
 	);
 
 	/**
 	 * Add an input field to the config form
 	 */
 	public function addInputField(
-		InputField $inputField
+		InputField $inputField, 
+		string $key = "key"
 	);
 
 	/**
 	 * Add a checkbox field to the config form
 	 */
 	public function addCheckboxField(
-		CheckboxField $checkboxField
+		CheckboxField $checkboxField, 
+		string $key = "key"
 	);
 
 	/**
 	 * Add a selectbox field to the config form
 	 */
 	public function addSelectboxField(
-		SelectboxField $selectboxField
+		SelectboxField $selectboxField, 
+		string $key = "key"
 	);
 
 	/**
 	 * Add a checkboxGroup field to the config form
 	 */
 	public function addCheckboxGroupField(
-		CheckboxGroupField $checkboxGroupField
+		CheckboxGroupField $checkboxGroupField, 
+		string $key = "key"
 	);
 
 	/**
 	 * Add a  hyperlink field to the config form
 	 */
 	public function addHyperlinkField(
-		HyperlinkField $hyperlinkField
+		HyperlinkField $hyperlinkField, 
+		string $key = "key"
 	);
 
 	/**
