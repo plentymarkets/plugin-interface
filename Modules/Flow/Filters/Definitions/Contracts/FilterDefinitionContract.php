@@ -8,7 +8,6 @@ use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\SelectboxField;
 use Plenty\Modules\Flow\Filters\Definitions\Exceptions\FilterDefinitionException;
 use Plenty\Modules\Flow\Models\Input;
-use Plenty\Modules\Flow\Models\Output;
 
 /**
  * Flow filter
@@ -36,7 +35,8 @@ abstract class FilterDefinitionContract
 
 	abstract public function performFilter(
 		array $inputs, 
-		array $filterField
+		array $filterField, 
+		array $extraParams = []
 	):bool;
 
 	abstract public function addOperators(

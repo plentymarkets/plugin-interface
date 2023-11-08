@@ -40,6 +40,8 @@ public		$createdAt;
 	
 public		$updatedAt;
 	
+public		$isActive;
+	
 public		$location;
 	
 public		$country;
