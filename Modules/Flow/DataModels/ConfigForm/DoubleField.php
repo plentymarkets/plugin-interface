@@ -3,9 +3,9 @@ namespace Plenty\Modules\Flow\DataModels\ConfigForm;
 
 
 /**
- * The selectbox field model.
+ * The input field model.
  */
-abstract class SelectboxField 
+abstract class DoubleField 
 {
 
 	const TYPE_DATE = 'date';
@@ -33,8 +33,6 @@ public		$label;
 public		$value;
 	
 public		$type;
-	
-public		$selectBoxValues;
 	
 public		$isVisible;
 	

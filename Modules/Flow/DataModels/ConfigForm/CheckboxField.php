@@ -12,7 +12,11 @@ abstract class CheckboxField
 
 	const TYPE_TIME = 'time';
 
-	const TYPE_INPUT = 'input';
+	const TYPE_INPUT = 'text';
+
+	const TYPE_NUMBER = 'number';
+
+	const TYPE_DOUBLE = 'double';
 
 	const TYPE_CHECKBOX = 'checkbox';
 

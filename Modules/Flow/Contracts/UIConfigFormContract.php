@@ -4,9 +4,11 @@ namespace Plenty\Modules\Flow\Contracts;
 use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxGroupField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\DateField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\DoubleField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\HyperlinkField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\InputField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\NumberField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\SelectboxField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\TimeField;
 
@@ -37,6 +39,22 @@ interface UIConfigFormContract
 	 */
 	public function addInputField(
 		InputField $inputField, 
+		string $key = "key"
+	);
+
+	/**
+	 * Add a number input field to the config form
+	 */
+	public function addNumberField(
+		NumberField $doubleField, 
+		string $key = "key"
+	);
+
+	/**
+	 * Add an double input field to the config form
+	 */
+	public function addDoubleField(
+		DoubleField $doubleField, 
 		string $key = "key"
 	);
 
