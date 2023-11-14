@@ -11,6 +11,7 @@ use Plenty\Modules\Document\Builder\Variables\Models\Context\VariablesContext;
 use Plenty\Modules\Document\Builder\Variables\Models\Context\VariablesResolution;
 use Plenty\Modules\Document\Builder\Variables\Models\VariableGroup;
 use Plenty\Modules\Document\Builder\Variables\Models\VariableGroupContainer;
+use Plenty\Modules\Document\Generation\Helper\VariationSalesPriceSearchHelper;
 use Plenty\Modules\Document\Models\Document;
 use Plenty\Modules\Document\TemplateSetting\Models\DocumentTemplateSetting;
 use Plenty\Modules\Order\Models\Order;
