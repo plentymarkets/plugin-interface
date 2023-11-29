@@ -26,6 +26,10 @@ public		$defaultOrderStatus;
 	
 public		$resetOutgoingItemsStatusId;
 	
+public		$;
+	
+public		$;
+	
 	/**
 	 * Returns this model as an array.
 	 */

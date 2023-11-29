@@ -21,7 +21,8 @@ interface SalesPriceRepositoryContract
 	public function search(
 		array $with = [], 
 		int $page = 1, 
-		int $perPage = 50
+		int $perPage = 50, 
+		array $sorting = []
 	):Collection;
 
 	/**

@@ -36,6 +36,8 @@ public		$type;
 	
 public		$isVisible;
 	
+public		$condition;
+	
 	/**
 	 * Returns this model as an array.
 	 */

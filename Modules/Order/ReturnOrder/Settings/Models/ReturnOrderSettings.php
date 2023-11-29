@@ -24,6 +24,10 @@ public		$defaultStatusId;
 	
 public		$defaultOrderStatus;
 	
+public		$;
+	
+public		$;
+	
 	/**
 	 * Returns this model as an array.
 	 */
