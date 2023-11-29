@@ -6,6 +6,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use JsonException;
 use Plenty\Modules\Account\Exceptions\CRMCritical;
 use Plenty\Modules\Messenger\Conversations\Errors\ConversationException;
+use Plenty\Modules\Messenger\Conversations\History\Models\ConversationHistoryList;
 use Plenty\Modules\Messenger\Conversations\Models\Conversation;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
@@ -249,5 +250,12 @@ interface ConversationRepositoryContract
 		array $conversationsUuids, 
 		array $foldersUuids
 	):bool;
+
+	/**
+	 * Retrieves history for a conversation
+	 */
+	public function getHistoryByConversationUUID(
+		string $UUID
+	):array;
 
 }
