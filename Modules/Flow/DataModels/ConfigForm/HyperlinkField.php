@@ -38,6 +38,8 @@ public		$url;
 	
 public		$isVisible;
 	
+public		$isRequired;
+	
 public		$condition;
 	
 public		$;

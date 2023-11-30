@@ -38,6 +38,8 @@ public		$selectBoxValues;
 	
 public		$isVisible;
 	
+public		$isRequired;
+	
 public		$condition;
 	
 public		$;
