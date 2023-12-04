@@ -42,6 +42,8 @@ public		$deletedAt;
 	
 public		$deadline;
 	
+public		$followUpDate;
+	
 public		$messages;
 	
 public		$;
