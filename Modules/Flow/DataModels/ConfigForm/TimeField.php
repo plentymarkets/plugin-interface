@@ -36,6 +36,8 @@ public		$type;
 	
 public		$isVisible;
 	
+public		$isRequired;
+	
 public		$condition;
 	
 public		$;
