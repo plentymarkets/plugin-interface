@@ -28,6 +28,8 @@ public		$validateQuantityFromParent;
 	
 public		$defaultOrderStatus;
 	
+public		$;
+	
 	/**
 	 * Returns this model as an array.
 	 */

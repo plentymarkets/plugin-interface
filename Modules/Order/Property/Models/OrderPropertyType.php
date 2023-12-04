@@ -208,6 +208,8 @@ abstract class OrderPropertyType
 
 	const PICKING_PRIORITY = 101;
 
+	const CREDIT_NOTE_REASON = 102;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;

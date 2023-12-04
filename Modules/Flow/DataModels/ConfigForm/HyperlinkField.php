@@ -38,6 +38,12 @@ public		$url;
 	
 public		$isVisible;
 	
+public		$isRequired;
+	
+public		$condition;
+	
+public		$;
+	
 	/**
 	 * Returns this model as an array.
 	 */

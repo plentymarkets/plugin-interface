@@ -38,6 +38,16 @@ public		$;
 	
 public		$isVisible;
 	
+public		$condition;
+	
+public		$isRequired;
+	
+public		$;
+	
+public		$;
+	
+public		$;
+	
 	/**
 	 * Returns this model as an array.
 	 */

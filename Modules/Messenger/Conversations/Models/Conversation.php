@@ -88,6 +88,8 @@ public		$conversationPreview;
 	
 public		$categoryId;
 	
+public		$linkedFolders;
+	
 	/**
 	 * Returns this model as an array.
 	 */
