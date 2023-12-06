@@ -344,6 +344,8 @@ public		$itemRedirectActive;
 	
 public		$googleRecaptchaApiWebsitekey;
 	
+public		$cloudflareTurnstileApiSecretKey;
+	
 public		$itemSearchEngine;
 	
 public		$itemRatingAllowComments;
