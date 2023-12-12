@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Flow\Triggers\Definitions\Contracts;
 
-use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 
 /**
  * Flow trigger plenty definition
@@ -31,6 +30,6 @@ interface FlowTriggerPlentyDefinitionContract
 	):string;
 
 	public function getUIConfigField(
-	):FormField;
+	):array;
 
 }
