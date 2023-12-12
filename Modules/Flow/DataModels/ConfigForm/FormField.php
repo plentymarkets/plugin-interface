@@ -36,11 +36,9 @@ public		$type;
 	
 public		$isVisible;
 	
-public		$isRequired;
-	
 public		$condition;
 	
-public		$;
+public		$effectedFields;
 	
 	/**
 	 * Returns this model as an array.

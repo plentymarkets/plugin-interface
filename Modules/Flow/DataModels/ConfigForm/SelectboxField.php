@@ -26,23 +26,7 @@ abstract class SelectboxField
 
 	const TYPE_HYPERLINK = 'hyperlink';
 	
-public		$name;
-	
-public		$label;
-	
-public		$value;
-	
-public		$type;
-	
 public		$selectBoxValues;
-	
-public		$isVisible;
-	
-public		$isRequired;
-	
-public		$condition;
-	
-public		$;
 	
 	/**
 	 * Returns this model as an array.

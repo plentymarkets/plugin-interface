@@ -25,23 +25,7 @@ abstract class InputField
 	const TYPE_CHECK_BOX_GROUP = 'checkboxGroup';
 
 	const TYPE_HYPERLINK = 'hyperlink';
-	
-public		$name;
-	
-public		$label;
-	
-public		$value;
-	
-public		$type;
-	
-public		$isVisible;
-	
-public		$isRequired;
-	
-public		$condition;
-	
-public		$;
-	
+
 	/**
 	 * Returns this model as an array.
 	 */

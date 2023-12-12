@@ -26,23 +26,7 @@ abstract class HyperlinkField
 
 	const TYPE_HYPERLINK = 'hyperlink';
 	
-public		$name;
-	
-public		$label;
-	
-public		$value;
-	
-public		$type;
-	
 public		$url;
-	
-public		$isVisible;
-	
-public		$isRequired;
-	
-public		$condition;
-	
-public		$;
 	
 	/**
 	 * Returns this model as an array.

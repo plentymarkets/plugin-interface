@@ -25,21 +25,7 @@ abstract class DoubleField
 	const TYPE_CHECK_BOX_GROUP = 'checkboxGroup';
 
 	const TYPE_HYPERLINK = 'hyperlink';
-	
-public		$name;
-	
-public		$label;
-	
-public		$value;
-	
-public		$type;
-	
-public		$isVisible;
-	
-public		$isRequired;
-	
-public		$condition;
-	
+
 	/**
 	 * Returns this model as an array.
 	 */
