@@ -26,6 +26,6 @@ interface FlowTriggerDefinitionContract
 	):string;
 
 	public function getUIConfigField(
-	):FormField;
+	):array;
 
 }

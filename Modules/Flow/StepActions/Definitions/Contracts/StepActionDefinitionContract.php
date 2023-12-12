@@ -8,16 +8,12 @@ use Plenty\Modules\Flow\Models\Filter;
 use Plenty\Modules\Flow\Models\Input;
 use Plenty\Modules\Flow\Models\Output;
 use Plenty\Modules\Flow\StepActions\Definitions\Exceptions\StepActionDefinitionException;
-use Plenty\Modules\Flow\StepActions\Definitions\Models\UI\StepActionUI;
 
 /**
  * Flow step action
  */
 abstract class StepActionDefinitionContract 
 {
-
-	abstract public function getUIAction(
-	):StepActionUI;
 
 	abstract public function getIdentifier(
 	):string;

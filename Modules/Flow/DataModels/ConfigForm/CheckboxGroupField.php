@@ -26,27 +26,11 @@ abstract class CheckboxGroupField
 
 	const TYPE_HYPERLINK = 'hyperlink';
 	
-public		$name;
+public		$selectBoxValues;
 	
-public		$label;
+public		$formGroup;
 	
-public		$value;
-	
-public		$type;
-	
-public		$;
-	
-public		$isVisible;
-	
-public		$condition;
-	
-public		$isRequired;
-	
-public		$;
-	
-public		$;
-	
-public		$;
+public		$formGroupValues;
 	
 	/**
 	 * Returns this model as an array.
