@@ -6,7 +6,6 @@ use Illuminate\Auth\Access\AuthorizationException;
 use JsonException;
 use Plenty\Modules\Account\Exceptions\CRMCritical;
 use Plenty\Modules\Messenger\Conversations\Errors\ConversationException;
-use Plenty\Modules\Messenger\Conversations\History\Models\ConversationHistoryList;
 use Plenty\Modules\Messenger\Conversations\Models\Conversation;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
@@ -80,12 +79,27 @@ interface ConversationRepositoryContract
 	):int;
 
 	/**
+	 * Sets follow up date for a batch of conversations
+	 */
+	public function updateFollowUpDate(
+		array $uuids, 
+		string $followUpDate = null
+	):int;
+
+	/**
 	 * Marks a batch of conversations as red/not read by the given user
 	 */
 	public function updateRead(
 		array $uuids, 
 		int $userId, 
 		bool $read
+	):int;
+
+	/**
+	 * Resubmits all conversations with follow up date today (resets read by array, resets follow up date)
+	 */
+	public function batchResubmitConversations(
+		array $uuids
 	):int;
 
 	/**
