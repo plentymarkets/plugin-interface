@@ -16,6 +16,8 @@ abstract class VariablesObjectTypeEnum
 
 	const Contact = 'Contact';
 
+	const Address = 'Address';
+
 	const Document = 'Document';
 
 	const PluginOld = 'PluginOld';
