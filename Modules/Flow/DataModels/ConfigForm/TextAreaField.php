@@ -3,9 +3,9 @@ namespace Plenty\Modules\Flow\DataModels\ConfigForm;
 
 
 /**
- * The time field model.
+ * The text area field model.
  */
-abstract class TimeField 
+abstract class TextAreaField 
 {
 
 	const TYPE_DATE = 'date';

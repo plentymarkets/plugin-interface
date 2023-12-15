@@ -26,6 +26,8 @@ abstract class NumberField
 
 	const TYPE_HYPERLINK = 'hyperlink';
 
+	const TYPE_TEXTAREA = 'textarea';
+
 	/**
 	 * Returns this model as an array.
 	 */

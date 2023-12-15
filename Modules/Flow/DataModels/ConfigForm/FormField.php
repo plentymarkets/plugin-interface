@@ -25,6 +25,8 @@ abstract class FormField
 	const TYPE_CHECK_BOX_GROUP = 'checkboxGroup';
 
 	const TYPE_HYPERLINK = 'hyperlink';
+
+	const TYPE_TEXTAREA = 'textarea';
 	
 public		$name;
 	
