@@ -39,6 +39,9 @@ abstract class FilterDefinitionContract
 		array $extraParams = []
 	):bool;
 
+	abstract public function searchCriteria(
+	):string;
+
 	abstract public function addOperators(
 		UIConfigFormContract $configForm, 
 		string $key = "key"

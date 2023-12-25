@@ -39,7 +39,8 @@ abstract class StepActionDefinitionContract
 	abstract public function performTask(
 		array $inputs, 
 		array $configFields, 
-		 $filter = null
+		 $filter = null, 
+		array $extraParams = []
 	):array;
 
 	abstract public function validateConfigFields(
