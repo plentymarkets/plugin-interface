@@ -33,6 +33,9 @@ abstract class FilterDefinitionContract
 	abstract public function getOperators(
 	):array;
 
+	abstract public function getAvailabilities(
+	):array;
+
 	abstract public function performFilter(
 		array $inputs, 
 		array $filterField, 
