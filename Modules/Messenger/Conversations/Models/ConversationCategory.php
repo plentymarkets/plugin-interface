@@ -25,6 +25,10 @@ abstract class ConversationCategory
 	const CUSTOMER_NOTES_CATEGORY_ID = 3;
 
 	const CUSTOMER_NOTES_CATEGORY_POSITION = 3;
+
+	const DEFAULT_EMAILSERVICE_GROUP_ID = 4;
+
+	const DEFAULT_EMAILSERVICE_GROUP_POSITION = 4;
 	
 public		$names;
 	
