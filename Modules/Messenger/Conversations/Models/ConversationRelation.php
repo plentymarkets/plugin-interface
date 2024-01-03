@@ -18,7 +18,7 @@ abstract class ConversationRelation
 
 	const RELATION_TYPE_USER = 'user';
 
-	const RELATION_AMAZON_ORDER = 'amazonOrder';
+	const RELATION_ORDER_EXTERNAL_ID = 'orderExternalId';
 
 	const RELATION_TYPE_CONTACT_EMAIL = 'contactEmail';
 
@@ -29,6 +29,8 @@ abstract class ConversationRelation
 	const RELATION_TYPE_INVOICE_NUMBER = 'invoiceNumber';
 
 	const RELATION_TYPE_ORDER_ID = 'orderId';
+
+	const RELATION_AMAZON_ORDER = 'amazonOrder';
 	
 public		$type;
 	

@@ -7,6 +7,8 @@ use Plenty\Modules\Authorization\Services\AuthHelper;
 use Plenty\Modules\Comment\Contracts\CommentRepositoryContract;
 use Plenty\Modules\Document\Contracts\DocumentRepositoryContract;
 use Plenty\Modules\Document\Models\Document;
+use Plenty\Modules\Flow\Services\EventTriggerService;
+use Plenty\Modules\Flow\Triggers\Definitions\Models\ReturnLabelSavedTrigger;
 use Plenty\Modules\Order\Contracts\OrderRepositoryContract;
 use Plenty\Modules\Order\Legacy\Services\LegacyOrderEventService;
 use Plenty\Modules\Order\Settings\Contracts\OrderSettingsRepositoryContract;

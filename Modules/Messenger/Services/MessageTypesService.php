@@ -43,6 +43,8 @@ abstract class MessageTypesService
 
 	const REFERRER_TYPE_EMAIL = 'email';
 
+	const REFERRER_TYPE_MARKETPLACES = 'marketplaces';
+
 	const TO_TYPE_USER = 'user';
 
 	const TO_TYPE_ROLE = 'role';
@@ -56,6 +58,8 @@ abstract class MessageTypesService
 	const FROM_TYPE_CONTACT = 'contact';
 
 	const FROM_TYPE_EMAIL = 'email';
+
+	const MARKETPLACE_EBAY = 'ebay';
 
 	/**
 	 * Gets the valid types for "linked to" references.

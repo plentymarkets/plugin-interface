@@ -73,7 +73,8 @@ interface AccountRepositoryContract
 		int $itemsPerPage = 50, 
 		array $with = [], 
 		string $sortBy = "id", 
-		string $sortOrder = "desc"
+		string $sortOrder = "desc", 
+		array $filters = []
 	):PaginatedResult;
 
 	/**

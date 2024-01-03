@@ -10,6 +10,7 @@ use Plenty\Modules\Flow\DataModels\ConfigForm\HyperlinkField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\InputField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\NumberField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\SelectboxField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\TextAreaField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\TimeField;
 
 /**
@@ -46,7 +47,7 @@ interface UIConfigFormContract
 	 * Add a number input field to the config form
 	 */
 	public function addNumberField(
-		NumberField $doubleField, 
+		NumberField $numberField, 
 		string $key = "key"
 	);
 
@@ -87,6 +88,14 @@ interface UIConfigFormContract
 	 */
 	public function addHyperlinkField(
 		HyperlinkField $hyperlinkField, 
+		string $key = "key"
+	);
+
+	/**
+	 * Add a text area field to the config form
+	 */
+	public function addTextAreaField(
+		TextAreaField $textAreaField, 
 		string $key = "key"
 	);
 
