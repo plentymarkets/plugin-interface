@@ -33,11 +33,17 @@ abstract class FilterDefinitionContract
 	abstract public function getOperators(
 	):array;
 
+	abstract public function getAvailabilities(
+	):array;
+
 	abstract public function performFilter(
 		array $inputs, 
 		array $filterField, 
 		array $extraParams = []
 	):bool;
+
+	abstract public function searchCriteria(
+	):string;
 
 	abstract public function addOperators(
 		UIConfigFormContract $configForm, 

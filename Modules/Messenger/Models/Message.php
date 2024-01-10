@@ -58,6 +58,16 @@ public		$attachments;
 	
 public		$categoryId;
 	
+public		$typeId;
+	
+public		$typePosition;
+	
+public		$statusId;
+	
+public		$statusPosition;
+	
+public		$marketplacesMetadata;
+	
 	/**
 	 * Returns this model as an array.
 	 */

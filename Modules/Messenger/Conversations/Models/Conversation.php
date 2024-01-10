@@ -92,6 +92,8 @@ public		$categoryId;
 	
 public		$linkedFolders;
 	
+public		$marketplacesMetadata;
+	
 	/**
 	 * Returns this model as an array.
 	 */

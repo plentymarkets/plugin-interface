@@ -20,6 +20,10 @@ abstract class Credentials
 
 	const STATUS_PENDING = 'pending';
 
+	const CREDENTIALS_EBAY_AUTH_TYPE_OAUTH2 = 'oauth2';
+
+	const CREDENTIALS_EBAY_AUTH_TYPE_AUTH_N_AUTH = 'auth_n_auth';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
