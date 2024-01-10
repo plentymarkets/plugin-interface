@@ -86,6 +86,8 @@ public		$loginType;
 	
 public		$blockLegacyLogin;
 	
+public		$;
+	
 	/**
 	 * Returns this model as an array.
 	 */
