@@ -29,6 +29,8 @@ abstract class ConversationCategory
 	const DEFAULT_EMAILSERVICE_GROUP_ID = 4;
 
 	const DEFAULT_EMAILSERVICE_GROUP_POSITION = 4;
+
+	const MAX_NUMBER_OF_CHARS_FOR_EBAY_MESSAGE = 4000;
 	
 public		$names;
 	
