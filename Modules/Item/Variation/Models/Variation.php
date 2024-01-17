@@ -140,6 +140,8 @@ public		$singleItemCount;
 	
 public		$customsTariffNumber;
 	
+public		$campaignId;
+	
 public		$categoryVariationId;
 	
 public		$marketVariationId;

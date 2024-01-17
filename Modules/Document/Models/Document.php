@@ -160,6 +160,8 @@ public		$webstores;
 	
 public		$categories;
 	
+public		$tags;
+	
 	/**
 	 * Returns this model as an array.
 	 */
