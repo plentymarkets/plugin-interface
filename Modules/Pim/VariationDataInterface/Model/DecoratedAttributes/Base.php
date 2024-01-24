@@ -320,6 +320,11 @@ abstract class Base
 	public		$customsTariffNumber;
 	
 	/**
+	 * @var int
+	 */
+	public		$campaignId;
+	
+	/**
 	 * @var bool
 	 */
 	public		$categoriesInherited;
