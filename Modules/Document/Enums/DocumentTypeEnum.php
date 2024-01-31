@@ -18,6 +18,10 @@ abstract class DocumentTypeEnum
 
 	const OrderConfirmation = 'order_confirmation';
 
+	const MultiInvoice = 'multi_invoice';
+
+	const MultiCreditNote = 'multi_credit_note';
+
 	const Offer = 'offer';
 
 	const EntryCertificate = 'success_confirmation';
