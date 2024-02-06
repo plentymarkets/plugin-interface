@@ -40,6 +40,8 @@ public		$calculatedAt;
 	
 public		$sortBy;
 	
+public		$displayZeroPrimaryValue;
+	
 	/**
 	 * Returns this model as an array.
 	 */
