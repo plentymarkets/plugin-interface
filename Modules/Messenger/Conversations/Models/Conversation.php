@@ -94,6 +94,8 @@ public		$linkedFolders;
 	
 public		$marketplacesMetadata;
 	
+public		$owners;
+	
 	/**
 	 * Returns this model as an array.
 	 */
