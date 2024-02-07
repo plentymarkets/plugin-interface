@@ -44,6 +44,10 @@ public		$updatedAt;
 	
 public		$packageSscc;
 	
+public		$mrn;
+	
+public		$atlasRegistration;
+	
 public		$order;
 	
 public		$items;
