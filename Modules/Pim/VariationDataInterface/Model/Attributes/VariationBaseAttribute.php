@@ -14,6 +14,7 @@ use Plenty\Modules\Item\ItemShippingProfiles\Models\ItemShippingProfiles;
 use Plenty\Modules\Item\Item\Models\Item;
 use Plenty\Modules\Item\PackingUnit\Models\PackingUnit;
 use Plenty\Modules\Item\Unit\Models\Unit;
+use Plenty\Modules\Item\VariationBundle\Models\VariationBundle;
 use Plenty\Modules\Item\VariationDescription\Models\VariationDescription;
 use Plenty\Modules\Item\VariationProperty\Models\VariationPropertyValue;
 use Plenty\Modules\Pim\DocumentService\Models\Variation\Base;
@@ -39,11 +40,15 @@ abstract class VariationBaseAttribute
 
 	const CROSS_SELLING = 'Plenty\Modules\Item\ItemCrossSelling\Models\ItemCrossSelling';
 
+	const CROSS_SELLING_FOR = 'Plenty\Modules\Item\ItemCrossSelling\Models\ItemCrossSelling';
+
 	const TEXTS = 'Plenty\Modules\Item\VariationDescription\Models\VariationDescription';
 
 	const PACKING_UNITS = 'Plenty\Modules\Item\PackingUnit\Models\PackingUnit';
 
 	const AVAILABILITY = 'Plenty\Modules\Item\Availability\Models\Availability';
+
+	const VARIATION_BUNDLE = 'Plenty\Modules\Item\VariationBundle\Models\VariationBundle';
 
 	const SHIPPING_PROFILE = 'Plenty\Modules\Item\ItemShippingProfiles\Models\ItemShippingProfiles';
 
