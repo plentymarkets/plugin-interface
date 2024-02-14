@@ -21,7 +21,13 @@ abstract class StepActionDefinitionContract
 	abstract public function getPath(
 	):string;
 
+	abstract public function getPathIcon(
+	):string;
+
 	abstract public function getName(
+	):string;
+
+	abstract public function getIcon(
 	):string;
 
 	abstract public function getDescription(
