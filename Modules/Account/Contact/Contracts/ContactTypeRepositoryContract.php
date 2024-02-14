@@ -45,7 +45,9 @@ interface ContactTypeRepositoryContract
 	 * Returns a collection of contact types.
 	 */
 	public function allContactTypes(
-		array $columns = []
+		array $columns = [], 
+		string $sortBy = "id", 
+		string $sortOrder = "asc"
 	):array;
 
 }
