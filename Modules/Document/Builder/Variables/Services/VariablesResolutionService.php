@@ -4,6 +4,7 @@ namespace Plenty\Modules\Document\Builder\Variables\Services;
 use Exception;
 use Illuminate\Pipeline\Pipeline;
 use Plenty\Log\Traits\Loggable;
+use Plenty\Modules\Account\Contact\Models\Contact;
 use Plenty\Modules\Document\Builder\Variables\Contracts\DocumentBuilderVariablesContainerContract;
 use Plenty\Modules\Document\Builder\Variables\Enums\VariablesObjectTypeEnum;
 use Plenty\Modules\Document\Builder\Variables\Models\Context\ObjectEntry;
@@ -34,6 +35,13 @@ abstract class VariablesResolutionService
 	 */
 	abstract public function setDocument(
 		Document $document
+	):self;
+
+	/**
+	 * Set the contact into the variables context
+	 */
+	abstract public function setContact(
+		Contact $contact
 	):self;
 
 	/**
