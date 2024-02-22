@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Order\Reorder\Contracts;
 
 use Carbon\Carbon;
+use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Order\Models\Order;
 
