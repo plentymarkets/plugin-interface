@@ -24,6 +24,13 @@ abstract class VariablesResolutionService
 {
 
 	/**
+	 * Set the language to be used by the variables resolution.
+	 */
+	abstract public function setLanguage(
+		string $language
+	):self;
+
+	/**
 	 * Set the order into the variables context
 	 */
 	abstract public function setOrder(
