@@ -9,6 +9,7 @@ use Plenty\Modules\Basket\Models\BasketItem;
 use Plenty\Modules\Basket\Repositories\BasketItemRepository;
 use Plenty\Modules\Item\DataLayer\Contracts\ItemDataLayerRepositoryContract;
 use Plenty\Modules\Item\DataLayer\Models\Record;
+use Plenty\Modules\Item\DataLayer\Models\RecordList;
 use Plenty\Modules\Item\Stock\Contracts\BasketReservationContract;
 use Plenty\Modules\Item\Stock\Events\BasketItemWarnOversell;
 use Plenty\Modules\Order\Contracts\InternalOrderRepositoryContract;

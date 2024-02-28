@@ -28,6 +28,8 @@ public		$itemHash;
 	
 public		$hashReference;
 	
+public		$itemVariationId;
+	
 	/**
 	 * Returns this model as an array.
 	 */

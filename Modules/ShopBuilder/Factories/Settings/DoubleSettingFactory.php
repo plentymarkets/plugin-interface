@@ -35,14 +35,6 @@ abstract class DoubleSettingFactory
 	):self;
 
 	/**
-	 * Set an option for the setting.
-	 */
-	abstract public function withOption(
-		string $key, 
-		 $value
-	):self;
-
-	/**
 	 * Set the default value for the setting.
 	 */
 	abstract public function withDefaultValue(
@@ -64,10 +56,25 @@ abstract class DoubleSettingFactory
 	):self;
 
 	/**
+	 * Set an option for the setting.
+	 */
+	abstract public function withOption(
+		string $key, 
+		 $value
+	):self;
+
+	/**
 	 * Set a tooltip text for this input
 	 */
 	abstract public function withTooltip(
 		string $tooltip
+	):self;
+
+	/**
+	 * Define the tooltip placement. Possible values are 'bottom', 'top', 'left' or 'right', default is 'top'
+	 */
+	abstract public function withTooltipPlacement(
+		string $tooltipPlacement
 	):self;
 
 	/**
