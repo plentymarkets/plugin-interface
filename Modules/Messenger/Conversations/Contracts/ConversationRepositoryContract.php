@@ -24,6 +24,14 @@ interface ConversationRepositoryContract
 	):array;
 
 	/**
+	 * List all conversations and returns a paginated result
+	 */
+	public function searchConversations(
+		array $getFilters, 
+		array $postFilters
+	):array;
+
+	/**
 	 * Creates a new conversation
 	 */
 	public function createConversation(

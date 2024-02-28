@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Redistribution\Contracts;
 
+use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Models\Order;
 
 /**
