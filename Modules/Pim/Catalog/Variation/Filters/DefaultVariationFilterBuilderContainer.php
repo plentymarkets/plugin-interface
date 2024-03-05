@@ -22,6 +22,10 @@ abstract class DefaultVariationFilterBuilderContainer extends \Plenty\Modules\Ca
 	abstract public function getFilterBuilders(
 	):array;
 
+	abstract public function removeFilterBuilders(
+		string $key
+	);
+
 	abstract public function removeAllFilterBuilders(
 	);
 

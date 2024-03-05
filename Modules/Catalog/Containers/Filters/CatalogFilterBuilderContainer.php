@@ -20,6 +20,10 @@ abstract class CatalogFilterBuilderContainer
 		 $key
 	);
 
+	abstract public function removeFilterBuilders(
+		string $key
+	);
+
 	abstract public function removeAllFilterBuilders(
 	);
 
