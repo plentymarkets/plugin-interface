@@ -40,6 +40,10 @@ abstract class DocumentTemplateOutputSetting
 
 	const XML_TYPE_FACTUR_X_BASIC = 'facturXBasic';
 
+	const UNIT_FORMAT_LONG_FORM = 'longForm';
+
+	const UNIT_FORMAT_SHORT_FORM = 'shortForm';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -83,6 +87,8 @@ public		$pdfBackground;
 public		$outputType;
 	
 public		$xmlFormat;
+	
+public		$unitFormat;
 	
 public		$documentTemplateSetting;
 	
