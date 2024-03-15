@@ -38,6 +38,18 @@ public		$tags;
 	
 public		$outputSetting;
 	
+public		$references;
+	
+public		$headerReference;
+	
+public		$footerReference;
+	
+public		$referencedBy;
+	
+public		$headerReferencedBy;
+	
+public		$footerReferencedBy;
+	
 public		$typeSettings;
 	
 	/**
