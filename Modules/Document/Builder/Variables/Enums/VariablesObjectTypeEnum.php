@@ -20,6 +20,8 @@ abstract class VariablesObjectTypeEnum
 
 	const Document = 'Document';
 
+	const MetaData = 'MetaData';
+
 	const PluginOld = 'PluginOld';
 
 	const Other = 'Other';

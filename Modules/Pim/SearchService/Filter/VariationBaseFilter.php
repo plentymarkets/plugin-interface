@@ -175,6 +175,13 @@ abstract class VariationBaseFilter implements TypeInterface
 	):self;
 
 	/**
+	 * Restricts the result to have an item image.
+	 */
+	abstract public function hasVariationImage(
+		bool $bool = true
+	):self;
+
+	/**
 	 * Restricts the result to have the manufacturer.
 	 */
 	abstract public function hasManufacturer(

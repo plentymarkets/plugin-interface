@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Webshop\ItemSearch\Helpers;
 
 use Plenty\Log\Traits\Loggable;
+use Plenty\Modules\Webshop\Storefront\Api\ApiResource;
 
 /**
  * Collect templates to read required result fields for several views from.

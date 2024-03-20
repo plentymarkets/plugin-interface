@@ -40,6 +40,18 @@ abstract class DocumentTemplateOutputSetting
 
 	const XML_TYPE_FACTUR_X_BASIC = 'facturXBasic';
 
+	const REPEAT_FIRST_PAGE = 'firstPage';
+
+	const REPEAT_EACH_PAGE = 'everyPage';
+
+	const REPEAT_LAST_PAGE = 'lastPage';
+
+	const REPEAT_NONE = 'none';
+
+	const UNIT_FORMAT_LONG_FORM = 'longForm';
+
+	const UNIT_FORMAT_SHORT_FORM = 'shortForm';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -83,6 +95,10 @@ public		$pdfBackground;
 public		$outputType;
 	
 public		$xmlFormat;
+	
+public		$repeatPdfBackground;
+	
+public		$unitFormat;
 	
 public		$documentTemplateSetting;
 	
