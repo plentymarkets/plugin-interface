@@ -31,6 +31,10 @@ abstract class ConversationCategory
 	const DEFAULT_EMAILSERVICE_GROUP_POSITION = 4;
 
 	const MAX_NUMBER_OF_CHARS_FOR_EBAY_MESSAGE = 4000;
+
+	const TICKET_LEGACY_CATEGORY_ID = 5;
+
+	const TICKET_LEGACY_CATEGORY_POSITION = 5;
 	
 public		$names;
 	
