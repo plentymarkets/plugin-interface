@@ -45,6 +45,13 @@ abstract class VariablesResolutionService
 	):self;
 
 	/**
+	 * Set the meta data of the template into the variables context
+	 */
+	abstract public function setMetaData(
+		array $metaData
+	):self;
+
+	/**
 	 * Set the contact into the variables context
 	 */
 	abstract public function setContact(
