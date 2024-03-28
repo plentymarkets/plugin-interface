@@ -52,6 +52,8 @@ abstract class DocumentTemplateOutputSetting
 
 	const UNIT_FORMAT_SHORT_FORM = 'shortForm';
 
+	const REORDER_ITEM_SORT = 'reorderItemSort';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
@@ -99,6 +101,8 @@ public		$xmlFormat;
 public		$repeatPdfBackground;
 	
 public		$unitFormat;
+	
+public		$reorderItemSort;
 	
 public		$integrateInvoices;
 	
