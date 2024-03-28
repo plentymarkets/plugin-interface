@@ -100,6 +100,8 @@ public		$repeatPdfBackground;
 	
 public		$unitFormat;
 	
+public		$integrateInvoices;
+	
 public		$documentTemplateSetting;
 	
 	/**
