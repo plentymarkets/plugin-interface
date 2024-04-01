@@ -20,6 +20,8 @@ public		$dataName;
 	
 public		$active;
 	
+public		$forcedInactive;
+	
 	/**
 	 * Returns this model as an array.
 	 */
