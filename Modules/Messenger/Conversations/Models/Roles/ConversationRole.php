@@ -8,6 +8,8 @@ namespace Plenty\Modules\Messenger\Conversations\Models\Roles;
 abstract class ConversationRole 
 {
 	
+public		$id;
+	
 public		$position;
 	
 public		$userId;
