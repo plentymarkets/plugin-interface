@@ -8,6 +8,8 @@ namespace Plenty\Modules\Feedback\Models;
 abstract class FeedbackSourceRelation 
 {
 
+	const AUTHOR_NAME_ANONYMOUS = 'Anonymous';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

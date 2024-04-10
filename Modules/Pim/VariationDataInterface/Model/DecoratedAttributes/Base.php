@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
+use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Base\With;
 
 /**
@@ -323,6 +324,26 @@ abstract class Base
 	 * @var int
 	 */
 	public		$campaignId;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$createdAt;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$updatedAt;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$relatedUpdatedAt;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$availabilityUpdatedAt;
 	
 	/**
 	 * @var bool
