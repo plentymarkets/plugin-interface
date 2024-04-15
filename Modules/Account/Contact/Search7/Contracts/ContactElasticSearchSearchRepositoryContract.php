@@ -18,7 +18,8 @@ interface ContactElasticSearchSearchRepositoryContract
 		array $filters = [], 
 		string $sortBy = "contactId", 
 		string $sortOrder = "desc", 
-		string $with = ""
+		string $with = "", 
+		bool $returnAsArray = true
 	):FilteredPaginatedResult;
 
 	/**
@@ -31,7 +32,8 @@ interface ContactElasticSearchSearchRepositoryContract
 		string $sortOrder = "desc", 
 		string $with = "", 
 		array $searchAfterKey = [], 
-		bool $withResult = true
+		bool $withResult = true, 
+		bool $returnAsArray = true
 	):array;
 
 }
