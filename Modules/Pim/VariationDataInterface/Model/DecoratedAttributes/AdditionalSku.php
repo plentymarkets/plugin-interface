@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
+use Carbon\Carbon;
 
 /**
  * Contains information about an additonal sku, belongs to a variation.
@@ -32,6 +33,11 @@ abstract class AdditionalSku
 	 * @var string
 	 */
 	public		$sku;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

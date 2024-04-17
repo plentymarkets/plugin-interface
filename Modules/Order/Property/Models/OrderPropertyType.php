@@ -210,6 +210,8 @@ abstract class OrderPropertyType
 
 	const CREDIT_NOTE_REASON = 102;
 
+	const IS_TRANSPARENCY = 103;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
