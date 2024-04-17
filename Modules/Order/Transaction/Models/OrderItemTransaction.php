@@ -42,6 +42,8 @@ public		$batch;
 	
 public		$bestBeforeDate;
 	
+public		$deliveryNoteNumber;
+	
 public		$batchBestBeforeDateId;
 	
 public		$createdAt;
