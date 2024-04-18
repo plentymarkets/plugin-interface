@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
-use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Tag\With;
 
 /**
@@ -24,16 +23,6 @@ abstract class Tag
 	 * @var int
 	 */
 	public		$tagId;
-	
-	/**
-	 * @var Carbon
-	 */
-	public		$createdAt;
-	
-	/**
-	 * @var Carbon
-	 */
-	public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.
