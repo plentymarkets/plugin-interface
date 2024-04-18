@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
-use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Warehouse\With;
 
 /**
@@ -69,16 +68,6 @@ abstract class Warehouse
 	 * @var bool
 	 */
 	public		$isBestBeforeDate;
-	
-	/**
-	 * @var Carbon
-	 */
-	public		$updatedAt;
-	
-	/**
-	 * @var Carbon
-	 */
-	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.

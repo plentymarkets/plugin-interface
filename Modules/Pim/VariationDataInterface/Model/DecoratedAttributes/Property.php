@@ -1,7 +1,6 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
-use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Property\With;
 
 /**
@@ -59,16 +58,6 @@ abstract class Property
 	 * @var array
 	 */
 	public		$selectionValues;
-	
-	/**
-	 * @var Carbon
-	 */
-	public		$createdAt;
-	
-	/**
-	 * @var Carbon
-	 */
-	public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.
