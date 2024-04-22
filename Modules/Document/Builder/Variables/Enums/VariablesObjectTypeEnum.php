@@ -26,6 +26,8 @@ abstract class VariablesObjectTypeEnum
 
 	const Other = 'Other';
 
+	const MessengerConversation = 'MessengerConversation';
+
 	const Unknown = 'Unknown';
 
 	/**
