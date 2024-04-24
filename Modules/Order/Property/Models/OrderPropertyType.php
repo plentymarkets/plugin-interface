@@ -212,6 +212,8 @@ abstract class OrderPropertyType
 
 	const IS_TRANSPARENCY = 103;
 
+	const LISTING_ID = 104;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
