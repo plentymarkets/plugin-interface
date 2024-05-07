@@ -10,7 +10,9 @@ use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderItemVariationIdF
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderOwnerFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderPaidAtFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderPaymentMethodFilterBuilder;
+use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderReceivedDateFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderReferrerFilterBuilder;
+use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderShippingProfileFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderStatusFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderTypeFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderUpdatedAtFilterBuilder;
@@ -63,5 +65,11 @@ abstract class OrderFilterBuilderFactory
 
 	abstract public function orderCompletedAtFilterBuilder(
 	):OrderCompletedAtFilterBuilder;
+
+	abstract public function orderReceivedDateFilterBuilder(
+	):OrderReceivedDateFilterBuilder;
+
+	abstract public function orderShippingProfileFilterBuilder(
+	):OrderShippingProfileFilterBuilder;
 
 }
