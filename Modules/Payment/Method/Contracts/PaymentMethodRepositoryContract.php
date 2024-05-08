@@ -73,6 +73,17 @@ interface PaymentMethodRepositoryContract
 	):PaymentMethod;
 
 	/**
+	 * Updates payment method name and isDocumentBuilderActive
+	 */
+	public function update(
+		 $paymentMethodData
+	):PaymentMethod;
+
+	public function updateBulk(
+		 $paymentMethods
+	);
+
+	/**
 	 * Prepares a payment method. The ID of the payment method must be specified.
 	 */
 	public function preparePaymentMethod(
@@ -125,6 +136,13 @@ interface PaymentMethodRepositoryContract
 	):array;
 
 	public function backendActivePaymentMethods(
+	):array;
+
+	/**
+	 * List all payment methods which are active for DocumentBuilder
+	 */
+	public function listDocumentBuilderActive(
+		string $lang
 	):array;
 
 }
