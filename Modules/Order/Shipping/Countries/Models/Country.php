@@ -38,6 +38,8 @@ public		$vatCodes;
 	
 public		$region;
 	
+public		$currencies;
+	
 	/**
 	 * Returns this model as an array.
 	 */

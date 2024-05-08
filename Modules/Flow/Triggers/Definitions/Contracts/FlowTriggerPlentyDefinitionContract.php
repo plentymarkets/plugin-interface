@@ -29,6 +29,9 @@ interface FlowTriggerPlentyDefinitionContract
 	public function getTriggerDescription(
 	):string;
 
+	public function getTriggerPath(
+	):string;
+
 	public function getUIConfigField(
 	):array;
 
