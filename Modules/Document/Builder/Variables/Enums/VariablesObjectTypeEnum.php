@@ -26,6 +26,14 @@ abstract class VariablesObjectTypeEnum
 
 	const PluginOld = 'PluginOld';
 
+	const ShippingProfile = 'ShippingProfile';
+
+	const ShippingProvider = 'ShippingProvider';
+
+	const Warehouse = 'Warehouse';
+
+	const QuantityArray = 'QuantityArray';
+
 	const Other = 'Other';
 
 	const MessengerConversation = 'MessengerConversation';

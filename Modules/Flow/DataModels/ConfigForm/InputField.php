@@ -28,6 +28,8 @@ abstract class InputField
 
 	const TYPE_TEXTAREA = 'textarea';
 
+	const VALIDATION_TYPE_NUMBER = 'number';
+
 	/**
 	 * Returns this model as an array.
 	 */
