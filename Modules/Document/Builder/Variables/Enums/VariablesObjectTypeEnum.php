@@ -12,6 +12,8 @@ abstract class VariablesObjectTypeEnum
 
 	const OrderItem = 'OrderItem';
 
+	const OrderItemTypes = 'OrderItemTypes';
+
 	const OrderAmount = 'OrderAmount';
 
 	const Variation = 'Variation';
