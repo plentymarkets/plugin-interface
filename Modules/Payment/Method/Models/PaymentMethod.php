@@ -20,6 +20,8 @@ public		$paymentKey;
 	
 public		$name;
 	
+public		$isDocumentBuilderActive;
+	
 	/**
 	 * Returns this model as an array.
 	 */
