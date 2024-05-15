@@ -12,6 +12,8 @@ abstract class VariablesObjectTypeEnum
 
 	const OrderItem = 'OrderItem';
 
+	const OrderItemTypes = 'OrderItemTypes';
+
 	const OrderAmount = 'OrderAmount';
 
 	const Variation = 'Variation';
@@ -25,6 +27,14 @@ abstract class VariablesObjectTypeEnum
 	const MetaData = 'MetaData';
 
 	const PluginOld = 'PluginOld';
+
+	const ShippingProfile = 'ShippingProfile';
+
+	const ShippingProvider = 'ShippingProvider';
+
+	const Warehouse = 'Warehouse';
+
+	const QuantityArray = 'QuantityArray';
 
 	const Other = 'Other';
 

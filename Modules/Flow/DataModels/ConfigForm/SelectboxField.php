@@ -27,6 +27,8 @@ abstract class SelectboxField
 	const TYPE_HYPERLINK = 'hyperlink';
 
 	const TYPE_TEXTAREA = 'textarea';
+
+	const VALIDATION_TYPE_NUMBER = 'number';
 	
 public		$selectBoxValues;
 	

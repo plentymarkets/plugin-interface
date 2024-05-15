@@ -8,6 +8,10 @@ namespace Plenty\Modules\Flow\DataModels\ConfigForm;
 abstract class NumberField 
 {
 
+	const VALIDATION_GREATER_THAN = 'NumberGreaterThan';
+
+	const VALIDATION_LESS_THAN = 'NumberLessThan';
+
 	const TYPE_DATE = 'date';
 
 	const TYPE_TIME = 'time';
@@ -27,6 +31,8 @@ abstract class NumberField
 	const TYPE_HYPERLINK = 'hyperlink';
 
 	const TYPE_TEXTAREA = 'textarea';
+
+	const VALIDATION_TYPE_NUMBER = 'number';
 
 	/**
 	 * Returns this model as an array.
