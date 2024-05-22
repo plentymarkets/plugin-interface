@@ -52,6 +52,8 @@ public		$updatedAt;
 	
 public		$orderItem;
 	
+public		$warehouseLocation;
+	
 	/**
 	 * Returns this model as an array.
 	 */
