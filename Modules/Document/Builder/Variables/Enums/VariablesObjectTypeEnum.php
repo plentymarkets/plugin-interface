@@ -34,6 +34,8 @@ abstract class VariablesObjectTypeEnum
 
 	const ShippingProvider = 'ShippingProvider';
 
+	const TaxDeterminer = 'TaxDeterminer';
+
 	const Warehouse = 'Warehouse';
 
 	const QuantityArray = 'QuantityArray';
