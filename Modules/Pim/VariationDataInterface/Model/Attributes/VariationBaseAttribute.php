@@ -13,7 +13,6 @@ use Plenty\Modules\Item\ItemSerialNumber\Models\ItemSerialNumber;
 use Plenty\Modules\Item\ItemShippingProfiles\Models\ItemShippingProfiles;
 use Plenty\Modules\Item\Item\Models\Item;
 use Plenty\Modules\Item\PackingUnit\Models\PackingUnit;
-use Plenty\Modules\Item\Unit\Models\Unit;
 use Plenty\Modules\Item\VariationBundle\Models\VariationBundle;
 use Plenty\Modules\Item\VariationDescription\Models\VariationDescription;
 use Plenty\Modules\Item\VariationProperty\Models\VariationPropertyValue;

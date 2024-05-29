@@ -29,6 +29,11 @@ abstract class With
 	/**
 	 * @var array
 	 */
+	public		$crossSellingFor;
+	
+	/**
+	 * @var array
+	 */
 	public		$texts;
 	
 	/**
