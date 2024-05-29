@@ -63,6 +63,13 @@ interface DocumentRepositoryContract
 	):bool;
 
 	/**
+	 * Delete a document without an order relation
+	 */
+	public function deleteOrderDocumentWithoutOrderRelation(
+		int $documentId
+	):bool;
+
+	/**
 	 * Archive order document
 	 */
 	public function archiveOrderDocument(
