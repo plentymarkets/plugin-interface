@@ -26,6 +26,16 @@ abstract class VariablesObjectTypeEnum
 
 	const Document = 'Document';
 
+	const ParentDocument = 'ParentDocument';
+
+	const ReferenceDocument = 'ReferenceDocument';
+
+	const Invoice = 'Invoice';
+
+	const DeliveryNote = 'DeliveryNote';
+
+	const OrderConfirmation = 'OrderConfirmation';
+
 	const MetaData = 'MetaData';
 
 	const PluginOld = 'PluginOld';
