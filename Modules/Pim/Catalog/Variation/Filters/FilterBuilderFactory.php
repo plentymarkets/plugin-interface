@@ -30,6 +30,7 @@ use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationHasChildren;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIds;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIsActive;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationIsMain;
+use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationRelatedOrStockUpdatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationRelatedUpdatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Variation\VariationUpdatedAt;
 
