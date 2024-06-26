@@ -77,6 +77,11 @@ abstract class With
 	public		$setConfig;
 	
 	/**
+	 * @var array
+	 */
+	public		$itemEbayTitle;
+	
+	/**
 	 * Returns this model as an array.
 	 */
 	public function toArray(
