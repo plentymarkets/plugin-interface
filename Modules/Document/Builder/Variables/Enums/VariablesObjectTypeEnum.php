@@ -20,6 +20,16 @@ abstract class VariablesObjectTypeEnum
 
 	const Variation = 'Variation';
 
+	const OrderVariationsAmounts = 'OrderVariationsAmounts';
+
+	const OrderCouponsAmounts = 'OrderCouponsAmounts';
+
+	const OrderDiscountAmounts = 'OrderDiscountAmounts';
+
+	const OrderItemReorderReference = 'OrderItemReorderReference';
+
+	const ReferencedOrder = 'ReferencedOrder';
+
 	const Contact = 'Contact';
 
 	const Address = 'Address';
@@ -47,6 +57,8 @@ abstract class VariablesObjectTypeEnum
 	const ShippingProvider = 'ShippingProvider';
 
 	const TaxDeterminer = 'TaxDeterminer';
+
+	const CountryVat = 'CountryVat';
 
 	const Warehouse = 'Warehouse';
 
