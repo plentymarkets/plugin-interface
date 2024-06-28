@@ -2,9 +2,12 @@
 namespace Plenty\Modules\Mail\Templates\Contracts\Service\EmailService;
 
 use Illuminate\Support\Collection;
+use Plenty\Modules\Account\Exceptions\CRMBaseException;
 use Plenty\Modules\ContentBuilder\Exceptions\ContentBuilderException;
+use Plenty\Modules\Mail\Templates\Exceptions\MailTemplateCriticalException;
 use Plenty\Modules\Mail\Templates\Exceptions\MailTemplateFactoryException;
 use Plenty\Modules\Mail\Templates\Exceptions\MailTemplateMailerException;
+use Plenty\Modules\Mail\Templates\Exceptions\MailTemplateNonLoggableException;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 
@@ -59,6 +62,10 @@ interface EmailTemplatesSendServiceContract
 	 * Sends a direct email to the specified recipients (a preview of a template or any other custom content email)
 	 */
 	public function sendPreview(
+		array $data = []
+	):array;
+
+	public function getRecipient(
 		array $data = []
 	):array;
 

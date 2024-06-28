@@ -32,6 +32,13 @@ interface OrderItemTransactionRepositoryContract
 	):OrderItemTransaction;
 
 	/**
+	 * Create multiple transactions
+	 */
+	public function createMany(
+		array $data
+	):array;
+
+	/**
 	 * Update a transaction
 	 */
 	public function update(
