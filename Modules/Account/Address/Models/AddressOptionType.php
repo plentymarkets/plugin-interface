@@ -8,6 +8,8 @@ namespace Plenty\Modules\Account\Address\Models;
 abstract class AddressOptionType 
 {
 
+	const MIN_AUTOINCREMENT_ID = 1001;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
