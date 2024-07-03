@@ -34,6 +34,8 @@ abstract class AddressOption
 
 	const TYPE_EXTERNAL_CUSTOMER_ID = 13;
 
+	const TYPE_BUYER_REFERENCE = 100;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

@@ -7,6 +7,10 @@ namespace Plenty\Modules\Messenger\Conversations\Models;
  */
 abstract class Conversation 
 {
+
+	const TAG_ADVANCED_FIELD_VALUE = 'tagAdvanced';
+
+	const TAG_ADVANCED_OPERATORS = ['eq','in','nin'];
 	
 public		$uuid;
 	
