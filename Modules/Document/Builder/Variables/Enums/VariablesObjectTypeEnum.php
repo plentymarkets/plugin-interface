@@ -24,6 +24,8 @@ abstract class VariablesObjectTypeEnum
 
 	const Address = 'Address';
 
+	const Location = 'Location';
+
 	const Document = 'Document';
 
 	const ParentDocument = 'ParentDocument';
