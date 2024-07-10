@@ -280,4 +280,13 @@ interface ConversationRepositoryContract
 		string $UUID
 	):array;
 
+	/**
+	 * Removes relation from a conversation
+	 */
+	public function removeConversationRelation(
+		string $conversationUuid, 
+		string $type, 
+		string $value
+	):bool;
+
 }

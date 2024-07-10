@@ -10,6 +10,8 @@ abstract class Feedback
 
 	const MAX_ITEMS_PER_PAGE = 500;
 
+	const TYPE_REVIEW = 'review';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

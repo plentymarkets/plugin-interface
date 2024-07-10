@@ -72,7 +72,9 @@ interface ReorderRepositoryContract
 	 * Calculate and save the delivery dates
 	 */
 	public function updateDeliveryDates(
-		int $orderId
+		int $orderId, 
+		Carbon $date = null, 
+		string $transferToOrderItems = null
 	):Order;
 
 	/**
