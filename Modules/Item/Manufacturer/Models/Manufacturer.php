@@ -52,6 +52,20 @@ public		$comment;
 	
 public		$updatedAt;
 	
+public		$responsibleName;
+	
+public		$responsibleStreet;
+	
+public		$responsibleHouseNo;
+	
+public		$responsiblePostCode;
+	
+public		$responsibleTown;
+	
+public		$responsibleCountry;
+	
+public		$responsibleEmail;
+	
 public		$commissions;
 	
 public		$externals;
