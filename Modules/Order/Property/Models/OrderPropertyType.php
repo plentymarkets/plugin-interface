@@ -214,6 +214,8 @@ abstract class OrderPropertyType
 
 	const LISTING_ID = 104;
 
+	const CHANNEL_LAYER_EXTERNAL_ORDER_ITEM_ID = 105;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
