@@ -90,7 +90,8 @@ interface StockRepositoryContract
 	 * Redistribute stock
 	 */
 	public function redistributeStock(
-		array $data
+		array $data, 
+		array $additionalParams = []
 	);
 
 	/**
