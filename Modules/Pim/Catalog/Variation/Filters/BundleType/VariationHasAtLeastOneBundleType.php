@@ -20,7 +20,9 @@ abstract class VariationHasAtLeastOneBundleType implements \Plenty\Modules\Catal
 
 	const BUNDLE_ITEM = 'bundle_item';
 
-	const BUNDLE_TYPES = ['default','bundle','bundle_item'];
+	const IS_NOT_BUNDLE = 'is_not_bundle';
+
+	const BUNDLE_TYPES = ['default','bundle','bundle_item','is_not_bundle'];
 
 	const KEY = 'variationIsBundleType';
 

@@ -3,8 +3,10 @@ namespace Plenty\Modules\Pim\SearchService\Filter;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\RangeFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**

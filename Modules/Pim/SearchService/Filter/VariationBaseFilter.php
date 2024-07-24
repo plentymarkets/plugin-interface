@@ -167,6 +167,9 @@ abstract class VariationBaseFilter implements TypeInterface
 		 $bool = true
 	):self;
 
+	abstract public function hasLinkedImages(
+	);
+
 	/**
 	 * Restricts the result to have an item image.
 	 */
