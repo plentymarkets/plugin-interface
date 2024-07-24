@@ -3,6 +3,8 @@ namespace Plenty\Modules\Pim\SearchService\Filter;
 
 use Exception;
 use Illuminate\Contracts\Support\Arrayable;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldExistsStatement;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldIsMissingStatement;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
@@ -33,9 +35,21 @@ abstract class ItemFilter implements TypeInterface
 	):self;
 
 	/**
-	 * Restricts the result to have an image.
+	 * Restricts the result to have an image that is not linked to any variation.
 	 */
 	abstract public function hasAnImage(
+	):self;
+
+	/**
+	 * Restricts the result to have an image that is not linked to any variation.
+	 */
+	abstract public function doesntHaveAnImage(
+	):self;
+
+	/**
+	 * Restricts the results to have an image on item
+	 */
+	abstract public function hasAnyImage(
 	):self;
 
 	/**
@@ -85,6 +99,9 @@ abstract class ItemFilter implements TypeInterface
 	 */
 	abstract public function hasAManufacturer(
 	):self;
+
+	abstract public function withoutManufacturer(
+	);
 
 	/**
 	 * Restricts the result to have the specified item type.

@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Pim\SearchService\Filter;
 
 use Illuminate\Contracts\Support\Arrayable;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\RangeFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
@@ -36,6 +37,11 @@ abstract class WarehouseFilter implements TypeInterface
 	abstract public function hasWarehouseIds(
 		array $warehouseIds
 	):WarehouseFilter;
+
+	abstract public function hasPhysicalStockInWarehouseIds(
+		array $warehouseIds, 
+		string $operator = "gt"
+	):self;
 
 	abstract public function toArray(
 	):array;

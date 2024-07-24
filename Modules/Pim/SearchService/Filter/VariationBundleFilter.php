@@ -3,6 +3,7 @@ namespace Plenty\Modules\Pim\SearchService\Filter;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldExistsStatement;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldIsMissingStatement;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
@@ -35,6 +36,12 @@ abstract class VariationBundleFilter implements TypeInterface
 	 * Restricts the result to have the no bundle type.
 	 */
 	abstract public function hasNoBundleType(
+	):self;
+
+	/**
+	 * Restricts the result to have the no bundle type.
+	 */
+	abstract public function isNotBundle(
 	):self;
 
 	/**
