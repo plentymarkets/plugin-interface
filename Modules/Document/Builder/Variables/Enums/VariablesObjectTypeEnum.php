@@ -30,6 +30,8 @@ abstract class VariablesObjectTypeEnum
 
 	const ReferencedOrder = 'ReferencedOrder';
 
+	const OrderPaymentTerms = 'OrderPaymentTerms';
+
 	const Contact = 'Contact';
 
 	const Address = 'Address';
