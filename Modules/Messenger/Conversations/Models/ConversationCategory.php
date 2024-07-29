@@ -35,6 +35,14 @@ abstract class ConversationCategory
 	const TICKET_LEGACY_CATEGORY_ID = 5;
 
 	const TICKET_LEGACY_CATEGORY_POSITION = 5;
+
+	const OTTO_CATEGORY_ID = 6;
+
+	const OTTO_CATEGORY_POSITION = 6;
+
+	const KAUFLAND_CATEGORY_ID = 7;
+
+	const KAUFLAND_CATEGORY_POSITION = 7;
 	
 public		$names;
 	
