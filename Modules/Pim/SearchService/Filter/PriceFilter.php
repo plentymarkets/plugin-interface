@@ -40,6 +40,12 @@ abstract class PriceFilter implements TypeInterface
 		float $max = null
 	):self;
 
+	abstract public function priceValue(
+		float $priceValue, 
+		int $priceType, 
+		string $operator = "eq"
+	):self;
+
 	abstract public function toArray(
 	):array;
 

@@ -2,10 +2,10 @@
 namespace Plenty\Modules\Account\Contact\Contracts;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Account\Contact\Models\Contact;
 use Plenty\Modules\Data\History\Contracts\DataHistoryProviderContract;
-use Plenty\Modules\RestDocumentation\Annotations\CallParam;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Contracts\SortableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -33,6 +33,13 @@ interface ContactRepositoryContract
 		array $data, 
 		int $contactId
 	):Contact;
+
+	/**
+	 * Updates batch of contacts and returns them.
+	 */
+	public function batchUpdate(
+		Collection $contactsBatch
+	):bool;
 
 	/**
 	 * Updates the newsletter date from contact and returns it.

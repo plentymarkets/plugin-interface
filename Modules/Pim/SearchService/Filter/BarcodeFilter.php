@@ -2,9 +2,11 @@
 namespace Plenty\Modules\Pim\SearchService\Filter;
 
 use Illuminate\Contracts\Support\Arrayable;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldExistsStatement;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchExactFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\MatchFuzzyFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
@@ -49,6 +51,17 @@ abstract class BarcodeFilter implements TypeInterface
 	 * Restricts the result to have at least one barcode
 	 */
 	abstract public function hasBarcode(
+	):self;
+
+	/**
+	 * Restricts the result to have any of the barcode ids.
+	 */
+	abstract public function hasAnyBarcode(
+		array $barcodeIds
+	):self;
+
+	abstract public function withoutBarcode(
+		int $barcodeId
 	):self;
 
 	abstract public function toArray(
