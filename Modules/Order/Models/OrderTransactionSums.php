@@ -24,6 +24,10 @@ public		$quantityTransactionsInCancelled;
 	
 public		$quantityTransactionsOutCancelled;
 	
+public		$quantityTransactionsInBooked;
+	
+public		$quantityTransactionsOutBooked;
+	
 public		$priceTotalTransactionsInRegular;
 	
 public		$priceTotalTransactionsOutRegular;
