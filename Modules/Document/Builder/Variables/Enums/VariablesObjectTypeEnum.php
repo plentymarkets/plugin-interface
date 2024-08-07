@@ -70,6 +70,12 @@ abstract class VariablesObjectTypeEnum
 
 	const MessengerConversation = 'MessengerConversation';
 
+	const StockIntakeData = 'StockIntakeData';
+
+	const ReceiptItem = 'ReceiptItem';
+
+	const ValueFormatter = 'ValueFormatter';
+
 	const Unknown = 'Unknown';
 
 	/**

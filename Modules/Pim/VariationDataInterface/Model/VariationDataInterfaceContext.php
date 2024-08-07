@@ -167,6 +167,10 @@ abstract class VariationDataInterfaceContext
 	abstract public function getLimit(
 	);
 
+	abstract public function setLimit(
+		int $limit
+	):self;
+
 	/**
 	 * set whether the result should return all found entities without pagination or not
 	 */
