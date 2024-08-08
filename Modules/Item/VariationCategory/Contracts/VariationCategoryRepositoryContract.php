@@ -13,7 +13,7 @@ interface VariationCategoryRepositoryContract
 {
 
 	/**
-	 * Gets the link between a category and a variation. The ID of the variation and the ID of the category must be specified.
+	 * Gets the link between a category and a variation.
 	 */
 	public function show(
 		int $variationId, 
@@ -28,7 +28,7 @@ interface VariationCategoryRepositoryContract
 	):VariationCategory;
 
 	/**
-	 * Updates a link between a category and a variation. The ID of the variation and the ID of the category must be specified.
+	 * Updates a link between a category and a variation.
 	 */
 	public function update(
 		array $data, 
@@ -37,7 +37,7 @@ interface VariationCategoryRepositoryContract
 	):VariationCategory;
 
 	/**
-	 * Deletes the link between a category and a variation. The ID of the variation and the ID of the category must be specified.
+	 * Deletes the link between a category and a variation.
 	 */
 	public function delete(
 		int $variationId, 
@@ -45,28 +45,28 @@ interface VariationCategoryRepositoryContract
 	):DeleteResponse;
 
 	/**
-	 * Lists the categories linked to a variation. The ID of the variation must be specified.
+	 * Lists the categories linked to a variation.
 	 */
 	public function findByVariationId(
 		int $variationId
 	):VariationCategory;
 
 	/**
-	 * Lists the categories linked to a variation including inheritance information. The ID of the variation must be specified.
+	 * Lists the categories linked to a variation including inheritance information.
 	 */
 	public function findByVariationIdWithInheritance(
 		int $variationId
 	):VariationCategory;
 
 	/**
-	 * Updates up to 50 links between variations and categories. The ID of the variations and the ID of the categories must be specified.
+	 * Updates up to 50 links between variations and categories.
 	 */
 	public function updateBulk(
 		array $data
 	):Collection;
 
 	/**
-	 * Creates up to 50 links between variations and categories. The ID of the variations and the ID of the categories must be specified.
+	 * Creates up to 50 links between variations and categories.
 	 */
 	public function createBulk(
 		array $data

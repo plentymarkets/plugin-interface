@@ -37,7 +37,8 @@ interface VariationMarketIdentNumberRepositoryContract
 	 * Deletes a market ident number (ASIN/ePID) of a variation. The ID of the market ident number must be specified.
 	 */
 	public function delete(
-		int $variationMarketIdentNumberId
+		int $variationMarketIdentNumberId, 
+		int $variationId = null
 	):DeleteResponse;
 
 	/**
