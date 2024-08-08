@@ -12,7 +12,7 @@ interface VariationClientRepositoryContract
 {
 
 	/**
-	 * Gets a client (store) linked to a variation. The ID of the variation and the client ID must be specified.
+	 * Gets a client (store) linked to a variation.
 	 */
 	public function findOne(
 		int $plentyId, 
@@ -27,7 +27,7 @@ interface VariationClientRepositoryContract
 	):VariationClient;
 
 	/**
-	 * Deletes the link between a variation and a client (store). The ID of the variation and the client ID must be specified.
+	 * Deletes the link between a variation and a client (store).
 	 */
 	public function delete(
 		int $plentyId, 
@@ -42,7 +42,7 @@ interface VariationClientRepositoryContract
 	):VariationClient;
 
 	/**
-	 * Lists the clients (stores) linked to a variation including inheritance information. The ID of the variation must be specified.
+	 * Lists the clients (stores) linked to a variation including inheritance information.
 	 */
 	public function findByVariationIdWithInheritance(
 		int $variationId
