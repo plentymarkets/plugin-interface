@@ -11,7 +11,7 @@ use Plenty\Modules\Payment\Models\Payment;
 abstract class MatchInvoiceNumber 
 {
 
-	const SCORE_UP = 35;
+	const SCORE_UP = 55;
 
 	abstract public function canScore(
 		Payment $payment, 
