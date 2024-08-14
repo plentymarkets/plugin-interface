@@ -36,6 +36,8 @@ abstract class AddressOption
 
 	const TYPE_BUYER_REFERENCE = 100;
 
+	const TYPE_GLOBAL_LOCATION_NUMBER = 101;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
