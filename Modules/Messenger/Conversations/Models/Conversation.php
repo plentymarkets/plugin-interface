@@ -82,6 +82,8 @@ public		$messagesReferrers;
 	
 public		$messagesFroms;
 	
+public		$replyTo;
+	
 public		$messagesPaths;
 	
 public		$messagesIds;
