@@ -75,6 +75,10 @@ abstract class MessagesSearchService
 		string $path
 	):Message;
 
+	abstract public static function removeTagsAndWhitespaces(
+		 $message
+	);
+
 	/**
 	 * Gets a stream of messages. The given UUID can be the UUID of the first message in the stream or one of the replied messages.
 	 */
