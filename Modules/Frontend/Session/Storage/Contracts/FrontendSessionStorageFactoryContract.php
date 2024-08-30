@@ -2,7 +2,6 @@
 namespace Plenty\Modules\Frontend\Session\Storage\Contracts;
 
 use Plenty\Modules\Frontend\Session\Storage\Models\Customer;
-use Plenty\Modules\Frontend\Session\Storage\Models\Forum;
 use Plenty\Modules\Frontend\Session\Storage\Models\LocaleSettings;
 use Plenty\Modules\Frontend\Session\Storage\Models\Order;
 use Plenty\Modules\Frontend\Session\Storage\Models\Plugin;
@@ -36,11 +35,5 @@ interface FrontendSessionStorageFactoryContract
 	 */
 	public function getPlugin(
 	):Plugin;
-
-	/**
-	 * Get the forum data from the session storage.
-	 */
-	public function getForum(
-	):Forum;
 
 }
