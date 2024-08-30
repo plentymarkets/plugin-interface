@@ -7,17 +7,7 @@ namespace Plenty\Modules\Frontend\Session\Storage\Models;
  */
 abstract class Forum 
 {
-	
-public		$forumGroupId;
-	
-public		$forumUsername;
-	
-public		$forumConfig;
-	
-public		$forumPermissions;
-	
-public		$forumLastVisitTime;
-	
+
 	/**
 	 * Returns this model as an array.
 	 */

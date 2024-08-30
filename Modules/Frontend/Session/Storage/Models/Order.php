@@ -30,13 +30,7 @@ public		$orderAmountVats;
 	
 public		$promotionalCouponItems;
 	
-public		$orderinfoText;
-	
-public		$payDataComplete;
-	
 public		$itemOrderParams;
-	
-public		$uploadedFileStack;
 	
 public		$trustedShopBuyerProtection;
 	
