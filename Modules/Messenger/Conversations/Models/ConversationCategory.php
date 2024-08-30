@@ -43,6 +43,10 @@ abstract class ConversationCategory
 	const KAUFLAND_CATEGORY_ID = 7;
 
 	const KAUFLAND_CATEGORY_POSITION = 7;
+
+	const AMAZON_CATEGORY_ID = 8;
+
+	const AMAZON_CATEGORY_POSITION = 8;
 	
 public		$names;
 	
