@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Pim\VariationDataInterface\Operations;
 
 use DB;
+use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Pim\DocumentService\Models\Variation;
 use Plenty\Modules\Pim\DocumentService\Models\Variation\Base;
 use Plenty\Modules\Pim\DocumentService\Models\WriteResponse;

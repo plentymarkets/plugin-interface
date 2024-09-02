@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Operations;
 
+use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Pim\DocumentService\Models\WriteResponse;
 use Plenty\Modules\Pim\VariationDataInterface\Contracts\OperationInterface;
 
