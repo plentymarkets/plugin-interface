@@ -30,7 +30,9 @@ abstract class TagAvailability
 
 	const TAG_TYPE_DOCUMENT_TEMPLATE = 'documentTemplate';
 
-	const ALLOWED_TYPES = ['category','ticket','variation','board','contact','order','messenger','messageBillable','messageClearingSubAccount','document','documentTemplate'];
+	const TAG_TYPE_PLENTY_FUNCTION = 'plentyFunction';
+
+	const ALLOWED_TYPES = ['category','ticket','variation','board','contact','order','messenger','messageBillable','messageClearingSubAccount','document','documentTemplate','plentyFunction'];
 
 	const CREATED_AT = 'createdAt';
 

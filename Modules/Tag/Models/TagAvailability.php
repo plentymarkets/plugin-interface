@@ -30,6 +30,8 @@ abstract class TagAvailability
 
 	const TAG_TYPE_DOCUMENT_TEMPLATE = 'documentTemplate';
 
+	const TAG_TYPE_PLENTY_FUNCTION = 'plentyFunction';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
