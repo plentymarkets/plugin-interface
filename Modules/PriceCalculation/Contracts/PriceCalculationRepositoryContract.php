@@ -43,10 +43,22 @@ interface PriceCalculationRepositoryContract
 		string $id
 	):DeleteResponse;
 
+	/**
+	 * Check if type & key are used in the price calculation.
+	 */
 	public function uses(
 		string $id, 
 		string $type, 
 		string $key
+	):bool;
+
+	/**
+	 * Check if type & any (at least one) of the keys are used in the price calculation.
+	 */
+	public function usesAny(
+		string $id, 
+		string $type, 
+		array $keys
 	):bool;
 
 	/**
