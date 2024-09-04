@@ -66,6 +66,8 @@ public		$responsibleCountry;
 	
 public		$responsibleEmail;
 	
+public		$responsiblePhoneNo;
+	
 public		$commissions;
 	
 public		$externals;
