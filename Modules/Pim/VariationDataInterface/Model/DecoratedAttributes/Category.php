@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
+use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Category\With;
 
 /**
@@ -33,6 +34,16 @@ abstract class Category
 	 * @var string
 	 */
 	public		$isNeckermannPrimary;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$createdAt;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.

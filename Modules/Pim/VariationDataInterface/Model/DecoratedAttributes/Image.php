@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
+use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Images\With;
 
 /**
@@ -23,6 +24,11 @@ abstract class Image
 	 * @var int
 	 */
 	public		$imageId;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$updatedAt;
 	
 	/**
 	 * Returns this model as an array.
