@@ -16,6 +16,8 @@ public		$id;
 	
 public		$name;
 	
+public		$warehouseKeeperName;
+	
 public		$note;
 	
 public		$typeId;

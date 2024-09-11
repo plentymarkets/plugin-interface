@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Webshop\ItemSearch\Services;
 
 use Plenty\Log\Traits\Loggable;
+use Plenty\Modules\Webshop\Helpers\PropertyFileService;
 use Plenty\Modules\Webshop\ItemSearch\Factories\BaseSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Factories\FacetSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Factories\MultiSearchFactory;
@@ -27,5 +28,9 @@ abstract class ItemSearchService
 	abstract public function getResult(
 		 $searchFactory
 	):array;
+
+	abstract public function getResultsWithDownloadLinkForProperties(
+		 $results
+	);
 
 }
