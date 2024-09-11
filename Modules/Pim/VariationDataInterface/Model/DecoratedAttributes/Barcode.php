@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes;
 
+use Carbon\Carbon;
 use Plenty\Modules\Pim\VariationDataInterface\Model\DecoratedAttributes\Decorators\Barcode\With;
 
 /**
@@ -28,6 +29,11 @@ abstract class Barcode
 	 * @var int
 	 */
 	public		$variationId;
+	
+	/**
+	 * @var Carbon
+	 */
+	public		$createdAt;
 	
 	/**
 	 * Returns this model as an array.
