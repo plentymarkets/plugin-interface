@@ -4,6 +4,7 @@ namespace Plenty\Modules\Order\Catalogues\Order\Template;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderClientFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderCompletedAtFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderCreatedAtFilterBuilder;
+use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderExcludeMainOrdersFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderIdFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderItemTypeFilterBuilder;
 use Plenty\Modules\Order\Catalogues\Order\Template\Filters\OrderItemVariationIdFilterBuilder;
@@ -70,6 +71,9 @@ abstract class OrderFilterBuilderFactory
 	):OrderReceivedDateFilterBuilder;
 
 	abstract public function orderShippingProfileFilterBuilder(
+	):OrderShippingProfileFilterBuilder;
+
+	abstract public function orderExcludeMainOrdersFilterBuilder(
 	):OrderShippingProfileFilterBuilder;
 
 }
