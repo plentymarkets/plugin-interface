@@ -19,6 +19,11 @@ abstract class Market
 	public		$marketId;
 	
 	/**
+	 * @var string
+	 */
+	public		$createdAt;
+	
+	/**
 	 * Returns this model as an array.
 	 */
 	public function toArray(

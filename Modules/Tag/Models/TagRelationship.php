@@ -30,6 +30,8 @@ abstract class TagRelationship
 
 	const TAG_TYPE_DOCUMENT_TEMPLATE = 'documentTemplate';
 
+	const TAG_TYPE_PLENTY_FUNCTION = 'plentyFunction';
+
 	const RELATIONSHIP_AVAILABILITY_RELATION = 'availability';
 
 	const RELATIONSHIP_TAG_RELATION = 'tag';
