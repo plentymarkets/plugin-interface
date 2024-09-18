@@ -16,7 +16,7 @@ abstract class ItemSearchService
 {
 
 	/**
-	 * Execute multiple item searches at once. Results will be mapped to the same keys as used in the given associative array of search factories.
+	 * Execute multiple item searches at once.
 	 */
 	abstract public function getResults(
 		 $searches
@@ -29,8 +29,11 @@ abstract class ItemSearchService
 		 $searchFactory
 	):array;
 
+	/**
+	 * Generates an image url for every existent variation property which is passed within $results param.
+	 */
 	abstract public function getResultsWithDownloadLinkForProperties(
-		 $results
+		array $results
 	);
 
 }

@@ -46,6 +46,8 @@ abstract class OrderDateType
 
 	const CONFIRMATION_LINK_VALID_UNTIL = 19;
 
+	const OFFER_VALID_UNTIL = 20;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
