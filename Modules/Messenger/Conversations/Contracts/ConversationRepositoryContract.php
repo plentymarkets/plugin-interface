@@ -145,7 +145,8 @@ interface ConversationRepositoryContract
 	 */
 	public function searchReceiver(
 		string $searchTerm, 
-		int $companyId = null
+		int $companyId = null, 
+		array $extraParams = []
 	):array;
 
 	/**
@@ -286,7 +287,19 @@ interface ConversationRepositoryContract
 	public function removeConversationRelation(
 		string $conversationUuid, 
 		string $type, 
-		string $value
+		string $value, 
+		bool $removeRecipient = false
+	):bool;
+
+	/**
+	 * Adds relations to a conversation
+	 */
+	public function addConversationRelation(
+		string $conversationUuid, 
+		array $emails, 
+		array $contacts, 
+		array $orders, 
+		bool $addToRecipients
 	):bool;
 
 }
