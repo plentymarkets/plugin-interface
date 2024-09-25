@@ -24,6 +24,9 @@ abstract class StepControlDefinitionContract
 	abstract public function getDescription(
 	):string;
 
+	abstract public function getTooltip(
+	):string;
+
 	abstract public function getUIConfigFields(
 	):array;
 

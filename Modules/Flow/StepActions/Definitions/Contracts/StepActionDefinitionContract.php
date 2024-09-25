@@ -42,6 +42,9 @@ abstract class StepActionDefinitionContract
 	abstract public function getProvidedOutputTypes(
 	):array;
 
+	abstract public function getTooltip(
+	):string;
+
 	abstract public function performTask(
 		array $inputs, 
 		array $configFields, 

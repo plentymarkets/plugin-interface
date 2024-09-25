@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Messenger\Services;
 
+use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Collapse\CollapseInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Index\IndexInterface;
@@ -80,7 +81,8 @@ abstract class MessagesSearchService
 	);
 
 	/**
-	 * Gets a stream of messages. The given UUID can be the UUID of the first message in the stream or one of the replied messages.
+	 * Gets a stream of messages. The given UUID can be the UUID
+of the first message in the stream or one of the replied messages.
 	 */
 	abstract public function findByConversationId(
 		string $conversationUuid
