@@ -40,6 +40,8 @@ public		$outputSetting;
 	
 public		$references;
 	
+public		$xmlSettings;
+	
 public		$headerReference;
 	
 public		$footerReference;

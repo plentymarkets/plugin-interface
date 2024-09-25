@@ -20,6 +20,8 @@ public		$lang;
 	
 public		$name;
 	
+public		$title;
+	
 public		$name2;
 	
 public		$name3;
