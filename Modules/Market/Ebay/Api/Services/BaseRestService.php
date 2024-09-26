@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Market\Ebay\Api\Services;
 
 use Ebay\DigitalSignature\Signature;
+use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Cache;
@@ -13,6 +14,7 @@ use Plenty\Modules\Cloud\SecretsManager\Contracts\CachedSecretsManagerRepository
 use Plenty\Modules\Cloud\Storage\Contracts\GlobalStorageProviderRepositoryContract;
 use Plenty\Modules\Market\Credentials\Models\Credentials;
 use Plenty\Modules\Market\Ebay\Api\Exceptions\InvalidEndPointException;
+use Plenty\Modules\Market\Ebay\Api\Exceptions\TokenRetrievalException;
 use Plenty\Modules\Market\Ebay\Api\Handlers\HttpHandler;
 use Plenty\Modules\Market\Ebay\Api\Helpers\Helper;
 use Plenty\Modules\Market\Ebay\Api\Helpers\SignatureHelper;
@@ -23,6 +25,7 @@ use Plenty\Modules\Market\Ebay\Auth\Helpers\AuthHelper;
 use Plenty\Modules\Market\Ebay\Auth\Services\AuthService;
 use Plenty\Modules\Market\MarketLogIdentifier;
 use Psr\Http\Message\ResponseInterface;
+use Throwable;
 
 /**
  * The service for making eBay REST calls.
