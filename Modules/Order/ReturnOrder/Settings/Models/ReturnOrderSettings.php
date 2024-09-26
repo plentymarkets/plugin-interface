@@ -28,6 +28,10 @@ public		$;
 	
 public		$;
 	
+public		$setShippingCostsToZero;
+	
+public		$copyShippingCostsFromOriginOrder;
+	
 	/**
 	 * Returns this model as an array.
 	 */
