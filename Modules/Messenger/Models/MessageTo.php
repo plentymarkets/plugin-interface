@@ -16,6 +16,12 @@ public		$email;
 	
 public		$allUsers;
 	
+public		$contacts;
+	
+public		$orders;
+	
+public		$emails;
+	
 	/**
 	 * Returns this model as an array.
 	 */

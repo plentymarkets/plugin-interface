@@ -26,6 +26,8 @@ public		$title;
 	
 public		$conversationRelation;
 	
+public		$conversationRecipients;
+	
 public		$tagIds;
 	
 public		$isClosed;
