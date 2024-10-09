@@ -165,4 +165,11 @@ interface FrontendPaymentMethodRepositoryContract
 		int $paymentMethodId
 	);
 
+	/**
+	 * Get the payment key of the payment method by ID.
+	 */
+	public function getPaymentMethodKeyById(
+		int $paymentMethodId
+	):string;
+
 }

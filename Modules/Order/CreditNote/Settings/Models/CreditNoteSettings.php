@@ -24,6 +24,8 @@ public		$defaultStatusId;
 	
 public		$setShippingCostsToZero;
 	
+public		$copyShippingCostsFromOriginOrder;
+	
 public		$validateQuantityFromParent;
 	
 public		$defaultOrderStatus;
