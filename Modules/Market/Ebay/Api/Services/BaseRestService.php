@@ -13,6 +13,7 @@ use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Cloud\SecretsManager\Contracts\CachedSecretsManagerRepositoryContract;
 use Plenty\Modules\Cloud\Storage\Contracts\GlobalStorageProviderRepositoryContract;
 use Plenty\Modules\Market\Credentials\Models\Credentials;
+use Plenty\Modules\Market\Ebay\Api\Exceptions\CredentialsIdMissingException;
 use Plenty\Modules\Market\Ebay\Api\Exceptions\InvalidEndPointException;
 use Plenty\Modules\Market\Ebay\Api\Exceptions\TokenRetrievalException;
 use Plenty\Modules\Market\Ebay\Api\Handlers\HttpHandler;
