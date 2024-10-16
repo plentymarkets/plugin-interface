@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Account\Contact\Models\Contact;
+use Plenty\Modules\Account\Contact\Search7\Filter\Complex\ContactSearchRequestFilters;
 use Plenty\Modules\Data\History\Contracts\DataHistoryProviderContract;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Contracts\SortableContract;
@@ -75,6 +76,15 @@ interface ContactRepositoryContract
 		int $itemsPerPage = 50, 
 		string $sortBy = "id", 
 		string $sortOrder = "desc"
+	):PaginatedResult;
+
+	public function searchContacts(
+		ContactSearchRequestFilters $filters, 
+		array $with, 
+		int $page, 
+		int $itemsPerPage, 
+		string $sortBy, 
+		string $sortOrder
 	):PaginatedResult;
 
 	/**
