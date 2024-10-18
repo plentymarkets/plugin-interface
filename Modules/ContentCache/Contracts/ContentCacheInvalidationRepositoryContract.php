@@ -9,6 +9,15 @@ interface ContentCacheInvalidationRepositoryContract
 {
 
 	/**
+	 * Soft purge all cache entries related to given manufacturer ID.
+	 */
+	public function invalidateByManufacturerId(
+		int $manufacturerId, 
+		int $plentyId = null, 
+		int $delaySeconds = 0
+	);
+
+	/**
 	 * Completely remove all cache entries related to given variation IDs.
 	 */
 	public function invalidateVariationIds(
