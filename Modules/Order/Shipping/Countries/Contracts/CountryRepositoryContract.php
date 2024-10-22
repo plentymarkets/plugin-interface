@@ -78,4 +78,8 @@ interface CountryRepositoryContract
 		int $countryId
 	):Country;
 
+	public function shouldKeepEUCountry(
+		 $country
+	);
+
 }
