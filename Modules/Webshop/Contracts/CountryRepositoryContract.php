@@ -17,4 +17,8 @@ interface CountryRepositoryContract
 		string $lang
 	):array;
 
+	public function getCombinedList(
+		string $language
+	):array;
+
 }
