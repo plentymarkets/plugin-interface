@@ -94,4 +94,26 @@ interface OrderDateRepositoryContract
 		int $orderId
 	);
 
+	/**
+	 * Create an order date type.
+	 */
+	public function createType(
+		array $data
+	):OrderDateType;
+
+	/**
+	 * Update an order date type.
+	 */
+	public function updateType(
+		int $id, 
+		array $data
+	):OrderDateType;
+
+	/**
+	 * Delete an order date type.
+	 */
+	public function deleteType(
+		int $id
+	):bool;
+
 }
