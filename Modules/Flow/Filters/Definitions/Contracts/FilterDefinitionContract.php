@@ -49,6 +49,9 @@ abstract class FilterDefinitionContract
 		 $value
 	);
 
+	abstract public function isSystemSpecific(
+	):bool;
+
 	abstract public function addOperators(
 		UIConfigFormContract $configForm, 
 		string $key = "key"
