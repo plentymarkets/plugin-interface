@@ -3,6 +3,7 @@ namespace Plenty\Modules\Flow\StepActions\Definitions\Contracts;
 
 use Exception;
 use Illuminate\Translation\Translator;
+use Plenty\Modules\Flow\Contracts\InternalFlowHistoryRepositoryContract;
 use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 use Plenty\Modules\Flow\Models\Filter;
 use Plenty\Modules\Flow\Models\Input;
@@ -47,6 +48,20 @@ abstract class StepActionDefinitionContract
 
 	abstract public function isSystemSpecific(
 	):bool;
+
+	abstract public function setWorkflowName(
+		string $workflowName
+	);
+
+	abstract public function getWorkflowName(
+	):string;
+
+	abstract public function setStepName(
+		string $stepName
+	);
+
+	abstract public function getStepName(
+	):string;
 
 	abstract public function performTask(
 		array $inputs, 
