@@ -3,11 +3,10 @@ namespace Plenty\Modules\Flow\StepControls\Definitions\Contracts;
 
 use Exception;
 use Illuminate\Translation\Translator;
+use Plenty\Modules\Flow\Contracts\InternalFlowHistoryRepositoryContract;
 use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 use Plenty\Modules\Flow\Models\Filter;
 use Plenty\Modules\Flow\Models\Input;
-use Plenty\Modules\Flow\Models\Output;
-use Plenty\Modules\Flow\StepControls\Definitions\Exceptions\StepControlDefinitionException;
 
 /**
  * Flow step control
@@ -41,6 +40,20 @@ abstract class StepControlDefinitionContract
 		array $configFields, 
 		 $filterField = null
 	);
+
+	abstract public function setWorkflowName(
+		string $workflowName
+	);
+
+	abstract public function getWorkflowName(
+	):string;
+
+	abstract public function setStepName(
+		string $stepName
+	);
+
+	abstract public function getStepName(
+	):string;
 
 	abstract public function validateConfigFields(
 		array $configFields

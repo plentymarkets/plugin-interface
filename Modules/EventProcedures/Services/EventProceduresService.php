@@ -8,6 +8,11 @@ use Plenty\Modules\EventProcedures\Exceptions\EventProceduresRegisterException;
 use Plenty\Modules\EventProcedures\Services\Entries\FilterEntry;
 use Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 use Plenty\Modules\EventProcedures\Services\Entries\TriggerEntry;
+use Plenty\Modules\Flow\Services\EventTriggerService;
+use Plenty\Modules\Flow\Services\FilterRegistrationService;
+use Plenty\Modules\Flow\Services\StepActionRegistrationService;
+use Plenty\Modules\Flow\Services\TriggerRegistrationService;
+use Plenty\Modules\Flow\Triggers\Objects\FlowTriggerObjectOrder;
 
 /**
  * The EventProcedureService class offers the possibility to register a procedure class and method that can be called by plentymarkets event procedures.

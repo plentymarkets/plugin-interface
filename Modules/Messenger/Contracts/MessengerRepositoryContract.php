@@ -50,6 +50,14 @@ interface MessengerRepositoryContract
 	):array;
 
 	/**
+	 * Lists messages for a single conversation
+	 */
+	public function listConversationMessages(
+		string $conversationUuid, 
+		bool $isDeleted = false
+	):PaginatedResult;
+
+	/**
 	 * Lists messages for an archived conversation
 	 */
 	public function listArchivedMessages(
