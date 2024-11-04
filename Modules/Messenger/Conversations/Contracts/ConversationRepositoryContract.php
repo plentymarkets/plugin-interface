@@ -302,4 +302,12 @@ interface ConversationRepositoryContract
 		bool $addToRecipients
 	):bool;
 
+	/**
+	 * Changes group for a batch of conversations
+	 */
+	public function batchChangeGroup(
+		array $uuids, 
+		int $groupId
+	):int;
+
 }
