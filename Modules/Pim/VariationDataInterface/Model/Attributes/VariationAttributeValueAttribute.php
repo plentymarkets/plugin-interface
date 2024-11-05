@@ -35,4 +35,11 @@ abstract class VariationAttributeValueAttribute
 	abstract public function getLazyLoadParts(
 	);
 
+	abstract public function addFilters(
+		 $filters
+	);
+
+	abstract public function getFilters(
+	);
+
 }

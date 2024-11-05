@@ -3,6 +3,7 @@ namespace Plenty\Modules\Pim\VariationDataInterface\Model\Attributes;
 
 use Exception;
 use Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
+use Plenty\Modules\Pim\VariationDataInterface\Model\Attributes\Criteria\PropertyIdCriteria;
 use Plenty\Modules\Pim\VariationDataInterface\Model\VariationDataInterfaceContext;
 use Plenty\Modules\Property\V2\Models\Property;
 
@@ -30,6 +31,13 @@ abstract class VariationPropertyAttribute
 	);
 
 	abstract public function getLazyLoadParts(
+	);
+
+	abstract public function addFilters(
+		 $filters
+	);
+
+	abstract public function getFilters(
 	);
 
 }
