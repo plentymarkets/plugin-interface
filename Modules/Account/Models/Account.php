@@ -38,6 +38,8 @@ public		$dealerMinOrderValue;
 	
 public		$supplierCurrency;
 	
+public		$externalId;
+	
 public		$createdAt;
 	
 public		$updatedAt;

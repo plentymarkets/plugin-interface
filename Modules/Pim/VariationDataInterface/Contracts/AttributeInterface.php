@@ -38,4 +38,17 @@ interface AttributeInterface
 	public function getLazyLoadParts(
 	):array;
 
+	/**
+	 * Add filters to the attribute.
+	 */
+	public function addFilters(
+		 $filters
+	):Plenty\Modules\Pim\VariationDataInterface\Contracts\AttributeInterface;
+
+	/**
+	 * Get all filters applied to the attribute.
+	 */
+	public function getFilters(
+	):array;
+
 }
