@@ -35,4 +35,7 @@ interface FlowTriggerPluginDefinitionContract
 	public function getUIConfigField(
 	):array;
 
+	public function isSystemSpecific(
+	):bool;
+
 }
