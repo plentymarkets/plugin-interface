@@ -18,6 +18,8 @@ public		$accountId;
 	
 public		$contactId;
 	
+public		$isPrimary;
+	
 public		$account;
 	
 public		$contact;
