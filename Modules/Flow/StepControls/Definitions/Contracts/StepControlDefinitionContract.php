@@ -23,6 +23,12 @@ abstract class StepControlDefinitionContract
 	abstract public function getDescription(
 	):string;
 
+	abstract public function getIcon(
+	):string;
+
+	abstract public function getType(
+	):string;
+
 	abstract public function getTooltip(
 	):string;
 
