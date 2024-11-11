@@ -9,7 +9,7 @@ interface ContentCacheRepositoryContract
 {
 
 	/**
-	 * Enable content caching for current response so next request on this resource will be delivered from content cache.
+	 * Enable content caching for response so next request on this resource will be delivered from content cache.
 	 */
 	public function enableCacheForResponse(
 		array $options = []
@@ -19,7 +19,8 @@ interface ContentCacheRepositoryContract
 	 * Disable caching for current response because of any unwanted behavior.
 	 */
 	public function disableCacheForResponse(
-		string $reason = ""
+		string $reason = "", 
+		bool $disableLog = false
 	);
 
 	/**
