@@ -18,6 +18,8 @@ public		$name;
 	
 public		$width;
 	
+public		$individualWeight;
+	
 public		$height;
 	
 public		$length;
