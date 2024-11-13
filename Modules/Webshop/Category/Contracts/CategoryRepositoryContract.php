@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Webshop\Category\Contracts;
 
 use Plenty\Modules\Category\Models\Category;
+use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 
 /**
  * Get category data for plentyShop.
@@ -38,5 +39,17 @@ interface CategoryRepositoryContract
 		int $webstoreId = null, 
 		array $additionalFilter = []
 	):string;
+
+	/**
+	 * Return navigation tree for plentyShop LTS only.
+	 */
+	public function getNavigationTree(
+		 $type = "all", 
+		string $language = "de", 
+		int $clientId = null, 
+		int $maxLevel = 6, 
+		int $customerClassId = 0, 
+		string $resultFieldsTemplate = \Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate::TEMPLATE_CATEGORY_TREE
+	):array;
 
 }
