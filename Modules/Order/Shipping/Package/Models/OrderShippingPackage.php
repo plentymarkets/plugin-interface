@@ -20,6 +20,10 @@ public		$packageId;
 	
 public		$weight;
 	
+public		$extraWeight;
+	
+public		$itemsWeight;
+	
 public		$packageNumber;
 	
 public		$labelPath;

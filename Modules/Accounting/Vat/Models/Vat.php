@@ -24,6 +24,8 @@ public		$countryId;
 	
 public		$taxIdNumber;
 	
+public		$economicIdNumber;
+	
 public		$startedAt;
 	
 public		$invalidFrom;

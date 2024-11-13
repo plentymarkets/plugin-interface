@@ -12,7 +12,7 @@ abstract class DynamicVariable
 
 	const OPERATOR_EQUALS = 'EQUAL';
 
-	const OPERATOR_NOT = 'NOT';
+	const OPERATOR_NOT_EQUAL = 'NOT_EQUAL';
 
 	const OPERATOR_LOWER_THAN = 'LT';
 

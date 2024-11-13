@@ -3,8 +3,8 @@ namespace Plenty\Modules\Flow\StepControls\Definitions\Contracts;
 
 use Exception;
 use Illuminate\Translation\Translator;
-use Plenty\Modules\Flow\Contracts\InternalFlowHistoryRepositoryContract;
 use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
+use Plenty\Modules\Flow\Helper\FlowHistoryHelper;
 use Plenty\Modules\Flow\Models\Filter;
 use Plenty\Modules\Flow\Models\Input;
 
@@ -21,6 +21,12 @@ abstract class StepControlDefinitionContract
 	):string;
 
 	abstract public function getDescription(
+	):string;
+
+	abstract public function getIcon(
+	):string;
+
+	abstract public function getType(
 	):string;
 
 	abstract public function getTooltip(
