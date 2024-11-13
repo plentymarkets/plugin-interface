@@ -12,6 +12,8 @@ public		$contentCategory;
 	
 public		$itemCategory;
 	
+public		$itemImage;
+	
 public		$item;
 	
 public		$blog;
