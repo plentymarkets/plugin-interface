@@ -18,11 +18,15 @@ public		$id;
 	
 public		$name;
 	
+public		$legalName;
+	
 public		$externalName;
 	
 public		$logo;
 	
 public		$url;
+	
+public		$contactUrl;
 	
 public		$street;
 	
@@ -65,6 +69,8 @@ public		$responsibleTown;
 public		$responsibleCountry;
 	
 public		$responsibleEmail;
+	
+public		$responsibleContactUrl;
 	
 public		$responsiblePhoneNo;
 	
