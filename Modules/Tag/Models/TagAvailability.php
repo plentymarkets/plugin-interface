@@ -20,6 +20,12 @@ abstract class TagAvailability
 
 	const TAG_TYPE_ORDER = 'order';
 
+	const TAG_TYPE_REORDER = 'reorder';
+
+	const TAG_TYPE_REDISTRIBUTION = 'redistribution';
+
+	const TAG_TYPE_SUBSCRIPTION = 'subscription';
+
 	const TAG_TYPE_MESSENGER = 'messenger';
 
 	const TAG_TYPE_MESSAGE_BILLABLE = 'messageBillable';
