@@ -57,6 +57,7 @@ use Plenty\Modules\Webshop\ItemSearch\Mutators\GroupedAttributeValuesMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\ItemUrlMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\OrderPropertySelectionValueMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\ReduceDataMutator;
+use Plenty\Modules\Webshop\ItemSearch\Mutators\ReduceManufacturerDataMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\VariationPropertySelectionValuesMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\VariationPropertyTransformMutator;
 use Plenty\Modules\Webshop\WebshopServiceProvider;
@@ -91,17 +92,6 @@ abstract class VariationSearchFactory
 
 	/**
 	 * Get the default configuration of a search factory. This applies the following filters
- - @see VariationSearchFactory::isActive()
- - @see VariationSearchFactory::isVisibleForClient()
- - @see VariationSearchFactory::hasPriceForCustomer()
- - @see VariationSearchFactory::hasNameInLanguage()
- - @see VariationSearchFactory::withLanguage()
- - @see VariationSearchFactory::withUrls()
- - @see VariationSearchFactory::withImages()
- - @see VariationSearchFactory::withDefaultImage()
- - @see VariationSearchFactory::withPrices()
- - @see VariationSearchFactory::withReducedResults()
- - @see VariationSearchFactory::withSalableVariationCount()
 	 */
 	abstract public static function default(
 		array $options = []
@@ -377,6 +367,10 @@ abstract class VariationSearchFactory
 	):self;
 
 	abstract public function withReducedResults(
+	):self;
+
+	abstract public function withReducedManufacturerData(
+		string $manufacturerFields
 	):self;
 
 	abstract public function withAvailability(
