@@ -58,17 +58,6 @@ abstract class FacetSearchFactory
 
 	/**
 	 * Get the default configuration of a search factory. This applies the following filters
- - @see VariationSearchFactory::isActive()
- - @see VariationSearchFactory::isVisibleForClient()
- - @see VariationSearchFactory::hasPriceForCustomer()
- - @see VariationSearchFactory::hasNameInLanguage()
- - @see VariationSearchFactory::withLanguage()
- - @see VariationSearchFactory::withUrls()
- - @see VariationSearchFactory::withImages()
- - @see VariationSearchFactory::withDefaultImage()
- - @see VariationSearchFactory::withPrices()
- - @see VariationSearchFactory::withReducedResults()
- - @see VariationSearchFactory::withSalableVariationCount()
 	 */
 	abstract public static function default(
 		array $options = []
@@ -344,6 +333,10 @@ abstract class FacetSearchFactory
 	):self;
 
 	abstract public function withReducedResults(
+	):self;
+
+	abstract public function withReducedManufacturerData(
+		string $manufacturerFields
 	):self;
 
 	abstract public function withAvailability(

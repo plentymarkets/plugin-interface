@@ -104,6 +104,13 @@ interface ConversationRepositoryContract
 	):int;
 
 	/**
+	 * Marks a batch of conversations as red/not read by the given user
+	 */
+	public function markNotSpam(
+		array $uuids
+	):int;
+
+	/**
 	 * Resubmits all conversations with follow up date today (resets read by array, resets follow up date)
 	 */
 	public function batchResubmitConversations(
