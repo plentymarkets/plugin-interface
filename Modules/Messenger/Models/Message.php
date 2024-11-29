@@ -26,6 +26,8 @@ public		$to;
 	
 public		$whispered;
 	
+public		$forwarded;
+	
 public		$tags;
 	
 public		$title;
@@ -63,6 +65,8 @@ public		$typePosition;
 public		$statusId;
 	
 public		$statusPosition;
+	
+public		$messageType;
 	
 public		$marketplacesMetadata;
 	
