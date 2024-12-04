@@ -63,4 +63,11 @@ interface ConversationCategoryRepositoryContract
 		array $categoryIds
 	):bool;
 
+	/**
+	 * Creates default types and statuses for a category
+	 */
+	public function createDefaultTypesAndStatuses(
+		int $id
+	):bool;
+
 }
