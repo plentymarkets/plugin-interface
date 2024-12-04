@@ -298,6 +298,19 @@ abstract class VariationDataInterfaceContext
 	);
 
 	/**
+	 * Returns whether the total hits should be tracked or not
+	 */
+	abstract public function isTrackTotalHits(
+	):bool;
+
+	/**
+	 * Set whether the total hits should be tracked or not
+	 */
+	abstract public function setTrackTotalHits(
+		bool $trackTotalHits
+	):self;
+
+	/**
 	 * Get the search after key.
 	 */
 	abstract public function getSearchAfterKey(
