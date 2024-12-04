@@ -61,6 +61,18 @@ abstract class MessageTypesService
 
 	const MARKETPLACE_EBAY = 'ebay';
 
+	const MESSAGE_TYPE_NEW_MESSAGE_FROM_CONTACT = 'newMessageFromContact';
+
+	const MESSAGE_TYPE_NEW_MESSAGE_FROM_USER = 'newMessageFromUser';
+
+	const MESSAGE_TYPE_NEW_REPLY_FROM_CONTACT = 'newReplyFromContact';
+
+	const MESSAGE_TYPE_NEW_REPLY_FROM_USER = 'newReplyFromUser';
+
+	const MESSAGE_TYPE_FORWARDED_MESSAGE = 'forwardedMessage';
+
+	const MESSAGE_TYPE_INTERNAL_NOTE = 'internalNote';
+
 	/**
 	 * Gets the valid types for "linked to" references.
 	 */

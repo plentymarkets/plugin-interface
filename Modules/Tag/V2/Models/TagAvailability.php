@@ -20,6 +20,12 @@ abstract class TagAvailability
 
 	const TAG_TYPE_ORDER = 'order';
 
+	const TAG_TYPE_REORDER = 'reorder';
+
+	const TAG_TYPE_REDISTRIBUTION = 'redistribution';
+
+	const TAG_TYPE_SUBSCRIPTION = 'subscription';
+
 	const TAG_TYPE_MESSENGER = 'messenger';
 
 	const TAG_TYPE_MESSAGE_BILLABLE = 'messageBillable';
@@ -32,7 +38,7 @@ abstract class TagAvailability
 
 	const TAG_TYPE_PLENTY_FUNCTION = 'plentyFunction';
 
-	const ALLOWED_TYPES = ['category','ticket','variation','board','contact','order','messenger','messageBillable','messageClearingSubAccount','document','documentTemplate','plentyFunction'];
+	const ALLOWED_TYPES = ['category','ticket','variation','board','contact','order','reorder','redistribution','subscription','messenger','messageBillable','messageClearingSubAccount','document','documentTemplate','plentyFunction'];
 
 	const CREATED_AT = 'createdAt';
 
