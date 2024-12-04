@@ -318,12 +318,14 @@ abstract class FacetSearchFactory
 	 * Add bundle component variations.
 	 */
 	abstract public function withBundleComponents(
+		 $manufacturerFields = "legacy"
 	):self;
 
 	/**
 	 * Add set component variations to item set entries.
 	 */
 	abstract public function withSetComponents(
+		 $manufacturerFields = "legacy"
 	);
 
 	abstract public function withLinkToContent(
