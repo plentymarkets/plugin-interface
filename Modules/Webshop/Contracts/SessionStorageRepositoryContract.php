@@ -48,6 +48,8 @@ interface SessionStorageRepositoryContract
 
 	const SKIP_ITEM_STOCK_CHECK = 'skipItemStockCheck';
 
+	const SEO_FORCE_NO_INDEX = 'seoForceNoIndex';
+
 	/**
 	 * Set a value to a given key in the session
 	 */
