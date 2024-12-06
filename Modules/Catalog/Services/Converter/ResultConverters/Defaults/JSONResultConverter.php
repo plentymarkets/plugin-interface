@@ -4,13 +4,16 @@ namespace Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\UI\UIOptionsContract;
 use Plenty\Modules\Catalog\Helpers\Traits\NumberFormatter;
 use Plenty\Modules\Catalog\Models\CatalogExportResult;
 use Plenty\Modules\Catalog\Services\Collections\CatalogLazyCollection;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\BaseResultConverter;
+use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\Options\JSONUnicodeCharactersOption;
 use Plenty\Modules\Catalog\Services\FileHandlers\ResourceHandler;
+use Plenty\Modules\Catalog\Services\UI\Options\UIOptions;
 
 /**
  * Default JSON Result converter
@@ -25,13 +28,21 @@ abstract class JSONResultConverter extends \Plenty\Modules\Catalog\Services\Conv
 
 	const FILE_EXTENSION = 'json';
 
+	const OPTIONS_PATH = 'converter.json';
+
 	const OPTIONS_FORMAT_PATH = 'format';
 
 	abstract public function getKey(
 	):string;
 
+	abstract public function getOptions(
+	):UIOptionsContract;
+
 	abstract public function getLabel(
 	):string;
+
+	abstract public function getJSONEncodeUnicodeCharacters(
+	):bool;
 
 	abstract public function getDecimalSeparator(
 	):string;
@@ -76,12 +87,6 @@ abstract class JSONResultConverter extends \Plenty\Modules\Catalog\Services\Conv
 	abstract public function fromCatalogExportResult(
 		CatalogExportResult $exportResult
 	):CatalogResultConverterContract;
-
-	/**
-	 * Get the options
-	 */
-	abstract public function getOptions(
-	):UIOptionsContract;
 
 	/**
 	 * Get the lazy collection's chunk size
