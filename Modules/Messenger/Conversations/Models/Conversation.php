@@ -94,6 +94,8 @@ public		$isMigratedToEs;
 	
 public		$isArchived;
 	
+public		$isSpam;
+	
 public		$conversationPreview;
 	
 public		$categoryId;
