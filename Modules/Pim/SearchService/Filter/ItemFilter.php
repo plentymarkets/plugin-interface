@@ -80,6 +80,12 @@ abstract class ItemFilter implements TypeInterface
 		array $flags
 	):self;
 
+	abstract public function hasListing(
+	):self;
+
+	abstract public function hasNoListing(
+	):self;
+
 	/**
 	 * Restricts the result to have the manufacturer id.
 	 */
