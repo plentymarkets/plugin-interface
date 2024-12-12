@@ -58,4 +58,23 @@ interface ConversationStatusRepositoryContract
 		array $statusIds
 	):bool;
 
+	/**
+	 * Get the ID of the last created status
+	 */
+	public function getLastStatusId(
+	);
+
+	/**
+	 * Gets the highest position of a status
+	 */
+	public function getMaxPosition(
+		 $typeId
+	);
+
+	/**
+	 * Refreshes list of statuses
+	 */
+	public function setStatusesList(
+	);
+
 }

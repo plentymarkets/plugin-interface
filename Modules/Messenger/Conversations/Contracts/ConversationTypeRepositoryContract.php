@@ -59,4 +59,23 @@ interface ConversationTypeRepositoryContract
 		array $typeIds
 	):bool;
 
+	/**
+	 * Get the ID of the last created type
+	 */
+	public function getLastTypeId(
+	);
+
+	/**
+	 * Gets the highest position of a type
+	 */
+	public function getMaxPosition(
+		 $categoryId
+	);
+
+	/**
+	 * Refreshes list of types
+	 */
+	public function setTypesList(
+	);
+
 }
