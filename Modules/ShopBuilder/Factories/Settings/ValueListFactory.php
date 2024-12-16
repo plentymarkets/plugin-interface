@@ -24,15 +24,6 @@ abstract class ValueListFactory
 	):self;
 
 	/**
-	 * Add an entry to the list that will be shown if a condition is met
-	 */
-	abstract public function addEntryWithCondition(
-		string $value, 
-		string $caption, 
-		string $condition
-	):self;
-
-	/**
 	 * Get all values.
 	 */
 	abstract public function toArray(
