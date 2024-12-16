@@ -27,7 +27,8 @@ interface SubscriptionOrderRepositoryContract
 	 */
 	public function manualRun(
 		int $orderId, 
-		bool $skipNextRun = false
+		bool $skipNextRun = false, 
+		array $data = []
 	):Order;
 
 }
