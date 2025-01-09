@@ -8,6 +8,9 @@ namespace Plenty\Modules\Messenger\Conversations\Events;
 abstract class TagAddedConversationEvent 
 {
 
+	abstract public function getConversationUUIDs(
+	);
+
 	abstract public function getConversationUUID(
 	);
 

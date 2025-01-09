@@ -14,6 +14,8 @@ public		$value;
 	
 public		$translateCaption;
 	
+public		$tooltip;
+	
 	/**
 	 * Returns this model as an array.
 	 */
