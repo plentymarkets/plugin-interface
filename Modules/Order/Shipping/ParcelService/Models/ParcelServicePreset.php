@@ -78,6 +78,8 @@ public		$isParcelBox;
 	
 public		$isPostOffice;
 	
+public		$isSelfPickup;
+	
 public		$parcelService;
 	
 public		$parcelServiceRegionConstraint;
