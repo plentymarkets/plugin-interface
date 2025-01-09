@@ -48,6 +48,8 @@ abstract class OrderDateType
 
 	const OFFER_VALID_UNTIL = 20;
 
+	const SUBSCRIPTION_FIRST_RUN = 21;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';
