@@ -43,6 +43,8 @@ abstract class MessageTypesService
 
 	const REFERRER_TYPE_EMAIL = 'email';
 
+	const REFERRER_TYPE_EMAIL_PRIVATE = 'email_private';
+
 	const REFERRER_TYPE_MARKETPLACES = 'marketplaces';
 
 	const TO_TYPE_USER = 'user';
@@ -72,6 +74,8 @@ abstract class MessageTypesService
 	const MESSAGE_TYPE_FORWARDED_MESSAGE = 'forwardedMessage';
 
 	const MESSAGE_TYPE_INTERNAL_NOTE = 'internalNote';
+
+	const MESSAGE_TYPE_PRIVATE_EMAIL = 'privateEmail';
 
 	/**
 	 * Gets the valid types for "linked to" references.
