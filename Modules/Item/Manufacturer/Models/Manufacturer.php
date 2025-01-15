@@ -74,9 +74,15 @@ public		$responsibleContactUrl;
 	
 public		$responsiblePhoneNo;
 	
+public		$responsibleCountryIso;
+	
+public		$responsibleCountryName;
+	
 public		$commissions;
 	
 public		$externals;
+	
+public		$gpsrCountry;
 	
 	/**
 	 * Returns this model as an array.
