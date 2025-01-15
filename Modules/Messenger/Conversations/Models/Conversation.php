@@ -106,6 +106,8 @@ public		$marketplacesMetadata;
 	
 public		$owners;
 	
+public		$privateUserId;
+	
 	/**
 	 * Returns this model as an array.
 	 */
