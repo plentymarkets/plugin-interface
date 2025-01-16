@@ -49,6 +49,9 @@ abstract class StepActionDefinitionContract
 	abstract public function isSystemSpecific(
 	):bool;
 
+	abstract public function getCondition(
+	):bool;
+
 	abstract public function setWorkflowName(
 		string $workflowName
 	);
