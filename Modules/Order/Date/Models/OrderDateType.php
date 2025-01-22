@@ -50,6 +50,10 @@ abstract class OrderDateType
 
 	const SUBSCRIPTION_FIRST_RUN = 21;
 
+	const BILLING_PERIOD_START_DATE = 22;
+
+	const BILLING_PERIOD_END_DATE = 23;
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

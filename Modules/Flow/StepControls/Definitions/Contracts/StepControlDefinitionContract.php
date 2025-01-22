@@ -69,4 +69,7 @@ abstract class StepControlDefinitionContract
 		 $inputs
 	);
 
+	abstract public function getCondition(
+	):bool;
+
 }
