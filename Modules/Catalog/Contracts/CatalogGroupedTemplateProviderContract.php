@@ -121,4 +121,10 @@ interface CatalogGroupedTemplateProviderContract
 	public function getDevcacheIntervals(
 	):Intervals;
 
+	/**
+	 * Gets Channel Map custom keys
+	 */
+	public function getMapFieldKeys(
+	):array;
+
 }

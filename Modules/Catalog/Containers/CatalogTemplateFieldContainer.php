@@ -31,4 +31,7 @@ abstract class CatalogTemplateFieldContainer
 	abstract public function getFields(
 	):array;
 
+	abstract public function toArray(
+	):array;
+
 }
