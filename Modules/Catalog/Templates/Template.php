@@ -297,4 +297,17 @@ abstract class Template implements TemplateContract
 		CatalogFilterBuilderContainer $filterContainer
 	);
 
+	/**
+	 * Gets map field keys
+	 */
+	abstract public function getMapFieldKeys(
+	):array;
+
+	/**
+	 * Sets map field keys
+	 */
+	abstract public function setMapFieldKeys(
+		array $mapFieldKeys
+	);
+
 }
