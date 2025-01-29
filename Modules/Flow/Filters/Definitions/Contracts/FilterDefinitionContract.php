@@ -36,6 +36,9 @@ abstract class FilterDefinitionContract
 	abstract public function getAvailabilities(
 	):array;
 
+	abstract public function getCondition(
+	):bool;
+
 	abstract public function performFilter(
 		array $inputs, 
 		array $filterField, 
