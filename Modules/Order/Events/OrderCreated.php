@@ -5,7 +5,7 @@ use Plenty\Modules\Order\Models\Order;
 
 /**
  * An event class fired after a new order is created. The order type is not relevant.
- * 	At the same time also type depended events will be fired, like ReturnsCreated or CreditNoteCreated.
+ *  At the same time also type depended events will be fired, like ReturnsCreated or CreditNoteCreated.
  */
 abstract class OrderCreated extends \Plenty\Modules\Order\Events\OrderEvent 
 
