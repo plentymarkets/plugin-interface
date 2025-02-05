@@ -7,7 +7,7 @@ use Plenty\Modules\Payment\Models\Payment;
 /**
  * An Event class fired after a payment was assigned to an order.
  * After this event one of the following events will be fired, depending the payment status of the order:
- *	 OrderPrepaid, OrderPartlyPaid, OrderFullyPaid, OrderOverpaid.
+ *   OrderPrepaid, OrderPartlyPaid, OrderFullyPaid, OrderOverpaid.
  */
 abstract class OrderPaymentAssigned extends \Plenty\Modules\Order\Events\OrderEvent 
 

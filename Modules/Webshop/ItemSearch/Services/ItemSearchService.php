@@ -2,6 +2,7 @@
 namespace Plenty\Modules\Webshop\ItemSearch\Services;
 
 use Plenty\Log\Traits\Loggable;
+use Plenty\Modules\Item\Variation\Repositories\VariationRepository;
 use Plenty\Modules\Webshop\Helpers\PropertyFileService;
 use Plenty\Modules\Webshop\ItemSearch\Factories\BaseSearchFactory;
 use Plenty\Modules\Webshop\ItemSearch\Factories\FacetSearchFactory;
