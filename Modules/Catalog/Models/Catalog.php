@@ -30,6 +30,8 @@ public		$id;
 	
 public		$active;
 	
+public		$with;
+	
 public		$showMandatoryFields;
 	
 public		$updatedAt;

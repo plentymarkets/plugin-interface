@@ -7,6 +7,7 @@ use Plenty\Modules\Catalog\Containers\CatalogTemplateFieldContainer;
 use Plenty\Modules\Catalog\Contracts\CatalogMappingValueProviderContract;
 use Plenty\Modules\Catalog\Contracts\CatalogTemplateFieldCallableContract;
 use Plenty\Modules\Catalog\Contracts\CatalogTemplateFieldContract;
+use Plenty\Modules\Catalog\DataProviders\CatalogEmptyMappingValueProvider;
 
 /**
  * A complex template field is used for Mappings with predefined valid values. The user has to choose a valid value and then provide a condition, which determines in which cases this value will be sent.
@@ -32,6 +33,10 @@ abstract class ComplexTemplateField implements \Plenty\Modules\Catalog\Contracts
 
 	abstract public function getKey(
 	):string;
+
+	abstract public function applyCustomChannelMapKey(
+		string $key
+	);
 
 	abstract public function getLabel(
 	):string;

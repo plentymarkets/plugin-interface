@@ -178,6 +178,8 @@ public		$properties;
 	
 public		$propertiesV2;
 	
+public		$orderPropertiesV2;
+	
 public		$variationSalesPrices;
 	
 public		$marketItemNumbers;

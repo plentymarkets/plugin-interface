@@ -22,4 +22,7 @@ abstract class CatalogMappingValueContainer
 	abstract public function getMappingValues(
 	):array;
 
+	abstract public function toArray(
+	):array;
+
 }

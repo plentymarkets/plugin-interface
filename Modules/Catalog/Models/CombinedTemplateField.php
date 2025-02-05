@@ -7,6 +7,7 @@ use Plenty\Modules\Catalog\Containers\CatalogTemplateFieldContainer;
 use Plenty\Modules\Catalog\Contracts\CatalogMappingValueProviderContract;
 use Plenty\Modules\Catalog\Contracts\CatalogTemplateFieldCallableContract;
 use Plenty\Modules\Catalog\Contracts\CatalogTemplateFieldContract;
+use Plenty\Modules\Catalog\DataProviders\CatalogEmptyMappingValueProvider;
 
 /**
  * A combined template field is a mix out of simple and complex template fields. You can define a field with predefined valid values, which will be exported if all nested fields were filled successfully in the export. An example is a barcode type. The customer can choose a barcode type, that is exported if the field barcode was successfully mapped with a specific source.
@@ -33,6 +34,10 @@ abstract class CombinedTemplateField implements \Plenty\Modules\Catalog\Contract
 
 	abstract public function getKey(
 	):string;
+
+	abstract public function applyCustomChannelMapKey(
+		string $key
+	);
 
 	abstract public function getLabel(
 	):string;

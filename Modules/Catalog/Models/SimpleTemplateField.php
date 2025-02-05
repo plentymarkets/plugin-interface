@@ -33,6 +33,10 @@ abstract class SimpleTemplateField implements \Plenty\Modules\Catalog\Contracts\
 	abstract public function getKey(
 	):string;
 
+	abstract public function applyCustomChannelMapKey(
+		string $key
+	);
+
 	abstract public function getLabel(
 	):string;
 

@@ -104,6 +104,12 @@ abstract class AbstractGroupedTemplateProvider implements CatalogGroupedTemplate
 	):Intervals;
 
 	/**
+	 * Gets Channel Map custom keys
+	 */
+	abstract public function getMapFieldKeys(
+	):array;
+
+	/**
 	 * Returns a container in which all TemplateGroups of this template are collected.
 	 */
 	abstract public function getTemplateGroupContainer(
