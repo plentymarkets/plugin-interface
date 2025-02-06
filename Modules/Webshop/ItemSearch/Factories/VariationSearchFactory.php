@@ -21,10 +21,10 @@ use Plenty\Modules\Pim\SearchService\Aggregations\Processors\VariationCombinatio
 use Plenty\Modules\Pim\SearchService\Aggregations\SearchSuggestions\SearchSuggestionsTermsAggregation;
 use Plenty\Modules\Pim\SearchService\Aggregations\VariationCombinationAggregation;
 use Plenty\Modules\Pim\SearchService\Filter\CategoryFilter;
+use Plenty\Modules\Pim\SearchService\Filter\CharacteristicFilter;
 use Plenty\Modules\Pim\SearchService\Filter\ClientFilter;
 use Plenty\Modules\Pim\SearchService\Filter\CrossSellingFilter;
 use Plenty\Modules\Pim\SearchService\Filter\PriceFilter;
-use Plenty\Modules\Pim\SearchService\Filter\PropertyFilter;
 use Plenty\Modules\Pim\SearchService\Filter\SalesPriceFilter;
 use Plenty\Modules\Pim\SearchService\Filter\TagFilter;
 use Plenty\Modules\Pim\SearchService\Filter\TextFilter;
@@ -166,7 +166,7 @@ abstract class VariationSearchFactory
 	):self;
 
 	/**
-	 * Filter variations by multiple property ids.
+	 * Filter variations by multiple property(characteristics) ids.
 	 */
 	abstract public function hasEachProperty(
 		array $propertyIds
