@@ -132,7 +132,7 @@ abstract class FacetSearchFactory
 	):self;
 
 	/**
-	 * Filter variations by multiple property ids.
+	 * Filter variations by multiple property(characteristics) ids.
 	 */
 	abstract public function hasEachProperty(
 		array $propertyIds
