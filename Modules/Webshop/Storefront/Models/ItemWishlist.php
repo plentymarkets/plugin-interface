@@ -20,6 +20,8 @@ public		$contactId;
 	
 public		$plentyId;
 	
+public		$canDirectlyAddToCart;
+	
 public		$createdAt;
 	
 public		$updatedAt;
