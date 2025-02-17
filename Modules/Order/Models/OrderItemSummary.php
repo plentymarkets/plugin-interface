@@ -28,6 +28,10 @@ public		$profitMarginOrderCurrency;
 	
 public		$orderCommentCount;
 	
+public		$parentOrderId;
+	
+public		$parentOrderType;
+	
 	/**
 	 * Returns this model as an array.
 	 */
