@@ -47,6 +47,10 @@ abstract class ConversationCategory
 	const AMAZON_CATEGORY_ID = 8;
 
 	const AMAZON_CATEGORY_POSITION = 8;
+
+	const PLENTYONE_EMAILS_CATEGORY_ID = 9;
+
+	const PLENTYONE_EMAILS_CATEGORY_POSITION = 9;
 	
 public		$names;
 	
