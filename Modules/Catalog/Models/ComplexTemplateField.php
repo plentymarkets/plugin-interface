@@ -28,7 +28,8 @@ abstract class ComplexTemplateField implements \Plenty\Modules\Catalog\Contracts
 		bool $isLocked = false, 
 		bool $isArray = false, 
 		array $meta = [], 
-		array $defaultSources = []
+		array $defaultSources = [], 
+		string $description = null
 	);
 
 	abstract public function getKey(
@@ -70,6 +71,9 @@ abstract class ComplexTemplateField implements \Plenty\Modules\Catalog\Contracts
 
 	abstract public function getType(
 	):int;
+
+	abstract public function getDescription(
+	):string;
 
 	abstract public function setCallable(
 		CatalogTemplateFieldCallableContract $callable

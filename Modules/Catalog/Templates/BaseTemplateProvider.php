@@ -51,4 +51,10 @@ abstract class BaseTemplateProvider implements CatalogTemplateProviderContract
 	abstract public function getDevcacheIntervals(
 	):Intervals;
 
+	/**
+	 * Gets Channel Map custom keys
+	 */
+	abstract public function getMapFieldKeys(
+	):array;
+
 }

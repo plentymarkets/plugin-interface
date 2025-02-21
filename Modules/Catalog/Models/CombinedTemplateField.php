@@ -29,7 +29,8 @@ abstract class CombinedTemplateField implements \Plenty\Modules\Catalog\Contract
 		bool $isLocked = false, 
 		bool $isArray = false, 
 		array $meta = [], 
-		array $defaultSources = []
+		array $defaultSources = [], 
+		string $description = null
 	);
 
 	abstract public function getKey(
@@ -71,6 +72,9 @@ abstract class CombinedTemplateField implements \Plenty\Modules\Catalog\Contract
 
 	abstract public function getType(
 	):int;
+
+	abstract public function getDescription(
+	):string;
 
 	abstract public function setCallable(
 		CatalogTemplateFieldCallableContract $callable
