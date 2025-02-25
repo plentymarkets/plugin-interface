@@ -29,6 +29,7 @@ abstract class ComplexTemplateField implements \Plenty\Modules\Catalog\Contracts
 		bool $isArray = false, 
 		array $meta = [], 
 		array $defaultSources = [], 
+		array $templates = [], 
 		string $description = null
 	);
 
@@ -52,6 +53,9 @@ abstract class ComplexTemplateField implements \Plenty\Modules\Catalog\Contracts
 	):bool;
 
 	abstract public function getMeta(
+	):array;
+
+	abstract public function getTemplates(
 	):array;
 
 	abstract public function getCallable(

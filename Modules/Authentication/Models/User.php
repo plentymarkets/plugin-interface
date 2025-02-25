@@ -88,6 +88,8 @@ public		$blockLegacyLogin;
 	
 public		$;
 	
+public		$supportAccess;
+	
 	/**
 	 * Returns this model as an array.
 	 */
