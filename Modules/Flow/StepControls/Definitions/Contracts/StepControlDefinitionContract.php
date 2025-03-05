@@ -61,6 +61,13 @@ abstract class StepControlDefinitionContract
 	abstract public function getStepName(
 	):string;
 
+	abstract public function setFlowName(
+		string $flowName
+	);
+
+	abstract public function getFlowName(
+	):string;
+
 	abstract public function validateConfigFields(
 		array $configFields
 	);
