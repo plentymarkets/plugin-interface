@@ -17,6 +17,14 @@ interface PaymentMatcherRulesContainerContract
 	);
 
 	/**
+	 * Register a specific rule class for all payment methods belonging to a plugin
+	 */
+	public function registerRuleForPlugin(
+		string $ruleClass, 
+		string $pluginName
+	);
+
+	/**
 	 * Gets all registered rules that apply to a specific method of payment
 If the payment method doesn't have any specificity, the rule set that applies generically is returned
 	 */

@@ -50,4 +50,10 @@ interface CatalogTemplateProviderContract
 	public function getMetaInfo(
 	):array;
 
+	/**
+	 * Gets Channel Map custom keys
+	 */
+	public function getMapFieldKeys(
+	):array;
+
 }

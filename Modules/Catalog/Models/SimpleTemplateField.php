@@ -27,7 +27,9 @@ abstract class SimpleTemplateField implements \Plenty\Modules\Catalog\Contracts\
 		bool $isLocked = false, 
 		bool $isArray = false, 
 		array $meta = [], 
-		array $defaultSources = []
+		array $defaultSources = [], 
+		array $templates = [], 
+		string $description = null
 	);
 
 	abstract public function getKey(
@@ -49,6 +51,9 @@ abstract class SimpleTemplateField implements \Plenty\Modules\Catalog\Contracts\
 	abstract public function getMeta(
 	):array;
 
+	abstract public function getTemplates(
+	):array;
+
 	abstract public function getCallable(
 	):CatalogTemplateFieldCallableContract;
 
@@ -66,6 +71,9 @@ abstract class SimpleTemplateField implements \Plenty\Modules\Catalog\Contracts\
 
 	abstract public function getType(
 	):int;
+
+	abstract public function getDescription(
+	):string;
 
 	abstract public function isRequired(
 	):bool;
