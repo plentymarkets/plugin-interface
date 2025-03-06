@@ -17,7 +17,7 @@ abstract class AdaptationDefinitionContract
 	):string;
 
 	abstract public function getFrom(
-	):string;
+	):array;
 
 	abstract public function getTo(
 	):string;

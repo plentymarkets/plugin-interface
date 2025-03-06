@@ -5,7 +5,6 @@ use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxGroupField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\DateField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\DoubleField;
-use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\HyperlinkField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\InputField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\NumberField;
