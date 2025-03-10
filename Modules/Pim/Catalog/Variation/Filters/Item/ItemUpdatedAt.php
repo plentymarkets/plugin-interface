@@ -23,7 +23,7 @@ abstract class ItemUpdatedAt implements \Plenty\Modules\Catalog\Contracts\Filter
 
 	const LAST_DAYS = 'lastDays';
 
-	const OPERATORS = ['today','lastDays','period','=','>','<','>=','<=','!='];
+	const OPERATORS = ['today','lastDays','period','yesterday','=','>','<','>=','<=','!='];
 
 	abstract public function getKey(
 	):string;
@@ -39,13 +39,13 @@ abstract class ItemUpdatedAt implements \Plenty\Modules\Catalog\Contracts\Filter
 		 $filterData
 	);
 
-	abstract public function getUiFilter(
-	):CatalogUiFilter;
-
 	abstract public function setTimeWindow(
 		Carbon $fromDate, 
 		Carbon $toDate = null
 	);
+
+	abstract public function getUiFilter(
+	):CatalogUiFilter;
 
 	/**
 	 * Fluent setter
