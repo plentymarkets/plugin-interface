@@ -3,6 +3,7 @@ namespace Plenty\Modules\Pim\Catalog\Variation\Filters\Variation;
 
 use Carbon\Carbon;
 use Plenty\Modules\Catalog\Models\Filters\CatalogUiFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\DateFilterBuilder;
 use Plenty\Modules\Pim\SearchService\Filter\VariationCreatedAtFilter;
 
@@ -23,7 +24,7 @@ abstract class VariationCreatedAt implements \Plenty\Modules\Catalog\Contracts\F
 
 	const LAST_DAYS = 'lastDays';
 
-	const OPERATORS = ['today','lastDays','period','=','>','<','>=','<=','!='];
+	const OPERATORS = ['today','lastDays','period','yesterday','=','>','<','>=','<=','!='];
 
 	abstract public function getKey(
 	):string;
@@ -39,13 +40,13 @@ abstract class VariationCreatedAt implements \Plenty\Modules\Catalog\Contracts\F
 		 $filterData
 	);
 
-	abstract public function getUiFilter(
-	):CatalogUiFilter;
-
 	abstract public function setTimeWindow(
 		Carbon $fromDate, 
 		Carbon $toDate = null
 	);
+
+	abstract public function getUiFilter(
+	):CatalogUiFilter;
 
 	/**
 	 * Fluent setter
