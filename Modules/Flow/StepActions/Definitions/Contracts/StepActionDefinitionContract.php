@@ -52,11 +52,18 @@ abstract class StepActionDefinitionContract
 	abstract public function getCondition(
 	):bool;
 
+	abstract public function setFlowName(
+		string $flowName
+	);
+
+	abstract public function getWorkflowName(
+	):string;
+
 	abstract public function setWorkflowName(
 		string $workflowName
 	);
 
-	abstract public function getWorkflowName(
+	abstract public function getFlowName(
 	):string;
 
 	abstract public function setStepName(
