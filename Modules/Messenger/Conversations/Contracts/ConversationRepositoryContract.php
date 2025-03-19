@@ -176,7 +176,8 @@ interface ConversationRepositoryContract
 	public function updateConversationsTypeAndStatus(
 		array $conversationsUuids, 
 		int $typeId, 
-		int $statusId
+		int $statusId, 
+		int $categoryId = null
 	):bool;
 
 	/**
