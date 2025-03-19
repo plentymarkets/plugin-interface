@@ -30,10 +30,6 @@ abstract class VariationDataInterfaceContext
 		TypeInterface $filter
 	):VariationDataInterfaceContext;
 
-	abstract public function setFilter(
-		Collection $filter
-	):self;
-
 	/**
 	 * Add aggregation to aggregate the result.
 	 */
@@ -60,6 +56,10 @@ abstract class VariationDataInterfaceContext
 	 */
 	abstract public function getFilter(
 	):Collection;
+
+	abstract public function setFilter(
+		Collection $filter
+	):self;
 
 	/**
 	 * Get ids which are added to the context.
@@ -99,18 +99,18 @@ abstract class VariationDataInterfaceContext
 	);
 
 	/**
-	 * Add part to the result. A part specifies what is returned in the result.
-	 */
-	abstract public function addPart(
-		AttributeInterface $part
-	);
-
-	/**
 	 * Set parts. A part specifies what is returned in the result.
 	 */
 	abstract public function setParts(
 		array $parts
 	):VariationDataInterfaceContext;
+
+	/**
+	 * Add part to the result. A part specifies what is returned in the result.
+	 */
+	abstract public function addPart(
+		AttributeInterface $part
+	);
 
 	/**
 	 * Get plenty ids. No further functionality added yet
@@ -164,15 +164,19 @@ abstract class VariationDataInterfaceContext
 	abstract public function isGetAllFound(
 	):bool;
 
-	abstract public function getLimit(
-	);
-
 	/**
 	 * set whether the result should return all found entities without pagination or not
 	 */
 	abstract public function setGetAllFound(
 		bool $getAll, 
 		int $limit = null
+	):self;
+
+	abstract public function getLimit(
+	);
+
+	abstract public function setLimit(
+		int $limit
 	):self;
 
 	/**
