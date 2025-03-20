@@ -9,7 +9,8 @@ abstract class PluginSeoSitemapService
 {
 
 	abstract public function loadPatterns(
-		string $url
+		string $url, 
+		array $headers = []
 	):bool;
 
 	abstract public function getPatterns(
