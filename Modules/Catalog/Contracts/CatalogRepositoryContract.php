@@ -195,6 +195,11 @@ interface CatalogRepositoryContract
 	public function getScheduleDays(
 	):array;
 
+	public function setParents(
+		array $catalogIds, 
+		string $parentId
+	);
+
 	/**
 	 * Sets the filter array.
 	 */
