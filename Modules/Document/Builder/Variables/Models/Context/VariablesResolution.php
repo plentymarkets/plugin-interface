@@ -3,7 +3,8 @@ namespace Plenty\Modules\Document\Builder\Variables\Models\Context;
 
 
 /**
- * This class can be used by variables to get the needed objects and to push resolved variable content.
+ * This class can be used by variables to get the
+ * needed objects and to push resolved variable content.
  */
 abstract class VariablesResolution 
 {

@@ -44,6 +44,8 @@ public		$isRequired;
 	
 public		$condition;
 	
+public		$conditionKeys;
+	
 public		$effectedFields;
 	
 	/**
