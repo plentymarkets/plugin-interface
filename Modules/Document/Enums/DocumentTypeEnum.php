@@ -8,57 +8,57 @@ namespace Plenty\Modules\Document\Enums;
 abstract class DocumentTypeEnum 
 {
 
-	const Invoice = 'invoice';
+	const INVOICE = 'invoice';
 
-	const ReversalInvoice = 'reversal_document';
+	const REVERSAL_INVOICE = 'reversal_document';
 
-	const ProFormaInvoice = 'pro_forma_invoice';
+	const PRO_FORMA_INVOICE = 'pro_forma_invoice';
 
-	const DeliveryNote = 'delivery_note';
+	const DELIVERY_NOTE = 'delivery_note';
 
-	const OrderConfirmation = 'order_confirmation';
+	const ORDER_CONFIRMATION = 'order_confirmation';
 
-	const MultiInvoice = 'multi_invoice';
+	const MULTI_INVOICE = 'multi_invoice';
 
-	const MultiCreditNote = 'multi_credit_note';
+	const MULTI_CREDIT_NOTE = 'multi_credit_note';
 
-	const Offer = 'offer';
+	const OFFER = 'offer';
 
-	const EntryCertificate = 'success_confirmation';
+	const ENTRY_CERTIFICATE = 'success_confirmation';
 
-	const PickupDelivery = 'pickup_delivery';
+	const PICKUP_DELIVERY = 'pickup_delivery';
 
-	const CreditNote = 'credit_note';
+	const CREDIT_NOTE = 'credit_note';
 
-	const ReversalCreditNote = 'reversal_refund';
+	const REVERSAL_CREDIT_NOTE = 'reversal_refund';
 
-	const AdjustmentForm = 'correction_document';
+	const ADJUSTMENT_FORM = 'correction_document';
 
-	const DunningLetter = 'dunning_letter';
+	const DUNNING_LETTER = 'dunning_letter';
 
-	const ReversalDunningLetter = 'reversal_dunning_letter';
+	const REVERSAL_DUNNING_LETTER = 'reversal_dunning_letter';
 
-	const ReturnSlip = 'return_note';
+	const RETURN_SLIP = 'return_note';
 
-	const RepairBill = 'repair_bill';
+	const REPAIR_BILL = 'repair_bill';
 
-	const Reorder = 'reorder';
+	const REORDER = 'reorder';
 
-	const PODeliveryNote = 'po_delivery_note';
+	const PO_DELIVERY_NOTE = 'po_delivery_note';
 
-	const Voucher = 'voucher';
+	const VOUCHER = 'voucher';
 
-	const Coupon = 'coupon';
+	const COUPON = 'coupon';
 
-	const ExternalInvoice = 'invoice_external';
+	const EXTERNAL_INVOICE = 'invoice_external';
 
-	const ExternalCreditNote = 'credit_note_external';
+	const EXTERNAL_CREDIT_NOTE = 'credit_note_external';
 
-	const Uploaded = 'uploaded';
+	const UPLOADED = 'uploaded';
 
-	const OrderCustom = 'order_custom';
+	const ORDER_CUSTOM = 'order_custom';
 
-	const IncomingItemReceipt = 'incoming_items_receipt';
+	const INCOMING_ITEMS_RECEIPT = 'incoming_items_receipt';
 
 	/**
 	 * Returns this model as an array.
