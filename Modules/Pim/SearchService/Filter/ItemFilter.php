@@ -127,6 +127,13 @@ abstract class ItemFilter implements TypeInterface
 		array $revenueAccounts
 	):self;
 
+	/**
+	 * Restricts the result to have the specified item list.
+	 */
+	abstract public function isItemList(
+		bool $itemList
+	):self;
+
 	abstract public function toArray(
 	):array;
 

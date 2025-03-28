@@ -391,6 +391,11 @@ abstract class Base
 	public		$itemType;
 	
 	/**
+	 * @var bool
+	 */
+	public		$isCopy;
+	
+	/**
 	 * Returns this model as an array.
 	 */
 	public function toArray(
