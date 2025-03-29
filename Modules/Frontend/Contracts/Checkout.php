@@ -13,7 +13,7 @@ interface Checkout
 	 * Gets the shipping country ID.
 	 */
 	public function getShippingCountryId(
-	):int;
+	):?int;
 
 	/**
 	 * Updates the ID of the shipping country. The ID must be specified.
