@@ -8,4 +8,10 @@ namespace Plenty\Modules\Frontend\Events;
 abstract class FrontendCustomerAddressChanged 
 {
 
+	/**
+	 * Shows if the basket calculation should be skipped
+	 */
+	abstract public function isSkipBasketCalculation(
+	):bool;
+
 }
