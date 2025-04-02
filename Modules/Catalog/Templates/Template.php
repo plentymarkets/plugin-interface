@@ -9,6 +9,7 @@ use Plenty\Modules\Catalog\Contracts\CatalogMutatorContract;
 use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\CatalogRuntimeConfigContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
+use Plenty\Modules\Catalog\Models\Catalog;
 use Plenty\Modules\Catalog\Models\Filters\CatalogUiFilter;
 use Plenty\Modules\Catalog\Services\Cache\Intervals\Defaults\DefaultIntervals;
 use Plenty\Modules\Catalog\Services\Cache\Intervals\Intervals;
@@ -309,5 +310,31 @@ abstract class Template implements TemplateContract
 	abstract public function setMapFieldKeys(
 		array $mapFieldKeys
 	);
+
+	/**
+	 * Gets forced fields for channel
+	 */
+	abstract public function getForcedFieldsForChannel(
+	):TemplateGroupContainer;
+
+	/**
+	 * Sets forced fields for channel
+	 */
+	abstract public function setForcedFieldsForChannel(
+		TemplateGroupContainer $templateGroupContainer
+	);
+
+	/**
+	 * Sets a catalog
+	 */
+	abstract public function setCatalog(
+		Catalog $catalog
+	);
+
+	/**
+	 * Gets the catalog
+	 */
+	abstract public function getCatalog(
+	):Catalog;
 
 }
