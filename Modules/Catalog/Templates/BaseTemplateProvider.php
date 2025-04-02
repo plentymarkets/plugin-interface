@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Catalog\Templates;
 
+use Plenty\Modules\Catalog\Containers\TemplateGroupContainer;
 use Plenty\Modules\Catalog\Contracts\CatalogRuntimeConfigProviderContract;
 use Plenty\Modules\Catalog\Contracts\CatalogTemplateProviderContract;
 use Plenty\Modules\Catalog\Contracts\TemplateContract;
@@ -56,5 +57,8 @@ abstract class BaseTemplateProvider implements CatalogTemplateProviderContract
 	 */
 	abstract public function getMapFieldKeys(
 	):array;
+
+	abstract public function getForcedFieldsForChannel(
+	):TemplateGroupContainer;
 
 }

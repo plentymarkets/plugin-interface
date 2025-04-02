@@ -8,75 +8,75 @@ namespace Plenty\Modules\Document\Builder\Variables\Enums;
 abstract class VariablesObjectTypeEnum 
 {
 
-	const Order = 'Order';
+	const ORDER = 'Order';
 
-	const OrderItem = 'OrderItem';
+	const ORDER_ITEM = 'OrderItem';
 
-	const OrderItemTypes = 'OrderItemTypes';
+	const ORDER_ITEM_TYPES = 'OrderItemTypes';
 
-	const OrderAmount = 'OrderAmount';
+	const ORDER_AMOUNT = 'OrderAmount';
 
-	const OrderItemAmount = 'OrderItemAmount';
+	const ORDER_ITEM_AMOUNT = 'OrderItemAmount';
 
-	const Variation = 'Variation';
+	const VARIATION = 'Variation';
 
-	const OrderVariationsAmounts = 'OrderVariationsAmounts';
+	const ORDER_VARIATIONS_AMOUNTS = 'OrderVariationsAmounts';
 
-	const OrderCouponsAmounts = 'OrderCouponsAmounts';
+	const ORDER_COUPONS_AMOUNTS = 'OrderCouponsAmounts';
 
-	const OrderDiscountAmounts = 'OrderDiscountAmounts';
+	const ORDER_DISCOUNT_AMOUNTS = 'OrderDiscountAmounts';
 
-	const OrderItemReorderReference = 'OrderItemReorderReference';
+	const ORDER_ITEM_REORDER_REFERENCE = 'OrderItemReorderReference';
 
-	const ReferencedOrder = 'ReferencedOrder';
+	const REFERENCED_ORDER = 'ReferencedOrder';
 
-	const OrderPaymentTerms = 'OrderPaymentTerms';
+	const ORDER_PAYMENT_TERMS = 'OrderPaymentTerms';
 
-	const Contact = 'Contact';
+	const CONTACT = 'Contact';
 
-	const Address = 'Address';
+	const ADDRESS = 'Address';
 
-	const Location = 'Location';
+	const LOCATION = 'Location';
 
-	const Document = 'Document';
+	const DOCUMENT = 'Document';
 
-	const ParentDocument = 'ParentDocument';
+	const PARENT_DOCUMENT = 'ParentDocument';
 
-	const ReferenceDocument = 'ReferenceDocument';
+	const REFERENCE_DOCUMENT = 'ReferenceDocument';
 
-	const Invoice = 'Invoice';
+	const INVOICE = 'Invoice';
 
-	const DeliveryNote = 'DeliveryNote';
+	const DELIVERY_NOTE = 'DeliveryNote';
 
-	const OrderConfirmation = 'OrderConfirmation';
+	const ORDER_CONFIRMATION = 'OrderConfirmation';
 
-	const MetaData = 'MetaData';
+	const META_DATA = 'MetaData';
 
-	const PluginOld = 'PluginOld';
+	const PLUGIN_OLD = 'PluginOld';
 
-	const ShippingProfile = 'ShippingProfile';
+	const SHIPPING_PROFILE = 'ShippingProfile';
 
-	const ShippingProvider = 'ShippingProvider';
+	const SHIPPING_PROVIDER = 'ShippingProvider';
 
-	const TaxDeterminer = 'TaxDeterminer';
+	const TAX_DETERMINER = 'TaxDeterminer';
 
-	const CountryVat = 'CountryVat';
+	const COUNTRY_VAT = 'CountryVat';
 
-	const Warehouse = 'Warehouse';
+	const WAREHOUSE = 'Warehouse';
 
-	const QuantityArray = 'QuantityArray';
+	const QUANTITY_ARRAY = 'QuantityArray';
 
-	const Other = 'Other';
+	const OTHER = 'Other';
 
-	const MessengerConversation = 'MessengerConversation';
+	const MESSENGER_CONVERSATION = 'MessengerConversation';
 
-	const StockIntakeData = 'StockIntakeData';
+	const STOCK_INTAKE_DATA = 'StockIntakeData';
 
-	const ReceiptItem = 'ReceiptItem';
+	const RECEIPT_ITEM = 'ReceiptItem';
 
-	const ValueFormatter = 'ValueFormatter';
+	const VALUE_FORMATTER = 'ValueFormatter';
 
-	const Unknown = 'Unknown';
+	const UNKNOWN = 'Unknown';
 
 	/**
 	 * Returns this model as an array.

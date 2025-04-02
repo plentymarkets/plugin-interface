@@ -1,18 +1,21 @@
 <?php
 namespace Plenty\Modules\Document\Contracts;
 
+use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Document\Models\Document;
-use Plenty\Modules\Document\Models\DocumentComment;
+use Plenty\Modules\Order\Exceptions\OrderUndefinedTypeException;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
 use Plenty\Repositories\Criteria\Criteria;
 use Plenty\Repositories\Models\PaginatedResult;
 
 /**
- * Download and list order documents as well as download, list, upload and delete category documents.
+ * Download and list order documents as well as download, list,
+ * upload and delete category documents.
  */
 interface DocumentRepositoryContract 
 {
@@ -129,7 +132,7 @@ interface DocumentRepositoryContract
 	):Document;
 
 	/**
-	 * Delets a document.
+	 * Deletes a document.
 	 */
 	public function deleteOrderShippingPackageDocuments(
 		int $packageId
