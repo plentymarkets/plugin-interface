@@ -135,6 +135,13 @@ interface MessengerRepositoryContract
 	):Attachment;
 
 	/**
+	 * Gets all message attachments as zip from an array of messages.
+	 */
+	public function getAllAttachmentsForBatchOfMessages(
+		array $uuids
+	);
+
+	/**
 	 * Updates the meta data of the message.
 	 */
 	public function updateMetaData(
