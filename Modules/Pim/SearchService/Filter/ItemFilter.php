@@ -134,6 +134,20 @@ abstract class ItemFilter implements TypeInterface
 		bool $itemList
 	):self;
 
+	/**
+	 * Restricts the result to have the specified item age restriction.
+	 */
+	abstract public function isAgeRestriction(
+		int $ageRestriction
+	):self;
+
+	/**
+	 * Restricts the result to not have the specified item age restriction.
+	 */
+	abstract public function isNotAgeRestriction(
+		int $ageRestriction
+	):self;
+
 	abstract public function toArray(
 	):array;
 
