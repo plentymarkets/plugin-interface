@@ -14,4 +14,10 @@ abstract class FrontendUpdateDeliveryAddress
 	abstract public function getAccountAddressId(
 	):int;
 
+	/**
+	 * Shows if the basket calculation should be skipped
+	 */
+	abstract public function isSkipBasketCalculation(
+	):bool;
+
 }

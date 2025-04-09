@@ -18,6 +18,8 @@ abstract class LegalInformation
 
 	const TYPE_WITHDRAWAL_FORM = 'WithdrawalForm';
 
+	const TYPE_DECLARATION_OF_ACCESSIBILITY = 'DeclarationOfAccessibility';
+
 	const CREATED_AT = 'createdAt';
 
 	const UPDATED_AT = 'updatedAt';

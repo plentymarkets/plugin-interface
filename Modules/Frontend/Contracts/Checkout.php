@@ -4,7 +4,7 @@ namespace Plenty\Modules\Frontend\Contracts;
 use Plenty\Modules\Frontend\Events\ValidateCheckoutEvent;
 
 /**
- * The CheckoutContract is the interface for the checkout repository. This interface allows to set the shipping country ID, the payment method ID, the shipping profile ID and the currency in the checkout.
+ * The CheckoutContract is the interface for the checkout repository.
  */
 interface Checkout 
 {
@@ -85,7 +85,8 @@ interface Checkout
 	 * Sets the invoice address id for the current shopping cart.
 	 */
 	public function setCustomerInvoiceAddressId(
-		int $invoiceAddressId
+		int $invoiceAddressId, 
+		bool $skipBasketCalculation = false
 	);
 
 	/**
@@ -98,7 +99,8 @@ interface Checkout
 	 * Sets the shipping address id for the current shopping cart.
 	 */
 	public function setCustomerShippingAddressId(
-		int $shippingAddressId
+		int $shippingAddressId, 
+		bool $skipBasketCalculation = false
 	);
 
 	/**
@@ -106,5 +108,11 @@ interface Checkout
 	 */
 	public function validateCheckout(
 	):ValidateCheckoutEvent;
+
+	/**
+	 * Reset addresses
+	 */
+	public function resetAddresses(
+	);
 
 }
