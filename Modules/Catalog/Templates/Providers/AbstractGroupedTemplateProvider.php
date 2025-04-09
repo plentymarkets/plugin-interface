@@ -110,6 +110,12 @@ abstract class AbstractGroupedTemplateProvider implements CatalogGroupedTemplate
 	):array;
 
 	/**
+	 * Gets forced fields for channel
+	 */
+	abstract public function getForcedFieldsForChannel(
+	):TemplateGroupContainer;
+
+	/**
 	 * Returns a container in which all TemplateGroups of this template are collected.
 	 */
 	abstract public function getTemplateGroupContainer(

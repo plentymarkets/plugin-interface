@@ -8,15 +8,15 @@ namespace Plenty\Modules\Document\Builder\Variables\Models\Groups;
 abstract class AddressTypeBaseGroup 
 {
 
-	const InvoiceAddress = 'InvoiceAddress';
+	const INVOICE_ADDRESS = 'InvoiceAddress';
 
-	const DeliveryAddress = 'DeliveryAddress';
+	const DELIVERY_ADDRESS = 'DeliveryAddress';
 
-	const SupplierAddress = 'SupplierAddress';
+	const SUPPLIER_ADDRESS = 'SupplierAddress';
 
-	const InboundWarehouseAddress = 'InboundWarehouseAddress';
+	const INBOUND_WAREHOUSE_ADDRESS = 'InboundWarehouseAddress';
 
-	const OutboundWarehouseAddress = 'OutboundWarehouseAddress';
+	const OUTBOUND_WAREHOUSE_ADDRESS = 'OutboundWarehouseAddress';
 
 	/**
 	 * Returns this model as an array.

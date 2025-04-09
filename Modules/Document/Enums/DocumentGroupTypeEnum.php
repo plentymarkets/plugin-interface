@@ -8,17 +8,17 @@ namespace Plenty\Modules\Document\Enums;
 abstract class DocumentGroupTypeEnum 
 {
 
-	const Order = 'Order';
+	const ORDER = 'Order';
 
-	const PurchaseOrder = 'PurchaseOrder';
+	const PURCHASE_ORDER = 'PurchaseOrder';
 
-	const Voucher = 'Voucher';
+	const VOUCHER = 'Voucher';
 
-	const External = 'External';
+	const EXTERNAL = 'External';
 
-	const OrderGlobal = 'OrderGlobal';
+	const ORDER_GLOBAL = 'OrderGlobal';
 
-	const StockIntake = 'StockIntake';
+	const STOCK_INTAKE = 'StockIntake';
 
 	/**
 	 * Returns this model as an array.

@@ -4,6 +4,7 @@ namespace Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
+use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Catalog\Contracts\CatalogResultConverterContract;
 use Plenty\Modules\Catalog\Contracts\UI\UIOptionsContract;
 use Plenty\Modules\Catalog\Helpers\Traits\NumberFormatter;
@@ -13,6 +14,7 @@ use Plenty\Modules\Catalog\Services\Converter\ResultConverters\BaseResultConvert
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\Options\DelimiterOption;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\Options\EnclosureOption;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\Options\HeaderRowOption;
+use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\Options\JSONUnicodeCharactersOption;
 use Plenty\Modules\Catalog\Services\Converter\ResultConverters\Defaults\Options\LineBreakOption;
 use Plenty\Modules\Catalog\Services\FileHandlers\ResourceHandler;
 use Plenty\Modules\Catalog\Services\UI\Options\UIOptions;
@@ -44,6 +46,9 @@ abstract class CSVResultConverterArrayAsJson extends \Plenty\Modules\Catalog\Ser
 	):UIOptionsContract;
 
 	abstract public function getCSVHeaderRowIncluded(
+	):bool;
+
+	abstract public function getJSONEncodeUnicodeCharacters(
 	):bool;
 
 	abstract public function getDecimalSeparator(
