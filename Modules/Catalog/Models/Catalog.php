@@ -38,6 +38,10 @@ public		$updatedAt;
 	
 public		$createdAt;
 	
+public		$errors;
+	
+public		$errorCount;
+	
 	/**
 	 * Returns this model as an array.
 	 */

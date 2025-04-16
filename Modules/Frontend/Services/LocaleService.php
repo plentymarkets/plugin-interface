@@ -14,7 +14,8 @@ abstract class LocaleService
 	 */
 	abstract public function setLanguage(
 		string $newLanguage, 
-		bool $fireEvents = true
+		bool $fireEvents = true, 
+		bool $isDetectedByBrowserLanguage = false
 	);
 
 }
