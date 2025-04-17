@@ -1,16 +1,13 @@
 <?php
 namespace Plenty\Modules\Pim\SearchService\Filter;
 
-use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldExistsStatement;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\FieldIsMissingStatement;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
-use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
@@ -135,6 +132,13 @@ abstract class ItemFilter implements TypeInterface
 	):self;
 
 	/**
+	 * Restricts the result to have the specified item shop action / store special.
+	 */
+	abstract public function isShopAction(
+		int $shopAction
+	):self;
+
+	/**
 	 * Restricts the result to have the specified item age restriction.
 	 */
 	abstract public function isAgeRestriction(
@@ -146,6 +150,13 @@ abstract class ItemFilter implements TypeInterface
 	 */
 	abstract public function isNotAgeRestriction(
 		int $ageRestriction
+	):self;
+
+	/**
+	 * Restricts the result to have the specified item stock type.
+	 */
+	abstract public function isStockType(
+		string $stockType
 	):self;
 
 	abstract public function toArray(
