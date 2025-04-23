@@ -28,8 +28,6 @@ public		$target;
 	
 public		$groupByDimension;
 	
-public		$aggregateDimensions;
-	
 public		$aggregateFunction;
 	
 public		$itemsPerPage;
