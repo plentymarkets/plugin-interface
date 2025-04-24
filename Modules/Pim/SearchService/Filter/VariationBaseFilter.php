@@ -263,6 +263,14 @@ abstract class VariationBaseFilter implements TypeInterface
 		int $stockLimitation
 	):self;
 
+	abstract public function hasAnyVatId(
+		array $vatIds
+	):self;
+
+	abstract public function hasNotAnyVatId(
+		array $vatIds
+	):self;
+
 	abstract public function toArray(
 	):array;
 
