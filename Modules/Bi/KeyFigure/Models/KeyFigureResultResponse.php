@@ -28,6 +28,8 @@ public		$keyFigureName;
 	
 public		$calculatedAt;
 	
+public		$fullCount;
+	
 	/**
 	 * Returns this model as an array.
 	 */
