@@ -20,7 +20,7 @@ abstract class AdaptationDefinitionContract
 	):array;
 
 	abstract public function getTo(
-	):string;
+	):array;
 
 	abstract public function performTask(
 		array $inputs, 
