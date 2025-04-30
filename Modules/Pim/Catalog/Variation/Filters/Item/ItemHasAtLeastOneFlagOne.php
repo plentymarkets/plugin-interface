@@ -6,7 +6,7 @@ use Plenty\Modules\Catalog\Helpers\Legacy\FlagHelper;
 use Plenty\Modules\Catalog\Models\Filters\CatalogUiFilter;
 use Plenty\Modules\Catalog\Models\Filters\CatalogUiFilterSelectionValue;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\FilterBuilder;
-use Plenty\Modules\Pim\SearchService\Filter\ItemFilter;
+use Plenty\Modules\Pim\SearchService\Filter\ItemFilter as ItemFilter;
 
 /**
  * Used to represent the ItemHasFlagOne filter in both the catalog export and UI.
@@ -17,9 +17,6 @@ abstract class ItemHasAtLeastOneFlagOne implements \Plenty\Modules\Catalog\Contr
 
 	const KEY = 'itemHasAtLeastOneFlagOne';
 
-	abstract public function getKey(
-	):string;
-
 	/**
 	 * This method will be called in the export process if the filter was registered as a custom filter. In the
 template definition this should not be called. Use the specific setter methods instead.
@@ -27,6 +24,10 @@ template definition this should not be called. Use the specific setter methods i
 	abstract public function setFilterData(
 		 $filterData
 	);
+
+	abstract public function setFlags(
+		array $flags
+	):self;
 
 	/**
 	 * Will return a ItemFilter if a flag is provided. Otherwise null is returned.
@@ -38,9 +39,8 @@ template definition this should not be called. Use the specific setter methods i
 	abstract public function getUiFilter(
 	):CatalogUiFilter;
 
-	abstract public function setFlags(
-		array $flags
-	):self;
+	abstract public function getKey(
+	):string;
 
 	/**
 	 * Fluent setter
