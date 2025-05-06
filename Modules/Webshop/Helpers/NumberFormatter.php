@@ -26,4 +26,12 @@ abstract class NumberFormatter
 		 $currencyISO
 	):string;
 
+	/**
+	 * Get formatter
+Get formatter by given currency iso
+	 */
+	abstract public function getFormatter(
+		string $currencyISO
+	);
+
 }
