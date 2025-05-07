@@ -44,6 +44,8 @@ public		$inProductive;
 	
 public		$isConnectedWithGit;
 	
+public		$isInstalledWithGit;
+	
 public		$updateInformation;
 	
 public		$type;

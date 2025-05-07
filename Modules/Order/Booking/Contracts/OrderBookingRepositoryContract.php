@@ -31,7 +31,8 @@ interface OrderBookingRepositoryContract
 	public function bookOrderItemTransactions(
 		array $transactionIds, 
 		int $warehouseId = null, 
-		string $deliveryNoteNumber = null
+		string $deliveryNoteNumber = null, 
+		array $purchasePrices = []
 	):OrderBooking;
 
 }
