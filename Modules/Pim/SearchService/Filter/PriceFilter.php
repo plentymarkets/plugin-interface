@@ -32,7 +32,7 @@ abstract class PriceFilter implements TypeInterface
 	);
 
 	/**
-	 * Restricts the result to a price between the specified min and max value. The price must be related to one of the specified price ids.
+	 * Restricts the result to a price between the specified min and max value.
 	 */
 	abstract public function betweenByPriceId(
 		array $priceIds = [], 
