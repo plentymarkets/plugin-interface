@@ -48,6 +48,8 @@ public		$conditionKeys;
 	
 public		$effectedFields;
 	
+public		$helperText;
+	
 	/**
 	 * Returns this model as an array.
 	 */
