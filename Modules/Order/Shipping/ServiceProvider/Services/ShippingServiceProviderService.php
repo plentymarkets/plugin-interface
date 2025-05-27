@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Order\Shipping\ServiceProvider\Services;
 
+use Plenty\Modules\DhlShipping\Services\MigrationService;
 use Plenty\Modules\Order\Shipping\ServiceProvider\Exceptions\ShippingProviderRegisterException;
 use Plenty\Modules\Order\Shipping\ServiceProvider\Services\Entries\ShippingServiceProviderEntry;
 
