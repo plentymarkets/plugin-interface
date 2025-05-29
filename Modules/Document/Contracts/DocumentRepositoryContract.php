@@ -7,6 +7,7 @@ use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Plenty\Exceptions\ValidationException;
 use Plenty\Modules\Document\Models\Document;
+use Plenty\Modules\Document\Models\DocumentComment;
 use Plenty\Modules\Order\Exceptions\OrderUndefinedTypeException;
 use Plenty\Repositories\Contracts\FilterableContract;
 use Plenty\Repositories\Criteria\Contracts\CriteriableContract;
@@ -177,6 +178,13 @@ interface DocumentRepositoryContract
 		int $orderId, 
 		array $documentTypes
 	):bool;
+
+	/**
+	 * Get the document comment if any
+	 */
+	public function getDocumentComment(
+		int $documentId
+	):DocumentComment;
 
 	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.

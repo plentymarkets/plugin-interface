@@ -96,7 +96,13 @@ abstract class Document
 
 	const INCOMING_ITEMS_RECEIPT = 'incoming_items_receipt';
 
+	const INCOMING_ITEMS_REGISTER = 'incoming_items_register';
+
+	const CASH_JOURNAL = 'cash_journal';
+
 	const ORDER_CUSTOM = 'order_custom';
+
+	const SEPA_DIRECT_DEBIT = 'sepa_direct_debit';
 
 	const SHIPPING_LABEL = 'shipping_label';
 
