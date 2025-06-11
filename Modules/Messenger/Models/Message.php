@@ -70,6 +70,8 @@ public		$messageType;
 	
 public		$marketplacesMetadata;
 	
+public		$eventId;
+	
 	/**
 	 * Returns this model as an array.
 	 */

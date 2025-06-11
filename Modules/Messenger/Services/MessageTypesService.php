@@ -71,6 +71,8 @@ abstract class MessageTypesService
 
 	const MESSAGE_TYPE_NEW_REPLY_FROM_USER = 'newReplyFromUser';
 
+	const MESSAGE_TYPE_NEW_REPLY_FROM_EVENT = 'newReplyFromEvent';
+
 	const MESSAGE_TYPE_FORWARDED_MESSAGE = 'forwardedMessage';
 
 	const MESSAGE_TYPE_INTERNAL_NOTE = 'internalNote';

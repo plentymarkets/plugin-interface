@@ -6,6 +6,7 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
@@ -14,6 +15,20 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 abstract class PropertyFilter implements TypeInterface
 
 {
+
+	/**
+	 * Restricts the result to have any of the property ids.
+	 */
+	abstract public function hasPropertyIds(
+		array $ids
+	):self;
+
+	/**
+	 * Restricts the result to NOT have any of the property ids.
+	 */
+	abstract public function hasNotPropertyIds(
+		array $ids
+	):self;
 
 	/**
 	 * Restricts the result to have the property selection id.
