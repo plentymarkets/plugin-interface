@@ -27,4 +27,7 @@ abstract class AdaptationDefinitionContract
 		string $replaceOption
 	):array;
 
+	abstract public function shouldBeRegistered(
+	):bool;
+
 }
