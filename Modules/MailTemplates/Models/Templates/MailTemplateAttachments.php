@@ -9,7 +9,7 @@ namespace Plenty\Modules\Mail\Templates\Models\Templates;
 abstract class MailTemplateAttachments 
 {
 
-	const MAX_MAIL_ATTACHMENTS_SIZE = 10485760;
+	const MAX_MAIL_ATTACHMENTS_SIZE = 26214400;
 
 	const CREATED_AT = 'createdAt';
 
