@@ -25,7 +25,7 @@ trait Reportable
      * @param mixed $additionalInfo
      * @param array $references
      */
-    private function report($identifier, $code, $additionalInfo = null, $references = array())
+    private function report($identifier, $code, $additionalInfo = null, $references = [])
     {
         if (is_null($this->pluginNamespaceReportable)) {
             $classInfo = explode('\\', trim(get_class($this), '\\'));
