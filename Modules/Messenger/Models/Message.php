@@ -56,6 +56,8 @@ public		$deletedBy;
 	
 public		$attachments;
 	
+public		$inboxId;
+	
 public		$categoryId;
 	
 public		$typeId;

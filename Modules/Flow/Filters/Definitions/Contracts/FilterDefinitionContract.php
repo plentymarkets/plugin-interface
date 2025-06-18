@@ -49,7 +49,8 @@ abstract class FilterDefinitionContract
 	):string;
 
 	abstract public function searchCriteriaValue(
-		 $value
+		 $value, 
+		string $operator = ""
 	);
 
 	abstract public function isSystemSpecific(
