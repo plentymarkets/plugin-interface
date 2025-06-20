@@ -56,6 +56,8 @@ public		$isShippableByAmazon;
 	
 public		$amazonProductType;
 	
+public		$amazonProductType2;
+	
 public		$amazonFedas;
 	
 public		$ebayPresetId;
