@@ -8,6 +8,8 @@ use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolShouldStatementFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
@@ -122,6 +124,43 @@ abstract class ItemFilter implements TypeInterface
 
 	abstract public function hasAnyRevenueAccount(
 		array $revenueAccounts
+	):self;
+
+	abstract public function hasAmazonProductTypeId(
+		int $amazonProductTypeId
+	):self;
+
+	abstract public function isInAnyAmazonProductTypeIds(
+		array $amazonProductTypeIds
+	):self;
+
+	abstract public function hasNotAmazonProductTypeIds(
+		array $amazonProductTypeIds
+	):self;
+
+	/**
+	 * Filter for the new amazon product type id (2025)
+	 */
+	abstract public function hasAmazonProductName(
+		string $amazonProductName
+	):self;
+
+	/**
+	 * Restricts the result to have any of the clientIds.
+	 */
+	abstract public function isInAnyAmazonProductName(
+		array $amazonProductNames
+	):self;
+
+	abstract public function isNotAmazonProductName(
+		string $amazonProductName
+	):self;
+
+	/**
+	 * Restricts the result to not match the specified IDs.
+	 */
+	abstract public function hasNotAmazonProductName(
+		array $amazonProductNames
 	):self;
 
 	/**
