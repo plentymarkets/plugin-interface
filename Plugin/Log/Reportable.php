@@ -28,7 +28,7 @@ trait Reportable
     private function report($identifier, $code, $additionalInfo = null, $references = [])
     {
         if (is_null($this->pluginNamespaceReportable)) {
-            $classInfo = explode('\\', trim(get_class($this), '\\'));
+            $classInfo = explode('\\', trim($this::class, '\\'));
 
             $this->pluginNamespaceReportable = array_shift($classInfo);
         }

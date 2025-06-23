@@ -24,7 +24,7 @@ trait Loggable
     private function getLogger($identifier)
     {
         if (is_null($this->pluginNamespace)) {
-            $classInfo = explode('\\', trim(get_class($this), '\\'));
+            $classInfo = explode('\\', trim($this::class, '\\'));
 
             $this->pluginNamespace = array_shift($classInfo);
         }
