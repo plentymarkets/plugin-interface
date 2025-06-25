@@ -100,7 +100,8 @@ interface ConversationRepositoryContract
 	public function updateRead(
 		array $uuids, 
 		int $userId, 
-		bool $read
+		bool $read, 
+		bool $globalReadStatus = null
 	):int;
 
 	/**
