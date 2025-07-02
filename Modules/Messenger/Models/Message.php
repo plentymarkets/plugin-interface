@@ -72,8 +72,6 @@ public		$messageType;
 	
 public		$marketplacesMetadata;
 	
-public		$marketplacesMetadataNew;
-	
 public		$eventId;
 	
 	/**
