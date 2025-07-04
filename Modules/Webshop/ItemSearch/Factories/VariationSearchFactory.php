@@ -58,6 +58,7 @@ use Plenty\Modules\Webshop\ItemSearch\Mutators\ItemUrlMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\OrderPropertySelectionValueMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\ReduceDataMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\ReduceManufacturerDataMutator;
+use Plenty\Modules\Webshop\ItemSearch\Mutators\ReduceVariationPropertyMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\VariationPropertySelectionValuesMutator;
 use Plenty\Modules\Webshop\ItemSearch\Mutators\VariationPropertyTransformMutator;
 use Plenty\Modules\Webshop\WebshopServiceProvider;
@@ -373,6 +374,10 @@ abstract class VariationSearchFactory
 
 	abstract public function withReducedManufacturerData(
 		string $manufacturerFields
+	):self;
+
+	abstract public function withCanonicalVariationProperties(
+		int $itemCanonicalId
 	):self;
 
 	abstract public function withAvailability(
