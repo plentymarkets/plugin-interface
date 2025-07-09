@@ -10,6 +10,8 @@ abstract class MessageMarketplacesMetaData
 	
 public		$ebayProperties;
 	
+public		$amazonProperties;
+	
 	/**
 	 * Returns this model as an array.
 	 */
