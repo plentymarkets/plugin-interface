@@ -341,6 +341,10 @@ abstract class FacetSearchFactory
 		string $manufacturerFields
 	):self;
 
+	abstract public function withCanonicalVariationProperties(
+		int $itemCanonicalId
+	):self;
+
 	abstract public function withAvailability(
 	):self;
 
