@@ -168,6 +168,8 @@ public		$categories;
 	
 public		$tags;
 	
+public		$tagRelationships;
+	
 	/**
 	 * Returns this model as an array.
 	 */

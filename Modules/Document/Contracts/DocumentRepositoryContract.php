@@ -187,6 +187,21 @@ interface DocumentRepositoryContract
 	):DocumentComment;
 
 	/**
+	 * Get the document tags as array of tag IDs.
+	 */
+	public function getTags(
+		int $documentId
+	):array;
+
+	/**
+	 * Set the document tags as array of tag IDs.
+	 */
+	public function setTags(
+		int $documentId, 
+		array $tags
+	):array;
+
+	/**
 	 * Resets all Criteria filters by creating a new instance of the builder object.
 	 */
 	public function clearCriteria(

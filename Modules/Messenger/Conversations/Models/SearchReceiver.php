@@ -20,6 +20,8 @@ public		$externalId;
 	
 public		$type;
 	
+public		$referrerId;
+	
 	/**
 	 * Returns this model as an array.
 	 */
