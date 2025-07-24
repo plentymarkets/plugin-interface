@@ -319,4 +319,11 @@ interface ConversationRepositoryContract
 		int $groupId
 	):int;
 
+	/**
+	 * Retrieves the list of allowed Amazon messaging API actions for orders
+	 */
+	public function getAmazonAllowedActions(
+		array $orderIds
+	):array;
+
 }
