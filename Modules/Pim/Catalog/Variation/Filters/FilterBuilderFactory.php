@@ -12,6 +12,7 @@ use Plenty\Modules\Pim\Catalog\Variation\Filters\Client\VariationHasClients;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Image\VariationHasImage;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Item\ItemBelongsToAtLeastOneAmazonFlatFile;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Item\ItemBelongsToAtLeastOneAmazonProductType;
+use Plenty\Modules\Pim\Catalog\Variation\Filters\Item\ItemBelongsToAtLeastOneNewAmazonProductType;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Item\ItemCreatedAt;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Item\ItemHasAtLeastOneFlagOne;
 use Plenty\Modules\Pim\Catalog\Variation\Filters\Item\ItemHasAtLeastOneFlagTwo;
@@ -96,6 +97,9 @@ abstract class FilterBuilderFactory
 
 	abstract public function itemBelongsToAtLeastOneAmazonProductType(
 	):ItemBelongsToAtLeastOneAmazonProductType;
+
+	abstract public function itemBelongsToAtLeastOneNewAmazonProductType(
+	):ItemBelongsToAtLeastOneNewAmazonProductType;
 
 	abstract public function itemCreatedAt(
 	):ItemCreatedAt;

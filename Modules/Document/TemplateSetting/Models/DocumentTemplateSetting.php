@@ -54,6 +54,8 @@ public		$footerReferencedBy;
 	
 public		$typeSettings;
 	
+public		$generationInformations;
+	
 	/**
 	 * Returns this model as an array.
 	 */
