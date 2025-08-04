@@ -93,4 +93,14 @@ interface OfferRepositoryContract
 		bool $lazyLoaded = false
 	):Order;
 
+	/**
+	 * Restore an offer
+	 */
+	public function restore(
+		int $orderId, 
+		array $data = [], 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
 }

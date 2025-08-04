@@ -150,4 +150,14 @@ interface SalesOrderRepositoryContract
 		bool $lazyLoaded = false
 	):Order;
 
+	/**
+	 * Restore a sales order
+	 */
+	public function restore(
+		int $orderId, 
+		array $data = [], 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
 }
