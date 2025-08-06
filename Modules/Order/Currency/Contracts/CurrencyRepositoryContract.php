@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
 use Plenty\Modules\Order\Currency\Models\Currency;
 use Plenty\Modules\Order\Currency\Models\CurrencyExchangeRate;
+use Plenty\Modules\Order\Currency\Models\LiveExchangeRatesResult;
 use Plenty\Modules\Order\Shipping\Countries\Models\Country;
 
 /**
@@ -67,5 +68,11 @@ interface CurrencyRepositoryContract
 	public function getExchangeRatesTo(
 		string $currencyIso
 	):array;
+
+	/**
+	 * Get the live exchange rates
+	 */
+	public function getLiveExchangeRates(
+	):LiveExchangeRatesResult;
 
 }

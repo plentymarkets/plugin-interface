@@ -170,6 +170,8 @@ public		$tags;
 	
 public		$tagRelationships;
 	
+public		$generationInformation;
+	
 	/**
 	 * Returns this model as an array.
 	 */
