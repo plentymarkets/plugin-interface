@@ -116,4 +116,14 @@ interface ReturnOrderRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Restore a return
+	 */
+	public function restore(
+		int $orderId, 
+		array $data = [], 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
 }
