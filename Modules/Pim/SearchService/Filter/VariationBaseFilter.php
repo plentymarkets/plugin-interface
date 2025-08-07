@@ -121,6 +121,13 @@ abstract class VariationBaseFilter implements TypeInterface
 	):self;
 
 	/**
+	 * Restricts the result to not have the any of the price calculation uuid
+	 */
+	abstract public function hasNoAnyPriceCalculationUuid(
+		array $uuids
+	):self;
+
+	/**
 	 * Restricts the result to have the any of the item ids
 	 */
 	abstract public function hasItemIds(
@@ -202,6 +209,13 @@ abstract class VariationBaseFilter implements TypeInterface
 	 * Restricts the result to have any of the availabilities.
 	 */
 	abstract public function hasAtLeastOneAvailability(
+		array $availabilities
+	):self;
+
+	/**
+	 * Restricts the result to not have any of the availabilities.
+	 */
+	abstract public function hasNoAtLeastOneAvailability(
 		array $availabilities
 	):self;
 

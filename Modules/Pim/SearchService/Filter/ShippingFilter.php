@@ -5,6 +5,7 @@ use Illuminate\Contracts\Support\Arrayable;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\Filter\TermsFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Statement\StatementInterface;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustFilter;
+use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\Filter\BoolMustNotFilter;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\Query\Type\TypeInterface;
 
 /**
@@ -18,6 +19,13 @@ abstract class ShippingFilter implements TypeInterface
 	 * Restricts the result to have the shipping profile id.
 	 */
 	abstract public function hasShippingProfile(
+		array $ids
+	):self;
+
+	/**
+	 * Restricts the result to not have the shipping profile id.
+	 */
+	abstract public function hasNoShippingProfile(
 		array $ids
 	):self;
 
