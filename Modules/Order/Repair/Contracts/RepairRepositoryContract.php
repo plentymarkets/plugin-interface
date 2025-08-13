@@ -124,4 +124,14 @@ interface RepairRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Restore a repair
+	 */
+	public function restore(
+		int $orderId, 
+		array $data = [], 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
 }

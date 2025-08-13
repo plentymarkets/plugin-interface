@@ -124,4 +124,14 @@ interface WarrantyRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Restore a warranty
+	 */
+	public function restore(
+		int $orderId, 
+		array $data = [], 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
 }

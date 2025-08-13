@@ -100,6 +100,13 @@ abstract class ItemFilter implements TypeInterface
 	):self;
 
 	/**
+	 * Restricts the result to have any of the manufacturer ids.
+	 */
+	abstract public function hasNoManufacturers(
+		array $manufacturerIds
+	):self;
+
+	/**
 	 * Restricts the result to have an manufacturer.
 	 */
 	abstract public function hasAManufacturer(

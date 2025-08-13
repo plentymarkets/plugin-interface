@@ -101,4 +101,14 @@ interface CreditNoteRepositoryContract
 		array $data
 	):array;
 
+	/**
+	 * Restore a credit note
+	 */
+	public function restore(
+		int $orderId, 
+		array $data = [], 
+		array $with = [], 
+		bool $lazyLoaded = false
+	):Order;
+
 }

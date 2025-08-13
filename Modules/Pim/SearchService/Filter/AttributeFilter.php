@@ -32,6 +32,13 @@ abstract class AttributeFilter implements TypeInterface
 	):self;
 
 	/**
+	 * Restricts the result to have any of the specified attributeId.
+	 */
+	abstract public function hasNoAnyAttribute(
+		array $attributeIds
+	):self;
+
+	/**
 	 * Restricts the result to has all of the specified attributeId.
 	 */
 	abstract public function hasAllAttributes(
@@ -49,6 +56,13 @@ abstract class AttributeFilter implements TypeInterface
 	 * Restricts the result to have any of the specified attributeValueId.
 	 */
 	abstract public function hasAnyAttributeValue(
+		array $attributeValueIds
+	):self;
+
+	/**
+	 * Restricts the result to not have any of the specified attributeValueId.
+	 */
+	abstract public function hasNoAnyAttributeValue(
 		array $attributeValueIds
 	):self;
 
