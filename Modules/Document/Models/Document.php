@@ -144,6 +144,8 @@ public		$displayDate;
 	
 public		$status;
 	
+public		$endOfRetentionPeriod;
+	
 public		$content;
 	
 public		$createdAt;
