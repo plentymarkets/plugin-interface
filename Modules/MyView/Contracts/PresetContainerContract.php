@@ -29,4 +29,18 @@ interface PresetContainerContract
 		string $myViewKey
 	):array;
 
+	/**
+	 * Get all presets from which the my-view key starts with the given string
+	 */
+	public function getPresetsStartingWithMyViewKey(
+		string $myViewKeyStartsWith
+	):array;
+
+	/**
+	 * Get all default presets from which the my-view key starts with the given string
+	 */
+	public function getDefaultPresetsStartingWithMyViewKey(
+		string $myViewKeyStartsWith
+	):array;
+
 }
