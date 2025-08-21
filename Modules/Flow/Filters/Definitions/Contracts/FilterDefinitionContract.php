@@ -46,6 +46,7 @@ abstract class FilterDefinitionContract
 	):bool;
 
 	abstract public function searchCriteria(
+		array $field = []
 	):string;
 
 	abstract public function searchCriteriaValue(
