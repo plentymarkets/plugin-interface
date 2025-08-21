@@ -226,6 +226,8 @@ abstract class OrderPropertyType
 
 	const CHANNEL_SHIPMENT_ID = 110;
 
+	const RESERVATION_ERROR = 111;
+
 	const TRADE_REPRESENTATIVE = 992;
 
 	const EBAY_CANCELLATION = 993;
