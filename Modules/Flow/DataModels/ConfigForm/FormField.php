@@ -50,6 +50,8 @@ public		$effectedFields;
 	
 public		$helperText;
 	
+public		$setupPath;
+	
 	/**
 	 * Returns this model as an array.
 	 */
