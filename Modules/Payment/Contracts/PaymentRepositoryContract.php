@@ -119,6 +119,10 @@ interface PaymentRepositoryContract
 		 $data
 	):Payment;
 
+	public function update(
+		Payment $payment
+	);
+
 	public function getStatusConstants(
 	):array;
 
