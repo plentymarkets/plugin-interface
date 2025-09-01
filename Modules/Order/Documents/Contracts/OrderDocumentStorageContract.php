@@ -4,7 +4,9 @@ namespace Plenty\Modules\Order\Documents\Contracts;
 use Plenty\Modules\Cloud\Storage\Models\StorageObject;
 
 /**
- * Provides methods to store, get and delete order document files. The files are stored on an AWS S3 storage by default. The implementation for this contract can be replaced by your own implementation.
+ * * Provides methods to store, get and delete order document files.
+ *     The files are stored on an AWS S3 storage by default. The implementation for this contract can be
+ *     replaced by your own implementation.
  */
 interface OrderDocumentStorageContract 
 {
@@ -36,6 +38,13 @@ interface OrderDocumentStorageContract
 	 */
 	public function delete(
 		string $path
+	):bool;
+
+	/**
+	 * Delete the requested files from the storage.
+	 */
+	public function deleteMultiple(
+		array $paths
 	):bool;
 
 }
