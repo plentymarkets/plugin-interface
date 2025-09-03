@@ -32,6 +32,16 @@ abstract class VariationWarehouseAttribute
 	abstract public function getLazyLoadParts(
 	);
 
+	abstract public function addDataBasePart(
+		string $dataBasePart, 
+		array $columns = [], 
+		array $relations = [], 
+		array $filters = []
+	):AttributeInterface;
+
+	abstract public function getDataBaseParts(
+	):array;
+
 	abstract public function addFilters(
 		 $filters
 	);

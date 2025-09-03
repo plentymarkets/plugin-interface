@@ -33,6 +33,16 @@ interface AttributeInterface
 	):self;
 
 	/**
+	 * Get all parts which should be loaded from the database.
+	 */
+	public function addDataBasePart(
+		string $dataBasePart, 
+		array $columns = [], 
+		array $relations = [], 
+		array $filters = []
+	):AttributeInterface;
+
+	/**
 	 * Get all parts which should be lazy loaded.
 	 */
 	public function getLazyLoadParts(
