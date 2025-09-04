@@ -71,8 +71,15 @@ abstract class VariationDataInterfaceContext
 	 * Set ids. All other restrictions are ignored.
 	 */
 	abstract public function setIds(
-		Collection $ids
+		Collection $ids, 
+		bool $useBatchSize = false
 	);
+
+	/**
+	 * Use batch size also in NoSearch repo (setIds). This can help with memory problems on large result sets.
+	 */
+	abstract public function isBatchSizeInNoSearch(
+	):bool;
 
 	/**
 	 * Get aggregations which are added to the result.
