@@ -42,6 +42,8 @@ abstract class DocumentTemplateOutputSetting
 
 	const XML_TYPE_FACTUR_X_COMFORT = 'facturXComfort';
 
+	const XML_TYPE_FACTUR_X_EXTENDED = 'facturXExtended';
+
 	const REPEAT_FIRST_PAGE = 'firstPage';
 
 	const REPEAT_EACH_PAGE = 'everyPage';
