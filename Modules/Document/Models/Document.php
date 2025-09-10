@@ -14,6 +14,8 @@ abstract class Document
 
 	const FAULTY = 'faulty';
 
+	const DELETED = 'deleted';
+
 	const RECEIPT = 'receipt';
 
 	const CANCELLATION = 'cancellation';
