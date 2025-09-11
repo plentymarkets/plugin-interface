@@ -3,7 +3,6 @@ namespace Plenty\Modules\Webshop\Helpers;
 
 use Plenty\Modules\Webshop\Contracts\LocalizationRepositoryContract;
 use Plenty\Modules\Webshop\Contracts\WebstoreConfigurationRepositoryContract;
-use Plenty\Plugin\ConfigRepository;
 
 /**
  * Helper to generate and manipulate urls to be used in the webshop.
