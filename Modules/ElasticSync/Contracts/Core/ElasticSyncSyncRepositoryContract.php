@@ -139,6 +139,13 @@ interface ElasticSyncSyncRepositoryContract
 	);
 
 	/**
+	 * Gets preview of csv values without sync entity.
+	 */
+	public function getCSVPreviewValues(
+		array $data = []
+	);
+
+	/**
 	 * Get preview of csv values.
 	 */
 	public function getPreviewValues(
