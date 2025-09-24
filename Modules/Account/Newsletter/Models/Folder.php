@@ -20,9 +20,13 @@ public		$name;
 	
 public		$isDeletable;
 	
+public		$isDeleteable;
+	
 public		$position;
 	
 public		$isSelectable;
+	
+public		$numberOfRecipients;
 	
 	/**
 	 * Returns this model as an array.
