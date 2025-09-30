@@ -26,6 +26,10 @@ public		$name;
 	
 public		$description;
 	
+public		$developmentMode;
+	
+public		$lastBuild;
+	
 public		$pluginSetEntries;
 	
 public		$pluginSetEntriesWithTrashed;
