@@ -78,6 +78,8 @@ abstract class VariablesObjectTypeEnum
 
 	const UNKNOWN = 'Unknown';
 
+	const ORDER_BANK_DATA = 'OrderBankData';
+
 	/**
 	 * Returns this model as an array.
 	 */
