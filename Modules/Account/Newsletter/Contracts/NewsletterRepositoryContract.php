@@ -74,6 +74,13 @@ interface NewsletterRepositoryContract
 	):Recipient;
 
 	/**
+	 * Deletes multiple recipients by their IDs.
+	 */
+	public function batchDeleteRecipientsById(
+		array $recipientIds
+	):int;
+
+	/**
 	 * Lists all newsletter entries.
 	 */
 	public function listAllEntries(
@@ -84,6 +91,17 @@ interface NewsletterRepositoryContract
 	 */
 	public function listAllFolders(
 	):array;
+
+	/**
+	 * Lists all newsletter recipients.
+	 */
+	public function searchFolders(
+		int $page, 
+		int $itemsPerPage, 
+		string $sortBy, 
+		string $sortOrder, 
+		array $filters
+	):PaginatedResult;
 
 	/**
 	 * Lists all recipients.
@@ -107,7 +125,10 @@ interface NewsletterRepositoryContract
 		int $page, 
 		int $itemsPerPage, 
 		array $filter, 
-		array $with
+		array $with, 
+		array $append = [], 
+		string $sortBy = null, 
+		string $sortOrder = null
 	):PaginatedResult;
 
 	/**
@@ -164,5 +185,40 @@ interface NewsletterRepositoryContract
 		string $surname = "", 
 		array $emailDirIds = []
 	);
+
+	/**
+	 * Moves all recipients from one folder to another.
+	 */
+	public function moveRecipients(
+		int $sourceFolderId, 
+		int $destinationFolderId
+	):int;
+
+	/**
+	 * Moves recipients by their IDs from one folder to another.
+	 */
+	public function moveRecipientsById(
+		array $recipientIds, 
+		int $destinationFolderId
+	):int;
+
+	/**
+	 * Searches for orders based on the provided parameters.
+	 */
+	public function searchOrders(
+		int $page, 
+		int $itemsPerPage, 
+		string $sortBy, 
+		string $sortOrder, 
+		array $filters
+	):PaginatedResult;
+
+	/**
+	 * Import email addresses to a newsletter folder for found orders.
+	 */
+	public function importFromOrders(
+		int $folderId, 
+		array $filters
+	):int;
 
 }
