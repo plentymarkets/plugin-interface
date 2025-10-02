@@ -5,6 +5,7 @@ use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\CheckboxGroupField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\DateField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\DoubleField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\Editors\EditorBaseField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\HyperlinkField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\InputField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\NumberField;
@@ -95,6 +96,14 @@ interface UIConfigFormContract
 	 */
 	public function addTextAreaField(
 		TextAreaField $textAreaField, 
+		string $key = "key"
+	);
+
+	/**
+	 * Add an editor field to the config form
+	 */
+	public function addEditorField(
+		EditorBaseField $editorField, 
 		string $key = "key"
 	);
 
