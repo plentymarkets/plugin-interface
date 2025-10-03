@@ -7,6 +7,7 @@ use Plenty\Modules\Webshop\Contracts\VatNumberRepositoryContract;
 use Plenty\Modules\Webshop\Contracts\WebstoreConfigurationRepositoryContract;
 use Plenty\Modules\Webshop\Events\ValidateVatNumber;
 use Plenty\Modules\Webshop\Exceptions\VatNumberException;
+use Plenty\Modules\Webshop\Repositories\WebstoreConfigurationRepository;
 
 /**
  * Hook to execute validation of vat numbers.
