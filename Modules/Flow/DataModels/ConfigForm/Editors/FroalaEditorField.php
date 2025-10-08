@@ -1,11 +1,11 @@
 <?php
-namespace Plenty\Modules\Flow\DataModels\ConfigForm;
+namespace Plenty\Modules\Flow\DataModels\ConfigForm\Editors;
 
 
 /**
- * The selectbox field model.
+ * The froala editor field model.
  */
-abstract class SelectboxField 
+abstract class FroalaEditorField 
 {
 
 	const TYPE_DATE = 'date';
@@ -31,9 +31,7 @@ abstract class SelectboxField
 	const TYPE_EDITOR_FROALA = 'editor_froala';
 
 	const VALIDATION_TYPE_NUMBER = 'number';
-	
-public		$selectBoxValues;
-	
+
 	/**
 	 * Returns this model as an array.
 	 */
