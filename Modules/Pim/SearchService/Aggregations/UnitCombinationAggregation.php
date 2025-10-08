@@ -30,7 +30,7 @@ abstract class UnitCombinationAggregation implements AggregationInterface
 	):array;
 
 	abstract public function setInclude(
-		string $string
+		string $value
 	);
 
 	abstract public function toArray(
