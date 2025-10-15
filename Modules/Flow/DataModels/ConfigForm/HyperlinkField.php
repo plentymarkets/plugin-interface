@@ -28,6 +28,8 @@ abstract class HyperlinkField
 
 	const TYPE_TEXTAREA = 'textarea';
 
+	const TYPE_EDITOR_FROALA = 'editor_froala';
+
 	const VALIDATION_TYPE_NUMBER = 'number';
 	
 public		$url;
