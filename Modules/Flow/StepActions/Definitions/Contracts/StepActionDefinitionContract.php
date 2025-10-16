@@ -49,6 +49,9 @@ abstract class StepActionDefinitionContract
 	abstract public function isSystemSpecific(
 	):bool;
 
+	abstract public function getParentPathIcon(
+	):string;
+
 	abstract public function getCondition(
 	):bool;
 

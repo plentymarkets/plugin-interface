@@ -9,6 +9,7 @@ use Plenty\Modules\Flow\DataModels\ConfigForm\Editors\EditorBaseField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\HyperlinkField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\InputField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\NumberField;
+use Plenty\Modules\Flow\DataModels\ConfigForm\PrintConfigurationsField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\SelectboxField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\TextAreaField;
 use Plenty\Modules\Flow\DataModels\ConfigForm\TimeField;
@@ -96,6 +97,14 @@ interface UIConfigFormContract
 	 */
 	public function addTextAreaField(
 		TextAreaField $textAreaField, 
+		string $key = "key"
+	);
+
+	/**
+	 * Add a print configurations field to the config form
+	 */
+	public function addPrintConfigurationsField(
+		PrintConfigurationsField $printConfigurationsField, 
 		string $key = "key"
 	);
 
