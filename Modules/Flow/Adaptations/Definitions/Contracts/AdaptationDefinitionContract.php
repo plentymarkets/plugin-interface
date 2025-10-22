@@ -19,12 +19,16 @@ abstract class AdaptationDefinitionContract
 	abstract public function getFrom(
 	):array;
 
+	abstract public function getUIConfigFields(
+	):array;
+
 	abstract public function getTo(
 	):array;
 
 	abstract public function performTask(
 		array $inputs, 
-		string $replaceOption
+		string $replaceOption, 
+		array $configFields = []
 	):array;
 
 	abstract public function shouldBeRegistered(
