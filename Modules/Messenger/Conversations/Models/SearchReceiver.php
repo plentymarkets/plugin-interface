@@ -22,6 +22,8 @@ public		$type;
 	
 public		$referrerId;
 	
+public		$clientId;
+	
 	/**
 	 * Returns this model as an array.
 	 */
