@@ -18,7 +18,7 @@ public		$language;
 	
 public		$name;
 	
-public		$countryId;
+public		$country_id;
 	
 	/**
 	 * Returns this model as an array.
