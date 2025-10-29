@@ -3,9 +3,9 @@ namespace Plenty\Modules\Flow\DataModels\ConfigForm;
 
 
 /**
- * The time field model.
+ * The print configuration field model.
  */
-abstract class TimeField 
+abstract class PrintConfigurationsField 
 {
 
 	const TYPE_DATE = 'date';

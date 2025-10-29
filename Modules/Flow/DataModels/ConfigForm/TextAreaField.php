@@ -32,6 +32,8 @@ abstract class TextAreaField
 
 	const VALIDATION_TYPE_NUMBER = 'number';
 
+	const TYPE_PRINT_CONFIGURATIONS = 'printConfigurations';
+
 	/**
 	 * Returns this model as an array.
 	 */

@@ -31,6 +31,8 @@ abstract class DateField
 	const TYPE_EDITOR_FROALA = 'editor_froala';
 
 	const VALIDATION_TYPE_NUMBER = 'number';
+
+	const TYPE_PRINT_CONFIGURATIONS = 'printConfigurations';
 	
 public		$value;
 	
