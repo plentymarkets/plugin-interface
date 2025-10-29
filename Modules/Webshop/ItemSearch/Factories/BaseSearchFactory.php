@@ -23,6 +23,8 @@ use Plenty\Modules\Webshop\Contracts\PriceDetectRepositoryContract;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\ItemSearchExtension;
 use Plenty\Modules\Webshop\ItemSearch\Extensions\SortExtension;
 use Plenty\Modules\Webshop\ItemSearch\Helpers\LoadResultFields;
+use Plenty\Modules\Webshop\Pwa\Contracts\PwaSettingsRepositoryContract;
+use Plenty\Modules\Webshop\Storefront\Middlewares\GeneralStorefrontMiddleware;
 use Plenty\Modules\Webshop\Template\Contracts\TemplateConfigRepositoryContract;
 use Plenty\Modules\Webshop\WebshopServiceProvider;
 use WebshopMutator;
