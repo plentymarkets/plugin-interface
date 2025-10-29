@@ -1,6 +1,7 @@
 <?php
 namespace Plenty\Modules\Webshop\ItemSearch\Helpers;
 
+use Exception;
 use Plenty\Log\Traits\Loggable;
 use Plenty\Modules\Webshop\Storefront\Middlewares\GeneralStorefrontMiddleware;
 

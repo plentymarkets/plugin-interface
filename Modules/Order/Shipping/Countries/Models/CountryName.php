@@ -18,6 +18,8 @@ public		$language;
 	
 public		$name;
 	
+public		$country_id;
+	
 	/**
 	 * Returns this model as an array.
 	 */
