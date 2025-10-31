@@ -2,7 +2,6 @@
 namespace Plenty\Modules\Flow\Triggers\Definitions\Contracts;
 
 use Plenty\Modules\Flow\DataModels\ConfigForm\FormField;
-use Plenty\Modules\Flow\Triggers\Definitions\Models\FlowUiTrigger;
 
 /**
  * Flow trigger definition
