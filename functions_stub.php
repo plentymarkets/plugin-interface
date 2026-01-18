@@ -1,5 +1,11 @@
 <?php
 
+	/**
+	 * @template T
+	 * @param class-string<T> $abstract
+	 * @param array $parameters
+	 * @return T
+	 */
 	 function pluginApp(
 		string $abstract, 
 		array $parameters = []
